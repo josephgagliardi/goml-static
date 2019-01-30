@@ -783,12 +783,12 @@ a:focus {
   border: none;
   background-color: #CA202A; }
 
-.oval:hover [class*="flaticon-"]::before {
+.oval:hover [class*="fa-"]::before {
   color: #fafafa; }
 
-.oval [class*="flaticon-"]::before {
-  color: #545555;
-  font-size: 13px !important; }
+.oval [class*="fa-"]::before {
+  color: #CA202A;
+  font-size: 20px !important; }
 
 .mini-oval {
   display: inline-block;
