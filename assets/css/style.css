@@ -337,6 +337,8 @@ img {
 
 /*----------  Helpers  ----------*/
 
+
+
 .columns-1 {
     -webkit-column-count: 1;
     column-count: 1
@@ -2060,11 +2062,11 @@ button.button-text:focus {
 }
 
 .form-search__icon {
-    color: #545555;
+    color: #000;
 }
 
 .form-search__icon:hover {
-    color: #00d99a;
+    color: #CA202A;
 }
 
 .form-search__icon::before {
@@ -2475,7 +2477,7 @@ button.button-text:focus {
 
 .menu-main li.menu-main__item.active a.menu-main__link {
     background-color: #fff;
-    color: #00d99a;
+    color: #CA202A;
     -webkit-transition: color 250ms ease-out;
     transition: color 250ms ease-out;
 }
@@ -2500,7 +2502,7 @@ button.button-text:focus {
 .menu-main li.menu-main__item > a.menu-main__link:hover,
 .menu-main li.menu-main__item > a.menu-main__link.active {
     background-color: #fff;
-    color: #00d99a;
+    color: #CA202A;
     -webkit-transition: color 250ms ease-out;
     transition: color 250ms ease-out;
 }
@@ -4244,6 +4246,12 @@ button.button-text:focus {
     color: #545555;
     background-color: #fefefe;
     border: solid 1px #e8e8e8;
+}
+
+.column-left__button-drop i {
+     font-size: 20px;
+  font-style: normal;
+  margin-left: 20px;
 }
 
 @media (max-width: 768px) {
@@ -10835,7 +10843,7 @@ Blog details sidebar
 
 /*=====  End of 6.  ======*/
 /*=============================================
-2.24 Signin form
+2.24 Signin and Signup form
 =============================================*/
 #signin--screen > .row {
     min-height: 100vh;
@@ -10843,6 +10851,16 @@ Blog details sidebar
 
 .signin-img {
     background-image: url(/assets/img/signin-signup/signin-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.signup-img {
+    background-image: url(/assets/img/signin-signup/signup-bg.jpg);
     background-position: center center;
     background-size: cover;
     min-height: 100vh;

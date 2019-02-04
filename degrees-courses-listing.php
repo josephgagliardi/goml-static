@@ -9,7 +9,7 @@
                 <div class="col-lg-3 col-md-3 column-left">
                     <div class="column-left__item">
                         <h1 class="column-left__title">Categories</h1>
-                        <div class="select list-selector"><a class="column-left__button-drop" href="#list-catagories" data-toggle="collapse" id="btn-list-catagories"><span class="column-left__button-drop__text" id="select-text">Categories</span><span class="glyph-icon flaticon-arrows-2 column-left__icon"></span></a>
+                        <div class="select list-selector"><a class="column-left__button-drop" href="#list-catagories" data-toggle="collapse" id="btn-list-catagories"><span class="column-left__button-drop__text" id="select-text">Categories</span><i class="fas fa-angle-down column-left__icon"></i></a>
                             <div class="list-catagories list-catagories" id="list-catagories">
                                 <ul class="list-catagories__list">
                                     <li class="list-catagories__item">
@@ -36,7 +36,7 @@
                     </div>
                     <div class="column-left__item">
                         <h1 class="column-left__title">topics</h1>
-                        <div class="select list-selector"><a class="column-left__button-drop" href="#topics" data-toggle="collapse" id="btn-topics"><span class="column-left__button-drop__text">topics</span><span class="glyph-icon flaticon-arrows-2 column-left__icon"></span></a>
+                        <div class="select list-selector"><a class="column-left__button-drop" href="#topics" data-toggle="collapse" id="btn-topics"><span class="column-left__button-drop__text">topics</span><i class="fas fa-angle-down column-left__icon"></i></a>
                             <div class="list-catagories topics" id="topics">
                                 <ul class="select__list">
                                     <li class="select__item">
@@ -163,7 +163,7 @@
                     </div>
                     <div class="column-left__item">
                         <h1 class="column-left__title">skill level</h1>
-                        <div class="select list-selector"><a class="column-left__button-drop" href="#skill-level" data-toggle="collapse" id="btn-skill-level"><span class="column-left__button-drop__text">skill level</span><span class="glyph-icon flaticon-arrows-2 column-left__icon"></span></a>
+                        <div class="select list-selector"><a class="column-left__button-drop" href="#skill-level" data-toggle="collapse" id="btn-skill-level"><span class="column-left__button-drop__text">skill level</span><i class="fas fa-angle-down column-left__icon"></i></a>
                             <div class="list-catagories skill-level" id="skill-level">
                                 <ul class="select__list">
                                     <li class="select__item">
@@ -196,7 +196,7 @@
                     </div>
                     <div class="column-left__item">
                         <h1 class="column-left__title">duration</h1>
-                        <div class="select list-selector"><a class="column-left__button-drop" href="#duration" data-toggle="collapse" id="btn-duration"><span class="column-left__button-drop__text">duration</span><span class="glyph-icon flaticon-arrows-2 column-left__icon"></span></a>
+                        <div class="select list-selector"><a class="column-left__button-drop" href="#duration" data-toggle="collapse" id="btn-duration"><span class="column-left__button-drop__text">duration</span><i class="fas fa-angle-down column-left__icon"></i></a>
                             <div class="list-catagories duration" id="duration">
                                 <ul class="select__list">
                                     <li class="select__item">

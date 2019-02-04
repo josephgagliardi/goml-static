@@ -10,7 +10,7 @@
                     <div class="form-search__input-group">
                         <input class="form-control form-search__input" type="text" placeholder="Search for course...">
                         <div class="form-search__btn-group">
-                            <button class="btn form-search__button" type="submit"><i class="glyph-icon flaticon-search form-search__icon"></i></button>
+                            <button class="btn form-search__button" type="submit"><i class="fas fa-search form-search__icon"></i></button>
                         </div>
                     </div>
                 </form>

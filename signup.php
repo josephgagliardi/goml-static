@@ -25,7 +25,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-ms-7 flex-fill signin-img text-hide">
+            <div class="col-ms-7 flex-fill signup-img text-hide">
                 Photo of diverse college students
             </div>
         </div>
