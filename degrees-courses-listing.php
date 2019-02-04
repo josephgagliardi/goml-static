@@ -221,7 +221,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                 </div>
                 <div class="col-lg-9 col-md-9 column-right">
                     <div class="header-filter">
@@ -345,4 +345,7 @@
     </div>
 </main>
 <?php include("includes/footer.php"); ?>
+<script src="assets/js/jquery-matchHeight.js"></script>
+<script src="assets/js/couse-listing.js"></script>
+
 </html>
