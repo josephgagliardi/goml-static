@@ -24,10 +24,10 @@ $(document).ready(function () {
             $('.collapse').collapse('hide');
         }
     });
-    
-      $('.col-equal').matchHeight({
-    property: 'height'
-  });
+
+    $('.col-equal').matchHeight({
+        property: 'height'
+    });
 
     $('.view-gird').on('click', '#view-course-list', function (e) {
         $('.courses-by-list').fadeIn('slow');

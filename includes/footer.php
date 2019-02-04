@@ -71,6 +71,7 @@
 <script src="assets/js/slicks.js"></script>
 <script src="assets/js/droopmenu.min.js"></script>
 <script src="assets/js/jquery.sticky.js"></script>
+<script src="assets/js/jquery-matchHeight.js"></script>
 <script src="assets/js/script.js"></script>
 <div class="positionfixed"></div>
 </body>

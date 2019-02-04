@@ -72,7 +72,6 @@
 .courses__content__institutions,
 .column-left__button-drop__text,
 .select__number {
-    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
@@ -1739,7 +1738,7 @@ button.button-text:focus {
     color: #CA202A;
 }
 
-.courses__content__author {
+.courses__content__institutions {
     margin-bottom: 16px;
     font-size: 0;
 }
@@ -2833,7 +2832,7 @@ button.button-text:focus {
     color: #CA202A;
 }
 
-.courses__content__author {
+.courses__content__institutions {
     margin-bottom: 16px;
     font-size: 0;
 }
@@ -4304,7 +4303,7 @@ button.button-text:focus {
         width: 250px;
         padding: 10px;
         top: 100%;
-        right: 0;
+        left: 0;
         z-index: 100;
         -webkit-border-radius: 4px;
         border-radius: 4px;
@@ -4316,7 +4315,7 @@ button.button-text:focus {
     }
 }
 
-.list-catagories.collapse.in {
+.list-catagories.collapse.show {
     opacity: 1;
     visibility: visible;
 }

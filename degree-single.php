@@ -1,87 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <title>Course single</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="assets/lib/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/font/flaticon/flaticon.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
-</head>
-
-<body class="course-single">
-    <header>
-        <div class="header-top">
-            <div class="container">
-                <div class="navbar-"></div>
-                <div class="navbar-right">
-                    <a class="nav-right__signin__link" href="#">Sign Up</a> | <a href="signin.html" class="nav-right__signin__link">Sign In</a>
-                </div>
-            </div>
-        </div>
-        <div class="header-bottom">
-            sdf
-        </div>
-
-    </header>
-    <div class="modal fade signin-form" id="modal-signin" role="dialog">
-        <div class="modal-dialog signin-form__dialog">
-            <div class="signin-form__button-close hidden-lg hidden-md hidden-sm">
-                <button class="close signin-form__button-close__btn" type="button" data-dismiss="modal">&times;</button>
-            </div>
-            <div class="signin-form__header"><a class="signin-form__header__logo" href="#"><img src="assets/img/logo/Logo-form.png" alt=""></a>
-                <p class="signin-form__sub">Universal access to the world’s best education.</p>
-            </div>
-            <div class="modal-content signin-form__content">
-                <div class="modal-body signin-form__body">
-                    <ul class="signin-form__tabs">
-                        <li class="active signin-form__tabs__items"><a class="signin-form__tabs__link" data-toggle="tab" href="#sign-in">Sign In</a></li>
-                        <li class="signin-form__tabs__items"><a class="signin-form__tabs__link" data-toggle="tab" href="#sign-up">Sign Up</a></li>
-                    </ul>
-                    <div class="tab-content">
-                        <div class="tab-pane fade in active" id="sign-in">
-                            <h3 class="signin-form__body__title">Log Into Your Account</h3>
-                            <p class="signin-form__body__sub">Your student account is your portal to all things Educef: your classroom, projects, forums, career resources, and more!</p>
-                            <form class="signin-form__form">
-                                <div class="signin-form__form__inputs">
-                                    <input class="input-item" type="text" placeholder="Email">
-                                    <input class="input-item" type="password" placeholder="Password">
-                                </div>
-                                <button class="btn-green list-link__btn">Sign In</button><a class="signin-form__link" href="#">Forgot your password?</a>
-                            </form>
-                            <div class="group-btn-socials">
-                                <p class="group-btn-socials__sub">or sign in with one of these services</p>
-                                <div class="btn-social btn-social--facebook"><i class="glyph-icon flaticon-social-1"></i><i>facebook</i></div>
-                                <div class="btn-social btn-social--twitter"><i class="glyph-icon flaticon-twitter-logo-silhouette"></i><i>twitter</i></div>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="sign-up">
-                            <h3 class="signin-form__body__title">Log Into Your Account</h3>
-                            <p class="signin-form__body__sub">Your student account is your portal to all things Educef: your classroom, projects, forums, career resources, and more!</p>
-                            <form class="signin-form__form">
-                                <div class="signin-form__form__inputs">
-                                    <input class="input-item" type="text" placeholder="User name">
-                                    <input class="input-item" type="email" placeholder="Email">
-                                    <input class="input-item" type="password" placeholder="Password">
-                                    <input class="input-item" type="password" placeholder="Confirm Password">
-                                </div>
-                                <button class="btn-green list-link__btn">Sign Up</button>
-                            </form>
-                            <div class="group-btn-socials">
-                                <p class="group-btn-socials__sub">or sign up with one of these services</p>
-                                <div class="btn-social btn-social--facebook"><i class="glyph-icon flaticon-social-1"></i><i>facebook</i></div>
-                                <div class="btn-social btn-social--twitter"><i class="glyph-icon flaticon-twitter-logo-silhouette"></i><i>twitter</i></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="signin-form__footer"><a class="signin-form__footer__link" href="#">Having trouble logging in?</a></div>
-        </div>
-    </div>
+<?php include("includes/head.php"); ?>
+<?php include("includes/header.php"); ?>
+    
+    
+<main class="course-single">
     <div class="bundle-content">
         <div class="container">
             <div class="row">
@@ -93,16 +16,14 @@
                             <li class="list-link__item"><a class="list-link__link " href="#creator">creator</a></li>
                             <li class="list-link__item"><a class="list-link__link " href="#faq">FAQ</a></li>
                         </ul>
-                        <div class="title-list list-link__title">Graphic design specialization</div><a class="btn-green list-link__btn" href="#">enroll now</a>
+                        <a class="btn-green list-link__btn" href="#">enroll now</a>
                     </div>
                 </div>
                 <div class="col-lg-9 col-md-9">
                     <div class="bundle-header__about">
-                        <h1 class="bundle-header__title">Graphic design specialization</h1>
+                        <h1 class="bundle-header__title">Master Of Education In Early Childhood Education</h1>
                         <p class="bundle-header__content">
-                            When you browse through videos at YouTube, which do you usually click first: one with around 10 views or one with
-                            around 75,000 views? If you’re normal, then you’re much more likely to click on YouTube videos that have a lot of
-                            clicks already.
+                           asdfsdf
                         </p>
                     </div>
                     <div class="bundle-list">
@@ -392,93 +313,8 @@
             </nav>
         </div>
     </div>
-    <footer class="footer">
-        <video id="video-background" playsinline autoplay muted loop preload="none">
-            <source src="https://player.vimeo.com/external/158148793.hd.mp4?s=8e8741dbee251d5c35a759718d4b0976fbf38b6f&amp;profile_id=119&amp;oauth2_token_id=57447761" type="video/mp4">
-        </video>
-        <div class="container">
-            <div class="footer__top">
-                <div class="icon-video"><span class="glyph-icon flaticon-music icon-custom icon-video__icon"></span></div>
-                <h2 class="footer__top__title">Start Your New Goal & Make Life Better</h2>
-                <div class="footer__top__sub">Try it Free for 30 days. No creadit card required</div><a class="btn button-default design-sprint__item__button" href="#">enroll now</a>
-            </div>
-            <div class="row footer__content">
-                <div class="col-lg-5 col-md-5"><a class="logo__link footer__logo" href="/"><img class="logo__image" src="assets/img/logo/Logo-footer.png" alt="Logo Educef"></a>
-                    <p class="footer__item__sub">
-                        Education, Inc.<br />
-                        3601 Seneca Street, New York City<br />
-                        NY 10010, USA
-                    </p>
-                    <div class="asocials">
-                        <ul class="asocials__list">
-                            <li class="asocials__item"><a class="asocials__link" href="#"><span class="glyph-icon icon-custom flaticon-social-media asocials__icon"></span></a></li>
-                            <li class="asocials__item"><a class="asocials__link" href="#"><span class="glyph-icon icon-custom flaticon-social-1 asocials__icon"></span></a></li>
-                            <li class="asocials__item"><a class="asocials__link" href="#"><span class="glyph-icon icon-custom flaticon-twitter-logo-silhouette asocials__icon"></span></a></li>
-                            <li class="asocials__item"><a class="asocials__link" href="#"><span class="glyph-icon icon-custom flaticon-google-plus-symbol asocials__icon"></span></a></li>
-                            <li class="asocials__item"><a class="asocials__link" href="#"><span class="glyph-icon icon-custom flaticon-social-4 asocials__icon"></span></a></li>
-                            <li class="asocials__item"><a class="asocials__link" href="#"><span class="glyph-icon icon-custom flaticon-pinterest-logotype asocials__icon"></span></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-7 col-md-7 footer__content__right">
-                    <div class="row">
-                        <div class="col-lg-4 col-md-4 col-sm-4 footer__item">
-                            <h3 class="footer__item__title">System</h3>
-                            <ul class="footer-link__list">
-                                <li class="footer-link__item"><a class="footer-link__link ">Help center</a>
-                                </li>
-                                <li class="footer-link__item"><a class="footer-link__link ">Support forum</a>
-                                </li>
-                                <li class="footer-link__item"><a class="footer-link__link ">affiliate</a>
-                                </li>
-                                <li class="footer-link__item"><a class="footer-link__link ">Explore</a>
-                                </li>
-                                <li class="footer-link__item"><a class="footer-link__link ">Pricing</a>
-                                </li>
-                                <li class="footer-link__item"><a class="footer-link__link ">Social</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-4 footer__item">
-                            <h3 class="footer__item__title">more</h3>
-                            <ul class="footer-link__list">
-                                <li class="footer-link__item"><a class="footer-link__link ">About us</a>
-                                </li>
-                                <li class="footer-link__item"><a class="footer-link__link ">Blog</a>
-                                </li>
-                                <li class="footer-link__item"><a class="footer-link__link ">Service</a>
-                                </li>
-                                <li class="footer-link__item"><a class="footer-link__link ">Sign in</a>
-                                </li>
-                                <li class="footer-link__item"><a class="footer-link__link ">Sign up</a>
-                                </li>
-                                <li class="footer-link__item"><a class="footer-link__link ">Contact</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-4 col-md-4 col-sm-4 footer__item">
-                            <h3 class="footer__item__title">get in touch</h3>
-                            <div class="footer-link__link footer-link__link--contact">Contact us if you need help with anything</div>
-                            <div class="footer-link__link footer-link__link--phone">(+ 01) 2675 286897</div>
-                            <div class="footer-link__link footer-link__link--phone">(+ 01) 2120 286473</div>
-                            <div class="footer-link__link footer-link__link--phone">help@rubikthemes.com</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer__bottom">&copy; 2018 RubikThemes</div>
-        </div>
-    </footer>
-    <script src="assets/lib/js/jquery-3.3.1.min.js"></script>
-    <script src="assets/lib/js/bootstrap.min.js"></script>
-    <script src="assets/lib/slick/slick.min.js"></script>
-    <script src="assets/js/jquery.sticky.js"></script>
-    <script src="assets/js/wow.js"></script>
-    <script src="assets/js/jquery-matchHeight.js"></script>
-    <script src="assets/js/slicks.js"></script>
-    <script src="assets/js/script.js"></script>
-    <script src="assets/js/course-bundle.js"></script>
-    <div class="positionfixed"></div>
-</body>
+</main>
 
+<?php include("includes/footer.php"); ?>
+<script src="/assets/js/course-bundle.js"></script>
 </html>

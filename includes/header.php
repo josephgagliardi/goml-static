@@ -42,6 +42,6 @@
                 </li>
                 <li><a href="#">News</a></li>
             </ul>
-        </div><!-- droopmenu-nav -->
-    </div><!-- droopmenu-inner -->
-</nav><!-- droopmenu-navbar  -->
+        </div>
+    </div>
+</nav>

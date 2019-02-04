@@ -36,8 +36,10 @@
                     </div>
                     <div class="column-left__item">
                         <h1 class="column-left__title">topics</h1>
-                        <div class="select list-selector"><a class="column-left__button-drop" href="#topics" data-toggle="collapse" id="btn-topics"><span class="column-left__button-drop__text">topics</span><i class="fas fa-angle-down column-left__icon"></i></a>
-                            <div class="list-catagories topics" id="topics">
+                        <div class="select list-selector">
+                            <a class="column-left__button-drop" data-toggle="collapse" href="#topics" role="button" aria-expanded="false">
+                                <span class="column-left__button-drop__text">topics</span><i class="fas fa-angle-down column-left__icon"></i></a>
+                            <div class="list-catagories" id="topics">
                                 <ul class="select__list">
                                     <li class="select__item">
                                         <div class="ckeckbox">
@@ -158,6 +160,7 @@
                                         </div>
                                     </div>
                                 </div>
+
                             </div>
                         </div>
                     </div>
@@ -251,8 +254,8 @@
                                     <div class="courses__top">
                                         <div class="courses__top__wapper"><img class="courses__top__image" src="assets/img/courses-image/0.jpg" alt=""></div>
                                     </div>
-                                    <div class="courses__content col-equal"><a class="courses__content__title" href="#">Master of Education in Early Childhood Education </a>
-                                        <div class="courses__content__author"><a class="courses__col-left" href="#"><span class="courses__content__institutions">University of West Georgia</span></a>
+                                    <div class="courses__content col-equal"><a class="courses__content__title" href="degree-single.php">Master of Education in Early Childhood Education a sdfa dfa dsfaf a dfs </a>
+                                        <div class="courses__content__author"><a class="courses__col-left" href="#"><span class="courses__content__institutions">University of West Georgia asdfa as fdsa </span></a>
                                         </div>
                                     </div>
                                 </div>
@@ -334,6 +337,17 @@
                 </div>
             </div>
         </div>
+
+        <p>
+            <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                Link with href
+            </a>
+        </p>
+        <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+            </div>
+        </div>
     </div>
     <div class="container">
         <nav class="breadcrumb-wapper">
@@ -345,7 +359,6 @@
     </div>
 </main>
 <?php include("includes/footer.php"); ?>
-<script src="assets/js/jquery-matchHeight.js"></script>
-<script src="assets/js/couse-listing.js"></script>
+<script src="/assets/js/couse-listing.js"></script>
 
 </html>
