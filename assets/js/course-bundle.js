@@ -3,16 +3,11 @@ function checkWindownSize() {
   var window_width = $(window).width();
 
   if (window_width <= 993) {
-    clickScroll('#menu-left', '#header-mobile', x);
     $('#menu-left').unstick();
   }
-  else {
-    clickScroll('#menu-left','#scrollspy', x);
-  }
 }
-
 $(document).ready(function(){
-  $('#menu-left').sticky({topSpacing:70, bottomSpacing: 603});
+  $('#menu-left').sticky({topSpacing:70, bottomSpacing: 1000});
 
   $('.course-detail__view-more').on('click', function(e) {
     var item = $(this).attr('data-item'),
@@ -38,3 +33,26 @@ $(document).ready(function(){
     checkWindownSize();
   });
 });
+
+(function($) {
+  $("a[href*=\\#]:not([href=\\#])").click(function() 
+  {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+        || location.hostname == this.hostname) 
+    {
+      
+      var target = $(this.hash),
+      headerHeight = $(".droopmenu-navbar").height() + 30; // Get fixed header height
+            
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+              
+      if (target.length) 
+      {
+        $('html,body').animate({
+          scrollTop: target.offset().top - headerHeight
+        }, 500);
+        return false;
+      }
+    }
+  });
+})(jQuery);

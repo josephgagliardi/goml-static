@@ -132,7 +132,7 @@
 .instructor-info__college,
 .instructor-info__sub,
 .instructor-goals__list {
-    font-family: Nunito;
+    
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.2px;
@@ -592,31 +592,6 @@ img {
     object-fit: cover;
 }
 
-/*----------  img  ----------*/
-.img-block {
-    display: block;
-}
-
-.full-height {
-    height: 100vh;
-}
-
-/*	FONTS
-------------------------*/
-@font-face {
-    font-family: 'Nunito';
-    font-style: normal;
-    font-weight: 400;
-    src: local("Nunito Regular"), local("NunitoSans-Regular"), url(https://fonts.gstatic.com/s/nunitosans/v3/pe0qMImSLYBIv1o4X1M8cceyI9tAcVwob5A.woff2) format("woff2");
-    unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
-}
-
-@font-face {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    src: local("Roboto"), local("Roboto-Regular"), url(fonts/Roboto-Regular.ttf) format("woff2");
-}
 
 /*=============================================
 1.1 Button in page
@@ -832,16 +807,17 @@ button.button-text:focus {
 
 .rating-start::before,
 .rating-start::after {
-    font-family: "Flaticon";
+    font-family: 'Font Awesome 5 Free';
     color: #CA202A;
+    font-weight: 900;
 }
 
 .rating-start::before {
-    content: "\f117\f117\f117\f117\f117";
+    content: "\f005\f005\f005\f005\f005";
 }
 
 .rating-start::after {
-    content: "\f110\f110\f110\f110\f110";
+    content: "\f005\f005\f005\f005\f005";
     position: absolute;
     top: 0;
     left: 0;
@@ -1958,18 +1934,12 @@ button.button-text:focus {
 
 .form-search__input-group {
     overflow: hidden;
-    width: 330px;
     -webkit-border-radius: 3px;
     border-radius: 3px;
     border: solid 1px #e8e8e8;
     background-color: #fefefe;
 }
 
-@media (max-width: 1199px) {
-    .form-search__input-group {
-        width: 238px;
-    }
-}
 
 .form-search__btn-group {
     display: inline-block;
@@ -2692,7 +2662,7 @@ button.button-text:focus {
 }
 
 .list-course__header__btn:hover {
-    color: #099b72;
+    color: #CA202A;
 }
 
 .list-course__header__btn:hover .list-course__header__icon {
@@ -2835,6 +2805,7 @@ button.button-text:focus {
 .courses__content__institutions {
     margin-bottom: 16px;
     font-size: 0;
+    display: block;
 }
 
 .courses__content__avatar {
@@ -3017,7 +2988,7 @@ button.button-text:focus {
 }
 
 .item__left__content {
-    font-family: Nunito;
+    
     line-height: 1.5;
     letter-spacing: 0.2px;
     text-align: left;
@@ -4477,11 +4448,6 @@ button.button-text:focus {
     font-style: italic;
 }
 
-.courseListing .courses__top__bundle,
-.courseListing .courses__top__bt-seller {
-    display: none;
-}
-
 .select__item {
     margin-bottom: 16px;
     color: #545555;
@@ -4582,7 +4548,7 @@ button.button-text:focus {
 
 @media (max-width: 768px) {
     .courseListing .column-left .list-selector {
-        width: 73%;
+        width: 95%;
     }
 }
 
@@ -4685,171 +4651,16 @@ button.button-text:focus {
     font-weight: bold;
 }
 
-.sort-right {
-    float: right;
-}
-
-@media (max-width: 479px) {
-    .sort-right {
-        font-size: 0;
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-pack: justify;
-        -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-        justify-content: space-between;
-        -webkit-box-align: center;
-        -webkit-align-items: center;
-        -ms-flex-align: center;
-        align-items: center;
-    }
-}
-
-.sort-left {
-    float: left;
-    margin-top: 7px;
-}
-
-@media (max-width: 479px) {
-
-    .sort-left,
-    .sort-right {
-        padding: 0 15px 10px;
-        float: none;
-    }
-}
-
-.sort-left .sort-by,
-.sort-right .sort-by {
-    display: inline-block;
-    vertical-align: middle;
-}
-
-@media (max-width: 479px) {
-
-    .sort-left .sort-by,
-    .sort-right .sort-by {
-        width: -webkit-calc(100% - 61px);
-        width: calc(100% - 61px);
-        margin-right: 0;
-    }
-}
-
-.sort-left .sort-by__text,
-.sort-right .sort-by__text {
-    margin-right: 7px;
-    font-size: 14px;
-    text-align: left;
-    color: #545555;
-}
-
-@media (max-width: 479px) {
-
-    .sort-left .sort-by__text,
-    .sort-right .sort-by__text {
-        display: inline-block;
-        vertical-align: middle;
-    }
-}
-
-.sort-left .sort-by .btn-dropdown,
-.sort-right .sort-by .btn-dropdown {
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.sort-left .sort-by__button,
-.sort-right .sort-by__button {
-    position: relative;
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 32px;
-}
-
-.sort-left .view-gird,
-.sort-right .view-gird {
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.sort-left .view-gird__icon,
-.sort-right .view-gird__icon {
-    display: inline-block;
-    color: #000;
-}
-
-.sort-left .view-gird__icon i,
-.sort-right .view-gird__icon i {
+.view-gird__icon i,
+.view-gird__icon i {
     margin: 0 10px 0 0;
     font-size: 20px;
 }
 
-.sort-left .view-gird__icon:hover,
-.sort-left .view-gird__icon:focus,
-.sort-right .view-gird__icon:hover,
-.sort-right .view-gird__icon:focus {
-    color: #CA202A;
-}
-
-.sort-left .view-gird__icon:last-child::before,
-.sort-right .view-gird__icon:last-child::before {
-    margin-right: 16px;
-}
-
-@media (max-width: 479px) {
-
-    .sort-left .view-gird__icon:last-child::before,
-    .sort-right .view-gird__icon:last-child::before {
-        margin: 0;
-    }
-}
-
-.sort-left .view-gird .flaticon-signs.view-gird__icon:before,
-.sort-right .view-gird .flaticon-signs.view-gird__icon:before {
-    font-size: 21px;
-}
-
-.sort-left .list-sort,
-.sort-right .list-sort {
-    min-width: 120px;
-    padding: 3px 10px;
-    left: 0;
-    -webkit-border-radius: 4px;
-    border-radius: 4px;
-    -webkit-box-shadow: -0.2px 3px 16px 0 #e1e1e1;
-    box-shadow: -0.2px 3px 16px 0 #e1e1e1;
-    background-color: #fff;
-    border: none;
-}
-
-.sort-left .list-sort__item,
-.sort-right .list-sort__item {
-    margin-bottom: 10px;
-}
-
-.sort-left .list-sort__item:last-child,
-.sort-right .list-sort__item:last-child {
-    margin-bottom: 0;
-}
-
-.sort-left .list-sort .active,
-.sort-right .list-sort .active {
-    color: #CA202A;
-}
-
-.sort-left .list-sort__link,
-.sort-right .list-sort__link {
-    cursor: pointer;
-}
-
-.sort-left .list-sort__link:hover,
-.sort-left .list-sort__link:focus,
-.sort-left .list-sort__link.active,
-.sort-right .list-sort__link:hover,
-.sort-right .list-sort__link:focus,
-.sort-right .list-sort__link.active {
+.view-gird__icon:hover,
+.view-gird__icon:focus,
+.view-gird__icon:hover,
+.view-gird__icon:focus {
     color: #CA202A;
 }
 
@@ -4964,7 +4775,6 @@ button.button-text:focus {
 }
 
 .course-gird .select .ckeckbox {
-    font-family: Nunito;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.2px;
@@ -5230,7 +5040,7 @@ button.button-text:focus {
 
 .list-link__link:hover,
 .list-link__link:focus {
-    color: #099b72;
+    color: #CA202A;
 }
 
 .list-link__btn {
@@ -5298,7 +5108,7 @@ button.button-text:focus {
 }
 
 .paragrap-content {
-    font-family: Nunito;
+    
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.2px;
@@ -5373,7 +5183,7 @@ button.button-text:focus {
 
 .detail__infor__sub {
     margin-bottom: 20px;
-    font-family: Nunito;
+    
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.2px;
@@ -5659,7 +5469,7 @@ button.button-text:focus {
 }
 
 .course-detail__view-more:hover {
-    color: #099b72;
+    color: #CA202A;
 }
 
 .list-brief-content__item {
@@ -5725,7 +5535,7 @@ button.button-text:focus {
 .list-brief__item {
     font-size: 16px;
     margin-bottom: 16px;
-    font-family: Nunito;
+    
 }
 
 .list-brief__item:last-child {
@@ -5800,7 +5610,7 @@ button.button-text:focus {
 }
 
 .creator__sub {
-    font-family: Nunito;
+    
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.2px;
@@ -5917,7 +5727,6 @@ button.button-text:focus {
 .faqs__body {
     padding: 15px 0;
     border-top: solid 1px #e8e8e8;
-    font-family: Nunito;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.2px;
@@ -6013,7 +5822,7 @@ button.button-text:focus {
 
 .list-syllabus .list-brief__item__kind,
 .list-syllabus .list-brief__item__content {
-    font-family: Nunito;
+    
     font-size: 16px;
     font-weight: normal;
     font-style: normal;
@@ -6131,7 +5940,7 @@ button.button-text:focus {
 }
 
 .list_works__subs {
-    font-family: Nunito;
+    
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.2px;
@@ -6218,7 +6027,7 @@ button.button-text:focus {
 }
 
 .reviews__sub-content {
-    font-family: Nunito;
+    
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.2px;
@@ -6364,7 +6173,7 @@ Partner details pages
 }
 
 .partner-header__content {
-    font-family: Nunito;
+    
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.2px;
@@ -8371,7 +8180,7 @@ Blog details sidebar
 
 .history-twitter__item {
     margin-bottom: 31px;
-    font-family: Nunito;
+    
     font-size: 16px;
     letter-spacing: 0.2px;
     text-align: left;
