@@ -4878,13 +4878,6 @@ button.button-text:focus {
   2.10.1. Bundle header
   2.10.2. Sidebar left
 =============================================*/
-.course-bundle .nav-right--login {
-    display: none;
-}
-
-.course-bundle .nav-right--notlogin {
-    display: inline-block;
-}
 
 .bundle-header {
     margin-bottom: 60px;
@@ -4894,7 +4887,6 @@ button.button-text:focus {
     position: relative;
     padding-top: 86px;
     padding-bottom: 80px;
-    margin-bottom: 60px;
     color: #545555;
 }
 
@@ -4911,7 +4903,72 @@ button.button-text:focus {
     }
 }
 
-.bundle-header__about::before {
+.bundle-header__highlight {
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    background-color: #CA202A;
+    color: #FFF;
+    padding: 20px 0;
+}
+
+ul.additional_info {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+}
+
+ul.additional_info li {
+    display: inline-block;
+    padding: 20px;
+    width: 32%;
+    border-right: 1px solid rgba(255,255,255,.2);
+    text-transform: capitalize;
+    position: relative;
+}
+
+@media (max-width: 767px) {
+    ul.additional_info {
+        text-align:left
+    }
+
+    ul.additional_info li {
+        display: block;
+        width: auto;
+        border-bottom: 1px solid rgba(255,255,255,.2);
+        border-right: none;
+        padding: 15px 15px 15px 85px
+    }
+}
+
+ul.additional_info li:last-child {
+    border-right: none;
+    border-bottom: none
+}
+
+ul.additional_info li i {
+    font-size: 52px;
+    font-size: 3.25rem;
+    display: block;
+    margin-bottom: 5px
+}
+
+@media (max-width: 767px) {
+    ul.additional_info li i {
+        display:inline-block;
+        position: absolute;
+        left: 15px;
+        top: 15px
+    }
+}
+
+ul.additional_info li strong {
+    display: block;
+    font-size: 21px;
+    font-size: 1.3125rem;
+    font-weight: 700;
+}
+
+/*.bundle-header__about::before {
     content: '';
     position: absolute;
     top: 0;
@@ -4920,6 +4977,29 @@ button.button-text:focus {
     width: 300%;
     height: 100%;
     background-color: #fafafa;
+}*/
+
+.bundle-header__image {
+     position: absolute;
+    top: 0;
+    z-index: -1;
+    left: -118%;
+    width: 300%;
+    height: 100%;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bundle-header__image::before {
+    background: #000 none repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    opacity: 0.6;
+    top: 0;
+    width: 100%;
+    z-index: 1;
 }
 
 .bundle-header__title {
@@ -4927,7 +5007,7 @@ button.button-text:focus {
     font-size: 50px;
     line-height: 1.2;
     text-align: left;
-    color: #545555;
+    color: #FFF;
 }
 
 @media (max-width: 768px) {
@@ -4946,13 +5026,18 @@ button.button-text:focus {
     font-size: 14px;
     font-weight: bold;
     text-align: left;
-    color: #545555;
+    color: #FFF;
 }
 
 .title-list {
     font-size: 28px;
     color: #545555;
     text-transform: capitalize;
+}
+
+.institutions-logo-single img {
+    max-height: 175px;
+    margin: 20px 15px 10px 15px;
 }
 
 .list-link {
@@ -4969,7 +5054,7 @@ button.button-text:focus {
 }
 
 .list-link__list {
-    margin-bottom: 24px;
+    margin-bottom: 15px;
 }
 
 @media (max-width: 1199px) {
@@ -5044,8 +5129,9 @@ button.button-text:focus {
 }
 
 .list-link__btn {
-    margin: 0 40px 26px;
-    padding: 16px 40px;
+    margin: 10px 20px;
+    padding: 15px 45px;
+    
 }
 
 @media (max-width: 1199px) {

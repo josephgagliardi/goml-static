@@ -250,7 +250,7 @@
                             <div class="col-lg-4 col-md-6 col-sm-6 courses__item">
                                 <div class="courses__wapper">
                                     <div class="courses__top">
-                                        <div class="courses__top__wapper"><img class="courses__top__image" src="assets/img/courses-image/0.jpg" alt=""></div>
+                                        <div class="courses__top__wapper"><img class="courses__top__image" src="/assets/img/course-single/header-img-1.jpg" alt=""></div>
                                     </div>
                                     <div class="courses__content col-equal"><a class="courses__content__title" href="course-single.php">Master of Education in Early Childhood Education </a>
                                         <div><a class="courses__col-left" href="#">

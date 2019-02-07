@@ -7,7 +7,7 @@ function checkWindownSize() {
   }
 }
 $(document).ready(function(){
-  $('#menu-left').sticky({topSpacing:70, bottomSpacing: 1000});
+  $('#menu-left').sticky({topSpacing:70, bottomSpacing: 950});
 
   $('.course-detail__view-more').on('click', function(e) {
     var item = $(this).attr('data-item'),
