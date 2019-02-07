@@ -6,7 +6,7 @@
     <div class="bundle-content">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-md-3 sidebar-left">
+                <div class="col-lg-3 col-md-3 col-sm-12 sidebar-left">
                     <div class="list-link" id="menu-left">
                         <div class="institutions-logo-single">
                             <img src="/assets/img/institutions/UWG-shield-color.svg" alt="University of West Georgia logo">
@@ -20,22 +20,30 @@
                                 <li class="list-link__item"><a class="list-link__link" href="#list-link-5">Dates & Deadlines</a></li>
                                 <li class="list-link__item"><a class="list-link__link" href="#list-link-6">Tuition & Fees</a></li>
                             </ul>
+                            <div class="mt-4 p-3">
+                                <a class="btn button-default btn-block list-link__btn" href="#">Apply Now</a>
+                                <a class="btn button-outline-02 btn-block list-link__btn" href="#">Request Info</a>
+                                <a class="mt-4 btn-block" href="#"><i class="fas fa-clipboard-list"></i> View Curriculum</a>
+                            </div>
                         </nav>
-                        <a class="btn button-default list-link__btn" href="#">Apply Now</a>
                     </div>
                 </div>
-                <div class="col-lg-9 col-md-9">
+                <div class="col-lg-9 col-md-9 col-sm-12">
                     <div class="bundle-header__about">
                         <div class="bundle-header__image" style="background-image: url(/assets/img/course-single/header-img-1.jpg)" data-overlay="6"></div>
                         <h1 class="bundle-header__title">Master Of Education In Early Childhood Education</h1>
                         <p class="bundle-header__content">
                             University Of West Georgia
                         </p>
+                 
+                           
+                     
                     </div>
                     <div class="bundle-header__highlight">
                         <ul class="additional_info">
-                            <li><i class="fas fa-graduation-cap"></i>Degree<strong>Bachelor</strong></li>
-                            <li><i class="far fa-clock"></i>Total Hours<strong>250</strong></li>
+                            <li class="wow fadeInLeft"><img src="/assets/img/course-single/book.svg">Degree<strong>Bachelor</strong></li>
+                            <li class="wow fadeInLeft" data-wow-delay="200ms"><img src="/assets/img/course-single/clock.svg">Total Hours<strong>250</strong></li>
+                            <li class="wow fadeInLeft" data-wow-delay="400ms"><img src="/assets/img/course-single/piggy-bank.svg">Cost<strong>$220.00</strong></li>
                         </ul>
                     </div>
                     <div class="bundle-list">
@@ -43,6 +51,10 @@
                             <h2 class="bundle__title">Program Descriptions</h2>
                             <div class="bundle__content">
                                 <p class="detail__infor__sub">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                
+                                <button type="button" class="btn btn-secondary" data-container="body" data-trigger="hover" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+                                    Popover on top
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -55,35 +67,45 @@
                             </div>
                         </div>
                     </div>
-                     <div class="bundle-list">
+                    <div class="bundle-list">
                         <div class="bundle" id="list-link-3">
                             <h2 class="bundle__title">Career Outlook</h2>
                             <div class="bundle__content">
-
+                                <p class="detail__infor__sub">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                <div class="row">
+                                    <div class="col-6 d-flex align-items-center">
+                                        <canvas id="myChart"></canvas>
+                                    </div>
+                                    <div class="col-6 d-flex align-items-center">
+                                        <canvas id="chartjs-4"></canvas>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                     <div class="bundle-list">
+                    <div class="bundle-list">
                         <div class="bundle" id="list-link-4">
                             <h2 class="bundle__title">Admission</h2>
                             <div class="bundle__content">
-
+                                <p class="detail__infor__sub">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                <p class="detail__infor__sub">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
                             </div>
                         </div>
                     </div>
-                     <div class="bundle-list">
+                    <div class="bundle-list">
                         <div class="bundle" id="list-link-5">
                             <h2 class="bundle__title">Dates & Deadlines</h2>
                             <div class="bundle__content">
-
+                                <p class="detail__infor__sub">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
                             </div>
                         </div>
                     </div>
-                     <div class="bundle-list">
+                    <div class="bundle-list">
                         <div class="bundle" id="list-link-6">
                             <h2 class="bundle__title">Tuition & Fees</h2>
                             <div class="bundle__content">
-
+                                <p class="detail__infor__sub">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                <p class="detail__infor__sub">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
                             </div>
                         </div>
                     </div>
@@ -104,5 +126,33 @@
 
 <?php include("includes/footer.php"); ?>
 <script src="/assets/js/course-single.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+<script>
+    new Chart(document.getElementById("myChart"), {
+        "type": "line",
+        data: {
+            labels: ["January", "February", "March", "April", "May", "June", "July"],
+            datasets: [{
+                label: "Salary After Attending",
+                backgroundColor: 'rgb(202, 32, 42)',
+                borderColor: 'rgb(202, 32, 42)',
+                data: [0, 10, 5, 2, 20, 30, 45],
+            }]
+        }
+    });
+    new Chart(document.getElementById("chartjs-4"), {
+        "type": "doughnut",
+        "data": {
+            "labels": ["Year 1", "Year 2", "Year 3"],
+            "datasets": [{
+                "label": "My First Dataset",
+                "data": [300, 50, 100],
+                "backgroundColor": ["rgb(202, 32, 42)", "rgb(195, 195, 195)", "rgb(56, 56, 56)"]
+            }]
+        }
+    });
+
+</script>
+
 
 </html>

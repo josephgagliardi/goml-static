@@ -221,7 +221,7 @@
                         <div class="header-filter__result">Result:<span class="header-filter__number">980 matches</span></div>
                     </div>
                     <div class="tags">
-                        <div class="tags__item"><span class="btn-outline">Clear All</span></div>
+                        <div class="tags__item"><span class="button-outline">Clear All</span></div>
                         <div class="tags__item"><i class="far fa-times-circle tags__icon"></i><span class="tags__text">Dregree Type</span></div>
                         <div class="tags__item"><i class="far fa-times-circle tags__icon"></i><span class="tags__text">Institutions</span></div>
                         <div class="tags__item"><i class="far fa-times-circle tags__icon"></i><span class="tags__text">Fields of Study</span></div>
