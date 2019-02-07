@@ -253,9 +253,22 @@
                                         <div class="courses__top__wapper"><img class="courses__top__image" src="/assets/img/course-single/header-img-1.jpg" alt=""></div>
                                     </div>
                                     <div class="courses__content col-equal"><a class="courses__content__title" href="course-single.php">Master of Education in Early Childhood Education </a>
-                                        <div><a class="courses__col-left" href="#">
-                                            <span class="courses__content__institutions">University of West Georgia</span></a>
+                                        <div>
+                                            <a class="courses__col-left" href="#"><span class="courses__content__institutions">University of West Georgia</span></a>
+                                            <ul class="list-tags pb-1">
+                                                <li>
+                                                    <button class="aos" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="Area of Study">aos</button>
+                                                </li>
+                                                <li>
+                                                    <button class="cpl" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="Credit for Prior Learning">cpl</button>
+                                                </li>
+                                                <li>
+                                                    <button class="ep" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="eMajor program">ep</button>
+                                                </li>
+                                            </ul>
+                                            <div class="clearfix"></div>
                                         </div>
+
                                     </div>
                                 </div>
                             </div>
@@ -265,7 +278,20 @@
                                         <div class="courses__top__wapper"><img class="courses__top__image" src="assets/img/courses-image/1.jpg" alt=""></div>
                                     </div>
                                     <div class="courses__content col-equal"><a class="courses__content__title" href="#">Bachelor of Science in Information Technology</a>
-                                        <div><a class="courses__col-left" href="#"><span class="courses__content__institutions">Kennesaw State University</span></a>
+                                        <div>
+                                            <a class="courses__col-left" href="#"><span class="courses__content__institutions">Kennesaw State University</span></a>
+                                            <ul class="list-tags pb-1">
+                                                <li>
+                                                    <button class="aos" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="Area of Study">aos</button>
+                                                </li>
+                                                <li>
+                                                    <button class="cpl" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="Credit for Prior Learning">cpl</button>
+                                                </li>
+                                                <li>
+                                                    <button class="ep" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="eMajor program">ep</button>
+                                                </li>
+                                            </ul>
+                                            <div class="clearfix"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -276,7 +302,20 @@
                                         <div class="courses__top__wapper"><img class="courses__top__image" src="assets/img/courses-image/2.jpg" alt=""></div>
                                     </div>
                                     <div class="courses__content col-equal"><a class="courses__content__title" href="#">Associate of Science in Financial Technology (Fintech)</a>
-                                        <div><a class="courses__col-left" href="#"><span class="courses__content__institutions">Middle Georgia State University</span></a>
+                                        <div>
+                                            <a class="courses__col-left" href="#"><span class="courses__content__institutions">Middle Georgia State University</span></a>
+                                            <ul class="list-tags pb-1">
+                                                <li>
+                                                    <button class="aos" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="Area of Study">aos</button>
+                                                </li>
+                                                <li>
+                                                    <button class="cpl" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="Credit for Prior Learning">cpl</button>
+                                                </li>
+                                                <li>
+                                                    <button class="ep" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="eMajor program">ep</button>
+                                                </li>
+                                            </ul>
+                                            <div class="clearfix"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -318,25 +357,25 @@
                                     <div class="courses__content col-equal"><a class="courses__content__title" href="#">Associate of Science in Financial Technology (Fintech)</a>
                                         <div>
                                             <a class="courses__col-left" href="#">
-                                            <span class="courses__content__institutions">Middle Georgia State University</span></a>
+                                                <span class="courses__content__institutions">Middle Georgia State University</span></a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
-                        <nav class="mx-auto" style="width: 200px;">
-                            <ul class="pagination pagination__list text-center">
-                                <li class="page-item pagination__item"><a class="page-link pagination__link " href="#">prev</a></li>
-                                <li class="page-item pagination__item"><a class="page-link pagination__link active" href="#">1</a></li>
-                                <li class="page-item pagination__item"><a class="page-link pagination__link " href="#">2</a></li>
-                                <li class="page-item pagination__item"><a class="page-link pagination__link " href="#">3</a></li>
-                                <li class="page-item pagination__item"><a class="page-link pagination__link " href="#">...</a></li>
-                                <li class="page-item pagination__item"><a class="page-link pagination__link " href="#">next</a></li>
-                            </ul>
-                        </nav>
-                   
+
+                    <nav class="mx-auto" style="width: 200px;">
+                        <ul class="pagination pagination__list text-center">
+                            <li class="page-item pagination__item"><a class="page-link pagination__link " href="#">prev</a></li>
+                            <li class="page-item pagination__item"><a class="page-link pagination__link active" href="#">1</a></li>
+                            <li class="page-item pagination__item"><a class="page-link pagination__link " href="#">2</a></li>
+                            <li class="page-item pagination__item"><a class="page-link pagination__link " href="#">3</a></li>
+                            <li class="page-item pagination__item"><a class="page-link pagination__link " href="#">...</a></li>
+                            <li class="page-item pagination__item"><a class="page-link pagination__link " href="#">next</a></li>
+                        </ul>
+                    </nav>
+
                 </div>
             </div>
         </div>

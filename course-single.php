@@ -35,15 +35,24 @@
                         <p class="bundle-header__content">
                             University Of West Georgia
                         </p>
-                 
-                           
-                     
+                        <ul class="list-tags">
+                            <li>
+                                <button class="aos" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="Area of Study">aos</button>
+                            </li>
+                            <li>
+                                <button class="cpl" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="Credit for Prior Learning">cpl</button>
+                            </li>
+                            <li>
+                                <button class="ep" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="eMajor program">ep</button>
+                            </li>
+                        </ul>
+
                     </div>
-                    <div class="bundle-header__highlight">
+                    <div class="bundle-header__highlight wow fadeIn" data-wow-delay="100ms">
                         <ul class="additional_info">
-                            <li class="wow fadeInLeft"><img src="/assets/img/course-single/book.svg">Degree<strong>Bachelor</strong></li>
+                            <li class="wow fadeInLeft" data-wow-delay="100ms"><img src="/assets/img/course-single/book.svg">Degree<strong>Bachelor</strong></li>
                             <li class="wow fadeInLeft" data-wow-delay="200ms"><img src="/assets/img/course-single/clock.svg">Total Hours<strong>250</strong></li>
-                            <li class="wow fadeInLeft" data-wow-delay="400ms"><img src="/assets/img/course-single/piggy-bank.svg">Cost<strong>$220.00</strong></li>
+                            <li class="wow fadeInLeft" data-wow-delay="300ms"><img src="/assets/img/course-single/piggy-bank.svg">Cost<strong>$220.00</strong></li>
                         </ul>
                     </div>
                     <div class="bundle-list">
@@ -51,10 +60,7 @@
                             <h2 class="bundle__title">Program Descriptions</h2>
                             <div class="bundle__content">
                                 <p class="detail__infor__sub">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                                
-                                <button type="button" class="btn btn-secondary" data-container="body" data-trigger="hover" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
-                                    Popover on top
-                                </button>
+
                             </div>
                         </div>
                     </div>
