@@ -48,11 +48,11 @@
                         </ul>
 
                     </div>
-                    <div class="bundle-header__highlight wow fadeIn" data-wow-delay="100ms">
+                    <div class="bundle-header__highlight">
                         <ul class="additional_info">
-                            <li class="wow fadeInLeft" data-wow-delay="100ms"><img src="/assets/img/course-single/book.svg">Degree<strong>Bachelor</strong></li>
-                            <li class="wow fadeInLeft" data-wow-delay="200ms"><img src="/assets/img/course-single/clock.svg">Total Hours<strong>250</strong></li>
-                            <li class="wow fadeInLeft" data-wow-delay="300ms"><img src="/assets/img/course-single/piggy-bank.svg">Cost<strong>$220.00</strong></li>
+                            <li class="wow fadeInUp" data-wow-delay="100ms"><img src="/assets/img/course-single/book.svg">Degree<strong>Bachelor</strong></li>
+                            <li class="wow fadeInUp" data-wow-delay="200ms"><img src="/assets/img/course-single/clock.svg">Total Hours<strong>250</strong></li>
+                            <li class="wow fadeInUp" data-wow-delay="300ms"><img src="/assets/img/course-single/piggy-bank.svg">Cost<strong>$220.00</strong></li>
                         </ul>
                     </div>
                     <div class="bundle-list">
