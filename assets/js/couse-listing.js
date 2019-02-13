@@ -25,10 +25,6 @@ $(document).ready(function () {
         }
     });
 
-    $('.col-equal').matchHeight({
-        property: 'height'
-    });
-
     $('.view-gird').on('click', '#view-course-list', function (e) {
         $('.courses-by-list').fadeIn('slow');
         $('.courses-by-gird').fadeOut('slow');

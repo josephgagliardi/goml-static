@@ -57,6 +57,46 @@ $(document).ready(function(){
     prevArrow: '<a class="oval oval-left" href="#" role="button"><i class="fas fa-angle-left"></i></a>',
     nextArrow: '<a class="oval oval-right" href="#" role="button"><i class="fas fa-angle-right"></i></a>',
     arrows: true,
+    adaptiveHeight: true,
+    responsive: [
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        dots: true,
+        arrows: false
+      }
+    },
+    {
+      breakpoint: 993,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        dots: true,
+        arrows: false
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+        arrows: false
+      }
+    }
+    ]
+  });
+    
+      // Related programs
+  $('.related').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    prevArrow: '<a class="oval oval-left" href="#" role="button"><i class="fas fa-angle-left"></i></a>',
+    nextArrow: '<a class="oval oval-right" href="#" role="button"><i class="fas fa-angle-right"></i></a>',
+    arrows: true,
+    adaptiveHeight: true,
     responsive: [
     {
       breakpoint: 1200,

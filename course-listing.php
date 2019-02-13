@@ -252,10 +252,11 @@
                                     <div class="courses__top">
                                         <div class="courses__top__wapper"><img class="courses__top__image" src="/assets/img/course-single/header-img-1.jpg" alt=""></div>
                                     </div>
-                                    <div class="courses__content col-equal"><a class="courses__content__title" href="course-single.php">Master of Education in Early Childhood Education </a>
+                                    <div class="courses__content col-equal"><a class="courses__content__title" href="course-single.php">Master of Education in Early Childhood Education sdfsdfsdf asd fads</a>
                                         <div>
                                             <a class="courses__col-left" href="#"><span class="courses__content__institutions">University of West Georgia</span></a>
-                                            <ul class="list-tags pb-1">
+
+                                            <ul class="list-tags">
                                                 <li>
                                                     <button class="aos" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="Area of Study">aos</button>
                                                 </li>
@@ -266,7 +267,6 @@
                                                     <button class="ep" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="eMajor program">ep</button>
                                                 </li>
                                             </ul>
-                                            <div class="clearfix"></div>
                                         </div>
 
                                     </div>
@@ -378,15 +378,13 @@
 
                 </div>
             </div>
+            <nav class="breadcrumb-wapper">
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item"><a class="breadcrumb__link" href="index.html">home</a></li>
+                    <li class="breadcrumb-item active"><a class="breadcrumb__link active" href="#">degree and course listing</a></li>
+                </ul>
+            </nav>
         </div>
-    </div>
-    <div class="container">
-        <nav class="breadcrumb-wapper">
-            <ul class="breadcrumb">
-                <li class="breadcrumb-item"><a class="breadcrumb__link" href="index.html">home</a></li>
-                <li class="breadcrumb-item active"><a class="breadcrumb__link active" href="#">degree and course listing</a></li>
-            </ul>
-        </nav>
     </div>
 </main>
 <?php include("includes/footer.php"); ?>

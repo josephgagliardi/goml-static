@@ -100,8 +100,8 @@
             </div>
             <div class="card-slide">
                 <div class="feature-course card-slide-bot">
-                    <div class="feature courses__list ">
-                        <div class="undefined courses__item">
+                    <div class="feature courses__list">
+                        <div class="courses__item">
                             <div class="courses__wapper">
                                 <div class="courses__top">
                                     <div class="courses__top__wapper"><img class="courses__top__image" src="assets/img/courses-image/1.jpg" alt=""></div>
