@@ -21,7 +21,7 @@
         <div class="droopmenu-nav">
             <ul class="droopmenu">
                 <li><a href="/index.php">Home</a></li>
-                <li><a href="/course-listing.php">Degrees and Courses</a></li>
+                <li><a href="/course-listing.php">Degrees & Programs</a></li>
                 <li><a href="/Institutions-listing.php">Institutions</a></li>
                 <li>
                     <a href="#">Future Students</a>

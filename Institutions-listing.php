@@ -8,13 +8,12 @@
             <div class="partner-listing-wrapper">
                 <div class="row justify-content-center">
                     <div class="col-6 align-self-center partner-listing-header">
-                        <h3 class="title-text">Our Institions</h3>
+                        <h3 class="title-text">Institions</h3>
                         <p class="content-text">Our Institions are some of the most forward-looking university in the country, and they're looking for graduates to fill critical roles today.</p>
-                        <ul class="menu-categori">
-                            <li class="menu-categori__item">161 partners<span></span></li>
-                            <li class="menu-categori__item">across 29 countries<span></span></li>
-                            <li class="menu-categori__item">offering 2,615 courses</li>
-                        </ul>
+                       <div class="row text-center">
+                           <div class="col-6">23 <span>Institions</span></div>
+                           <div class="col-6">offering 2,615 degrees</div>
+                        </div>
                     </div>
                 </div>
                 <div class="partner-listing-main">

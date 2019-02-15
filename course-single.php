@@ -13,7 +13,7 @@
                         </div>
                         <nav>
                             <ul class="list-link__list">
-                                <li class="list-link__item"><a class="list-link__link" href="#list-link-1">Program Descriptions</a></li>
+                                <li class="list-link__item"><a class="list-link__link" href="#list-link-1">Program Description</a></li>
                                 <li class="list-link__item"><a class="list-link__link" href="#list-link-2">Accreditation</a></li>
                                 <li class="list-link__item"><a class="list-link__link" href="#list-link-3">Career Outlook</a></li>
                                 <li class="list-link__item"><a class="list-link__link" href="#list-link-4">Admission</a></li>
@@ -31,7 +31,7 @@
                 <div class="col-lg-9 col-md-9 col-sm-12">
                     <div class="bundle-header__about">
                         <div class="bundle-header__image" style="background-image: url(/assets/img/course-single/header-img-1.jpg)" data-overlay="6"></div>
-                        <h1 class="bundle-header__title">Master Of Education In Early Childhood Education</h1>
+                        <h1 class="bundle-header__title">Master of Education in Early Childhood Education</h1>
                         <p class="bundle-header__content">
                             University Of West Georgia
                         </p>
@@ -50,14 +50,14 @@
                     </div>
                     <div class="bundle-header__highlight">
                         <ul class="additional_info">
-                            <li class="wow fadeInUp" data-wow-delay="100ms"><img src="/assets/img/course-single/book.svg">Degree<strong>Bachelor</strong></li>
-                            <li class="wow fadeInUp" data-wow-delay="200ms"><img src="/assets/img/course-single/clock.svg">Total Hours<strong>250</strong></li>
-                            <li class="wow fadeInUp" data-wow-delay="300ms"><img src="/assets/img/course-single/piggy-bank.svg">Cost<strong>$220.00</strong></li>
+                            <li class="wow fadeInUp" data-wow-delay="100ms"><img src="/assets/img/course-single/book.svg">Degrees<strong>Bachelor's</strong></li>
+                            <li class="wow fadeInUp" data-wow-delay="200ms"><img src="/assets/img/course-single/graph.svg">Total Credit Hours<strong>250</strong></li>
+                            <li class="wow fadeInUp" data-wow-delay="300ms"><img src="/assets/img/course-single/piggy-bank.svg">Per Credit Hour<strong>$220.00</strong></li>
                         </ul>
                     </div>
                     <div class="bundle-list">
                         <div class="bundle" id="list-link-1">
-                            <h2 class="bundle__title">Program Descriptions</h2>
+                            <h2 class="bundle__title">Program Description</h2>
                             <div class="bundle__content">
                                 <p class="detail__infor__sub">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 
