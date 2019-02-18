@@ -20,35 +20,35 @@
                     <div class="partner-listing-main__list">
                         <div class="university-menu">
                             <div class="row">
-                                <div class="col-md-3 col-sm-4">
+                                <div class="col-4">
                                     <a class="university-menu__item" href="#">
-                                        <div class="item-top flex-center"></div>
+                                        <div class="item-top d-flex"><img src="/assets/img/institutions/Abraham-Baldwin-Agricultural-College-COLOR.svg"></div>
                                         <div class="item-body">
-                                            <h5>University</h5>
+                                            <h5>Abraham Baldwin Agricultural College</h5>
                                         </div>
                                     </a>
                                 </div>
-                                <div class="col-md-3 col-sm-4">
+                                <div class="col-4">
                                     <a class="university-menu__item" href="#">
-                                        <div class="item-top flex-center"></div>
+                                        <div class="item-top d-flex"><img src="/assets/img/institutions/Albany-State-COLOR.svg"></div>
                                         <div class="item-body">
-                                            <h5>University</h5>
+                                            <h5>Albany State University</h5>
                                         </div>
                                     </a>
                                 </div>
-                                <div class="col-md-3 col-sm-4">
+                                <div class="col-4">
                                     <a class="university-menu__item" href="#">
-                                        <div class="item-top flex-center"></div>
+                                        <div class="item-top d-flex"><img src="/assets/img/institutions/atlanta-metro-color.svg"></div>
                                         <div class="item-body">
-                                            <h5>University </h5>
+                                            <h5>Atlanta Metropolitan State College</h5>
                                         </div>
                                     </a>
                                 </div>
-                                <div class="col-md-3 col-sm-4">
+                                <div class="col-4">
                                     <a class="university-menu__item" href="#">
-                                        <div class="item-top flex-center"></div>
+                                        <div class="item-top d-flex"><img src="/assets/img/institutions/College-of-Coastal-Georgia-color.svg"></div>
                                         <div class="item-body">
-                                            <h5>University</h5>
+                                            <h5>College of Coastal Georgia</h5>
                                         </div>
                                     </a>
                                 </div>

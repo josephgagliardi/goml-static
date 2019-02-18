@@ -3942,14 +3942,6 @@ button.button-text:focus {
 
 }
 
-@media (max-width: 576px) {
-    .footer-usg-logo {
-        margin-bottom: 40px;
-        padding: 20px;
-    }
-
-}
-
 .footer__bottom {
     position: relative;
     padding: 18px 0;
@@ -5776,13 +5768,6 @@ Partner details pages
   Course gird
   Our team
 =============================================*/
-.partner-details .nav-right--login {
-    display: none;
-}
-
-.partner-details .nav-right--notlogin {
-    display: inline-block;
-}
 
 .partner-header {
     margin-top: 100px;
@@ -9462,7 +9447,11 @@ Blog details sidebar
 
 .university-menu__item .item-top {
     position: relative;
-    padding: 30px 0;
+    padding: 30px 30px;
+}
+
+.university-menu__item .item-top img {
+    height: 220px;
 }
 
 .university-menu__item .item-top::before {

@@ -17,16 +17,17 @@
         <div class="row footer__middle">
             <div class="col-md-12">
                 <div class="row">
-                    <div class="col-md-3 col-sm-3 col-xs-6 d-flex align-items-center">
-                        <div class="d-flex align-items-center w-75 mx-auto footer-usg-logo">
-                            <img class="w-75 mx-auto" src="/assets/img/footer/University-System-of-Georgia.svg" alt="University System of Georgia logo">
-                        </div>
-                    </div>
-
-                    <div class="col-md-9 col-sm-9 col-xs-6 d-flex align-items-center">
+                    <div class="col d-flex align-items-center">
                         <div class="d-flex align-items-center mx-auto">
                             <img class="w-75 mx-auto" src="/assets/img/footer/emajor-logo.svg" alt="emajor logo">
                         </div>
+                    </div>
+                    <div class="col-6 d-flex align-items-center">
+                        <div class="d-flex align-items-center mx-auto">
+                            <img class="w-100 mx-auto" src="/assets/img/logo/ecampus-logo-white.svg" alt="ecampus logo">
+                        </div>
+                    </div>
+                    <div class="col d-flex align-items-center">
                         <div class="d-flex align-items-center mx-auto">
                             <img class="w-75 mx-auto" src="/assets/img/footer/ecore-logo.svg" alt="ecore logo">
                         </div>
