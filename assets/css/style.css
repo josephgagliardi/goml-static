@@ -1,39 +1,6 @@
 @charset "UTF-8";
 /*=============================================
-1. Modules in page
-  1.1. Button in page
-  1.2 Rating Star for course item
-  1.3 Breadcrumb
-  1.4 Input form in page
-  1.5 Button oval page
-  1.6 Status bar
-  1.7 Table in page
-  1.8 Card course in page
-2. Pages
-  2.1 Partials all page
-  2.2 Header content
-  2.3 Footer
-  2.4 Home page
-  2.5 Home 2 page
-  2.6 Catagories page
-  2.7 Course listing page
-  2.8 Course gird page
-  2.9 Search result page
-  2.10 Course Bundle page
-  2.11 Course single page
-  2.12 Partner details pages
-  2.13 Bundle details page
-  2.14 Blog grid page
-  2.15 Blog details page
-  2.16 Instructor details page
-  2.17 Blog details sidebar
-  2.18 404 Page
-  2.19 Coming soon page
-  2.20 Contact Page
-  2.21 Pricing table page
-  2.22 Partner listing page
-  2.23 Course details
-  2.34 Signin form
+
 =============================================*/
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700");
 
@@ -332,6 +299,7 @@ img {
     display: inline-block;
     max-width: 100%;
     height: auto;
+    image-rendering: -webkit-optimize-contrast;
 }
 
 /*----------  Helpers  ----------*/
@@ -505,7 +473,7 @@ img {
 .title-text {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
-    color: #545555;
+    color: #000;
 }
 
 .name-text {
@@ -4078,7 +4046,7 @@ button.button-text:focus {
     line-height: 1.5;
     margin-bottom: 16px;
     font-size: 32px;
-    color: #545555;
+    color: #000;
     text-align: left;
     text-transform: capitalize;
 }
@@ -5789,8 +5757,7 @@ Partner details pages
 }
 
 .partner-header__wapper {
-    width: 150px;
-    height: 150px;
+    
 }
 
 @media (max-width: 768px) {
@@ -5802,16 +5769,15 @@ Partner details pages
 .partner-header__image {
     width: 100%;
     height: auto;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
+    margin: 10px 0 30px 0;
 }
 
 .partner-header__title {
     margin-bottom: 20px;
     font-size: 50px;
-    line-height: 1.2;
+    line-height: 1.2em;
     text-align: left;
-    color: #545555;
+    color: #000;
 }
 
 @media (max-width: 768px) {
@@ -9430,7 +9396,9 @@ Blog details sidebar
     display: block;
     margin-bottom: 30px;
     background-color: #fff;
-    border: solid 1px #d6d6d6;
+    border: 1px solid transparent;
+    -webkit-box-shadow: 0 3px 16px 0 rgba(234, 234, 234, 0.9);
+    box-shadow: 0 3px 16px 0 rgba(234, 234, 234, 0.9);
     -webkit-border-radius: 3px;
     border-radius: 3px;
     -webkit-transition: all .3s;
@@ -9438,11 +9406,11 @@ Blog details sidebar
     color: #545555;
 }
 
-.university-menu__item:hover {
-    border: 1px solid transparent;
-    -webkit-box-shadow: 0 3px 16px 0 rgba(234, 234, 234, 0.6);
-    box-shadow: 0 3px 16px 0 rgba(234, 234, 234, 0.6);
-    color: #545555;
+.university-menu__item:hover, .university-menu__item:focus {
+    border: solid 1px #d6d6d6;
+     -webkit-box-shadow: none;
+    box-shadow: none;
+    color: #CA202A;
 }
 
 .university-menu__item .item-top {
@@ -9451,7 +9419,11 @@ Blog details sidebar
 }
 
 .university-menu__item .item-top img {
-    height: 220px;
+    height: 140px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .university-menu__item .item-top::before {
@@ -9472,9 +9444,10 @@ Blog details sidebar
 }
 
 .university-menu__item .item-body {
-    padding: 30px 0;
+    padding: 30px 10px;
     text-align: center;
 }
+
 
 /*===============================================
 2.23 Course details
