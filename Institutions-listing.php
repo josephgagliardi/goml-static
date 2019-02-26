@@ -7,10 +7,10 @@
         <div class="partner-listing-wrapper">
             <div class="row justify-content-center">
                 <div class="col-6 align-self-center partner-listing-header">
-                    <h1 class="title-text">Institions</h1>
-                    <p class="content-text">Our Institions are some of the most forward-looking university in the country, and they're looking for graduates to fill critical roles today.</p>
+                    <h1 class="title-text">Institutions</h1>
+                    <p class="content-text">Our institutions are some of the most forward-looking university in the country, and they're looking for graduates to fill critical roles today.</p>
                     <div class="row text-center">
-                        <div class="col-6">23 <span>Institions</span></div>
+                        <div class="col-6">23 <span>Institutions</span></div>
                         <div class="col-6">offering 2,615 degrees</div>
                     </div>
                 </div>
@@ -88,10 +88,10 @@
                 </div>
             </div>
         </div>
-        <nav class="breadcrumb-wapper">
+        <nav class="breadcrumb-wrapper">
             <ul class="breadcrumb">
                 <li class="breadcrumb-item"><a class="breadcrumb__link" href="index.html">home</a></li>
-                <li class="breadcrumb-item active"><a class="breadcrumb__link active" href="#">Institions</a></li>
+                <li class="breadcrumb-item active"><a class="breadcrumb__link active" href="#">Intuitions</a></li>
             </ul>
         </nav>
     </div>

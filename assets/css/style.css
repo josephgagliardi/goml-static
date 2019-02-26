@@ -821,13 +821,13 @@ button.button-text:focus {
 /*=============================================
 1.3 Breadcrumb
 =============================================*/
-.breadcrumb-wapper .breadcrumb {
+.breadcrumb-wrapper .breadcrumb {
     background-color: #fff;
     padding: 0;
     margin-bottom: 32px;
 }
 
-.breadcrumb-wapper .breadcrumb__link {
+.breadcrumb-wrapper .breadcrumb__link {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.2px;
@@ -836,13 +836,13 @@ button.button-text:focus {
     color: #545555;
 }
 
-.breadcrumb-wapper .breadcrumb__link:hover,
-.breadcrumb-wapper .breadcrumb__link .active {
+.breadcrumb-wrapper .breadcrumb__link:hover,
+.breadcrumb-wrapper .breadcrumb__link .active {
     color: #CA202A;
     text-decoration: underline;
 }
 
-.breadcrumb-wapper .breadcrumb .active {
+.breadcrumb-wrapper .breadcrumb .active {
     color: #CA202A;
     text-decoration: underline;
 }

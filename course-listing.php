@@ -404,7 +404,7 @@
 
                 </div>
             </div>
-            <nav class="breadcrumb-wapper">
+            <nav class="breadcrumb-wrapper">
                 <ul class="breadcrumb">
                     <li class="breadcrumb-item"><a class="breadcrumb__link" href="index.html">home</a></li>
                     <li class="breadcrumb-item active"><a class="breadcrumb__link active" href="#">degree and course listing</a></li>
