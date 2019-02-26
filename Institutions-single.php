@@ -29,25 +29,25 @@
                     <div class="bundle" id="list-link-1">
                         <h2 class="bundle__title">Accreditation</h2>
 
-                        <div class="accordian" id="accordian">
-                            <div class="panel accordian__item">
-                                <div class="accordian__heading">
-                                    <div class="accordian__title"><button class="accordian__link btn-block" data-toggle="collapse" data-target="#answer1" aria-expanded="true">Institutionl Accreditation<i class="fas fa-angle-right accordian__icon"></i></button>
+                        <div class="accordion" id="accordion">
+                            <div class="panel accordion__item">
+                                <div class="accordion__heading">
+                                    <div class="accordion__title"><button class="accordion__link btn-block" data-toggle="collapse" data-target="#answer1" aria-expanded="true">Institutionl Accreditation<i class="fas fa-angle-right accordion__icon"></i></button>
                                     </div>
                                 </div>
                                 <div class="panel-collapse collapse show" id="answer1">
-                                    <div class="accordian__body">
+                                    <div class="accordion__body">
                                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vulputate fringilla tellus, in lacinia eros ullamcorper eget. Nam dolor enim, tincidunt eu felis eu, lacinia pretium nisi. In sed dolor dignissim, rutrum massa ac, egestas ex. Nulla congue placerat lacus, sed dignissim leo varius at. Aenean sodales sem velit, in volutpat ligula eleifend id. In hendrerit sagittis odio ac rhoncus. Curabitur at eros quam. Donec sed turpis in risus convallis ullamcorper. Quisque ac odio sit amet nisi rhoncus luctus et vel ex. Aliquam luctus sagittis blandit. Cras vel diam ac leo sagittis finibus vel non magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a justo id tortor porttitor sagittis.
                                     </div>
                                 </div>
                             </div>
-                            <div class="panel accordian__item">
-                                <div class="accordian__heading">
-                                    <div class="accordian__title"><button class="accordian__link btn-block" data-toggle="collapse" data-target="#answer2">Program Accreditation<i class="fas fa-angle-right accordian__icon"></i></button>
+                            <div class="panel accordion__item">
+                                <div class="accordion__heading">
+                                    <div class="accordion__title"><button class="accordion__link btn-block" data-toggle="collapse" data-target="#answer2">Program Accreditation<i class="fas fa-angle-right accordion__icon"></i></button>
                                     </div>
                                 </div>
                                 <div class="panel-collapse collapse " id="answer2">
-                                    <div class="accordian__body">
+                                    <div class="accordion__body">
                                         <ul class="accred-list">
                                             <li><img src="/assets/img/accreditation-logos/aacsb-seeklogo.com.svg"></li>
                                             <li><img src="/assets/img/accreditation-logos/ACBSP_Accredited.svg"></li>

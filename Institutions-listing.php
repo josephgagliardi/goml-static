@@ -51,7 +51,7 @@
                                     </div>
                                 </a>
                             </div>
-                             <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
                                 <a class="university-menu__item col-equal" href="#">
                                     <div class="item-top"><img src="/assets/img/institutions/clayton-state-color.svg" alt=""></div>
                                     <div class="item-body">
@@ -67,7 +67,7 @@
                                     </div>
                                 </a>
                             </div>
-                             <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
                                 <a class="university-menu__item col-equal" href="#">
                                     <div class="item-top"><img src="/assets/img/institutions/columbus-state-university-color.svg" alt=""></div>
                                     <div class="item-body">
@@ -75,7 +75,7 @@
                                     </div>
                                 </a>
                             </div>
-                              <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                            <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
                                 <a class="university-menu__item col-equal" href="#">
                                     <div class="item-top"><img src="/assets/img/institutions/dalton-state-color.svg" alt=""></div>
                                     <div class="item-body">

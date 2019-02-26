@@ -6,8 +6,8 @@
     <div class="bundle-content">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-md-3 col-sm-12 sidebar-left">
-                    <div class="list-link" id="menu-left">
+                <div class="col-lg-3 col-md-3 col-sm-12">
+                    <div class="list-link" id="menu-left>
                         <div class="institutions-logo-single">
                             <img src="/assets/img/institutions/UWG-shield-color.svg" alt="University of West Georgia logo">
                         </div>

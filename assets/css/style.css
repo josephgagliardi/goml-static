@@ -5529,39 +5529,39 @@ ul.additional_info li strong {
     text-align: left;
 }
 
-.accordian {
+.accordion {
     margin-bottom: 100px;
 }
 
 @media (max-width: 768px) {
-    .accordian {
+    .accordion {
         margin-bottom: 60px;
     }
 }
 
 @media (max-width: 479px) {
-    .accordian {
+    .accordion {
         margin-bottom: 40px;
     }
 }
 
-.accordian--course-single {
+.accordion--course-single {
     margin-bottom: 60px;
 }
 
 @media (max-width: 768px) {
-    .accordian--course-single {
+    .accordion--course-single {
         margin-bottom: 40px;
     }
 }
 
 @media (max-width: 479px) {
-    .accordian--course-single {
+    .accordion--course-single {
         margin-bottom: 20px;
     }
 }
 
-.accordian__item {
+.accordion__item {
     padding: 15px 51px 0 51px;
     margin-bottom: 20px;
     background-color: #fefefe;
@@ -5569,30 +5569,30 @@ ul.additional_info li strong {
 }
 
 @media (max-width: 479px) {
-    .accordian__item {
+    .accordion__item {
         padding: 15px 15px 0 40px;
     }
 }
 
-.accordian__item:last-child {
+.accordion__item:last-child {
     margin-bottom: 0;
 }
 
-.accordian__heading {
+.accordion__heading {
     position: relative;
     background-color: #fefefe;
 }
 
-.accordian__title {
+.accordion__title {
     margin-bottom: 15px;
 }
 
-.accordian__title button {
+.accordion__title button {
     border: none;
     background-color: none;
 }
 
-.accordian__link {
+.accordion__link {
     display: block;
     font-size: 18px;
     font-weight: bold;
@@ -5600,19 +5600,19 @@ ul.additional_info li strong {
     color: #000;
 }
 
-.accordian__link:hover,
-.accordian__link:focus {
+.accordion__link:hover,
+.accordion__link:focus {
     color: #CA202A;
 }
 
-.accordian__link[aria-expanded="true"] i.accordian__icon::before {
+.accordion__link[aria-expanded="true"] i.accordion__icon::before {
     display: inline-block;
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
 }
 
-.accordian__link[aria-expanded="false"] i.accordian__icon::before {
+.accordion__link[aria-expanded="false"] i.accordion__icon::before {
     display: inline-block;
     -webkit-transform: rotate(0deg);
     -ms-transform: rotate(0deg);
@@ -5620,18 +5620,18 @@ ul.additional_info li strong {
 }
 
 @media (max-width: 479px) {
-    .accordian__link {
+    .accordion__link {
         font-size: 16px;
     }
 }
 
-.accordian__icon {
+.accordion__icon {
     position: absolute;
     top: 3px;
     left: -29px;
 }
 
-.accordian__icon::before {
+.accordion__icon::before {
     -webkit-transition: -webkit-transform 0.3s ease-in-out;
     transition: -webkit-transform 0.3s ease-in-out;
     transition: transform 0.3s ease-in-out;
@@ -5643,7 +5643,7 @@ ul.additional_info li strong {
     font-size: 25px;
 }
 
-.accordian__body {
+.accordion__body {
     padding: 15px 0;
     border-top: solid 1px #e8e8e8;
     font-size: 16px;
@@ -5654,7 +5654,7 @@ ul.additional_info li strong {
 }
 
 @media (max-width: 479px) {
-    .accordian__body {
+    .accordion__body {
         font-size: 14px;
     }
 }
@@ -9304,7 +9304,7 @@ Blog details sidebar
     }
 }
 
-.pricing-table-faq .accordian__item {
+.pricing-table-faq .accordion__item {
     margin-bottom: 30px;
 }
 
