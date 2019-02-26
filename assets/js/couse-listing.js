@@ -2,25 +2,25 @@
 $(document).ready(function () {
     var window_width = $(window).width(),
         $textSelect = $('#select-text'),
-        $list = $('#list-catagories');
+        $list = $('#list-categories');
 
-    $list.on('click', 'a.list-catagories__link', function () {
+    $list.on('click', 'a.list-categories__link', function () {
         var text = $(this).text();
         $textSelect.html(text);
 
-        $list.find('a.list-catagories__link').removeClass('active');
+        $list.find('a.list-categories__link').removeClass('active');
         $(this).addClass('active');
 
         if (window_width <= 768) {
-            $('#btn-list-catagories').trigger('click');
+            $('#btn-list-categories').trigger('click');
         }
     })
 
     $('body').on('click', function (e) {
-        var $trigger = $(".list-catagories");
+        var $trigger = $(".list-categories");
 
         if ($trigger !== e.target && !$trigger.has(e.target).length) {
-            $('.list-catagories').collapse('hide');
+            $('.list-categories').collapse('hide');
             $('.collapse').collapse('hide');
         }
     });

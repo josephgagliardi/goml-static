@@ -8,27 +8,27 @@
             <div class="row">
                 <div class="col-lg-3 col-md-3 column-left">
                     <div class="column-left__item">
-                        <h1 class="column-left__title">Dregree Type</h1>
+                        <h1 class="column-left__title">Dregree Levels</h1>
                         <div class="select list-selector"><a class="column-left__button-drop" href="#filter1" data-toggle="collapse"><span class="column-left__button-drop__text" id="select-text">Dregree Type</span><i class="fas fa-angle-down column-left__icon"></i></a>
-                            <div class="list-catagories" id="filter1">
-                                <ul class="list-catagories__list">
-                                    <li class="list-catagories__item">
-                                        <a href="#" class="list-catagories__link active">All Degree Levels</a>
+                            <div class="list-categories" id="filter1">
+                                <ul class="list-categories__list">
+                                    <li class="list-categories__item">
+                                        <a href="#" class="list-categories__link active">All Degree Levels</a>
                                     </li>
-                                    <li class="list-catagories__item">
-                                        <a href="#" class="list-catagories__link">Certificate</a>
+                                    <li class="list-categories__item">
+                                        <a href="#" class="list-categories__link">Certificate</a>
                                     </li>
-                                    <li class="list-catagories__item">
-                                        <a href="#" class="list-catagories__link">Associate</a>
+                                    <li class="list-categories__item">
+                                        <a href="#" class="list-categories__link">Associate</a>
                                     </li>
-                                    <li class="list-catagories__item">
-                                        <a href="#" class="list-catagories__link">Bachelor's</a>
+                                    <li class="list-categories__item">
+                                        <a href="#" class="list-categories__link">Bachelor's</a>
                                     </li>
-                                    <li class="list-catagories__item">
-                                        <a href="#" class="list-catagories__link">Master's</a>
+                                    <li class="list-categories__item">
+                                        <a href="#" class="list-categories__link">Master's</a>
                                     </li>
-                                    <li class="list-catagories__item">
-                                        <a href="#" class="list-catagories__link">Doctorate</a>
+                                    <li class="list-categories__item">
+                                        <a href="#" class="list-categories__link">Doctorate</a>
                                     </li>
                                 </ul>
                             </div>
@@ -39,7 +39,7 @@
                         <div class="select list-selector">
                             <a class="column-left__button-drop" data-toggle="collapse" href="#filter2" role="button" aria-expanded="false">
                                 <span class="column-left__button-drop__text">Institutions</span><i class="fas fa-angle-down column-left__icon"></i></a>
-                            <div class="list-catagories" id="filter2">
+                            <div class="list-categories" id="filter2">
                                 <ul class="select__list">
                                     <li class="select__item">
                                         <div class="ckeckbox">
@@ -134,9 +134,9 @@
                         </div>
                     </div>
                     <div class="column-left__item">
-                        <h1 class="column-left__title">Fields of Study</h1>
+                        <h1 class="column-left__title">Areas of Study</h1>
                         <div class="select list-selector"><a class="column-left__button-drop" href="#filter3" data-toggle="collapse"><span class="column-left__button-drop__text">Fields of Study</span><i class="fas fa-angle-down column-left__icon"></i></a>
-                            <div class="list-catagories" id="filter3">
+                            <div class="list-categories" id="filter3">
                                 <ul class="select__list">
                                     <li class="select__item">
                                         <div class="ckeckbox">
@@ -195,7 +195,7 @@
                     <div class="column-left__item">
                         <h1 class="column-left__title">eMajor</h1>
                         <div class="select list-selector"><a class="column-left__button-drop" href="#emajor" data-toggle="collapse"><span class="column-left__button-drop__text">emajor</span><i class="fas fa-angle-down column-left__icon"></i></a>
-                            <div class="list-catagories" id="emajor">
+                            <div class="list-categories" id="emajor">
                                 <ul class="select__list">
                                     <li class="select__item">
                                         <div class="ckeckbox">
@@ -327,37 +327,63 @@
                         <div class="row courses__list">
                             <div class="col-md-12 courses__item">
                                 <div class="courses__wapper">
-                                    <div class="courses__top col-equal">
-                                        <div class="courses__top__wapper"><img class="courses__top__image" src="assets/img/courses-image/0.jpg" alt=""></div>
-                                    </div>
                                     <div class="courses__content col-equal"><a class="courses__content__title" href="#">Master of Education in Early Childhood Education </a>
                                         <div>
                                             <a class="courses__col-left" href="#"><span class="courses__content__institutions">University of West Georgia</span></a>
+                                            <ul class="list-tags pb-1">
+                                                <li>
+                                                    <button class="aos" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="Area of Study">aos</button>
+                                                </li>
+                                                <li>
+                                                    <button class="cpl" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="Credit for Prior Learning">cpl</button>
+                                                </li>
+                                                <li>
+                                                    <button class="ep" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="eMajor program">em</button>
+                                                </li>
+                                            </ul>
+                                            <div class="clearfix"></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-12 courses__item">
                                 <div class="courses__wapper">
-                                    <div class="courses__top col-equal">
-                                        <div class="courses__top__wapper"><img class="courses__top__image" src="assets/img/courses-image/1.jpg" alt=""></div>
-                                    </div>
                                     <div class="courses__content col-equal"><a class="courses__content__title" href="#">Bachelor of Science in Information Technology</a>
                                         <div>
                                             <a class="courses__col-left" href="#"><span class="courses__content__institutions">Kennesaw State University</span></a>
+                                             <ul class="list-tags pb-1">
+                                                <li>
+                                                    <button class="aos" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="Area of Study">aos</button>
+                                                </li>
+                                                <li>
+                                                    <button class="cpl" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="Credit for Prior Learning">cpl</button>
+                                                </li>
+                                                <li>
+                                                    <button class="ep" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="eMajor program">em</button>
+                                                </li>
+                                            </ul>
+                                            <div class="clearfix"></div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-12 courses__item">
                                 <div class="courses__wapper">
-                                    <div class="courses__top col-equal">
-                                        <div class="courses__top__wapper"><img class="courses__top__image" src="assets/img/courses-image/2.jpg" alt=""></div>
-                                    </div>
                                     <div class="courses__content col-equal"><a class="courses__content__title" href="#">Associate of Science in Financial Technology (Fintech)</a>
                                         <div>
-                                            <a class="courses__col-left" href="#">
-                                                <span class="courses__content__institutions">Middle Georgia State University</span></a>
+                                            <a class="courses__col-left" href="#"><span class="courses__content__institutions">Middle Georgia State University</span></a>
+                                             <ul class="list-tags pb-1">
+                                                <li>
+                                                    <button class="aos" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="Area of Study">aos</button>
+                                                </li>
+                                                <li>
+                                                    <button class="cpl" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="Credit for Prior Learning">cpl</button>
+                                                </li>
+                                                <li>
+                                                    <button class="ep" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="eMajor program">em</button>
+                                                </li>
+                                            </ul>
+                                            <div class="clearfix"></div>
                                         </div>
                                     </div>
                                 </div>

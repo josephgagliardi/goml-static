@@ -57,7 +57,7 @@
 }
 
 .text-link,
-.list-catagories__link,
+.list-categories__link,
 .select__item,
 .sort-left .list-sort__link,
 .sort-right .list-sort__link {
@@ -1599,8 +1599,7 @@ button.button-text:focus {
 
 .courses__wapper:hover,
 .courses__wapper:focus {
-    -webkit-box-shadow: -0.2px 3px 16px 0 #ebebeb;
-    box-shadow: -0.2px 3px 16px 0 #ebebeb;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
 }
 
 .courses__item:focus {
@@ -1821,8 +1820,8 @@ button.button-text:focus {
   Header content
     1.1 Header top
       1.1.1 Logo
-      1.1.2 Catagories button
-        List catagories
+      1.1.2 categories button
+        List categories
         Cate sub
       1.1.3 Form search
       1.1.4 Nav Right
@@ -2368,7 +2367,7 @@ button.button-text:focus {
     transition: color 250ms ease-out;
 }
 
-.menu-main li.menu-main__item:hover .dropdown-catagories {
+.menu-main li.menu-main__item:hover .dropdown-categories {
     -webkit-transform: scaleY(1);
     -ms-transform: scaleY(1);
     transform: scaleY(1);
@@ -2403,7 +2402,7 @@ button.button-text:focus {
     font-size: 14px;
 }
 
-.menu-main__list .dropdown-catagories__link--full {
+.menu-main__list .dropdown-categories__link--full {
     width: 100%;
 }
 
@@ -3970,16 +3969,16 @@ button.button-text:focus {
 }
 
 /*=============================================
-2.6 Catagories page
-  2.6.1. List catagories
+2.6 categories page
+  2.6.1. List categories
   2.6.2. Colum left
   2.6.3. List-selector
-  2.6.4. List catagories
+  2.6.4. List categories
   2.6.5. Column right
   2.6.6. Pagination-wapper
   2.6.7. Pagination
 =============================================*/
-.catagories-page .rating-start {
+.categories-page .rating-start {
     display: none;
 }
 
@@ -4113,7 +4112,7 @@ button.button-text:focus {
 }
 
 @media (max-width: 768px) {
-    .list-catagories {
+    .list-categories {
         position: absolute;
         visibility: hidden;
         opacity: 0;
@@ -4132,32 +4131,32 @@ button.button-text:focus {
     }
 }
 
-.list-catagories.collapse.show {
+.list-categories.collapse.show {
     opacity: 1;
     visibility: visible;
 }
 
 @media (max-width: 479px) {
-    .list-catagories {
+    .list-categories {
         width: 100%;
     }
 }
 
-.list-catagories__item {
+.list-categories__item {
     margin-bottom: 16px;
 }
 
-.list-catagories .active {
+.list-categories .active {
     color: #CA202A;
 }
 
-.list-catagories__link {
+.list-categories__link {
     cursor: pointer;
 }
 
-.list-catagories__link:hover,
-.list-catagories__link:focus,
-.list-catagories__link.active {
+.list-categories__link:hover,
+.list-categories__link:focus,
+.list-categories__link.active {
     color: #CA202A;
 }
 
@@ -4515,7 +4514,7 @@ button.button-text:focus {
 
 .courses-by-list .courses__top,
 .courses-by-list .courses__content {
-    width: 50%;
+    width: 100%;
     display: inline-block;
     vertical-align: top;
 }
@@ -4569,7 +4568,7 @@ button.button-text:focus {
     font-style: italic;
 }
 
-.course-gird .list-catagories {
+.course-gird .list-categories {
     position: absolute;
     visibility: hidden;
     opacity: 0;
@@ -4587,12 +4586,12 @@ button.button-text:focus {
     transition: opacity 0.3s, visibility 0.3s;
 }
 
-.course-gird .list-catagories.collapse.in {
+.course-gird .list-categories.collapse.in {
     opacity: 1;
     visibility: visible;
 }
 
-.course-gird .list-catagories:before {
+.course-gird .list-categories:before {
     position: absolute;
     content: '';
     top: -14px;
@@ -4996,7 +4995,7 @@ ul.additional_info li strong {
 .related__title {
     margin-bottom: 24px;
     font-size: 32px;
-    color: #545555;
+    color: #000;
     text-transform: capitalize;
 }
 
@@ -5633,10 +5632,10 @@ ul.additional_info li strong {
 }
 
 .accordian__icon::before {
-    -webkit-transition: -webkit-transform 0.5s ease-in-out;
-    transition: -webkit-transform 0.5s ease-in-out;
-    transition: transform 0.5s ease-in-out;
-    transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+    -webkit-transition: -webkit-transform 0.3s ease-in-out;
+    transition: -webkit-transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
     -webkit-transform: rotate(0);
     -ms-transform: rotate(0);
     transform: rotate(0);
@@ -5687,7 +5686,7 @@ ul.additional_info li strong {
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 100%;
+    height: 100px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(#fefefe));
     background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0), #fefefe);
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), #fefefe);
@@ -6449,12 +6448,12 @@ Bundle details page
     }
 }
 
-.brief-course .list-brief__top__title:hover {
-    color: #CA202A;
+.list-brief__top__title a {
+    color: #000;
 }
 
-.brief-course .list-brief__top__title {
-    margin-right: 8px;
+.list-brief__top__title a:hover {
+    color: #CA202A;
 }
 
 .brief-course .list-brief__top__sub {
@@ -7786,21 +7785,21 @@ Blog details sidebar
     margin-bottom: 0;
 }
 
-.bg-details-right__item .list-catagories__item {
+.bg-details-right__item .list-categories__item {
     margin-bottom: 15px;
 }
 
-.bg-details-right__item .list-catagories__item:last-child {
+.bg-details-right__item .list-categories__item:last-child {
     margin-bottom: 0;
 }
 
-.bg-details-right__item .list-catagories__item .list-catagories__link {
+.bg-details-right__item .list-categories__item .list-categories__link {
     color: #545555;
 }
 
-.bg-details-right__item .list-catagories__item .list-catagories__link:hover,
-.bg-details-right__item .list-catagories__item .list-catagories__link:focus,
-.bg-details-right__item .list-catagories__item .list-catagories__link.active {
+.bg-details-right__item .list-categories__item .list-categories__link:hover,
+.bg-details-right__item .list-categories__item .list-categories__link:focus,
+.bg-details-right__item .list-categories__item .list-categories__link.active {
     color: #CA202A;
 }
 
@@ -9437,10 +9436,9 @@ Blog details sidebar
     margin-bottom: 30px;
     background-color: #fff;
     border: 1px solid transparent;
-    -webkit-box-shadow: 0 3px 16px 0 rgba(234, 234, 234, 0.9);
-    box-shadow: 0 3px 16px 0 rgba(234, 234, 234, 0.9);
     -webkit-border-radius: 3px;
     border-radius: 3px;
+    border: solid 1px #d6d6d6;
     -webkit-transition: all .3s;
     transition: all .3s;
     color: #545555;
@@ -9448,10 +9446,8 @@ Blog details sidebar
 
 .university-menu__item:hover,
 .university-menu__item:focus {
-    border: solid 1px #d6d6d6;
-    -webkit-box-shadow: none;
-    box-shadow: none;
     color: #CA202A;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
 }
 
 .university-menu__item .item-top {

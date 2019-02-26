@@ -70,11 +70,11 @@
                                 </div>
                             </div>
                             <div class="bundle__content">
-                                <div class="view-more">
+                                <div class="view-more shadow">
                                     <div class="list-brief-content">
                                         <div class="list-brief-content__item">
                                             <div class="list-brief__top row">
-                                                <div class="list-brief__top__title col-9 text-truncate">Master of Education in Early Childhood Education</div>
+                                                <div class="list-brief__top__title col-9 text-truncate"><a href="#">Master of Education in Early Childhood Education</a></div>
                                                 <div class="col-3">
                                                     <ul class="list-tags">
                                                         <li>
@@ -92,7 +92,7 @@
                                         </div>
                                         <div class="list-brief-content__item">
                                             <div class="list-brief__top row">
-                                                <div class="list-brief__top__title col-9 text-truncate">Bachelor of Science in Information Technology</div>
+                                                <div class="list-brief__top__title col-9 text-truncate"><a href="#">Bachelor of Science in Information Technology</a></div>
                                                  <div class="col-3">
                                                     <ul class="list-tags">
                                                         <li>
@@ -110,7 +110,7 @@
                                         </div>
                                         <div class="list-brief-content__item">
                                             <div class="list-brief__top row">
-                                                <div class="list-brief__top__title col-9 text-truncate">Associate of Science in Financial Technology (Fintech)</div>
+                                                <div class="list-brief__top__title col-9 text-truncate"><a href="#">Associate of Science in Financial Technology (Fintech)</a></div>
                                                 <div class="col-3">
                                                     <ul class="list-tags">
                                                         <li>
@@ -128,7 +128,7 @@
                                         </div>
                                         <div class="list-brief-content__item">
                                             <div class="list-brief__top row">
-                                                <div class="list-brief__top__title col-9 text-truncate">Master of Education in Early Childhood Education</div>
+                                                <div class="list-brief__top__title col-9 text-truncate"><a href="#">Master of Education in Early Childhood Education</a></div>
                                                 <div class="col-3">
                                                     <ul class="list-tags">
                                                         <li>
@@ -146,7 +146,7 @@
                                         </div>
                                         <div class="list-brief-content__item">
                                             <div class="list-brief__top row">
-                                                <div class="list-brief__top__title col-9 text-truncate">Bachelor of Science in Information Technology</div>
+                                                <div class="list-brief__top__title col-9 text-truncate"><a href="#">Bachelor of Science in Information Technology</a></div>
                                                 <div class="col-3">
                                                     <ul class="list-tags">
                                                         <li>
@@ -173,7 +173,7 @@
                                         </div>
                                         <div class="list-brief-content__item">
                                             <div class="list-brief__top row">
-                                                <div class="list-brief__top__title col-9 text-truncate">Associate of Science in Financial Technology (Fintech)</div>
+                                                <div class="list-brief__top__title col-9 text-truncate"><a href="#">Associate of Science in Financial Technology (Fintech)</a></div>
                                                 <div class="col-3">
                                                     <ul class="list-tags">
                                                         <li>
