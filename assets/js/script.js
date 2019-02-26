@@ -44,7 +44,16 @@ jQuery(function ($) {
 /*	--------------------------------------------------
 :: Equal height
 -------------------------------------------------- */
- $('.col-equal').matchHeight({
-        property: 'height'
-    });
+$('.col-equal').matchHeight({
+    property: 'height'
+});
 
+/*	--------------------------------------------------
+:: View more Component
+-------------------------------------------------- */
+$('#button-view').on('click', function () {
+    $('.view-more').toggleClass('view-more--show');
+    $(this).text(function (i, text) {
+        return text === "View Less" ? "View More" : "View Less";
+    })
+});

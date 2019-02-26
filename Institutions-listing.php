@@ -20,7 +20,7 @@
                     <div class="university-menu">
                         <div class="row">
                             <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                                <a class="university-menu__item col-equal" href="#">
+                                <a class="university-menu__item col-equal" href="/Institutions-single.php">
                                     <div class="item-top"><img src="/assets/img/institutions/Abraham-Baldwin-Agricultural-College-COLOR.svg" alt=""></div>
                                     <div class="item-body">
                                         Abraham Baldwin Agricultural College
