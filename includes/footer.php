@@ -65,14 +65,14 @@
         </div>
     </div>
 </footer>
-<script src="assets/lib/js/jquery-3.3.1.min.js"></script>
-<script src="assets/lib/js/popper.min.js"></script>
-<script src="assets/lib/js/bootstrap.min.js"></script>
-<script src="assets/lib/slick/slick.min.js"></script>
-<script src="assets/js/wow.js"></script>
-<script src="assets/js/slicks.js"></script>
-<script src="assets/js/droopmenu.min.js"></script>
-<script src="assets/js/jquery.sticky.js"></script>
-<script src="assets/js/jquery-matchHeight.js"></script>
-<script src="assets/js/script.js"></script>
+<script src="/assets/lib/js/jquery-3.3.1.min.js"></script>
+<script src="/assets/lib/js/popper.min.js"></script>
+<script src="/assets/lib/js/bootstrap.min.js"></script>
+<script src="/assets/lib/slick/slick.min.js"></script>
+<script src="/assets/js/wow.js"></script>
+<script src="/assets/js/slicks.js"></script>
+<script src="/assets/js/droopmenu.min.js"></script>
+<script src="/assets/js/jquery.sticky-sidebar.min.js"></script>
+<script src="/assets/js/jquery-matchHeight.js"></script>
+<script src="/assets/js/script.js"></script>
 </body>

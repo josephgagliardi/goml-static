@@ -248,9 +248,9 @@
                     <div class="courses-by-gird">
                         <div class="row courses__list">
                             <div class="col-lg-4 col-md-6 col-sm-6 courses__item">
-                                <div class="courses__wapper">
+                                <div class="courses__wrapper">
                                     <div class="courses__top">
-                                        <div class="courses__top__wapper"><img class="courses__top__image" src="/assets/img/course-single/header-img-1.jpg" alt=""></div>
+                                        <div class="courses__top__wrapper"><img class="courses__top__image" src="/assets/img/course-single/header-img-1.jpg" alt=""></div>
                                     </div>
                                     <div class="courses__content col-equal"><a class="courses__content__title" href="course-single.php">Master of Education in Early Childhood Education</a>
                                         <div>
@@ -273,9 +273,9 @@
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-6 col-sm-6 courses__item">
-                                <div class="courses__wapper">
+                                <div class="courses__wrapper">
                                     <div class="courses__top">
-                                        <div class="courses__top__wapper"><img class="courses__top__image" src="assets/img/courses-image/1.jpg" alt=""></div>
+                                        <div class="courses__top__wrapper"><img class="courses__top__image" src="assets/img/courses-image/1.jpg" alt=""></div>
                                     </div>
                                     <div class="courses__content col-equal"><a class="courses__content__title" href="#">Bachelor of Science in Information Technology</a>
                                         <div>
@@ -297,9 +297,9 @@
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-6 col-sm-6 courses__item">
-                                <div class="courses__wapper">
+                                <div class="courses__wrapper">
                                     <div class="courses__top">
-                                        <div class="courses__top__wapper"><img class="courses__top__image" src="assets/img/courses-image/2.jpg" alt=""></div>
+                                        <div class="courses__top__wrapper"><img class="courses__top__image" src="assets/img/courses-image/2.jpg" alt=""></div>
                                     </div>
                                     <div class="courses__content col-equal"><a class="courses__content__title" href="#">Associate of Science in Financial Technology (Fintech)</a>
                                         <div>
@@ -326,7 +326,7 @@
                     <div class="courses-by-list">
                         <div class="row courses__list">
                             <div class="col-md-12 courses__item">
-                                <div class="courses__wapper">
+                                <div class="courses__wrapper">
                                     <div class="courses__content col-equal"><a class="courses__content__title" href="#">Master of Education in Early Childhood Education </a>
                                         <div>
                                             <a class="courses__col-left" href="#"><span class="courses__content__institutions">University of West Georgia</span></a>
@@ -347,7 +347,7 @@
                                 </div>
                             </div>
                             <div class="col-md-12 courses__item">
-                                <div class="courses__wapper">
+                                <div class="courses__wrapper">
                                     <div class="courses__content col-equal"><a class="courses__content__title" href="#">Bachelor of Science in Information Technology</a>
                                         <div>
                                             <a class="courses__col-left" href="#"><span class="courses__content__institutions">Kennesaw State University</span></a>
@@ -368,7 +368,7 @@
                                 </div>
                             </div>
                             <div class="col-md-12 courses__item">
-                                <div class="courses__wapper">
+                                <div class="courses__wrapper">
                                     <div class="courses__content col-equal"><a class="courses__content__title" href="#">Associate of Science in Financial Technology (Fintech)</a>
                                         <div>
                                             <a class="courses__col-left" href="#"><span class="courses__content__institutions">Middle Georgia State University</span></a>

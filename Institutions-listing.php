@@ -4,7 +4,7 @@
 <?php include("includes/header.php"); ?>
 <main>
     <div class="container">
-        <div class="partner-listing-wrapper">
+        <div class="inst-main">
             <div class="row justify-content-center">
                 <div class="col-6 align-self-center partner-listing-header">
                     <h1 class="title-text">Institutions</h1>
