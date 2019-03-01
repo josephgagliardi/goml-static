@@ -1603,13 +1603,7 @@ button.button-text:focus {
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
 }
 
-.courses__item:focus {
-    outline: 0;
-}
-
-.courses__item.slick-slide {
-    height: auto;
-    padding: 0 15px;
+.courses__item. 
 }
 
 .courses__top {
@@ -2605,15 +2599,12 @@ button.button-text:focus {
 /*==============================
 =      Courses                 =
 ==============================*/
-.courses__wrapper {
+.courses__wrapper, view-course-grid.courses__wrapper {
     border: solid 1px rgba(232, 232, 232, 0.54);
     -webkit-border-radius: 3px;
     border-radius: 3px;
 }
 
-.courses__item:focus {
-    outline: 0;
-}
 
 .courses__item.slick-slide {
     height: auto;
@@ -2622,11 +2613,6 @@ button.button-text:focus {
 
 .courses__top {
     position: relative;
-}
-
-.courses__top:hover .courses__hover {
-    opacity: 1;
-    visibility: visible;
 }
 
 .courses__top__wrapper {
@@ -2675,9 +2661,6 @@ button.button-text:focus {
     border-radius: 50%;
 }
 
-.courses__content__info {
-    font-size: 0;
-}
 
 .courses__content__institutions {
     text-align: left;
@@ -2694,11 +2677,6 @@ button.button-text:focus {
     margin-right: 10px;
 }
 
-.courses__content__price {
-    font-weight: 600;
-    font-size: 22px;
-    color: #CA202A;
-}
 
 .courses__list .slick-list {
     padding-bottom: 20px;
@@ -2716,57 +2694,8 @@ button.button-text:focus {
     text-align: right;
 }
 
-.courses__hover {
-    position: absolute;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    opacity: 0;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(45, 125, 250, 0.9);
-    -webkit-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out;
-}
-
-.courses__hover-content {
-    display: inline-block;
-}
-
-.courses__hover-content__item {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    margin: 5px;
-    background-color: #fff;
-    -webkit-border-radius: 50%;
-    border-radius: 50%;
-    line-height: 43px;
-    text-align: center;
-    -webkit-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-}
-
-.courses__hover-content__item:hover {
-    background-color: #CA202A;
-    color: #fff;
-}
-
-.courses__hover-content__icon::before {
-    margin-left: 0;
-}
-
 /*=====  End of Courses  ======*/
+
 .col-left {
     width: 50%;
     text-align: right;
@@ -4506,15 +4435,15 @@ button.button-text:focus {
 }
 
 .courses-by-list {
-    display: none;
+    
 }
 
-.courses-by-list .courses__wrapper {
+.view-course-list .courses__wrapper {
     font-size: 0;
 }
 
-.courses-by-list .courses__top,
-.courses-by-list .courses__content {
+.view-course-list.courses__top,
+.view-course-list.courses__content {
     width: 100%;
     display: inline-block;
     vertical-align: top;
@@ -4522,21 +4451,21 @@ button.button-text:focus {
 
 @media (max-width: 479px) {
 
-    .courses-by-list .courses__top,
-    .courses-by-list .courses__content {
+    .view-course-list.courses__top,
+    .view-course-list.courses__content {
         width: 100%;
     }
 }
 
-.courses-by-list .courses__content {
+.view-course-list.courses__content {
     padding: 15px;
 }
 
-.courses-by-list .courses__hover-content__item {
+.view-course-list.courses__hover-content__item {
     font-size: 20px;
 }
 
-.courses-by-list .courses__content__title {
+.view-course-list.courses__content__title {
     font-size: 22px;
 }
 
@@ -4551,9 +4480,6 @@ button.button-text:focus {
     display: inline-block;
 }
 
-.course-gird .rating-start {
-    display: none;
-}
 
 .course-gird .column-left__title {
     font-size: 22px;
@@ -4620,18 +4546,6 @@ button.button-text:focus {
     line-height: 1.5;
     letter-spacing: 0.2px;
     color: #545555;
-}
-
-.course-gird .courses__item {
-    margin-bottom: 35px;
-}
-
-.course-gird .courses__top__bundle {
-    display: inline-block;
-}
-
-.course-gird .courses__top__bt-seller {
-    display: inline-block;
 }
 
 .header-filter {

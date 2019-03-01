@@ -24,14 +24,17 @@ $(document).ready(function () {
             $('.collapse').collapse('hide');
         }
     });
+  
+        $('#list').click(function(event) {
+            event.preventDefault();
+            $('#products .courses__item').addClass('list-group-item');
+        });
+        $('#grid').click(function(event) {
+            event.preventDefault();
+            $('#products .courses__item').removeClass('list-group-item');
+            $('#products .courses__item').addClass('grid-group-item');
+        });
+    
 
-    $('.view-gird').on('click', '#view-course-list', function (e) {
-        $('.courses-by-list').fadeIn('slow');
-        $('.courses-by-gird').fadeOut('slow');
-    });
-
-    $('.view-gird').on('click', '#view-course-gird', function (e) {
-        $('.courses-by-list').fadeOut('slow');
-        $('.courses-by-gird').fadeIn('slow');
-    });
+    
 })
