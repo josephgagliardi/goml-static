@@ -37,9 +37,33 @@ jQuery(function ($) {
         dmArrow: false,
         dmArrowDirection: 'dmarrowdown',
         dmSticky: true, // Make menu sticky becomes fixed on scrolling to top of page: true or false - Default is false
+        dmAnimationEffect:'dmslidedown',
         dmCentered: true
     });
 });
+
+/*	--------------------------------------------------
+   :: Nav Modal search 
+-------------------------------------------------- */
+jQuery(function ($) {
+    var searchBody = $('body'),
+        searchClose = $('.dm-search-close'),
+        searchToggle = $('.droopmenu-open-search button');
+
+    searchToggle.on('click', function (e) {
+        e.preventDefault();
+        searchBody.toggleClass("dm-search-open dm-body-fix");
+    });
+
+    searchClose.on('click', function (e) {
+        e.preventDefault();
+        searchBody.removeClass("dm-search-open");
+        setTimeout(function () {
+            searchBody.removeClass("dm-body-fix");
+        }, 600);
+    });
+});
+
 
 /*	--------------------------------------------------
 :: Equal height

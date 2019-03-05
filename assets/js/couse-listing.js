@@ -27,14 +27,17 @@ $(document).ready(function () {
   
         $('#list').click(function(event) {
             event.preventDefault();
-            $('#products .courses__item').addClass('list-group-item');
+            $('#courses .courses__item').addClass('list-view');
+            $('#courses .courses__item').removeClass('grid-group-item');
+            $('.col-equal').matchHeight({ remove: true });
         });
         $('#grid').click(function(event) {
             event.preventDefault();
-            $('#products .courses__item').removeClass('list-group-item');
-            $('#products .courses__item').addClass('grid-group-item');
+            $('#courses .courses__item').removeClass('list-view');
+            $('#courses .courses__item').addClass('grid-group-item');
+            $('.col-equal').matchHeight({ remove: false });
         });
     
 
     
-})
+});

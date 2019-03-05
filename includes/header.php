@@ -3,14 +3,32 @@
         <div class="container">
             <div class="row d-flex justify-content-between py-3">
                 <div class="logo d-flex align-items-center">
-                    <img src="/assets/img/logo/ecampus-logo.svg" alt="ecampus logo">
+                    <a href="/"><img src="/assets/img/logo/ecampus-logo.svg" alt="ecampus logo"></a>
                 </div>
-                <div class="d-flex align-items-center">
-                    <a class="nav-right__signin__link mr-2" href="signup.php">Sign Up</a>|<a href="signin.php" class="nav-right__signin__link ml-2">Sign In</a>
+                <div class="droopmenu-open-search d-flex align-items-center">
+                    <button class="button-outline">Search<i class="fas fa-search"></i></button>
                 </div>
-
             </div>
-        </div>
+            <div>
+            </div><!-- droopmenu-extra -->
+        </div><!-- droopmenu-inner -->
+        <div class="dm-modal-search dm-search-slidedown">
+            <div class="dm-search-wrapper">
+                <div class="dm-modal-form">
+                    <form>
+                        <input type="text" name="q" id="q" placeholder="Search...">
+                        <label for="q"></label>
+                        <button type="submit">
+                            <i class="far fa-arrow-alt-circle-right"></i><span class="sr-only">Perform Search</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+             <div class="dm-search-overlay"></div>
+            <button class="dm-search-close">    
+                <i class="fas fa-times"></i><span class="sr-only">Close Search</span>    
+            </button>
+        </div><!-- dm-modal-search -->
     </div>
 </header>
 <nav class="droopmenu-navbar">

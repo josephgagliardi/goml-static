@@ -6,13 +6,9 @@
     <div class="container">
         <div class="inst-main">
             <div class="row justify-content-center">
-                <div class="col-6 align-self-center partner-listing-header">
+                <div class="col-6 align-self-center inst-listing-header text-center">
                     <h1 class="title-text">Institutions</h1>
                     <p class="content-text">Our institutions are some of the most forward-looking university in the country, and they're looking for graduates to fill critical roles today.</p>
-                    <div class="row text-center">
-                        <div class="col-6">23 <span>Institutions</span></div>
-                        <div class="col-6">offering 2,615 degrees</div>
-                    </div>
                 </div>
             </div>
             <div class="partner-listing-main">

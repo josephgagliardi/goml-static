@@ -765,6 +765,23 @@ button.button-text:focus {
     background-color: #fff;
 }
 
+.bt-circle-fill-red {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    text-align: center;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    background-color: #CA202A;
+}
+
 /*=============================================
 1.2 Rating Star for course item
 =============================================*/
@@ -1600,10 +1617,10 @@ button.button-text:focus {
 
 .courses__wrapper:hover,
 .courses__wrapper:focus {
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
 }
 
-.courses__item. 
+.courses__item.
 }
 
 .courses__top {
@@ -1620,12 +1637,6 @@ button.button-text:focus {
     overflow: hidden;
 }
 
-.courses__top__wrapper:before {
-    content: '';
-    display: block;
-    padding-top: 61%;
-}
-
 .courses__top__image {
     position: absolute;
     top: 0;
@@ -1639,12 +1650,11 @@ button.button-text:focus {
     padding: 20px;
     -webkit-border-radius: 3px;
     border-radius: 3px;
-    background-color: #fff;
     position: relative;
 }
 
 .courses__content__title {
-    display: inline-block;
+    display: block;
     margin-bottom: 8px;
 }
 
@@ -1677,10 +1687,21 @@ button.button-text:focus {
 }
 
 .courses__col-right {
-    width: 30%;
     display: inline-block;
     vertical-align: middle;
     text-align: right;
+}
+
+.courses__icon {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 15px;
+    margin-right: 15px;
+}
+
+.courses__icon {
+    color: #FFF;
 }
 
 .courses__hover {
@@ -1795,10 +1816,13 @@ button.button-text:focus {
     line-height: 0px;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
+    border-radius: 50%;
+    background-color: #000;
+    border: 1px solid #FFF;
 }
 
 .btn-ontop i {
-    font-size: 2rem;
+    font-size: 25px;
 }
 
 .btn-ontop--show {
@@ -1851,7 +1875,7 @@ button.button-text:focus {
 @media (max-width: 768px) {
     .logo {
         display: block;
-        margin-left: 10px;
+        margin-left: 15px;
     }
 }
 
@@ -2006,9 +2030,9 @@ button.button-text:focus {
     border-color: #CA202A;
 
 
-    -webkit-box-shadow: 0px 0px 8px 1px rgba(202,32,42, 0.59);
-    -moz-box-shadow: 0px 0px 8px 1px rgba(202,32,42, 0.59);
-    box-shadow: 0px 0px 8px 1px rgba(202,32,42, 0.59);
+    -webkit-box-shadow: 0px 0px 8px 1px rgba(202, 32, 42, 0.59);
+    -moz-box-shadow: 0px 0px 8px 1px rgba(202, 32, 42, 0.59);
+    box-shadow: 0px 0px 8px 1px rgba(202, 32, 42, 0.59);
 }
 
 .form-search__expand input[type=search] {
@@ -2503,7 +2527,6 @@ button.button-text:focus {
     opacity: 0.3;
 }
 
-/*=====  End of 2.List icons  ======*/
 /*==============================
 =      List courses            =
 ==============================*/
@@ -2513,6 +2536,12 @@ button.button-text:focus {
 
 .list-course__gird {
     margin: 0 -15px;
+}
+
+.list-view {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
 }
 
 .list-course__header {
@@ -2595,14 +2624,23 @@ button.button-text:focus {
     padding: 20px 0;
 }
 
+
+
 /*=====  End of List courses  ======*/
 /*==============================
 =      Courses                 =
 ==============================*/
-.courses__wrapper, view-course-grid.courses__wrapper {
+.courses__wrapper,
+view-course-grid.courses__wrapper {
     border: solid 1px rgba(232, 232, 232, 0.54);
     -webkit-border-radius: 3px;
     border-radius: 3px;
+}
+
+.courses__top__wrapper:before {
+    content: '';
+    display: block;
+    padding-top: 61%;
 }
 
 
@@ -2619,22 +2657,12 @@ button.button-text:focus {
     position: relative;
 }
 
-.courses__top__wrapper:before {
-    content: '';
-    display: block;
-    padding-top: 61%;
-}
-
-.courses__top__image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    max-width: 100%;
-    height: auto;
+.courses__bottom {
+    border-top: solid 1px rgba(232, 232, 232, 0.8);
 }
 
 .courses__content__title {
-    display: inline-block;
+    display: block;
     margin-bottom: 8px;
 }
 
@@ -2645,6 +2673,7 @@ button.button-text:focus {
 .courses__content__institutions {
     font-size: 0;
     display: block;
+    margin-top: 8px;
 }
 
 .courses__content__avatar {
@@ -2682,16 +2711,12 @@ button.button-text:focus {
     padding-bottom: 20px;
 }
 
-.courses__col-left {
-    display: inline-block;
-    vertical-align: middle;
-}
 
-.courses__col-right {
-    width: 30%;
+.list-view .courses__top,
+.list-view .courses__content {
+    width: 49%;
     display: inline-block;
-    vertical-align: middle;
-    text-align: right;
+    vertical-align: top;
 }
 
 /*=====  End of Courses  ======*/
@@ -4400,14 +4425,6 @@ button.button-text:focus {
     border-right: unset;
 }
 
-.tabs a.tabs__link {
-    padding: 0 16px;
-    color: #545555;
-    font-size: 14px;
-    border-right: 1px solid #e8e8e8;
-    -webkit-border-radius: unset;
-    border-radius: unset;
-}
 
 @media (max-width: 479px) {
     .tabs a.tabs__link {
@@ -4421,6 +4438,12 @@ button.button-text:focus {
     font-weight: bold;
 }
 
+button.view-gird__icon {
+    border: none;
+    background: none;
+    color: #000;
+}
+
 .view-gird__icon i,
 .view-gird__icon i {
     margin: 0 10px 0 0;
@@ -4432,10 +4455,7 @@ button.button-text:focus {
 .view-gird__icon:hover,
 .view-gird__icon:focus {
     color: #CA202A;
-}
-
-.courses-by-list {
-    
+    cursor: pointer;
 }
 
 .view-course-list .courses__wrapper {
@@ -4569,11 +4589,13 @@ button.button-text:focus {
 .header-filter__result {
     float: right;
     color: #545555;
+    font-weight: 600;
 }
 
 .header-filter__number {
     margin-left: 5px;
-    color: #545555;
+    color: #000;
+
 }
 
 .course-gird .list-selector {
@@ -4797,7 +4819,7 @@ ul.additional_info li strong {
     margin: 20px 15px 10px 15px;
 }
 
-#menu-left{
+#menu-left {
     will-change: min-height;
 }
 
@@ -4808,7 +4830,8 @@ ul.additional_info li strong {
     background-color: #fff;
     border: solid 1px #d6d6d6;
     text-align: center;
-    transform: translate(0, 0); /* For browsers don't support translate3d. */
+    transform: translate(0, 0);
+    /* For browsers don't support translate3d. */
     transform: translate3d(0, 0, 0);
     will-change: position, transform;
 }
@@ -4908,7 +4931,7 @@ ul.additional_info li strong {
     margin-bottom: 60px;
 }
 
-.bundle-list:last-child  {
+.bundle-list:last-child {
     margin-bottom: 0px;
 }
 
@@ -5635,7 +5658,7 @@ ul.additional_info li strong {
 
 .view-more--show:after {
     background-image: unset;
-     position: relative;
+    position: relative;
 }
 
 
@@ -5670,6 +5693,7 @@ ul.list-tags {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    width: 65%;
 }
 
 .list-tags li {
@@ -5711,6 +5735,16 @@ Institution details pages
 
 .inst-main {
     margin-top: 100px;
+}
+
+.inst-listing-header .title-text {
+    font-size: 50px;
+    line-height: 1.2;
+    margin-bottom: 8px;
+}
+
+.inst-listing-header .content-text {
+    margin-bottom: 24px;
 }
 
 @media (max-width: 768px) {
@@ -5818,6 +5852,8 @@ Institution details pages
 .inst-details .courses__list {
     padding-bottom: 30px;
 }
+
+
 
 @media (max-width: 768px) {
     .inst-details .courses__list {
@@ -7795,43 +7831,125 @@ Blog details sidebar
 =            1.Banner            =
 ==============================*/
 .banner {
-    position: relative;
+    display: block;
     width: 100%;
-    overflow: hidden;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
 }
 
-.banner.played .banner-wall {
-    display: none;
-}
 
 .banner::before {
     content: "";
     width: 100%;
     height: 100%;
-    background: #9f041b;
-    /* Old browsers */
-    background: -moz-linear-gradient(top, #9f041b 0%, #f5515f 100%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, #9f041b 0%, #f5515f 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, #9f041b 0%, #f5515f 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#9f041b', endColorstr='#f5515f', GradientType=0);
-    /* IE6-9 */
+    position: absolute;
+    background: rgb(159, 4, 27);
+    background: linear-gradient(0deg, rgba(159, 4, 27, 0.9458158263305322) 18%, rgba(245, 81, 95, 0.7329306722689075) 100%);
     z-index: 2;
 }
 
-.banner .banner-wall {
-    width: 50%;
-    margin-left: auto;
-    z-index: 2;
+.main-search-inner {
+    top: 0;
+    transform: none;
+    padding-top: 150px;
+    padding-bottom: 210px;
+    position: relative;
+    display: block;
+    z-index: 3;
 }
 
-@media (max-width: 991px) {
-    .banner .banner-wall {
-        display: none;
-    }
+.main-search-inner h1 {
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 80px;
+    color: #FFF;
 }
+
+.main-search-inner h2 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    color: #FFF;
+}
+
+.main-search-inner select {
+    border: none;
+    padding-top: 2px;
+    padding-bottom: 0;
+    height: 44px;
+    box-shadow: none
+}
+
+.main-search-input {
+    margin-top: 50px;
+    border-radius: 50px;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, .12);
+    align-items: flex-start;
+    padding: 9px;
+    max-height: 68px
+}
+
+
+.main-search-input .column-left__button-drop {
+    display: block;
+    height: 44px;
+    width: 100%;
+    border: none;
+}
+
+.main-search-input .column-left__button-drop__text {
+    vertical-align: middle;
+    font-size: 1.2em;
+}
+
+.main-search-input .list-categories {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    width: 100%;
+    padding: 30px 20px;
+    top: 64px;
+    right: 0;
+    z-index: 100;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+.main-search-input input[type=text] {
+    padding: 0 20px;
+    outline: none;
+    font-size: 1.2em;
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+    border: none;
+    background: #fff;
+}
+
+
+.main-search-input input,
+.main-search-input input:focus {
+    background: #fff;
+    height: 44px;
+    line-height: 44px;
+    box-shadow: none;
+}
+
+
+.main-search-input button.button {
+    font-size: 18px;
+    font-weight: 700;
+    margin-right: 3px;
+    height: 45px;
+    border-radius: 50px;
+}
+
 
 .banner .flex-video {
     position: absolute;
@@ -9370,7 +9488,7 @@ Blog details sidebar
 .university-menu__item:hover,
 .university-menu__item:focus {
     color: #CA202A;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
 }
 
 .university-menu__item .item-top {

@@ -1,12 +1,12 @@
 <footer class="footer">
-    <div class="button-default btn-ontop" id="on-top"><i class="fas fa-angle-up"></i><span class="sr-only">back to top</span></div>
+    <div class="btn-ontop" id="on-top"><i class="fas fa-angle-up"></i><span class="sr-only">back to top</span></div>
     <div class="img-background" style="background-image: url('/assets/img/footer/footer-img.jpg');">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="footer__top">
-                        <div class="footer__top__title">Take your future in a new direction</div>
-                        <div class="footer__top__sub">Apply today and see how far you'll go</div>
+                        <div class="footer__top__title">Take your future in a new direction.</div>
+                        <div class="footer__top__sub">Apply today and see how far you'll go.</div>
                         <a class="btn button-default" href="#">Apply Now</a>
                     </div>
                 </div>
@@ -73,6 +73,6 @@
 <script src="/assets/js/slicks.js"></script>
 <script src="/assets/js/droopmenu.min.js"></script>
 <script src="/assets/js/jquery.sticky-sidebar.min.js"></script>
-<script src="/assets/js/jquery-matchHeight.js"></script>
+<script src="/assets/js/jquery.matchHeight-min.js"></script>
 <script src="/assets/js/script.js"></script>
 </body>
