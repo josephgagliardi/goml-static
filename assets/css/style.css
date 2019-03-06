@@ -51,9 +51,8 @@
 .titles,
 .item__left__title {
     font-size: 28px;
-    color: #545555;
+    color: #000;
     text-align: left;
-    text-transform: capitalize;
 }
 
 .text-link,
@@ -2566,7 +2565,7 @@ button.button-text:focus {
     -ms-flex: 1;
     flex: 1;
     font-size: 50px;
-    color: #545555;
+    color: #000;
     text-transform: capitalize;
     text-align: center;
 }
@@ -2755,36 +2754,35 @@ view-course-grid.courses__wrapper {
 ==============================*/
 .best-features {
     margin-bottom: 50px;
-    background-image: -webkit-gradient(linear, left bottom, left top, from(#ffffff), color-stop(52%, #e8f5fe), color-stop(52%, #ffffff));
-    background-image: -webkit-linear-gradient(bottom, #ffffff, #e8f5fe 52%, #ffffff);
-    background-image: linear-gradient(to top, #ffffff, #e8f5fe 52%, #ffffff);
+    margin-top: 50px;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#ffffff), color-stop(52%, #fee8e8), color-stop(52%, #ffffff));
+    background-image: -webkit-linear-gradient(bottom, #ffffff, #fee8e8 52%, #ffffff);
+    background-image: linear-gradient(to top, #ffffff, #fee8e8 52%, #ffffff);
 }
 
-.item {
-    margin-bottom: 50px;
+.image-container {
+    position: relative;
 }
 
-.item::before,
-.item::after {
-    content: '';
-    display: table;
+.image-container .img-1,
+.image-container .img-2,
+.image-container .img-3,
+.image-container .img-4,
+.image-container .img-5,
+.image-container .img-1 {
+    position: absolute;
+    box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
 }
 
-.item::after {
-    clear: both;
+.image-container .img-1 {
+    top: 10%;
+    left: 50%;
+    height: 250px;
+    z-index: 2;
 }
 
-.item__left,
-.item__right {
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.item:nth-child(2) .item__left {
-    float: right;
-}
-
-.item__left__image {
+.item__icon {
+    height: 100px;
     margin-bottom: 25px;
 }
 
@@ -2795,108 +2793,15 @@ view-course-grid.courses__wrapper {
 }
 
 .item__left__content {
-
     line-height: 1.5;
     letter-spacing: 0.2px;
     text-align: left;
-    color: #545555;
+
 }
 
-.item__right {
-    position: relative;
-}
 
-.item__right__image-left {
-    position: relative;
-    overflow: hidden;
-}
 
-.item__right__image-left::before {
-    content: '';
-    display: block;
-}
 
-.item__right__image-right {
-    position: absolute;
-    overflow: hidden;
-    top: 52px;
-    right: 0;
-}
-
-.item__right__image-right::before {
-    content: '';
-    display: block;
-}
-
-.item__right__image {
-    max-width: 100%;
-    height: auto;
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    right: 0;
-}
-
-.item:nth-child(1) .item__right__image-left {
-    width: 370px;
-}
-
-.item:nth-child(1) .item__right__image-left::before {
-    padding-top: 120%;
-}
-
-.item:nth-child(1) .item__right__image-right {
-    width: 270px;
-}
-
-.item:nth-child(1) .item__right__image-right::before {
-    padding-top: 110%;
-}
-
-.item:nth-child(2) .item__right__image-left {
-    width: 470px;
-}
-
-.item:nth-child(2) .item__right__image-left::before {
-    padding-top: 95.95%;
-}
-
-.item:nth-child(2) .item__right__image-right {
-    width: 330px;
-}
-
-.item:nth-child(2) .item__right__image-right::before {
-    padding-top: 78.4%;
-}
-
-.item:nth-child(3) .item__right__image-left-3 {
-    display: inline-block;
-    position: relative;
-    width: 211px;
-    top: 72px;
-    z-index: 2;
-}
-
-.item:nth-child(3) .item__right__image-left-3::before {
-    content: '';
-    display: block;
-    padding-top: 97.6%;
-}
-
-.item:nth-child(3) .item__right__image-right-3 {
-    position: relative;
-    width: -webkit-calc(100% - 200px);
-    width: calc(100% - 200px);
-    float: right;
-    margin-right: -12px;
-}
-
-.item:nth-child(3) .item__right__image-right-3::before {
-    content: '';
-    display: block;
-    padding-top: 98.7%;
-}
 
 /*=====  End of 5. The best Features  ======*/
 /*==============================
@@ -3340,19 +3245,6 @@ view-course-grid.courses__wrapper {
         margin-bottom: 25px;
     }
 
-    .item__left {
-        margin-bottom: 50px;
-        width: 100%;
-    }
-
-    .item__right {
-        width: 100%;
-    }
-
-    .item:nth-child(4) .item__right__image-right-3::before {
-        padding-top: 62.7%;
-    }
-
     .form-subs__button {
         padding: 16px 10px;
     }
@@ -3433,13 +3325,6 @@ view-course-grid.courses__wrapper {
         margin-bottom: 30px;
     }
 
-    .item__left {
-        margin-bottom: 30px;
-    }
-
-    .item__right {
-        width: 100%;
-    }
 
     .design-sprint__item__title {
         font-size: 36px;
@@ -3452,6 +3337,7 @@ view-course-grid.courses__wrapper {
     .column-item {
         margin-bottom: 15px;
     }
+
 
     .item__left__title {
         width: 100%;
@@ -7874,13 +7760,7 @@ Blog details sidebar
     color: #FFF;
 }
 
-.main-search-inner select {
-    border: none;
-    padding-top: 2px;
-    padding-bottom: 0;
-    height: 44px;
-    box-shadow: none
-}
+
 
 .main-search-input {
     margin-top: 50px;
@@ -7890,35 +7770,31 @@ Blog details sidebar
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, .12);
     align-items: flex-start;
     padding: 9px;
-    max-height: 68px
+    max-height: 68px;
 }
 
-
-.main-search-input .column-left__button-drop {
-    display: block;
+.main-search-input .select select {
+    width: 100%;
+    cursor: pointer;
+    border: 0;
+    background: #FFF;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
     height: 44px;
-    width: 100%;
-    border: none;
+    padding: 0 20px;
+    border-radius: 0px;
 }
 
-.main-search-input .column-left__button-drop__text {
-    vertical-align: middle;
-    font-size: 1.2em;
-}
-
-.main-search-input .list-categories {
+.main-search-input .select__arrow {
     position: absolute;
-    visibility: hidden;
-    opacity: 0;
-    width: 100%;
-    padding: 30px 20px;
-    top: 64px;
-    right: 0;
-    z-index: 100;
-    -webkit-border-radius: 4px;
-    border-radius: 4px;
-    background-color: #fff;
+    top: 12px;
+    right: 36px;
+    width: 0;
+    height: 0;
+    pointer-events: none;
 }
+
 
 .main-search-input input[type=text] {
     padding: 0 20px;
@@ -7948,6 +7824,36 @@ Blog details sidebar
     margin-right: 3px;
     height: 45px;
     border-radius: 50px;
+}
+
+@media (max-width: 767px) {
+    .main-search-input {
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    .main-search-input .border-left {
+        border-left: none !important;
+    }
+
+    .main-search-input .select select {
+        border-radius: 4px;
+        margin-bottom: 20px;
+        height: 55px;
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .08);
+    }
+
+    .main-search-input input,
+    .main-search-input input:focus {
+        height: 55px;
+        border-radius: 4px;
+        margin-bottom: 20px;
+    }
+
+    .main-search-input .select__arrow {
+        top: 17px;
+        right: 50px;
+    }
 }
 
 
