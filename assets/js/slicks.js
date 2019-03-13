@@ -127,6 +127,48 @@ $(document).ready(function(){
     }
     ]
   });
+    
+      $('.blog').slick({
+    // centerMode: true,
+    // centerPadding: '0px',
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    // autoplay: true,
+    autoplaySpeed: 2000,
+    dots: true,
+
+    // variableWidth: true,
+    nextArrow: $('.list-course-icon-arrow-recent-blog'),
+    speed: 300,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          dots: false,
+          variableWidth: false,
+          centerPadding: '0px',
+          slidesToShow: 2,
+          slidesToScroll: 1,
+
+        }
+      },
+      {
+        breakpoint: 993,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          dots: false,
+          variableWidth: false,
+          centerPadding: '0px',
+          slidesToShow: 1,
+          slidesToScroll: 1,
+
+        }
+      }
+    ]
+  });
 
 
 });

@@ -1,5 +1,8 @@
 "use strict";
-new WOW().init();
+AOS.init({
+  duration: 1000,
+  once: true
+})
 
 /*	--------------------------------------------------
 :: Enable bootstrap popovers

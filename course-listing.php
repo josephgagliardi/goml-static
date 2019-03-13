@@ -274,7 +274,7 @@
                         <div class="col-lg-4 col-md-6 col-sm-6 courses__item">
                             <div class="courses__wrapper h-100">
                                 <div class="courses__top">
-                                    <div class="courses__top__wrapper"><img class="courses__top__image" src="assets/img/course-single/header-img-1.jpg" alt=""></div>
+                                    <div class="courses__top__wrapper"><img class="courses__top__image" src="assets/img/course-single/header-img-2.jpg" alt=""></div>
                                 </div>
                                 <div class="courses__content">
                                     <a class="courses__content__title" href="#">Bachelor of Science in Information Technology</a>
@@ -299,7 +299,7 @@
                         <div class="col-lg-4 col-md-6 col-sm-6 courses__item">
                             <div class="courses__wrapper h-100">
                                 <div class="courses__top">
-                                    <div class="courses__top__wrapper"><img class="courses__top__image" src="assets/img/course-single/header-img-1.jpg" alt=""></div>
+                                    <div class="courses__top__wrapper"><img class="courses__top__image" src="assets/img/course-single/header-img-3.jpg" alt=""></div>
                                 </div>
                                 <div class="courses__content">
                                     <a class="courses__content__title" href="#">Bachelor of Science in Information Technology</a>
