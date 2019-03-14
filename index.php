@@ -14,7 +14,7 @@
 							<div class="row">
 								<div class="col-md-3">
 									<div class="select">
-										<label for="dtype" class="sr-only">Dregree Levels</label>
+										<label for="dtype" class="sr-only">Degree Levels</label>
 										<select id="dtype" name="dtype">
 											<option label="All Degree Levels" selected>All Degree Levels</option>
 											<option label="Certificate">Certificate</option>

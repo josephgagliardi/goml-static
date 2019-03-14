@@ -9,7 +9,7 @@
                 <div class="col-lg-3 col-md-3 column-left">
                     <div class="column-left__item">
                         <h1 class="column-left__title">Degree Levels</h1>
-                        <div class="select list-selector"><a class="column-left__button-drop" href="#filter1" data-toggle="collapse"><span class="column-left__button-drop__text" id="select-text">Dregree Type</span><i class="fas fa-angle-down column-left__icon"></i></a>
+                        <div class="select list-selector"><a class="column-left__button-drop" href="#filter1" data-toggle="collapse"><span class="column-left__button-drop__text" id="select-text">Degree Type</span><i class="fas fa-angle-down column-left__icon"></i></a>
                             <div class="list-categories" id="filter1">
                                 <ul class="list-categories__list">
                                     <li class="list-categories__item">
@@ -222,7 +222,7 @@
                     </div>
                     <div class="tags">
                         <div class="tags__item"><span class="button-outline">Clear All</span></div>
-                        <div class="tags__item"><i class="far fa-times-circle tags__icon"></i><span class="tags__text">Degree Type</span></div>
+                        <div class="tags__item"><i class="far fa-times-circle tags__icon"></i><span class="tags__text">Degree Level</span></div>
                         <div class="tags__item"><i class="far fa-times-circle tags__icon"></i><span class="tags__text">Institutions</span></div>
                         <div class="tags__item"><i class="far fa-times-circle tags__icon"></i><span class="tags__text">Fields of Study</span></div>
                         <div class="tags__item"><i class="far fa-times-circle tags__icon"></i><span class="tags__text">eMajor</span></div>
