@@ -7791,7 +7791,7 @@ Blog details sidebar
 	border-radius: 50px;
 	width: 100%;
 	background-color: #fff;
-	box-shadow: 0 0 8px 0 rgba(0, 0, 0, .12);
+	box-shadow: 0 20px 30px 0 rgba(0,0,0,.1);
 	align-items: flex-start;
 	padding: 9px;
 	max-height: 68px;

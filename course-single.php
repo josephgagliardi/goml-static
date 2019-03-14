@@ -129,70 +129,7 @@
                             <div class="courses__item">
                                 <div class="courses__wrapper">
                                     <div class="courses__top">
-                                        <div class="courses__top__wrapper"><img class="courses__top__image" src="assets/img/courses-image/1.jpg" alt=""></div>
-                                    </div>
-                                    <div class="courses__content col-equal"><a class="courses__content__title" href="#">Bachelor of Science in Information Technology sdfsd sf </a>
-                                        <a class="courses__col-left" href="#"><span class="courses__content__institutions">Kennesaw State University</span></a>
-                                        <ul class="list-tags">
-                                            <li>
-                                                <button class="aos" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="Area of Study" data-original-title="" title="">aos</button>
-                                            </li>
-                                            <li>
-                                                <button class="cpl" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="Credit for Prior Learning" data-original-title="" title="">cpl</button>
-                                            </li>
-                                            <li>
-                                                <button class="ep" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="eMajor program" data-original-title="" title="">em</button>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="courses__item">
-                                <div class="courses__wrapper">
-                                    <div class="courses__top">
-                                        <div class="courses__top__wrapper"><img class="courses__top__image" src="assets/img/courses-image/0.jpg" alt=""></div>
-                                    </div>
-                                    <div class="courses__content col-equal"><a class="courses__content__title" href="#">Master of Education in Early Childhood Education </a>
-                                        <a class="courses__col-left" href="#"><span class="courses__content__institutions">University of West Georgia</span></a>
-                                        <ul class="list-tags">
-                                            <li>
-                                                <button class="aos" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="Area of Study" data-original-title="" title="">aos</button>
-                                            </li>
-                                            <li>
-                                                <button class="cpl" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="Credit for Prior Learning" data-original-title="" title="">cpl</button>
-                                            </li>
-                                            <li>
-                                                <button class="ep" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="eMajor program" data-original-title="" title="">em</button>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="courses__item">
-                                <div class="courses__wrapper">
-                                    <div class="courses__top">
-                                        <div class="courses__top__wrapper"><img class="courses__top__image" src="assets/img/courses-image/2.jpg" alt=""></div>
-                                    </div>
-                                    <div class="courses__content col-equal"><a class="courses__content__title" href="#">Associate of Science in Financial Technology (Fintech)</a>
-                                        <a class="courses__col-left" href="#"><span class="courses__content__institutions">Middle Georgia State University</span></a>
-                                        <ul class="list-tags">
-                                            <li>
-                                                <button class="aos" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="Area of Study" data-original-title="" title="">aos</button>
-                                            </li>
-                                            <li>
-                                                <button class="cpl" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="Credit for Prior Learning" data-original-title="" title="">cpl</button>
-                                            </li>
-                                            <li>
-                                                <button class="ep" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="eMajor program" data-original-title="" title="">em</button>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="courses__item">
-                                <div class="courses__wrapper">
-                                    <div class="courses__top">
-                                        <div class="courses__top__wrapper"><img class="courses__top__image" src="assets/img/courses-image/1.jpg" alt=""></div>
+                                        <div class="courses__top__wrapper"><img class="courses__top__image" src="assets/img/course-single/header-img-1.jpg" alt=""></div>
                                     </div>
                                     <div class="courses__content col-equal"><a class="courses__content__title" href="#">Bachelor of Science in Information Technology</a>
                                         <a class="courses__col-left" href="#"><span class="courses__content__institutions">Kennesaw State University</span></a>
@@ -213,7 +150,70 @@
                             <div class="courses__item">
                                 <div class="courses__wrapper">
                                     <div class="courses__top">
-                                        <div class="courses__top__wrapper"><img class="courses__top__image" src="assets/img/courses-image/0.jpg" alt=""></div>
+                                        <div class="courses__top__wrapper"><img class="courses__top__image" src="assets/img/course-single/header-img-2.jpg" alt=""></div>
+                                    </div>
+                                    <div class="courses__content col-equal"><a class="courses__content__title" href="#">Master of Education in Early Childhood Education </a>
+                                        <a class="courses__col-left" href="#"><span class="courses__content__institutions">University of West Georgia</span></a>
+                                        <ul class="list-tags">
+                                            <li>
+                                                <button class="aos" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="Area of Study" data-original-title="" title="">aos</button>
+                                            </li>
+                                            <li>
+                                                <button class="cpl" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="Credit for Prior Learning" data-original-title="" title="">cpl</button>
+                                            </li>
+                                            <li>
+                                                <button class="ep" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="eMajor program" data-original-title="" title="">em</button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="courses__item">
+                                <div class="courses__wrapper">
+                                    <div class="courses__top">
+                                        <div class="courses__top__wrapper"><img class="courses__top__image" src="assets/img/course-single/header-img-3.jpg" alt=""></div>
+                                    </div>
+                                    <div class="courses__content col-equal"><a class="courses__content__title" href="#">Associate of Science in Financial Technology (Fintech)</a>
+                                        <a class="courses__col-left" href="#"><span class="courses__content__institutions">Middle Georgia State University</span></a>
+                                        <ul class="list-tags">
+                                            <li>
+                                                <button class="aos" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="Area of Study" data-original-title="" title="">aos</button>
+                                            </li>
+                                            <li>
+                                                <button class="cpl" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="Credit for Prior Learning" data-original-title="" title="">cpl</button>
+                                            </li>
+                                            <li>
+                                                <button class="ep" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="eMajor program" data-original-title="" title="">em</button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="courses__item">
+                                <div class="courses__wrapper">
+                                    <div class="courses__top">
+                                        <div class="courses__top__wrapper"><img class="courses__top__image" src="assets/img/course-single/header-img-4.jpg" alt=""></div>
+                                    </div>
+                                    <div class="courses__content col-equal"><a class="courses__content__title" href="#">Bachelor of Science in Information Technology</a>
+                                        <a class="courses__col-left" href="#"><span class="courses__content__institutions">Kennesaw State University</span></a>
+                                        <ul class="list-tags">
+                                            <li>
+                                                <button class="aos" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="Area of Study" data-original-title="" title="">aos</button>
+                                            </li>
+                                            <li>
+                                                <button class="cpl" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="Credit for Prior Learning" data-original-title="" title="">cpl</button>
+                                            </li>
+                                            <li>
+                                                <button class="ep" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="eMajor program" data-original-title="" title="">em</button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="courses__item">
+                                <div class="courses__wrapper">
+                                    <div class="courses__top">
+                                        <div class="courses__top__wrapper"><img class="courses__top__image" src="assets/img/course-single/header-img-5.jpg" alt=""></div>
                                     </div>
                                     <div class="courses__content col-equal"><a class="courses__content__title" href="#">Master of Education in Early Childhood Education </a>
                                         <a class="courses__col-left" href="#"><span class="courses__content__institutions">University of West Georgia</span></a>

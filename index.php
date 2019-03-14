@@ -146,7 +146,7 @@
 						<div class="courses__item">
 							<div class="courses__wrapper">
 								<div class="courses__top">
-									<div class="courses__top__wrapper"><img class="courses__top__image" src="assets/img/courses-image/0.jpg" alt=""></div>
+									<div class="courses__top__wrapper"><img class="courses__top__image" src="assets/img/course-single/header-img-6.jpg" alt=""></div>
 								</div>
 								<div class="courses__content col-equal"><a class="courses__content__title" href="#">Master
 										of Education in Early Childhood Education </a>
