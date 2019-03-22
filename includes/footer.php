@@ -76,4 +76,6 @@
 <script src="/assets/js/jquery.sticky-sidebar.min.js"></script>
 <script src="/assets/js/jquery.matchHeight-min.js"></script>
 <script src="/assets/js/script.js"></script>
+<script src="../../instantsearch.js">
+<script src="../../search.js"></script>
 </body>
