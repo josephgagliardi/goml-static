@@ -229,13 +229,14 @@
                </div>
                <div class="tabs">
                   <div class="row">
+                     <div id="searchbox"></div>
                      <div class="col-8 align-self-center">
-                        <div class="form-search__input-group">
+<!--                         <div class="form-search__input-group">
                            <input class="form-control form-search__input" type="text" placeholder="Search for degree...">
                            <div class="form-search__btn-group">
                               <button class="btn form-search__button" type="submit"><i class="fas fa-search form-search__icon"></i></button>
                            </div>
-                        </div>
+                        </div> -->
                      </div>
                      <div class="col-4 align-self-center">
                         <div class="view-gird text-md-right text-sm-right">
@@ -246,7 +247,7 @@
                   </div>
                </div>
                <div id="courses" class="row">
-                  <div class="col-lg-4 col-md-6 col-sm-6 courses__item">
+                  <!-- <div class="col-lg-4 col-md-6 col-sm-6 courses__item">
                      <div class="courses__wrapper">
                         <div class="courses__top">
                            <div class="courses__top__wrapper"><img class="courses__top__image" src="assets/img/course-single/header-img-1.jpg" alt=""></div>
@@ -320,16 +321,16 @@
                         </div>
                         <div class="courses__icon bt-circle-fill-red"><i class="fas fa-flask"></i></div>
                      </div>
-                  </div>
+                  </div> -->
                </div>
                <nav class="mx-auto" style="width: 200px;">
                   <ul class="pagination pagination__list text-center">
-                     <li class="page-item pagination__item"><a class="page-link pagination__link " href="#">prev</a></li>
+                     <!-- <li class="page-item pagination__item"><a class="page-link pagination__link " href="#">prev</a></li>
                      <li class="page-item pagination__item"><a class="page-link pagination__link active" href="#">1</a></li>
                      <li class="page-item pagination__item"><a class="page-link pagination__link " href="#">2</a></li>
                      <li class="page-item pagination__item"><a class="page-link pagination__link " href="#">3</a></li>
                      <li class="page-item pagination__item"><a class="page-link pagination__link " href="#">...</a></li>
-                     <li class="page-item pagination__item"><a class="page-link pagination__link " href="#">next</a></li>
+                     <li class="page-item pagination__item"><a class="page-link pagination__link " href="#">next</a></li> -->
                   </ul>
                </nav>
 
