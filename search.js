@@ -15,7 +15,7 @@ search.addWidget(
     container: '#searchbox',
     showSubmit: true,
     showReset: true,
-    searchAsYoType: true,
+    searchAsYouType: true,
     placeholder: 'Your future is merely a search away...'
   })
 );
@@ -32,7 +32,7 @@ search.addWidget(
                  <div class="courses__top__wrapper"><img class="courses__top__image" src="assets/img/course-single/header-img-3.jpg" alt=""></div>
               </div>
               <div class="courses__content">
-                 <a class="courses__content__title" href="#">Bachelor of Science in Information Technology</a>
+                 <a class="courses__content__title" href="#">{{#helpers.highlight}}{ "attribute": "coursePrefix" }{{/helpers.highlight}}</a>
                  <div class="courses__bottom">
                     <a class="courses__col-left" href="#"><span class="courses__content__institutions">Kennesaw State University</span></a>
                     <ul class="list-tags pb-1">
