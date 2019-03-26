@@ -15,8 +15,8 @@
 		<div class="dm-modal-search dm-search-slidedown">
 			<div class="dm-search-wrapper">
 				<div class="dm-modal-form">
-					<form>
-						<input type="text" name="q" id="q" placeholder="Search...">
+					<form id="search-form">
+						<input type="text" name="q" id="program-search" placeholder="Search...">
 						<label for="q"></label>
 						<button type="submit">
 							<i class="far fa-arrow-alt-circle-right"></i><span class="sr-only">Perform Search</span>
