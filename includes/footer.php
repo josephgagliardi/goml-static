@@ -1,6 +1,6 @@
 <footer class="footer">
 	<div class="btn-ontop" id="on-top"><i class="fas fa-angle-up"></i><span class="sr-only">back to top</span></div>
-	<div class="img-background" style="background-image: url('/assets/img/footer/footer-img.jpg');">
+	<div class="img-background">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">

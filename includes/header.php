@@ -34,7 +34,9 @@
 <nav class="droopmenu-navbar">
 	<div class="droopmenu-inner">
 		<div class="droopmenu-header">
-			<a href="#" class="droopmenu-toggle"></a>
+			<a href="#" role="button" class="droopmenu-toggle">
+				<span>Menu</span>
+			</a>
 		</div><!-- droopmenu-header -->
 		<div class="droopmenu-nav">
 			<ul class="droopmenu">
