@@ -119,7 +119,8 @@ search.addWidget(
       count: 'badge pull-right select__number',
       active: 'active',
       label: 'list-categories__link',
-      checkbox: 'filter__checkbox'
+      checkbox: 'filter__checkbox',
+      showMore: 'see-more-button-text'
     }
   })
 );
