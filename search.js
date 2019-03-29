@@ -12,7 +12,7 @@ const search = instantsearch({
 
 search.addWidget(
   instantsearch.widgets.searchBox({
-    container: '#searchbox',
+    container: '.form-search__input-group',
     showSubmit: true,
     showReset: true,
     searchAsYouType: true,
@@ -27,7 +27,7 @@ search.addWidget(
       empty: 'No results for <q>{{ query }}</q>',
       item: function(item) {
       cpl = item["credit for prior learning"] === "TRUE" ? "inherit" : "none";
-      return `<div class="col-lg-4 col-md-6 col-sm-6 courses__item">
+      return `
          <div class="courses__wrapper">
             <div class="courses__top">
                <div class="courses__top__wrapper"><img class="courses__top__image" src="assets/img/course-single/header-img-1.jpg" alt=""></div>
@@ -49,9 +49,7 @@ search.addWidget(
                   </ul>
                </div>
             </div>
-            <div class="courses__icon bt-circle-fill-red"><i class="fas fa-book-reader"></i></div>
-         </div>
-      </div>`;
+            <div class="courses__icon bt-circle-fill-red"><i class="fas fa-book-reader"></i></div>`;
       // return `
       // <div class="col-lg-4 col-md-4 col-sm-6 courses__item">
       // <div class="courses__wrapper h-100">
@@ -80,7 +78,7 @@ search.addWidget(
     },
     },
     cssClasses: {
-      root: 'courses__list'
+      item: 'col-lg-4 col-md-6 col-sm-6 courses__item'
       // item: 'col-lg-3 col-md-4 col-sm-6 courses__item'
     },
   })
@@ -88,18 +86,18 @@ search.addWidget(
 
 search.addWidget(
   instantsearch.widgets.pagination({
-    container: '#pagination__wrapper',
+    container: '.mx-auto',
     showNext: true,
     showPrevious: true,
     padding: 2,
     scrollTo: 'header',
     cssClasses: {
       root: 'pagination mx-auto',
-      list: 'pagination__list',
+      list: 'pagination pagination__list text-center',
       item: 'page-item pagination__item',
+      link: 'page-link pagination__link',
       previousPageItem: 'pagination__item',
-      nextPageItem: 'pagination__item',
-      link: 'pagination__link page-link'
+      nextPageItem: 'pagination__item'
     }
   })
 );
@@ -148,7 +146,7 @@ search.addWidget(
 
 search.addWidget(
   instantsearch.widgets.refinementList({
-    container: '#level__filter',
+    container: '#filter1',
     attribute: 'program level',
     operator: 'or',
     limit: 5,
@@ -164,51 +162,52 @@ search.addWidget(
       count: 'select__number',
       active: 'active',
       label: 'list-categories__link',
-      checkbox: 'filter__checkbox'
+      checkbox: 'filter__checkbox',
+      showMore: 'see-more-button-text'
     }
   })
 );
 
-search.addWidget(
-  instantsearch.widgets.refinementList({
-    container: '#aos__filter',
-    attribute: 'area of study',
-    operator: 'or',
-    limit: 5,
-    showMore: true,
-    // searchable: true,
-    searchablePlaceholder: 'Refine by Discipline...',
-    sortBy: ['name:asc'],
-    cssClasses: {
-      item: 'list-categories__item',
-      count: 'badge pull-right select__number',
-      active: 'active',
-      label: 'list-categories__link',
-      checkbox: 'filter__checkbox'
-    }
-  })
-);
+// search.addWidget(
+//   instantsearch.widgets.refinementList({
+//     container: '#aos__filter',
+//     attribute: 'area of study',
+//     operator: 'or',
+//     limit: 5,
+//     showMore: true,
+//     // searchable: true,
+//     searchablePlaceholder: 'Refine by Discipline...',
+//     sortBy: ['name:asc'],
+//     cssClasses: {
+//       item: 'list-categories__item',
+//       count: 'badge pull-right select__number',
+//       active: 'active',
+//       label: 'list-categories__link',
+//       checkbox: 'filter__checkbox'
+//     }
+//   })
+// );
 
-search.addWidget(
-  instantsearch.widgets.refinementList({
-    container: '#institution__filter',
-    attribute: 'university',
-    operator: 'or',
-    limit: 5,
-    showMore: true,
-    // searchable: true,
-    searchablePlaceholder: 'Choose School',
-    sortBy: ['name:asc'],
-    cssClasses: {
-      item: 'list-categories__item',
-      count: 'badge pull-right',
-      active: 'active',
-      label: 'list-categories__link',
-      checkbox: 'checkbox'
-      // showMore: 'button-text'
-    }
-  })
-);
+// search.addWidget(
+//   instantsearch.widgets.refinementList({
+//     container: '#institution__filter',
+//     attribute: 'university',
+//     operator: 'or',
+//     limit: 5,
+//     showMore: true,
+//     // searchable: true,
+//     searchablePlaceholder: 'Choose School',
+//     sortBy: ['name:asc'],
+//     cssClasses: {
+//       item: 'list-categories__item',
+//       count: 'badge pull-right',
+//       active: 'active',
+//       label: 'list-categories__link',
+//       checkbox: 'checkbox'
+//       // showMore: 'button-text'
+//     }
+//   })
+// );
 
 // search.addWidget(
 //   instantsearch.widgets.refinementList({
@@ -227,53 +226,54 @@ search.addWidget(
 //   })
 // );
 
-search.addWidget(
-  instantsearch.widgets.stats({
-    container: '.header-filter__result',
-    cssClasses: {
-      body: 'header-filter__number'
-    }
-  })
-);
+// search.addWidget(
+//   instantsearch.widgets.stats({
+//     container: '.header-filter__result',
+//     cssClasses: {
+//       body: 'header-filter__number'
+//     }
+//   })
+// );
 
 search.addWidget(
   instantsearch.widgets.clearRefinements({
-    container: '.clear__filters',
-    cssClasses: {
-      button: 'button-outline tags__item clear__button'
-    },
-    templates: {
-      // resetLabel: 'Clear All'
-      item: `<div class="tags__item"><span class="button-outline">Clear All</span></div>`,
-    },
-  })
-);
-search.addWidget(
-  instantsearch.widgets.toggleRefinement({
-    container: '#cpl__filter',
-    attribute: 'credit for prior learning',
-    templates: {
-      labelText: 'CPL',
-    },
-  })
-);
-search.addWidget(
-  instantsearch.widgets.currentRefinements({
     container: '.tags',
-    showMore: true,
-    padding: 20,
     cssClasses: {
-      item: 'tags__item button-outline',
-      label: 'tags__text',
+      button: 'button-outline tags__item clear__button tags__item'
+    },
+    templates: {
+      resetLabel: 'Clear All'
+      // item: `<div class="tags__item"><span class="button-outline">Clear All</span></div>`,
     },
   })
 );
-search.addWidget(
-  instantsearch.widgets.rangeSlider({
-    container: '#hours__filter',
-    attribute: 'total hours',
-    precision: 10
-  })
-);
+
+// search.addWidget(
+//   instantsearch.widgets.toggleRefinement({
+//     container: '#cpl__filter',
+//     attribute: 'credit for prior learning',
+//     templates: {
+//       labelText: 'CPL',
+//     },
+//   })
+// );
+// search.addWidget(
+//   instantsearch.widgets.currentRefinements({
+//     container: '.tags',
+//     showMore: true,
+//     padding: 20,
+//     cssClasses: {
+//       item: 'tags__item button-outline',
+//       label: 'tags__text',
+//     },
+//   })
+// );
+// search.addWidget(
+//   instantsearch.widgets.rangeSlider({
+//     container: '#hours__filter',
+//     attribute: 'total hours',
+//     precision: 10
+//   })
+// );
 
 search.start();

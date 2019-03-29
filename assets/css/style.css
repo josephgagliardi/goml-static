@@ -699,6 +699,17 @@ button.button-text {
 	cursor: pointer;
 }
 
+.see-more-button-text {
+	font-size: 14px;
+	color: #CA202A;
+	background-color: none;
+	font-weight: bold;
+	text-transform: capitalize;
+	border: 0;
+	padding: 0;
+	cursor: pointer;
+}
+
 button.button-text:hover,
 button.button-text:focus {
 	color: #CA202A;
