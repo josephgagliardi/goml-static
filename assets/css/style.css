@@ -4231,6 +4231,26 @@ view-course-grid.courses__wrapper {
 	text-align: center;
 }
 
+/*.ais-RefinementList-item--selected {
+	border: none;
+	content: "\f00c";
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 600;
+	background-color: #CA202A;
+	color: #fff;
+	text-align: center;
+}*/
+
+.ais-RefinementList-item input[type="checkbox"]:checked + label:before {
+	border: none;
+	content: "\f00c";
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 600;
+	background-color: #CA202A;
+	color: #fff;
+	text-align: center;
+}
+
 .select input[type="checkbox"]:checked + label:after {
 	font-weight: bold;
 }
@@ -7844,6 +7864,20 @@ Blog details sidebar
 	margin-right: 3px;
 	height: 45px;
 	border-radius: 50px;
+}
+
+.clear__button, .ais-ClearRefinements-button {
+	display: inline-block;
+	padding: 7px 25px;
+	-webkit-border-radius: 18px;
+	border-radius: 18px;
+	background-color: #fff;
+	border: solid 1px #CA202A;
+	color: #CA202A;
+	font-size: 14px;
+	text-transform: capitalize;
+	-webkit-transition: all 0.5s ease;
+	transition: all 0.5s ease;
 }
 
 .main-search-input button.button i {
