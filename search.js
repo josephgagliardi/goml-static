@@ -42,13 +42,13 @@ search.addWidget(
                   <a class="courses__col-left" href="#"><span class="courses__content__institutions">${item["area of study"]}</span></a>
                   <ul class="list-tags pb-1">
                      <li>
-                        <button class="aos" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="Area of Study" data-original-title="" title="">${item["area of study"]}</button>
+                        <button class="aos" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="Area of Study" data-original-title="" title="">aos</button>
                      </li>
                      <li style="display: ${cpl}">
                         <button class="cpl" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="Credit for Prior Learning" data-original-title="" title="">cpl</button>
                      </li>
                      <li>
-                        <button class="ep" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="eMajor program" data-original-title="" title="">${item["total hours"]}</button>
+                        <button class="ep" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="eMajor program" data-original-title="" title="">120</button>
                      </li>
                   </ul>
                </div>
@@ -62,6 +62,13 @@ search.addWidget(
     },
   })
 );
+
+function abbrv(str) {
+    return str.replace(/\w{4,}/g, function (s) {
+        var l = s.length;
+        return s[0] + (l - 2) + s[l - 1];
+    });
+};
 
 search.addWidget(
   instantsearch.widgets.pagination({
