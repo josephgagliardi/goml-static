@@ -699,6 +699,17 @@ button.button-text {
 	cursor: pointer;
 }
 
+.see-more-button-text {
+	font-size: 14px;
+	color: #CA202A;
+	background-color: none;
+	font-weight: bold;
+	text-transform: capitalize;
+	border: 0;
+	padding: 0;
+	cursor: pointer;
+}
+
 button.button-text:hover,
 button.button-text:focus {
 	color: #CA202A;
@@ -1093,7 +1104,7 @@ button.button-text:focus {
 	max-height: 26px;
 }
 
-.tag-bunle {
+.tag-bundle {
 	font-family: 'Roboto';
 	display: inline-block;
 	padding: 4px 17px;
@@ -4308,7 +4319,7 @@ view-course-grid.courses__wrapper {
 
 .tags__item {
 	display: inline-block;
-	font-size: 14px;
+	font-size: 16px;
 	text-align: left;
 	color: #545555;
 	margin-right: 30px;
@@ -10101,3 +10112,35 @@ Blog details sidebar
 	-webkit-box-shadow: -0.2px 3px 16px 0 #ebebeb;
 	box-shadow: -0.2px 3px 16px 0 #ebebeb;
 }
+
+.filter__checkbox {
+    width: 19px;
+    height: 19px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px solid #cacaca;
+    background-color: #fff;
+    content: "";
+    font-size: 12px;
+    line-height: 19px;
+    display: inline-block;
+    padding: 0;
+    vertical-align: top;
+}
+
+input[type="checkbox"]:checked + label:before  {
+	border: none;
+	content: "\f00c";
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 600;
+	background-color: #CA202A;
+	color: #fff;
+	text-align: center;
+}
+
+.filter__delete {
+	color: #000;
+	border: none;
+	font-size: 0;
+}
+
