@@ -63,7 +63,83 @@
                   </div>
                </div>
                
-               <div id="courses__list__wrapper" class="row"></div>
+               <div id="courses" class="row">
+<!--       <div class="col-lg-4 col-md-6 col-sm-6 courses__item">
+         <div class="courses__wrapper">
+            <div class="courses__top">
+               <div class="courses__top__wrapper"><img class="courses__top__image" src="assets/img/course-single/header-img-1.jpg" alt=""></div>
+            </div>
+            <div class="courses__content h-100">
+               <a href="course-single.php" class="courses__content__title">Master of Education in Early Childhood Education</a>
+               <div class="courses__bottom">
+                  <a class="courses__col-left" href="#"><span class="courses__content__institutions">University Of West Georgia</span></a>
+                  <ul class="list-tags">
+                     <li>
+                        <button class="aos" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="Area of Study" data-original-title="" title="">aos</button>
+                     </li>
+                     <li>
+                        <button class="cpl" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="Credit for Prior Learning" data-original-title="" title="">cpl</button>
+                     </li>
+                     <li>
+                        <button class="ep" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="eMajor program" data-original-title="" title="">em</button>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+            <div class="courses__icon bt-circle-fill-red"><i class="fas fa-book-reader"></i></div>
+         </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-6 courses__item">
+         <div class="courses__wrapper h-100">
+            <div class="courses__top">
+               <div class="courses__top__wrapper"><img class="courses__top__image" src="assets/img/course-single/header-img-2.jpg" alt=""></div>
+            </div>
+            <div class="courses__content">
+               <a class="courses__content__title" href="#">Bachelor of Science in Information Technology</a>
+               <div class="courses__bottom">
+                  <a class="courses__col-left" href="#"><span class="courses__content__institutions">Kennesaw State University</span></a>
+                  <ul class="list-tags pb-1">
+                     <li>
+                        <button class="aos" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="Area of Study" data-original-title="" title="">aos</button>
+                     </li>
+                     <li>
+                        <button class="cpl" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="Credit for Prior Learning" data-original-title="" title="">cpl</button>
+                     </li>
+                     <li>
+                        <button class="ep" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="eMajor program" data-original-title="" title="">em</button>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+            <div class="courses__icon bt-circle-fill-red"><i class="fas fa-flask"></i></div>
+         </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-6 courses__item">
+         <div class="courses__wrapper h-100">
+            <div class="courses__top">
+               <div class="courses__top__wrapper"><img class="courses__top__image" src="assets/img/course-single/header-img-3.jpg" alt=""></div>
+            </div>
+            <div class="courses__content">
+               <a class="courses__content__title" href="#">Bachelor of Science in Information Technology</a>
+               <div class="courses__bottom">
+                  <a class="courses__col-left" href="#"><span class="courses__content__institutions">Kennesaw State University</span></a>
+                  <ul class="list-tags pb-1">
+                     <li>
+                        <button class="aos" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="Area of Study" data-original-title="" title="">aos</button>
+                     </li>
+                     <li>
+                        <button class="cpl" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="Credit for Prior Learning" data-original-title="" title="">cpl</button>
+                     </li>
+                     <li>
+                        <button class="ep" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="eMajor program" data-original-title="" title="">em</button>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+            <div class="courses__icon bt-circle-fill-red"><i class="fas fa-flask"></i></div>
+         </div>
+      </div> -->
+   </div>
             </div>
                <div id="pagination__wrapper"></div>
 

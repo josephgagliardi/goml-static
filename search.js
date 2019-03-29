@@ -22,37 +22,62 @@ search.addWidget(
 
 search.addWidget(
   instantsearch.widgets.hits({
-    container: '#courses__list__wrapper',
+    container: '#courses',
     templates: {
       empty: 'No results for <q>{{ query }}</q>',
       item: function(item) {
       cpl = item["credit for prior learning"] === "TRUE" ? "inherit" : "none";
-      return `
-      <div class="col-lg-4 col-md-4 col-sm-6 courses__item">
-      <div class="courses__wrapper h-100">
+      return `<div class="col-lg-4 col-md-6 col-sm-6 courses__item">
+         <div class="courses__wrapper">
             <div class="courses__top">
-               <div class="courses__top__wrapper"><img class="courses__top__image" src="${item["logo"]}" alt=""></div>
+               <div class="courses__top__wrapper"><img class="courses__top__image" src="assets/img/course-single/header-img-1.jpg" alt=""></div>
             </div>
-            <div class="courses__content">
-               <a class="courses__content__title" href="#">${item["program title"]}</a>
+            <div class="courses__content h-100">
+               <a href="course-single.php" class="courses__content__title">Master of Education in Early Childhood Education</a>
                <div class="courses__bottom">
-                  <a class="courses__col-left" href="#"><span class="courses__content__institutions">${item["area of study"]}</span></a>
-                  <ul class="list-tags pb-1">
+                  <a class="courses__col-left" href="#"><span class="courses__content__institutions">University Of West Georgia</span></a>
+                  <ul class="list-tags">
                      <li>
-                        <button class="aos" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="Area of Study" data-original-title="" title="">${item["area of study"]}</button>
+                        <button class="aos" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="Area of Study" data-original-title="" title="">aos</button>
                      </li>
-                     <li style="display: ${cpl}">
+                     <li>
                         <button class="cpl" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="Credit for Prior Learning" data-original-title="" title="">cpl</button>
                      </li>
                      <li>
-                        <button class="ep" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="eMajor program" data-original-title="" title="">${item["total hours"]}</button>
+                        <button class="ep" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="eMajor program" data-original-title="" title="">em</button>
                      </li>
                   </ul>
                </div>
             </div>
-            <div class="courses__icon bt-circle-fill-red"><i class="fas fa-flask"></i></div>
-         </div></div>`;
-    }
+            <div class="courses__icon bt-circle-fill-red"><i class="fas fa-book-reader"></i></div>
+         </div>
+      </div>`;
+      // return `
+      // <div class="col-lg-4 col-md-4 col-sm-6 courses__item">
+      // <div class="courses__wrapper h-100">
+      //       <div class="courses__top">
+      //          <div class="courses__top__wrapper"><img class="courses__top__image" src="${item["logo"]}" alt=""></div>
+      //       </div>
+      //       <div class="courses__content">
+      //          <a class="courses__content__title" href="#">${item["program title"]}</a>
+      //          <div class="courses__bottom">
+      //             <a class="courses__col-left" href="#"><span class="courses__content__institutions">${item["area of study"]}</span></a>
+      //             <ul class="list-tags pb-1">
+      //                <li>
+      //                   <button class="aos" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="Area of Study" data-original-title="" title="">${item["area of study"]}</button>
+      //                </li>
+      //                <li style="display: ${cpl}">
+      //                   <button class="cpl" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="Credit for Prior Learning" data-original-title="" title="">cpl</button>
+      //                </li>
+      //                <li>
+      //                   <button class="ep" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="eMajor program" data-original-title="" title="">${item["total hours"]}</button>
+      //                </li>
+      //             </ul>
+      //          </div>
+      //       </div>
+      //       <div class="courses__icon bt-circle-fill-red"><i class="fas fa-flask"></i></div>
+      //    </div></div>`;
+    },
     },
     cssClasses: {
       root: 'courses__list'
@@ -133,8 +158,10 @@ search.addWidget(
     searchablePlaceholder: 'Refine by Level...',
     sortBy: ['name:asc'],
     cssClasses: {
-      item: 'list-categories__item',
-      count: 'badge pull-right select__number',
+      // item: 'list-categories__item',
+      list: 'select__list',
+      item: 'select__item',
+      count: 'select__number',
       active: 'active',
       label: 'list-categories__link',
       checkbox: 'filter__checkbox'
