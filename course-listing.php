@@ -76,8 +76,9 @@
 
       </div>
    </div>
-</main> <?php include("includes/footer.php"); ?> <script src="/assets/js/couse-listing.js">
-</script>
+</main> <?php include("includes/footer.php"); ?> 
+<!-- <script src="/assets/js/couse-listing.js">
+</script> -->
 <script src="../../search.js"></script>
 
 </html>
