@@ -7,7 +7,7 @@ const searchClient = algoliasearch(
 
 const search = instantsearch({
   indexName: 'prod_PROGRAMS',
-  searchClient
+  searchClient,
 });
 
 search.addWidget(
@@ -51,6 +51,7 @@ search.addWidget(
                         <button class="ep" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="eMajor program" data-original-title="" title="">120</button>
                      </li>
                   </ul>
+                  ${item["program desc"].substring(1, 195) + '...'}
                </div>
             </div>
             <div class="courses__icon bt-circle-fill-red"><i class="fas fa-flask"></i></div>`;
@@ -58,7 +59,7 @@ search.addWidget(
     },
     cssClasses: {
       list: 'row',
-      item: '"col-lg-3 col-md-3 col-sm-6 courses__item'
+      item: '"col-lg-3 col-md-6 col-sm-6 courses__item'
     },
   })
 );
