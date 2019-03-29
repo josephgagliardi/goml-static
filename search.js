@@ -6,7 +6,7 @@ const searchClient = algoliasearch(
 );
 
 const search = instantsearch({
-  indexName: 'dev_PROGRAMS',
+  indexName: 'prod_PROGRAMS',
   searchClient
 });
 
