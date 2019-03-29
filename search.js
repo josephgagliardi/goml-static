@@ -6,7 +6,7 @@ const searchClient = algoliasearch(
 );
 
 const search = instantsearch({
-  indexName: 'dev_PROGRAMS',
+  indexName: 'prod_PROGRAMS',
   searchClient
 });
 
@@ -28,6 +28,7 @@ search.addWidget(
       item: function(item) {
       cpl = item["credit for prior learning"] === "TRUE" ? "inherit" : "none";
       return `
+      <div class="col-lg-4 col-md-4 col-sm-6 courses__item">
       <div class="courses__wrapper h-100">
             <div class="courses__top">
                <div class="courses__top__wrapper"><img class="courses__top__image" src="${item["logo"]}" alt=""></div>
@@ -50,12 +51,12 @@ search.addWidget(
                </div>
             </div>
             <div class="courses__icon bt-circle-fill-red"><i class="fas fa-flask"></i></div>
-         </div>`;
+         </div></div>`;
     }
     },
     cssClasses: {
-      root: 'courses__list',
-      item: 'col-lg-3 col-md-4 col-sm-6 courses__item'
+      root: 'courses__list'
+      // item: 'col-lg-3 col-md-4 col-sm-6 courses__item'
     },
   })
 );
@@ -67,7 +68,6 @@ search.addWidget(
     showPrevious: true,
     padding: 2,
     scrollTo: 'header',
-
     cssClasses: {
       root: 'pagination mx-auto',
       list: 'pagination__list',
@@ -129,7 +129,7 @@ search.addWidget(
     limit: 5,
     showMore: true,
     searchForFacetValues: true,
-    searchable: true,
+    // searchable: true,
     searchablePlaceholder: 'Refine by Level...',
     sortBy: ['name:asc'],
     cssClasses: {
@@ -149,7 +149,7 @@ search.addWidget(
     operator: 'or',
     limit: 5,
     showMore: true,
-    searchable: true,
+    // searchable: true,
     searchablePlaceholder: 'Refine by Discipline...',
     sortBy: ['name:asc'],
     cssClasses: {
@@ -169,7 +169,7 @@ search.addWidget(
     operator: 'or',
     limit: 5,
     showMore: true,
-    searchable: true,
+    // searchable: true,
     searchablePlaceholder: 'Choose School',
     sortBy: ['name:asc'],
     cssClasses: {

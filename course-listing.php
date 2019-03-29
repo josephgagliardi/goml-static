@@ -62,6 +62,7 @@
                      </div>
                   </div>
                </div>
+               
                <div id="courses__list__wrapper" class="row"></div>
             </div>
                <div id="pagination__wrapper"></div>
