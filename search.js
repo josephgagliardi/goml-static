@@ -39,6 +39,7 @@ search.addWidget(
             <div class="courses__content">
                <a class="courses__content__title" target="_blank" href="https://www.georgiaonmyline.org/degrees/details/?rec=${item["goml-id"]}">${item["program title"]}</a>
                <div class="courses__bottom">
+               ${item["university"]}
                   <a class="courses__col-left" href="#"><span class="courses__content__institutions">${item["area of study"]}</span></a>
                   <ul class="list-tags pb-1">
                      <li>
