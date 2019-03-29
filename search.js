@@ -59,7 +59,7 @@ search.addWidget(
     },
     cssClasses: {
       list: 'row',
-      item: '"col-lg-3 col-md-6 col-sm-6 courses__item'
+      item: '"col-lg-3 col-md-4 col-sm-6 courses__item'
     },
   })
 );
@@ -195,7 +195,6 @@ search.addWidget(
   instantsearch.widgets.currentRefinements({
     container: '.tags',
     cssClasses: {
-      // item: 'badge',
       label: 'tags__item',
       delete: 'filter__delete far fa-times-circle tags__icon',
       categoryLabel: 'tags__text',
