@@ -32,7 +32,7 @@
 			<div class="col-lg-9 col-md-9 col-sm-12">
 				<div class="bundle-header__about">
 					<div class="bundle-header__image" style="background-image: url(/assets/img/course-single/header-img-1.jpg)" data-overlay="6"></div>
-					<h1 class="bundle-header__title">Master of Education in Early Childhood Education</h1>
+					<h1 id="program__title" class="bundle-header__title">Master of Education in Early Childhood Education</h1>
 					<p id="institution__name" class="bundle-header__content">
 						University Of West Georgia
 					</p>
@@ -50,7 +50,7 @@
 					<div class="row">
 						<div class="col-4">
 							<div class="additional_info rounded shadow p-3 p-lg-4 h-100 align-items-center">
-								<img src="/assets/img/course-single/book.svg">Degrees<strong>Bachelor's</strong>
+								<img src="/assets/img/course-single/book.svg">Degrees<strong id="program__level">Bachelor's</strong>
 							</div>
 						</div>
 						<div class="col-4">
@@ -276,6 +276,10 @@
 		  	$('.bundles').append(block);
 		  };
 		});
+		console.log(program["program title"]);
+		document.getElementById('program__title').innerHTML = program["program title"];
+		document.getElementById('institution__name').innerHTML = program["university"];
+		document.getElementById('program__level').innerHTML = program["program level"];
 	});
 
 	// new Chart(document.getElementById("myChart"), {
