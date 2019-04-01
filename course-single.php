@@ -33,7 +33,7 @@
 				<div class="bundle-header__about">
 					<div class="bundle-header__image" style="background-image: url(/assets/img/course-single/header-img-1.jpg)" data-overlay="6"></div>
 					<h1 class="bundle-header__title">Master of Education in Early Childhood Education</h1>
-					<p class="bundle-header__content">
+					<p id="institution__name" class="bundle-header__content">
 						University Of West Georgia
 					</p>
 					<ul class="list-tags">
@@ -65,11 +65,12 @@
 						</div>
 					</div>
 				</div>
-				<div class="bundle-list">
+				<div class="bundles"></div>
+				<!-- <div class="bundle-list">
 					<div class="bundle" id="list-link-1">
 						<h2 class="bundle__title">Program Description</h2>
 						<div class="bundle__content">
-							<p class="detail__infor__sub">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+							<p id="program__description__text" class="detail__infor__sub">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 
 						</div>
 					</div>
@@ -124,7 +125,7 @@
 							<p class="detail__infor__sub">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
 						</div>
 					</div>
-				</div>
+				</div> -->
 			</div>
 		</div>
 	</div>
@@ -261,29 +262,67 @@
 <script src="/assets/js/course-single.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
 <script>
-	new Chart(document.getElementById("myChart"), {
-		"type": "line",
-		data: {
-			labels: ["January", "February", "March", "April", "May", "June", "July"],
-			datasets: [{
-				label: "Salary After Attending",
-				backgroundColor: 'rgb(202, 32, 42)',
-				borderColor: 'rgb(202, 32, 42)',
-				data: [0, 10, 5, 2, 20, 30, 45],
-			}]
-		}
+	var params = getParams(window.location.href);
+	var programID = params["id"];
+	var client = algoliasearch('JBY4H547QZ', '133c145ebb78c84a04aefb61c32dba1d');
+	var index = client.initIndex('dev_PROGRAMS');
+	index.getObjects([programID.toString()], function(err, content) {
+	  if (err) throw err;
+	  program = content['results'][0];
+
+		Object.entries(program).forEach(([key, value]) => {
+		  var block = `<div class="bundle-list"><div class="bundle" id="list-link-5"><h2 class="bundle__title">${toTitleCase(key)}</h2><div class="bundle__content"><p class="detail__infor__sub">${value}</p></div></div></div>`; 
+		  if (key !== null && (value !== null && value !== '')) {
+		  	$('.bundles').append(block);
+		  };
+		});
 	});
-	new Chart(document.getElementById("chartjs-4"), {
-		"type": "doughnut",
-		"data": {
-			"labels": ["Year 1", "Year 2", "Year 3"],
-			"datasets": [{
-				"label": "My First Dataset",
-				"data": [300, 50, 100],
-				"backgroundColor": ["rgb(202, 32, 42)", "rgb(195, 195, 195)", "rgb(56, 56, 56)"]
-			}]
+
+	// new Chart(document.getElementById("myChart"), {
+	// 	"type": "line",
+	// 	data: {
+	// 		labels: ["January", "February", "March", "April", "May", "June", "July"],
+	// 		datasets: [{
+	// 			label: "Salary After Attending",
+	// 			backgroundColor: 'rgb(202, 32, 42)',
+	// 			borderColor: 'rgb(202, 32, 42)',
+	// 			data: [0, 10, 5, 2, 20, 30, 45],
+	// 		}]
+	// 	}
+	// });
+	// new Chart(document.getElementById("chartjs-4"), {
+	// 	"type": "doughnut",
+	// 	"data": {
+	// 		"labels": ["Year 1", "Year 2", "Year 3"],
+	// 		"datasets": [{
+	// 			"label": "My First Dataset",
+	// 			"data": [300, 50, 100],
+	// 			"backgroundColor": ["rgb(202, 32, 42)", "rgb(195, 195, 195)", "rgb(56, 56, 56)"]
+	// 		}]
+	// 	}
+	// });
+
+	function toTitleCase(str) {
+	    return str.replace(
+	        /\w\S*/g,
+	        function(txt) {
+	            return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+	        }
+	    );
+	};
+
+	function getParams(url) {
+		var params = {};
+		var parser = document.createElement('a');
+		parser.href = url;
+		var query = parser.search.substring(1);
+		var vars = query.split('&');
+		for (var i = 0; i < vars.length; i++) {
+			var pair = vars[i].split('=');
+			params[pair[0]] = decodeURIComponent(pair[1]);
 		}
-	});
+		return params;
+	};
 
 </script>
 
