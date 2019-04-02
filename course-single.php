@@ -269,7 +269,7 @@
 	index.getObjects([programID.toString()], function(err, content) {
 	  if (err) throw err;
 	  program = content['results'][0];
-
+	  console.log(program);
 		Object.entries(program).forEach(([key, value]) => {
 		  var block = `<div class="bundle-list"><div class="bundle" id="list-link-5"><h2 class="bundle__title">${toTitleCase(key)}</h2><div class="bundle__content"><p class="detail__infor__sub">${value}</p></div></div></div>`; 
 		  if (key !== null && (value !== null && value !== '')) {
