@@ -55,12 +55,12 @@
 						</div>
 						<div class="col-4">
 							<div class="additional_info rounded shadow p-3 p-lg-4 h-100 align-items-center">
-								<img src="/assets/img/course-single/graph.svg">Total Credit Hours<strong>250</strong>
+								<img src="/assets/img/course-single/graph.svg">Total Credit Hours<strong id="total__hours">250</strong>
 							</div>
 						</div>
 						<div class="col-4">
 							<div class="additional_info rounded shadow p-3 p-lg-4 h-100 align-items-center">
-								<img src="/assets/img/course-single/piggy-bank.svg">Per Credit Hour<strong>$220.00</strong>
+								<img src="/assets/img/course-single/piggy-bank.svg">Cost<strong id="total__cost">$220.00</strong>
 							</div>
 						</div>
 					</div>
@@ -280,31 +280,10 @@
 		document.getElementById('program__title').innerHTML = program["program title"];
 		document.getElementById('institution__name').innerHTML = program["university"];
 		document.getElementById('program__level').innerHTML = program["program level"];
+		document.getElementById('total__hours').innerHTML = program["total hours"];
+		document.getElementById('total__cost').innerHTML = program["tuition and fees"];
 	});
 
-	// new Chart(document.getElementById("myChart"), {
-	// 	"type": "line",
-	// 	data: {
-	// 		labels: ["January", "February", "March", "April", "May", "June", "July"],
-	// 		datasets: [{
-	// 			label: "Salary After Attending",
-	// 			backgroundColor: 'rgb(202, 32, 42)',
-	// 			borderColor: 'rgb(202, 32, 42)',
-	// 			data: [0, 10, 5, 2, 20, 30, 45],
-	// 		}]
-	// 	}
-	// });
-	// new Chart(document.getElementById("chartjs-4"), {
-	// 	"type": "doughnut",
-	// 	"data": {
-	// 		"labels": ["Year 1", "Year 2", "Year 3"],
-	// 		"datasets": [{
-	// 			"label": "My First Dataset",
-	// 			"data": [300, 50, 100],
-	// 			"backgroundColor": ["rgb(202, 32, 42)", "rgb(195, 195, 195)", "rgb(56, 56, 56)"]
-	// 		}]
-	// 	}
-	// });
 
 	function toTitleCase(str) {
 	    return str.replace(
