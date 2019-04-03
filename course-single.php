@@ -284,7 +284,6 @@
 		document.getElementById('total__cost').innerHTML = program["tuition and fees"];
 	});
 
-
 	function toTitleCase(str) {
 	    return str.replace(
 	        /\w\S*/g,

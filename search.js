@@ -34,6 +34,7 @@ search.addWidget(
       item: function(item) {
       cpl = item["credit for prior learning"] === "TRUE" ? "inherit" : "none";
       aos = abbrv(item["area of study"]);
+      hours = item["total hours"].split('(')[0];
       favoritedIcon = itemFavorited(item['objectID']) ? `<i class="fas fa-heart" onclick="favoriteDegree(this, ${item["objectID"]}, ${item["favorited_count"]});"></i>` : `<i class="far fa-heart" onclick="favoriteDegree(this, ${item["objectID"]}, ${item["favorited_count"]})"></i>`;
       favoritedCount = item['favorited_count']
       return `
@@ -45,7 +46,7 @@ search.addWidget(
                <a class="courses__content__title" href="/course-single.php?id=${item["objectID"]}">${item["program title"]}</a>
                <div class="courses__bottom">
                ${item["university"]}
-                  <a class="courses__col-left" href="#"><span class="courses__content__institutions">${aos}</span></a>
+                  <a class="courses__col-left" href="#"><span class="courses__content__institutions">${item["area of study"]}</span></a>
                   <ul class="list-tags pb-1">
                      <li>
                         <button class="aos" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="Area of Study" data-original-title="" title="">${aos}</button>
@@ -54,7 +55,7 @@ search.addWidget(
                         <button class="cpl" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="Credit for Prior Learning" data-original-title="" title="">cpl</button>
                      </li>
                      <li>
-                        <button class="ep" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="eMajor program" data-original-title="" title="">120</button>
+                        <button class="ep" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="eMajor program" data-original-title="" title="">${hours}</button>
                      </li>
                   </ul>
                </div>
@@ -85,13 +86,37 @@ function favoriteDegree(el, id, count){
   }
 };
 
-
 function abbrv(str) {
     return str.replace(/\w{4,}/g, function (s) {
         var l = s.length;
-        return s[0] + (l - 2) + s[l - 1];
+        return s[0] + s[l - 6];
     });
 };
+
+// function abbreviate(str, max, suffix)
+// {
+//   if((str = str.replace(/^\s+|\s+$/g, '').replace(/[\r\n]*\s*[\r\n]+/g, ' ').replace(/[ \t]+/g, ' ')).length <= max)
+//   {
+//     return str;
+//   }
+  
+//   var 
+//   abbr = '',
+//   str = str.split(' '),
+//   suffix = (typeof suffix !== 'undefined' ? suffix : ' ...'),
+//   max = (max - suffix.length);
+  
+//   for(var len = str.length, i = 0; i < len; i ++)
+//   {
+//     if((abbr + str[i]).length < max)
+//     {
+//       abbr += str[i] + ' ';
+//     }
+//     else { break; }
+//   }
+
+//   return abbr.replace(/[ ]$/g, '') + suffix;
+// };
 
 function itemFavorited(id){
   return !(localStorage.getItem(id) == null);
