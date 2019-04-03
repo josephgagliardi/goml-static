@@ -39,9 +39,8 @@ search.addWidget(
       favoritedCount = item['favorited_count']
       return `
             <div class="courses__top">
-               <div class="courses__top__wrapper"><img class="courses__top__image" src="${item["logo"]}" alt=""></div>
+               <div class="courses__top__wrapper"><img class="courses__top__image" src="${item["logo"]}" alt="">${favoritedIcon}</div>
             </div>
-            ${favoritedIcon}
             <div class="courses__content">
                <a class="courses__content__title" href="/course-single.php?id=${item["objectID"]}">${item["program title"]}</a>
                <div class="courses__bottom">
@@ -58,6 +57,7 @@ search.addWidget(
                         <button class="ep" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="eMajor program" data-original-title="" title="">${hours}</button>
                      </li>
                   </ul>
+
                </div>
             </div>
             <div class="row">
