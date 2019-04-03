@@ -48,7 +48,7 @@
 					<ul class="droopmenu-parent">
 						<li><a href="#">Military</a></li>
 						<li><a href="#">For Employers</a></li>
-						<li><a href="#">FAQ</a></li>
+						<li><a href="/faq.php">FAQ</a></li>
 					</ul>
 				</li>
 				<li>
