@@ -25,7 +25,6 @@ const search = instantsearch({
 
 // }
 
-search.getObjects(localStorage, )
 
 search.addWidget(
   instantsearch.widgets.searchBox({
