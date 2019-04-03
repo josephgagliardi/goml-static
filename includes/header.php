@@ -63,7 +63,7 @@
 				<li>
 					<a href="/my-favorites.php" style="color: red;">My Favorites</a>
 				</li>
-				<li><a href="#">Blog</a></li>
+				<li><a href="/blog-grid.php">Blog</a></li>
 			</ul>
 		</div>
 	</div>
