@@ -1653,6 +1653,7 @@ button.button-text:focus {
 	left: 0;
 	width: 100%;
 	height: auto;
+	min-height: 100%;
 }
 
 
@@ -10152,5 +10153,6 @@ input[type="checkbox"]:checked + label:before  {
 	width: 20px;
 	margin-left: 20px;
 	font-size: 24px;
+	cursor: pointer;
 }
 
