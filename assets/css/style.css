@@ -4135,9 +4135,6 @@ view-course-grid.courses__wrapper {
 
 /*=============================================
 2.7 Course listing page
-  2.7.1. Course listing section
-  2.7.2. Selector
-  2.7.3. Tabs
 =============================================*/
 .course-listing .header-filter__result {
 	display: none;
@@ -4162,6 +4159,10 @@ view-course-grid.courses__wrapper {
 	.courseListing {
 		margin-top: 40px;
 	}
+}
+
+.clear__filters {
+	margin-bottom: 20px;
 }
 
 .courseListing .column-left__item {
@@ -4549,7 +4550,7 @@ button.view-gird__icon {
 .header-filter__number {
 	margin-left: 5px;
 	color: #000;
-
+	display: inline-block;
 }
 
 .course-gird .list-selector {
