@@ -70,6 +70,22 @@ search.addWidget(
   })
 );
 
+function favoriteDegree(el, id, count){
+  if (itemFavorited(id)){
+    removeFavorite(id);
+    el.classList.remove('fas');
+    el.classList.add('far');
+    newCount = `${count - 1}`;
+    console.log(newCount);
+  } else {
+    addFavorite(id);
+    el.classList.remove('far');
+    el.classList.add('fas');
+    newCount = `${count + 1}`;
+  }
+};
+
+
 function abbrv(str) {
     return str.replace(/\w{4,}/g, function (s) {
         var l = s.length;
