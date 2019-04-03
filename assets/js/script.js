@@ -84,3 +84,5 @@ $('#button-view').on('click', function () {
         return text === "View Less" ? "View More" : "View Less";
     })
 });
+
+

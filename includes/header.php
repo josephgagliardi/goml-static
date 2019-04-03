@@ -60,6 +60,9 @@
 						<li><a href="#">Style Guide</a></li>
 					</ul>
 				</li>
+				<li>
+					<a href="/my-favorites.php" style="color: red;">My Favorites</a>
+				</li>
 				<li><a href="#">Blog</a></li>
 			</ul>
 		</div>

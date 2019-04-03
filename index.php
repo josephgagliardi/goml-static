@@ -287,7 +287,7 @@
 <?php include("includes/footer.php"); ?>
 <script src="/assets/js/typed.js"></script>
 <script src="../../homepage-search.js"></script>
-<!-- <script>
+<script>
 	var typed = new Typed('.typed-words', {
 		strings: ["Search for things like...", "Nexus degrees", "Fintech", "Information Technology",
 			"Early Childhood Education"
@@ -301,6 +301,6 @@
 		loop: true
 	});
 
-</script> -->
+</script>
 
 </html>
