@@ -21,7 +21,6 @@
 .form-subs__input,
 .form-subs__button,
 .tags__icon,
-.tags__text,
 .brief-course__top__bundle,
 .brief-course__top__title {
 	display: inline-block;
@@ -4163,6 +4162,11 @@ view-course-grid.courses__wrapper {
 
 .clear__filters {
 	margin-bottom: 20px;
+}
+
+.ais-CurrentRefinements-label.tags__item {
+	color: #000;
+	font-weight: 700;
 }
 
 .courseListing .column-left__item {
