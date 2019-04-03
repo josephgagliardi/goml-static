@@ -31,9 +31,15 @@
 			</div>
 			<div class="col-lg-9 col-md-9 col-sm-12">
 				<div class="bundle-header__about">
+<<<<<<< Updated upstream
 					<div class="bundle-header__image" style="background-image: url(/assets/img/course-single/header-img-1.jpg)" data-overlay="6"></div>
 					<h1 id="program__title" class="bundle-header__title">Master of Education in Early Childhood Education</h1>
 					<p id="institution__name" class="bundle-header__content">
+=======
+					<div class="bundle-header__image"></div>
+					<h1 class="bundle-header__title">Master of Education in Early Childhood Education</h1>
+					<p class="bundle-header__content">
+>>>>>>> Stashed changes
 						University Of West Georgia
 					</p>
 					<ul class="list-tags">
