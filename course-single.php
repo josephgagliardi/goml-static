@@ -2,7 +2,7 @@
 <html lang="en">
 <?php include("includes/head.php"); ?>
 <?php include("includes/header.php"); ?>
-<main class="course-single">
+<main class="bundle-content">
 	<div class="container">
 		<div class="row sticky__wrapper">
 			<div class="col-lg-3 col-md-3 col-sm-12">
