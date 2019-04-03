@@ -49,18 +49,30 @@
 				<div class="bundle-header__highlight">
 					<div class="row">
 						<div class="col-4">
-							<div class="additional_info rounded shadow p-3 p-lg-4 h-100 align-items-center">
-								<img src="/assets/img/course-single/book.svg">Degrees<strong id="program__level">Bachelor's</strong>
+							<div class="additional_info rounded shadow p-3 p-lg-4 h-100">
+								<div class="card h-100 justify-content-center">
+									<img src="/assets/img/course-single/book.svg">
+									Degrees
+									<strong id="program__level"></strong>
+								</div>
 							</div>
 						</div>
 						<div class="col-4">
-							<div class="additional_info rounded shadow p-3 p-lg-4 h-100 align-items-center">
-								<img src="/assets/img/course-single/graph.svg">Total Credit Hours<strong id="total__hours">250</strong>
+							<div class="additional_info rounded shadow p-3 p-lg-4 h-100">
+								<div class="card h-100 justify-content-center">
+									<img src="/assets/img/course-single/graph.svg">
+									Total Credit Hours
+									<strong id="total__hours"></strong>
+								</div>
 							</div>
 						</div>
 						<div class="col-4">
-							<div class="additional_info rounded shadow p-3 p-lg-4 h-100 align-items-center">
-								<img src="/assets/img/course-single/piggy-bank.svg">Cost<strong id="total__cost">$220.00</strong>
+							<div class="additional_info rounded shadow p-3 p-lg-4 h-100">
+								<div class="card h-100 justify-content-center">
+									<img src="/assets/img/course-single/piggy-bank.svg">
+									Cost
+									<strong id="total__cost"></strong>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -267,14 +279,14 @@
 	var client = algoliasearch('JBY4H547QZ', '133c145ebb78c84a04aefb61c32dba1d');
 	var index = client.initIndex('dev_PROGRAMS');
 	index.getObjects([programID.toString()], function(err, content) {
-	  if (err) throw err;
-	  program = content['results'][0];
-	  console.log(program);
+		if (err) throw err;
+		program = content['results'][0];
+		console.log(program);
 		Object.entries(program).forEach(([key, value]) => {
-		  var block = `<div class="bundle-list"><div class="bundle" id="list-link-5"><h2 class="bundle__title">${toTitleCase(key)}</h2><div class="bundle__content"><p class="detail__infor__sub">${value}</p></div></div></div>`; 
-		  if (key !== null && (value !== null && value !== '')) {
-		  	$('.bundles').append(block);
-		  };
+			var block = `<div class="bundle-list"><div class="bundle" id="list-link-5"><h2 class="bundle__title">${toTitleCase(key)}</h2><div class="bundle__content"><p class="detail__infor__sub">${value}</p></div></div></div>`;
+			if (key !== null && (value !== null && value !== '')) {
+				$('.bundles').append(block);
+			};
 		});
 		console.log(program["program title"]);
 		document.getElementById('program__title').innerHTML = program["program title"];
@@ -285,12 +297,12 @@
 	});
 
 	function toTitleCase(str) {
-	    return str.replace(
-	        /\w\S*/g,
-	        function(txt) {
-	            return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
-	        }
-	    );
+		return str.replace(
+			/\w\S*/g,
+			function(txt) {
+				return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+			}
+		);
 	};
 
 	function getParams(url) {

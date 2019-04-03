@@ -4649,6 +4649,11 @@ button.view-gird__icon {
 	font-size: 16px;
 }
 
+.additional_info .card {
+	border: none;
+	background-color: transparent;
+}
+
 .additional_info img {
 	height: 60px;
 	display: block;
@@ -7422,7 +7427,8 @@ Blog details sidebar
 	border-radius: 50px;
 }
 
-.clear__button, .ais-ClearRefinements-button {
+.clear__button,
+.ais-ClearRefinements-button {
 	display: inline-block;
 	padding: 7px 25px;
 	-webkit-border-radius: 18px;
@@ -10115,21 +10121,21 @@ Blog details sidebar
 }
 
 .filter__checkbox {
-    width: 19px;
-    height: 19px;
-    -webkit-border-radius: 3px;
-    border-radius: 3px;
-    border: 1px solid #cacaca;
-    background-color: #fff;
-    content: "";
-    font-size: 12px;
-    line-height: 19px;
-    display: inline-block;
-    padding: 0;
-    vertical-align: top;
+	width: 19px;
+	height: 19px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	border: 1px solid #cacaca;
+	background-color: #fff;
+	content: "";
+	font-size: 12px;
+	line-height: 19px;
+	display: inline-block;
+	padding: 0;
+	vertical-align: top;
 }
 
-input[type="checkbox"]:checked + label:before  {
+input[type="checkbox"]:checked + label:before {
 	border: none;
 	content: "\f00c";
 	font-family: 'Font Awesome 5 Free';
@@ -10156,3 +10162,15 @@ input[type="checkbox"]:checked + label:before  {
 	cursor: pointer;
 }
 
+@media(min-width: 992px) {
+	.container {
+		padding-left: 8px !important;
+		padding-right: 8px !important
+	}
+}
+
+@media(min-width: 1540px) {
+	.container {
+		max-width: 1440px !important
+	}
+}
