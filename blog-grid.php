@@ -34,7 +34,7 @@ fetch('blogs.json', {mode: 'no-cors'}).then(response => {
 if (entries.length > 0) {
 		for (let entry of entries) {
 			var formattedTime = moment(entry['published']['$t'], 'YYYY-MM-DD').format('LL');
-			console.log(formattedTime);
+
 			var block = `<div class="col-md-6 col-sm-6">
 					<div class="blog-col__item">
 						<div class="blog__item__left"><a class="blog__item__link" href="${entry['link'][4]['href']}" data-posturl="${entry['link'][3]['href']}"><img class="blog__item__image" src="${entry['media$thumbnail']['url']}" alt=""></a></div>
