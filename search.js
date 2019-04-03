@@ -33,6 +33,7 @@ search.addWidget(
       empty: 'No results for <q>{{ query }}</q>',
       item: function(item) {
       cpl = item["credit for prior learning"] === "TRUE" ? "inherit" : "none";
+      aos = abbrv(item["area of study"]);
       favoritedIcon = itemFavorited(item['objectID']) ? `<i class="fas fa-heart" onclick="favoriteDegree(this, ${item["objectID"]}, ${item["favorited_count"]});"></i>` : `<i class="far fa-heart" onclick="favoriteDegree(this, ${item["objectID"]}, ${item["favorited_count"]})"></i>`;
       favoritedCount = item['favorited_count']
       return `
@@ -44,10 +45,10 @@ search.addWidget(
                <a class="courses__content__title" href="/course-single.php?id=${item["objectID"]}">${item["program title"]}</a>
                <div class="courses__bottom">
                ${item["university"]}
-                  <a class="courses__col-left" href="#"><span class="courses__content__institutions">${item["area of study"]}</span></a>
+                  <a class="courses__col-left" href="#"><span class="courses__content__institutions">${aos}</span></a>
                   <ul class="list-tags pb-1">
                      <li>
-                        <button class="aos" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="Area of Study" data-original-title="" title="">aos</button>
+                        <button class="aos" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="Area of Study" data-original-title="" title="">${aos}</button>
                      </li>
                      <li style="display: ${cpl}">
                         <button class="cpl" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="Credit for Prior Learning" data-original-title="" title="">cpl</button>
