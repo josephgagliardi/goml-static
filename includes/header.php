@@ -48,7 +48,7 @@
 					<ul class="droopmenu-parent">
 						<li><a href="#">Military</a></li>
 						<li><a href="#">For Employers</a></li>
-						<li><a href="#">FAQ</a></li>
+						<li><a href="/faq.php">FAQ</a></li>
 					</ul>
 				</li>
 				<li>
@@ -63,7 +63,7 @@
 				<li>
 					<a href="/my-favorites.php" style="color: red;">My Favorites</a>
 				</li>
-				<li><a href="#">Blog</a></li>
+				<li><a href="/blog-grid.php">Blog</a></li>
 			</ul>
 		</div>
 	</div>
