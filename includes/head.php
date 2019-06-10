@@ -1,5 +1,5 @@
 <head>
-	<title>eCampus</title>
+	<title>GOML</title>
 	<meta charset="utf-8">
 	<!-- REMOVE FROM PROD-->
 	<meta name="robots" content="noindex">
