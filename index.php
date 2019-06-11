@@ -3,12 +3,12 @@
 <?php include("includes/head.php"); ?>
 <?php include("includes/header.php"); ?>
 <main>
-	<section class="banner" style="background-image: url(/assets/img/home/main-search-background-02.jpg);">
+	<section class="banner" style="background-image: url(/assets/img/home/main-search-background-01.jpg);">
 		<div class="main-search-inner">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12 text-center">
-						<h1 data-aos="fade-up" data-aos-delay="100">Success is Just a Search Away.</h1>
+						<h1 data-aos="fade-up" data-aos-delay="100" id="site-headline">Success is Just a Search Away.</h1>
 						<h2 data-aos="fade-up" data-aos-delay="200">Explore online degrees and certificates from across the University System of Georgia.</h2>
 						<div class="main-search-input" data-aos="fade-up" data-aos-delay="300">
 							<div class="row">

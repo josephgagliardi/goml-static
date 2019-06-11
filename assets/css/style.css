@@ -207,6 +207,7 @@ video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	/*font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;*/
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -254,7 +255,8 @@ table {
 /*	TYPOGRAPHY
 –––––––––––––––––––––––––––*/
 body {
-	font-family: 'Open Sans', sans-serif;
+	/*font-family: 'Open Sans', sans-serif;*/
+	font-family: 'Quicksand', sans-serif !important;
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 1.5;
@@ -2575,9 +2577,10 @@ button.button-text:focus {
 	-webkit-flex: 1;
 	-ms-flex: 1;
 	flex: 1;
-	font-size: 50px;
-	color: #000;
+	font-size: 4em;
+	color: #fffc;
 	text-align: center;
+	font-family: 'Amatic SC', sans-serif;
 }
 
 @media (max-width: 991px) {
@@ -2627,6 +2630,10 @@ button.button-text:focus {
 .list-course__header__icon-arrow::before {
 	font-size: 1em;
 	margin-left: 0;
+}
+
+.list-course__header__icon-arrow:hover {
+	width: 12px;
 }
 
 .list-course .slick-list {
@@ -2787,8 +2794,9 @@ view-course-grid.courses__wrapper {
 .best-features {
 	padding: 50px 0;
 	background-image: -webkit-gradient(linear, left bottom, left top, from(#ffffff), color-stop(52%, #fee8e8), color-stop(52%, #ffffff));
-	background-image: -webkit-linear-gradient(bottom, #ffffff, #fee8e8 52%, #ffffff);
-	background-image: linear-gradient(to top, #ffffff, #fee8e8 52%, #ffffff);
+	background-image: -webkit-linear-gradient(bottom, #ffffff, #3a5cdcd6 52%, #CA202A);
+	background-image: linear-gradient(to top, #ffffff, #3a5cdcd6 52%, #CA202A);
+	color: #ffff;
 }
 
 .image-container {
@@ -2844,6 +2852,21 @@ view-course-grid.courses__wrapper {
 
 .item__left__content p:last-child {
 	margin-bottom: 0px;
+}
+
+.item__left__content a {
+	padding: 5px;
+	border-radius: 3px;
+	background: #03a6f4b8;
+	color: #67050a;
+}
+
+.item__left__content a:hover {
+	padding: 10px;
+}
+
+.item__left__content:last-of-type {
+	color: #000;
 }
 
 
@@ -7338,7 +7361,7 @@ Blog details sidebar
 	/*background: rgb(159, 4, 27);
     background: linear-gradient(0deg, rgba(159, 4, 27, 0.9458158263305322) 18%, rgba(245, 81, 95, 0.7329306722689075) 100%);*/
 	background: rgb(159, 4, 27);
-	background: linear-gradient(0deg, rgba(159, 4, 27, 0.9458158263305322) 23%, rgba(110, 194, 180, 0.6334908963585435) 100%);
+	background: linear-gradient(0deg, rgba(27, 117, 206, 0.9458158263305322) 29%, rgba(190, 30, 20, 0.6334908963585435) 100%);
 	z-index: 2;
 }
 
@@ -10179,3 +10202,15 @@ input[type="checkbox"]:checked + label:before {
 		max-width: 1440px !important
 	}
 }
+ * {
+ 	font-family: 'Maven Pro', sans-serif;
+ }
+
+ #site-headline {
+ 	font-family: 'Amatic SC', sans-serif;
+ 	font-size: 13rem;
+ 	color: #fffc;
+ 	word-break: break-word;
+ 	line-height: 1.02em;
+ 	z-index: 0;
+ }

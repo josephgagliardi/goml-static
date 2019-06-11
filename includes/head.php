@@ -25,6 +25,7 @@
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<link rel="stylesheet" type="text/css" href="assets/css/droopmenu.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans|Amatic+SC|Maven+Pro&display=swap" rel="stylesheet">
 </head>
 
 <body data-aos="fade">

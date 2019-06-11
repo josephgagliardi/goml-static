@@ -3,7 +3,9 @@
 		<div class="container">
 			<div class="row d-flex justify-content-between py-3">
 				<div class="logo d-flex align-items-center">
-					<a href="/"><img src="/assets/img/logo/ecampus-logo.svg" alt="ecampus logo"></a>
+					<!-- <a href="/"><img src="/assets/img/logo/ecampus-logo.svg" alt="ecampus logo"></a> -->
+					<i class="fas fa-apple"></i><span class="sr-only">GOML</span>
+					
 				</div>
 				<div class="droopmenu-open-search d-flex align-items-center">
 					<button class="button-outline">Search<i class="fas fa-search"></i></button>
