@@ -14,9 +14,9 @@
 	<link rel="apple-touch-icon" sizes="144x144" href="/assets/img/icons/apple-touch-icon-144x144.png">
 	<link rel="apple-touch-icon" sizes="152x152" href="/assets/img/icons/apple-touch-icon-152x152.png">
 	<link rel="apple-touch-icon" sizes="180x180" href="/assets/img/icons/apple-touch-icon-180x180.png">
-	<link rel="icon" type="image/png" href="/assets/img/icons/goml-favi.png?v=2" sizes="16x16">
-	<link rel="icon" type="image/png" href="/assets/img/icons/goml-favi.png?v=2" sizes="32x32">
-	<link rel="icon" type="image/png" href="/assets/img/icons/goml-favi.png?v=2" sizes="96x96">
+	<link rel="icon" type="image/png" href="/assets/img/icons/goml-favi-96x96.png" sizes="16x16">
+	<link rel="icon" type="image/png" href="/assets/img/icons/goml-favi-96x96.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="/assets/img/icons/goml-favi-96x96.png" sizes="96x96">
 	<link rel="icon" type="image/png" href="/assets/img/icons/android-chrome-192x192.png" sizes="192x192">
 	<link rel="stylesheet" type="text/css" href="assets/lib/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
