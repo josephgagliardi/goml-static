@@ -3,8 +3,8 @@
 		<div class="container">
 			<div class="row d-flex justify-content-between py-3">
 				<div class="logo d-flex align-items-center">
-					<!-- <a href="/"><img src="/assets/img/logo/ecampus-logo.svg" alt="ecampus logo"></a> -->
-					<a href="/"><span id="site-name">GOML: Georgia On My Line </span><i class="fas fa-circle" id="site-icon"></i></a>
+					<a href="/"><img src="/assets/img/logo/goml-mock-logo.png" alt="ecampus logo"></a>
+					<!-- <a href="/"><span id="site-name">GOML: Georgia On My Line </span><i class="fas fa-circle" id="site-icon"></i></a> -->
 					
 				</div>
 				<div class="droopmenu-open-search d-flex align-items-center">
