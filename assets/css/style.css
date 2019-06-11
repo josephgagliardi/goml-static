@@ -2794,8 +2794,8 @@ view-course-grid.courses__wrapper {
 .best-features {
 	padding: 50px 0;
 	background-image: -webkit-gradient(linear, left bottom, left top, from(#ffffff), color-stop(52%, #fee8e8), color-stop(52%, #ffffff));
-	background-image: -webkit-linear-gradient(bottom, #ffffff, #3a5cdcd6 52%, #CA202A);
-	background-image: linear-gradient(to top, #ffffff, #3a5cdcd6 52%, #CA202A);
+	background-image: -webkit-linear-gradient(bottom, #ffffff, #3a5cdcd6 20%, #CA202A);
+	background-image: linear-gradient(to top, #ffffff, #3a5cdcd6 20%, #CA202A);
 	color: #ffff;
 }
 
@@ -10213,4 +10213,15 @@ input[type="checkbox"]:checked + label:before {
  	word-break: break-word;
  	line-height: 1.02em;
  	z-index: 0;
+ }
+
+ #site-name {
+ 	color: #1d72c5;
+ 	margin-right: 10px;
+ 	font-family: 'Maven Pro', sans-serif;
+ 	font-size: 2em;
+ }
+
+ #site-icon {
+ 	color: #f13e3ec4;
  }
