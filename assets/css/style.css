@@ -2794,8 +2794,8 @@ view-course-grid.courses__wrapper {
 .best-features {
 	padding: 50px 0;
 	background-image: -webkit-gradient(linear, left bottom, left top, from(#ffffff), color-stop(52%, #fee8e8), color-stop(52%, #ffffff));
-	background-image: -webkit-linear-gradient(bottom, #ffffff, #3a5cdcd6 20%, #CA202A);
-	background-image: linear-gradient(to top, #ffffff, #3a5cdcd6 20%, #CA202A);
+	background-image: -webkit-linear-gradient(bottom, #ffffff, #e67241 20%, #28c5da);
+	background-image: linear-gradient(to top, #ffffff, #e67241 20%, #28c5da);
 	color: #ffff;
 }
 
