@@ -3,13 +3,13 @@
 <?php include("includes/head.php"); ?>
 <?php include("includes/header.php"); ?>
 <main>
-	<section class="banner" style="background-image: url(/assets/img/home/main-search-background-02.jpg);">
+	<section class="banner" style="background-image: url(/assets/img/home/main-search-background-01.jpg);">
 		<div class="main-search-inner">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12 text-center">
-						<h1 data-aos="fade-up" data-aos-delay="100">Success is Just a Search Away.</h1>
-						<h2 data-aos="fade-up" data-aos-delay="200">Explore online programs from across Georgia.</h2>
+						<h1 data-aos="fade-up" data-aos-delay="100" id="site-headline">Success is Just a Search Away.</h1>
+						<h2 data-aos="fade-up" data-aos-delay="200">Explore online degrees and certificates from across the University System of Georgia.</h2>
 						<div class="main-search-input" data-aos="fade-up" data-aos-delay="300">
 							<div class="row">
 								<div class="col-md-3">
@@ -46,6 +46,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
+					<p class="content-text text-center">From the port of Savannah to the Blue Ridge Mountains, the University System of Georgia (USG) is dedicated to making high-quality higher education accessible from every corner of the peach state. Whether you are starting school for the first time, looking for a career change, or need to finish a degree you started years ago, Georgia On My Line (GOML) is your go-to resource for accredited and respected online programs from University System of Georgia institutions.</p><br><br>
 					<h3 class="text-center related__title">Most Searched Online Programs</h3>
 					<div class="searched courses__list">
 						<div class="courses__item">
@@ -174,19 +175,16 @@
 	<section class="best-features">
 		<div class="container">
 			<div class="list-course__header">
-				<h2 class="list-course__header__title">Our Best Features</h2>
+				<h2 class="list-course__header__title">The University System of Georgia at your Fingertips</h2>
 			</div>
 			<div class="row mb-5 justify-content-around align-items-center item__left">
 
 				<div class="col-lg-5">
 					<img class="item__icon" src="/assets/img/home/emajor-degree-icon.svg" alt="eMajor icone">
-					<h3 class="item__left__title">eMajor Degrees</h3>
+					<h3 class="item__left__title">Your Search. Your Way. </h3>
 					<div class="item__left__content">
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris convallis urna non gravida
-							auctor. Sed elit est, dictum nec nisi sagittis, consequat varius tortor. Class aptent
-							taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean vel
-							lobortis augue. Vivamus finibus vulputate odio, non venenatis nisi faucibus ac.
+							The newly designed Georgia On My Line website offers a truly user-friendly marketplace shopping experience for users. Search our database by college, area of study, degree level, and more. Narrow your results further by special features such as Credit for Prior Learning opportunities or specialized program accreditations. Find something you like? Request information to be contacted by our GOML support team or click Apply Now to go straight to the application at that institution. If you can shop online, you can use this site to find the degree that’s right for you. 
 						</p>
 						<p><a href="#">View More Programs</a></p>
 					</div>
@@ -201,13 +199,10 @@
 
 			<div class="row mb-5 justify-content-around align-items-center item__left">
 				<div class="col-lg-5 order-lg-2"><img class="item__icon" src="assets/img/home/online-learning.svg" alt="">
-					<h3 class="item__left__title">Benefits of Online Learning</h3>
+					<h3 class="item__left__title">Over 20 Colleges and Universities</h3>
 					<div class="item__left__content">
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris convallis urna non gravida
-							auctor. Sed elit est, dictum nec nisi sagittis, consequat varius tortor. Class aptent
-							taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean vel
-							lobortis augue. Vivamus finibus vulputate odio, non venenatis nisi faucibus ac.
+							Searching for an online degree can be a daunting task, and it can sometimes be difficult to decipher the legitimacy of an online program. The Georgia On My Line degree marketplace allows you to search hundreds of online degrees and certificates offered through regionally accredited USG institutions you know and trust. You can have peace of mind knowing every institution on our site is accredited by the Southern Association of Colleges and Schools Commission on Colleges (SACSCOC) and is well respected throughout Georgia, the Southeast, and the world.
 						</p>
 					</div>
 				</div>
@@ -215,6 +210,25 @@
 					<div class="image-container">
 						<img src="/assets/img/home/03.jpg" data-aos="zoom-in" data-aos-delay="100" alt="male student walking with backpack and books">
 						<img class="img-2" src="/assets/img/home/04.jpg" data-aos="zoom-in" data-aos-delay="200" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="row mb-5 justify-content-around align-items-center item__left">
+
+				<div class="col-lg-5">
+					<img class="item__icon" src="/assets/img/home/emajor-degree-icon.svg" alt="eMajor icone">
+					<h3 class="item__left__title">Hundreds of Online Programs </h3>
+					<div class="item__left__content">
+						<p>
+							The GOML degree marketplace includes over ___ online programs available throughout the University System of Georgia. From agriculture to cybersecurity, Georgia’s colleges and universities offer a wide variety of online curriculums to peak your interest and prepare you for today’s economic landscape. 
+						</p>
+						<p><a href="#">View More Programs</a></p>
+					</div>
+				</div>
+				<div class="col-lg-7">
+					<div class="image-container">
+						<img src="/assets/img/home/01.png" data-aos="zoom-in" data-aos-delay="100" alt="male student walking with backpack and books">
+						<img class="img-1" src="/assets/img/home/02.png" data-aos="zoom-in" data-aos-delay="200" alt="">
 					</div>
 				</div>
 			</div>
