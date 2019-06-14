@@ -4061,8 +4061,9 @@ view-course-grid.courses__wrapper {
 	color: #CA202A;
 }
 
-.list-categories__link {
+.ais-RefinementList-label.list-categories__link {
 	cursor: pointer;
+	width: 100%;
 }
 
 .list-categories__link:hover,
@@ -4222,11 +4223,17 @@ view-course-grid.courses__wrapper {
 	padding-left: 29px;
 }
 
-.select__number {
+.ais-RefinementList-count.select__number {
 	display: inline-block;
 	vertical-align: top;
-	text-align: right;
-	width: 40px;
+	text-align: center;
+	width: auto;
+	letter-spacing: 1.3px;
+	margin-left: 20px;
+	background-color: #fafafa;
+	color: #ca202a;
+	border-radius: 3px;
+	padding: 2px 4px;
 }
 
 .select input[type=checkbox].select__checkmark {
