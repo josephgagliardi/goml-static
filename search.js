@@ -32,14 +32,14 @@ search.addWidget(
     templates: {
       empty: 'No results for <q>{{ query }}</q>',
       item: function(item) {
-      cpl = item["credit for prior learning"] === "TRUE" ? "inherit" : "none";
+      cpl = item["Credit for Prior Learning"] === "TRUE" ? "inherit" : "none";
       aos = abbrv(item["Area of Study"]);
       hours = item["Total Credit Hours"] ? item["Total Credit Hours"] : 'N/A';
       favoritedIcon = itemFavorited(item['objectID']) ? `<i class="fas fa-heart" onclick="favoriteDegree(this, ${item["objectID"]}, ${item["favorited_count"]});"></i>` : `<i class="far fa-heart" onclick="favoriteDegree(this, ${item["objectID"]}, ${item["favorited_count"]})"></i>`;
       favoritedCount = item['favorited_count']
       return `
             <div class="courses__top">
-               <div class="courses__top__wrapper"><img class="courses__top__image" src="${item["logo"]}" alt="">${favoritedIcon}</div>
+               <div class="courses__top__wrapper"><img class="courses__top__image" src="/assets/img/course-single/header-img-1.jpg" alt="">${favoritedIcon}</div>
             </div>
             <div class="courses__content">
                <a class="courses__content__title" href="/course-single.php?id=${item["objectID"]}">${item["Program Name"]}</a>

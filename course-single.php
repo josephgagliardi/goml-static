@@ -282,6 +282,7 @@
 		if (err) throw err;
 		program = content['results'][0];
 		console.log(program);
+		hours = program["Total Credit Hours"] ? program["Total Credit Hours"] : 'N/A';
 		Object.entries(program).forEach(([key, value]) => {
 			var block = `<div class="bundle-list"><div class="bundle" id="list-link-5"><h2 class="bundle__title">${toTitleCase(key)}</h2><div class="bundle__content"><p class="detail__infor__sub">${value}</p></div></div></div>`;
 			if (key !== null && (value !== null && value !== '')) {
@@ -292,7 +293,7 @@
 		document.getElementById('program__title').innerHTML = program["Program Name"];
 		document.getElementById('institution__name').innerHTML = program["Institution"];
 		document.getElementById('program__level').innerHTML = program["Degree Level"];
-		document.getElementById('total__hours').innerHTML = program["Total Credit Hours"] : program["Total Credit Hours"] : 'N/A';
+		document.getElementById('total__hours').innerHTML = hours;
 		document.getElementById('total__cost').innerHTML = program["Per Credit Hour Tuition"];
 	});
 
