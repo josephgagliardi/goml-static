@@ -1,7 +1,7 @@
 
 
 var client = algoliasearch('JBY4H547QZ', '133c145ebb78c84a04aefb61c32dba1d');
-var index = client.initIndex('goml_institutions');
+var index = client.initIndex('goml_DEMO');
 
 
 var favoritePrograms = index.getObjects(Object.keys(localStorage));

@@ -6,7 +6,7 @@ const searchClient = algoliasearch(
 );
 
 const search = instantsearch({
-  indexName: 'goml_institutions',
+  indexName: 'goml_DEMO',
   searchClient,
   routing: true
 });
