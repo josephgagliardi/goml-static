@@ -292,7 +292,7 @@
 		document.getElementById('program__title').innerHTML = program["Program Name"];
 		document.getElementById('institution__name').innerHTML = program["Institution"];
 		document.getElementById('program__level').innerHTML = program["Degree Level"];
-		document.getElementById('total__hours').innerHTML = program["Total Credit Hours"];
+		document.getElementById('total__hours').innerHTML = program["Total Credit Hours"] : program["Total Credit Hours"] : 'N/A';
 		document.getElementById('total__cost').innerHTML = program["Per Credit Hour Tuition"];
 	});
 
