@@ -34,7 +34,7 @@ search.addWidget(
       item: function(item) {
       cpl = item["credit for prior learning"] === "TRUE" ? "inherit" : "none";
       aos = abbrv(item["Area of Study"]);
-      hours = item["Total Credit Hours"].split('(')[0];
+      hours = item["Total Credit Hours"] ? item["Total Credit Hours"].split('(')[0] : 'N/A';
       favoritedIcon = itemFavorited(item['objectID']) ? `<i class="fas fa-heart" onclick="favoriteDegree(this, ${item["objectID"]}, ${item["favorited_count"]});"></i>` : `<i class="far fa-heart" onclick="favoriteDegree(this, ${item["objectID"]}, ${item["favorited_count"]})"></i>`;
       favoritedCount = item['favorited_count']
       return `
