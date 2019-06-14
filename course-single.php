@@ -9,7 +9,7 @@
 				<div id="menu-left">
 					<div class="list-link">
 						<div class="institutions-logo-single">
-							<img src="/assets/img/institutions/UWG-shield-color.svg" alt="University of West Georgia logo">
+							<img src="/assets/img/institutions/columbus-state-university.svg" alt="University of West Georgia logo">
 						</div>
 						<nav>
 							<ul class="list-link__list">
@@ -275,9 +275,11 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
 <script>
 	var params = getParams(window.location.href);
+
 	var programID = params["id"];
 	var client = algoliasearch('JBY4H547QZ', '133c145ebb78c84a04aefb61c32dba1d');
 	var index = client.initIndex('goml_DEMO');
+	
 	index.getObjects([programID.toString()], function(err, content) {
 		if (err) throw err;
 		program = content['results'][0];
