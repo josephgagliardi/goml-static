@@ -9,7 +9,7 @@
 				<div id="menu-left">
 					<div class="list-link">
 						<div class="institutions-logo-single">
-							<img src="/assets/img/institutions/UWG-shield-color.svg" alt="University of West Georgia logo">
+							<img src="/assets/img/institutions/columbus-state-university.svg" alt="University of West Georgia logo">
 						</div>
 						<nav>
 							<ul class="list-link__list">
@@ -275,25 +275,28 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
 <script>
 	var params = getParams(window.location.href);
+
 	var programID = params["id"];
 	var client = algoliasearch('JBY4H547QZ', '133c145ebb78c84a04aefb61c32dba1d');
-	var index = client.initIndex('dev_PROGRAMS');
+	var index = client.initIndex('goml_DEMO');
+	
 	index.getObjects([programID.toString()], function(err, content) {
 		if (err) throw err;
 		program = content['results'][0];
 		console.log(program);
+		hours = program["Total Credit Hours"] ? program["Total Credit Hours"] : 'N/A';
 		Object.entries(program).forEach(([key, value]) => {
 			var block = `<div class="bundle-list"><div class="bundle" id="list-link-5"><h2 class="bundle__title">${toTitleCase(key)}</h2><div class="bundle__content"><p class="detail__infor__sub">${value}</p></div></div></div>`;
 			if (key !== null && (value !== null && value !== '')) {
 				$('.bundles').append(block);
 			};
 		});
-		console.log(program["program title"]);
-		document.getElementById('program__title').innerHTML = program["program title"];
-		document.getElementById('institution__name').innerHTML = program["university"];
-		document.getElementById('program__level').innerHTML = program["program level"];
-		document.getElementById('total__hours').innerHTML = program["total hours"];
-		document.getElementById('total__cost').innerHTML = program["tuition and fees"];
+		// console.log(program["Program Name"]);
+		document.getElementById('program__title').innerHTML = program["Program Name"];
+		document.getElementById('institution__name').innerHTML = program["Institution"];
+		document.getElementById('program__level').innerHTML = program["Degree Level"];
+		document.getElementById('total__hours').innerHTML = hours;
+		document.getElementById('total__cost').innerHTML = program["Per Credit Hour Tuition"];
 	});
 
 	function toTitleCase(str) {
