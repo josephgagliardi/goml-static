@@ -6,7 +6,7 @@ const searchClient = algoliasearch(
 );
 
 const search = instantsearch({
-  indexName: 'dev_PROGRAMS',
+  indexName: 'goml_institutions',
   searchClient,
   routing: true
 });
@@ -33,8 +33,8 @@ search.addWidget(
       empty: 'No results for <q>{{ query }}</q>',
       item: function(item) {
       cpl = item["credit for prior learning"] === "TRUE" ? "inherit" : "none";
-      aos = abbrv(item["area of study"]);
-      hours = item["total hours"].split('(')[0];
+      aos = abbrv(item["Area of Study"]);
+      hours = item["Total Credit Hours"].split('(')[0];
       favoritedIcon = itemFavorited(item['objectID']) ? `<i class="fas fa-heart" onclick="favoriteDegree(this, ${item["objectID"]}, ${item["favorited_count"]});"></i>` : `<i class="far fa-heart" onclick="favoriteDegree(this, ${item["objectID"]}, ${item["favorited_count"]})"></i>`;
       favoritedCount = item['favorited_count']
       return `
@@ -42,10 +42,10 @@ search.addWidget(
                <div class="courses__top__wrapper"><img class="courses__top__image" src="${item["logo"]}" alt="">${favoritedIcon}</div>
             </div>
             <div class="courses__content">
-               <a class="courses__content__title" href="/course-single.php?id=${item["objectID"]}">${item["program title"]}</a>
+               <a class="courses__content__title" href="/course-single.php?id=${item["objectID"]}">${item["Program Name"]}</a>
                <div class="courses__bottom">
-               ${item["university"]}
-                  <a class="courses__col-left" href="#"><span class="courses__content__institutions">${item["area of study"]}</span></a>
+               ${item["Institution"]}
+                  <a class="courses__col-left" href="#"><span class="courses__content__institutions">${item["Area of Study"]}</span></a>
                   <ul class="list-tags pb-1">
                      <li>
                         <button class="aos" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="Area of Study" data-original-title="" title="">${aos}</button>
@@ -126,7 +126,7 @@ search.addWidget(
 search.addWidget(
   instantsearch.widgets.refinementList({
     container: '#level__filter',
-    attribute: 'program level',
+    attribute: 'Degree Level',
     operator: 'or',
     limit: 5,
     showMore: true,
@@ -150,7 +150,7 @@ search.addWidget(
 search.addWidget(
   instantsearch.widgets.refinementList({
     container: '#aos__filter',
-    attribute: 'area of study',
+    attribute: 'Area of Study',
     operator: 'or',
     limit: 5,
     showMore: true,
@@ -170,7 +170,7 @@ search.addWidget(
 search.addWidget(
   instantsearch.widgets.refinementList({
     container: '#institution__filter',
-    attribute: 'university',
+    attribute: 'Institution',
     operator: 'or',
     limit: 5,
     showMore: true,
@@ -210,7 +210,7 @@ search.addWidget(
 search.addWidget(
   instantsearch.widgets.toggleRefinement({
     container: '#cpl__filter',
-    attribute: 'credit for prior learning',
+    attribute: 'Credit for Prior Learning',
     templates: {
       labelText: 'CPL',
     },

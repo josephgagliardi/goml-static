@@ -277,7 +277,7 @@
 	var params = getParams(window.location.href);
 	var programID = params["id"];
 	var client = algoliasearch('JBY4H547QZ', '133c145ebb78c84a04aefb61c32dba1d');
-	var index = client.initIndex('dev_PROGRAMS');
+	var index = client.initIndex('goml_institutions');
 	index.getObjects([programID.toString()], function(err, content) {
 		if (err) throw err;
 		program = content['results'][0];
@@ -288,12 +288,12 @@
 				$('.bundles').append(block);
 			};
 		});
-		console.log(program["program title"]);
-		document.getElementById('program__title').innerHTML = program["program title"];
-		document.getElementById('institution__name').innerHTML = program["university"];
-		document.getElementById('program__level').innerHTML = program["program level"];
-		document.getElementById('total__hours').innerHTML = program["total hours"];
-		document.getElementById('total__cost').innerHTML = program["tuition and fees"];
+		// console.log(program["Program Name"]);
+		document.getElementById('program__title').innerHTML = program["Program Name"];
+		document.getElementById('institution__name').innerHTML = program["Institution"];
+		document.getElementById('program__level').innerHTML = program["Degree Level"];
+		document.getElementById('total__hours').innerHTML = program["Total Credit Hours"];
+		document.getElementById('total__cost').innerHTML = program["Per Credit Hour Tuition"];
 	});
 
 	function toTitleCase(str) {
