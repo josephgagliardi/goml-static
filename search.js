@@ -46,18 +46,7 @@ search.addWidget(
                <div class="courses__bottom">
                ${item["Institution"]}
                   <a class="courses__col-left" href="#"><span class="courses__content__institutions">${item["Area of Study"]}</span></a>
-                  <ul class="list-tags pb-1">
-                     <li>
-                        <button class="aos" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="Area of Study" data-original-title="" title="">${aos}</button>
-                     </li>
-                     <li style="display: ${cpl}">
-                        <button class="cpl" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="Credit for Prior Learning" data-original-title="" title="">cpl</button>
-                     </li>
-                     <li>
-                        <button class="ep" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="eMajor program" data-original-title="" title="">${hours}</button>
-                     </li>
-                  </ul>
-
+                  
                </div>
             </div>
             <div class="row">
