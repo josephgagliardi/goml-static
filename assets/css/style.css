@@ -3,6 +3,11 @@
 
 =============================================*/
 
+:root {
+  /* main*/
+  --main__accent__color: #C74E1A;
+}
+
 .contend-title,
 .courses__content__title,
 .design-sprint__contents__title,
@@ -68,7 +73,7 @@
 .column-left__link,
 .course-detail__view-more {
   font-size: 14px;
-  color: #CA202A;
+  color: var(--main__accent__color);
   font-weight: bold;
   text-transform: capitalize;
   text-align: left;
@@ -281,12 +286,12 @@ button {
   -ms-transition: all 0.2s ease-out;
   -o-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
-  color: #CA202A;
+  color: color: var(--main__accent__color);
 }
 
 a:hover,
 button:hover {
-  color: #CA202A;
+  color: var(--main__accent__color);
   text-decoration: underline;
 }
 
@@ -448,7 +453,7 @@ img {
   width: 18px;
   height: 18px;
   text-align: center;
-  color: #CA202A;
+  color: var(--main__accent__color);
   background: #daf9f0;
   font-size: 9px;
   font-weight: 700;
@@ -500,7 +505,7 @@ img {
 .price-text {
   font-family: 'Open Sans', sans-serif;
   font-size: 22px;
-  color: #CA202A;
+  color: var(--main__accent__color);
 }
 
 .name-text {
@@ -576,7 +581,7 @@ img {
 }
 
 .button-default {
-  background-color: #CA202A;
+  background-color: var(--main__accent__color);
   font-weight: bold;
   color: #fff;
   font-size: 16px;
@@ -586,7 +591,7 @@ img {
 
 .button-default:hover,
 .button-default:focus {
-  border: solid 1px #CA202A;
+  border: solid 1px var(--main__accent__color);
   background-color: #A22422;
   color: #fff;
   -webkit-transition: all 0.5s ease;
@@ -596,7 +601,7 @@ img {
 .button-default .active:focus,
 .button-default .active:active {
   border: 1px solid transparent;
-  border: solid 1px #CA202A;
+  border: solid 1px var(--main__accent__color);
   background-color: #A22422;
   color: #fff;
   -webkit-transition: 1s;
@@ -612,8 +617,8 @@ img {
   font-weight: 700;
   color: #FFF;
   padding: 13px 51px;
-  background-color: #CA202A;
-  border: 1px solid #CA202A;
+  background-color: var(--main__accent__color);
+  border: 1px solid var(--main__accent__color);
 }
 
 .button-default-lg:hover,
@@ -657,8 +662,8 @@ img {
   -webkit-border-radius: 18px;
   border-radius: 18px;
   background-color: #fff;
-  border: solid 1px #CA202A;
-  color: #CA202A;
+  border: solid 1px var(--main__accent__color);
+  color: var(--main__accent__color);
   font-size: 14px;
   text-transform: capitalize;
   -webkit-transition: all 0.5s ease;
@@ -667,7 +672,7 @@ img {
 
 .button-outline:hover,
 .button-outline:focus {
-  background-color: #CA202A;
+  background-color: var(--main__accent__color);
   color: #fff;
   text-decoration: underline;
 }
@@ -675,22 +680,22 @@ img {
 .button-outline-02 {
   font-size: 16px;
   font-weight: 700;
-  color: #CA202A;
+  color: var(--main__accent__color);
   padding: 13px 51px;
   background-color: #FFF;
-  border: 1px solid #CA202A;
+  border: 1px solid var(--main__accent__color);
 }
 
 .button-outline-02:hover,
 .button-outline-02:focus {
-  background-color: #CA202A;
+  background-color: var(--main__accent__color);
   color: #fff;
   text-decoration: underline;
 }
 
 button.button-text {
   font-size: 14px;
-  color: #CA202A;
+  color: var(--main__accent__color);
   background-color: none;
   font-weight: bold;
   text-transform: capitalize;
@@ -701,7 +706,7 @@ button.button-text {
 
 .see-more-button-text {
   font-size: 14px;
-  color: #CA202A;
+  color: var(--main__accent__color);
   background-color: none;
   font-weight: bold;
   text-transform: capitalize;
@@ -712,7 +717,7 @@ button.button-text {
 
 button.button-text:hover,
 button.button-text:focus {
-  color: #CA202A;
+  color: var(--main__accent__color);
   text-decoration: underline;
 }
 
@@ -789,7 +794,7 @@ button.button-text:focus {
   overflow: hidden;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
-  background-color: #CA202A;
+  background-color: var(--main__accent__color);
 }
 
 /*=============================================
@@ -807,7 +812,7 @@ button.button-text:focus {
 .rating-start::before,
 .rating-start::after {
   font-family: 'Font Awesome 5 Free';
-  color: #CA202A;
+  color: var(--main__accent__color);
   font-weight: 900;
 }
 
@@ -866,12 +871,12 @@ button.button-text:focus {
 
 .breadcrumb-wrapper .breadcrumb__link:hover,
 .breadcrumb-wrapper .breadcrumb__link .active {
-  color: #CA202A;
+  color: var(--main__accent__color);
   text-decoration: underline;
 }
 
 .breadcrumb-wrapper .breadcrumb .active {
-  color: #CA202A;
+  color: var(--main__accent__color);
   text-decoration: underline;
 }
 
@@ -973,7 +978,7 @@ button.button-text:focus {
 
 .oval:hover {
   border: none;
-  background-color: #CA202A;
+  background-color: var(--main__accent__color);
 }
 
 .oval:hover [class*="fa-"]::before {
@@ -981,7 +986,7 @@ button.button-text:focus {
 }
 
 .oval [class*="fa-"]::before {
-  color: #CA202A;
+  color: var(--main__accent__color);
   font-size: 20px !important;
 }
 
@@ -991,7 +996,7 @@ button.button-text:focus {
   height: 30px;
   -webkit-border-radius: 50%;
   border-radius: 50%;
-  background: #CA202A;
+  background: var(--main__accent__color);
   text-align: center;
   padding: 3px 0;
   border: none;
@@ -1082,7 +1087,7 @@ button.button-text:focus {
   font-family: 'Open Sans', sans-serif;
   font-size: 12px;
   font-weight: 600;
-  background-color: #CA202A;
+  background-color: var(--main__accent__color);
   text-align: left;
 }
 
@@ -1178,7 +1183,7 @@ button.button-text:focus {
   color: white;
   text-align: center;
   text-indent: -9999px;
-  background-color: #CA202A;
+  background-color: var(--main__accent__color);
 }
 
 .stat-bar-rating {
@@ -1305,7 +1310,7 @@ button.button-text:focus {
 .card-price-menu__item.item-free {
   -webkit-box-shadow: none;
   box-shadow: none;
-  border: solid 1px #CA202A;
+  border: solid 1px var(--main__accent__color);
 }
 
 .card-price-menu__item.active:not(.item-free),
@@ -1320,7 +1325,7 @@ button.button-text:focus {
   -webkit-transform: scale(1.06);
   -ms-transform: scale(1.06);
   transform: scale(1.06);
-  background-color: #CA202A;
+  background-color: var(--main__accent__color);
   -webkit-box-shadow: -0.2px 3px 16px 0 #ebebeb;
   box-shadow: -0.2px 3px 16px 0 #ebebeb;
 }
@@ -1357,7 +1362,7 @@ button.button-text:focus {
 .card-price-menu__item.active:not(.item-free) .card-price-body__button .btn-green,
 .card-price-menu__item:hover:not(.item-free) .card-price-body__button .btn-green {
   background-color: #fff;
-  color: #CA202A;
+  color: var(--main__accent__color);
 }
 
 .card-price-menu__item.active:not(.item-free) .card-price-body__button .btn-green:hover,
@@ -1365,7 +1370,7 @@ button.button-text:focus {
 .card-price-menu__item:hover:not(.item-free) .card-price-body__button .btn-green:hover,
 .card-price-menu__item:hover:not(.item-free) .card-price-body__button .btn-green:focus {
   background-color: #fff;
-  color: #CA202A;
+  color: var(--main__accent__color);
 }
 
 .card-price-menu__item .card-price-top {
@@ -1384,7 +1389,7 @@ button.button-text:focus {
 .card-price-menu__item .card-price-top__nature {
   font-size: 14px;
   font-weight: bold;
-  color: #CA202A;
+  color: var(--main__accent__color);
   margin-bottom: 16px;
 }
 
@@ -1440,7 +1445,7 @@ button.button-text:focus {
 .card-price-menu__item .card-price-body__button .btn-green:hover,
 .card-price-menu__item .card-price-body__button .btn-green:focus {
   background-color: #fff;
-  color: #CA202A;
+  color: var(--main__accent__color);
 }
 
 /*=============================================
@@ -1585,7 +1590,7 @@ button.button-text:focus {
 
 .carousel-slide .carousel-slide__item__info .icon-quote::before {
   font-size: 40px;
-  color: #CA202A;
+  color: var(--main__accent__color);
 }
 
 @media (max-width: 768px) {
@@ -1670,7 +1675,7 @@ button.button-text:focus {
 }
 
 .courses__content__title:hover {
-  color: #CA202A;
+  color: var(--main__accent__color);
 }
 
 .courses__content__institutions {
@@ -1757,7 +1762,7 @@ button.button-text:focus {
 }
 
 .courses__hover-content__item:hover {
-  background-color: #CA202A;
+  background-color: var(--main__accent__color);
   color: #fff;
 }
 
@@ -1984,7 +1989,7 @@ button.button-text:focus {
 }
 
 .form-search__icon:hover {
-  color: #CA202A;
+  color: var(--main__accent__color);
 }
 
 .form-search__icon::before {
@@ -2038,7 +2043,7 @@ button.button-text:focus {
 .form-search__expand input[type=search]:focus {
 
   background-color: transparent;
-  border-color: #CA202A;
+  border-color: var(--main__accent__color);
 
 
   -webkit-box-shadow: 0px 0px 8px 1px rgba(202, 32, 42, 0.59);
@@ -2138,7 +2143,7 @@ button.button-text:focus {
 }
 
 .nav-right__item:hover .nav-right__item__notification {
-  background-color: #CA202A;
+  background-color: var(--main__accent__color);
   color: #daf9f0;
 }
 
@@ -2153,7 +2158,7 @@ button.button-text:focus {
   line-height: 18px;
   font-size: 9px;
   background-color: #daf9f0;
-  color: #CA202A;
+  color: var(--main__accent__color);
   font-weight: bold;
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
@@ -2177,7 +2182,7 @@ button.button-text:focus {
 }
 
 .nav-right__profile:hover {
-  color: #CA202A;
+  color: var(--main__accent__color);
 }
 
 .nav-right__profile:hover .profile {
@@ -2201,7 +2206,7 @@ button.button-text:focus {
   top: 1px;
   -webkit-border-radius: 50%;
   border-radius: 50%;
-  background-color: #CA202A;
+  background-color: var(--main__accent__color);
 }
 
 .nav-right__signin {
@@ -2228,7 +2233,7 @@ button.button-text:focus {
 
 .nav-right__signin__link:hover,
 .nav-right__signin__link:focus {
-  color: #CA202A;
+  color: var(--main__accent__color);
 }
 
 .nav-right--notlogin {
@@ -2320,7 +2325,7 @@ button.button-text:focus {
 
 .profile__course:hover,
 .profile__course:focus {
-  color: #CA202A;
+  color: var(--main__accent__color);
 }
 
 .profile__btn {
@@ -2392,7 +2397,7 @@ button.button-text:focus {
 
 .menu-main li.menu-main__item.active a.menu-main__link {
   background-color: #fff;
-  color: #CA202A;
+  color: var(--main__accent__color);
   -webkit-transition: color 250ms ease-out;
   transition: color 250ms ease-out;
 }
@@ -2417,7 +2422,7 @@ button.button-text:focus {
 .menu-main li.menu-main__item > a.menu-main__link:hover,
 .menu-main li.menu-main__item > a.menu-main__link.active {
   background-color: #fff;
-  color: #CA202A;
+  color: var(--main__accent__color);
   -webkit-transition: color 250ms ease-out;
   transition: color 250ms ease-out;
 }
@@ -2590,12 +2595,12 @@ button.button-text:focus {
 .list-course__header__btn {
   cursor: pointer;
   font-size: 14px;
-  color: #CA202A;
+  color: var(--main__accent__color);
   text-transform: uppercase;
 }
 
 .list-course__header__btn:hover {
-  color: #CA202A;
+  color: var(--main__accent__color);
 }
 
 .list-course__header__btn:hover .list-course__header__icon {
@@ -2611,13 +2616,13 @@ button.button-text:focus {
   margin-left: 10px;
   -webkit-border-radius: 50%;
   border-radius: 50%;
-  background-color: #CA202A;
+  background-color: var(--main__accent__color);
   color: #fafafa;
   cursor: pointer;
 }
 
 .list-course__header__icon:hover {
-  background-color: #CA202A;
+  background-color: var(--main__accent__color);
 }
 
 .list-course__header__icon-arrow {
@@ -2681,7 +2686,7 @@ view-course-grid.courses__wrapper {
 }
 
 .courses__content__title:hover {
-  color: #CA202A;
+  color: var(--main__accent__color);
 }
 
 .courses__content__institutions {
@@ -2774,7 +2779,7 @@ view-course-grid.courses__wrapper {
 
 .col-right {
   font-size: 22px;
-  color: #CA202A;
+  color: var(--main__accent__color);
 }
 
 .specializations .rating-start {
@@ -2792,8 +2797,8 @@ view-course-grid.courses__wrapper {
 .best-features {
   padding: 50px 0;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#ffffff), color-stop(52%, #fee8e8), color-stop(52%, #ffffff));
-  background-image: -webkit-linear-gradient(bottom, #ffffff, #3a5cdcd6 20%, #CA202A);
-  background-image: linear-gradient(to top, #ffffff, #3a5cdcd6 20%, #CA202A);
+  background-image: -webkit-linear-gradient(bottom, #ffffff, #3a5cdcd6 20%, var(--main__accent__color));
+  background-image: linear-gradient(to top, #ffffff, #3a5cdcd6 20%, var(--main__accent__color));
   color: #ffff;
 }
 
@@ -2890,7 +2895,7 @@ view-course-grid.courses__wrapper {
   display: table;
   margin: 0 15px;
   padding: 48px 50px;
-  background-color: #CA202A;
+  background-color: var(--main__accent__color);
   color: #fff;
   cursor: pointer;
 }
@@ -3048,7 +3053,7 @@ view-course-grid.courses__wrapper {
 }
 
 .blog__item__title:hover {
-  color: #CA202A;
+  color: var(--main__accent__color);
 }
 
 .blog__item__author {
@@ -3060,7 +3065,7 @@ view-course-grid.courses__wrapper {
 }
 
 .blog__item__author:hover {
-  color: #CA202A;
+  color: var(--main__accent__color);
 }
 
 .blog__item--right {
@@ -3274,7 +3279,7 @@ view-course-grid.courses__wrapper {
 .testimotials__list .slick-next:hover,
 .testimotials__list .slick-next:focus {
   border: 1px solid #fff;
-  background-color: #CA202A;
+  background-color: var(--main__accent__color);
   -webkit-transition: background-color 0.05s ease;
   transition: background-color 0.05s ease;
 }
@@ -3743,7 +3748,7 @@ view-course-grid.courses__wrapper {
 }
 
 .footer .icon-video:hover {
-  color: #CA202A;
+  color: var(--main__accent__color);
 }
 
 .footer .icon-video__icon {
@@ -3845,7 +3850,7 @@ view-course-grid.courses__wrapper {
 }
 
 .footer-link__link:hover {
-  color: #CA202A;
+  color: var(--main__accent__color);
 }
 
 .footer-link__link--contact {
@@ -4056,7 +4061,7 @@ view-course-grid.courses__wrapper {
 }
 
 .list-categories .active {
-  color: #CA202A;
+  color: var(--main__accent__color);
 }
 
 .ais-RefinementList-label.list-categories__link {
@@ -4067,7 +4072,7 @@ view-course-grid.courses__wrapper {
 .list-categories__link:hover,
 .list-categories__link:focus,
 .list-categories__link.active {
-  color: #CA202A;
+  color: var(--main__accent__color);
 }
 
 .column-right {
@@ -4127,7 +4132,7 @@ view-course-grid.courses__wrapper {
 .pagination li.pagination__item > a.pagination__link.active {
   -webkit-border-radius: 2px;
   border-radius: 2px;
-  background-color: #CA202A;
+  background-color: var(--main__accent__color);
   color: #fff;
   z-index: 0;
 }
@@ -4144,7 +4149,7 @@ view-course-grid.courses__wrapper {
 .pagination li.pagination__item:last-child > a.pagination__link:focus,
 .pagination li.pagination__item:nth-last-child(2) > a.pagination__link:hover,
 .pagination li.pagination__item:nth-last-child(2) > a.pagination__link:focus {
-  color: #CA202A;
+  color: var(--main__accent__color);
   background-color: #fff;
 }
 
@@ -4229,7 +4234,7 @@ view-course-grid.courses__wrapper {
   letter-spacing: 1.3px;
   margin-left: 20px;
   background-color: #fafafa;
-  color: #ca202a;
+  color: var(--main__accent__color);
   border-radius: 3px;
   padding: 2px 4px;
 }
@@ -4263,7 +4268,7 @@ view-course-grid.courses__wrapper {
   content: "\f00c";
   font-family: 'Font Awesome 5 Free';
   font-weight: 600;
-  background-color: #CA202A;
+  background-color: var(--main__accent__color);
   color: #fff;
   text-align: center;
 }
@@ -4273,7 +4278,7 @@ view-course-grid.courses__wrapper {
 	content: "\f00c";
 	font-family: 'Font Awesome 5 Free';
 	font-weight: 600;
-	background-color: #CA202A;
+	background-color: var(--main__accent__color);
 	color: #fff;
 	text-align: center;
 }*/
@@ -4283,7 +4288,7 @@ view-course-grid.courses__wrapper {
   content: "\f00c";
   font-family: 'Font Awesome 5 Free';
   font-weight: 600;
-  background-color: #CA202A;
+  background-color: var(--main__accent__color);
   color: #fff;
   text-align: center;
 }
@@ -4441,7 +4446,7 @@ button.view-gird__icon {
 .view-gird__icon:focus,
 .view-gird__icon:hover,
 .view-gird__icon:focus {
-  color: #CA202A;
+  color: var(--main__accent__color);
   cursor: pointer;
 }
 
@@ -4677,7 +4682,7 @@ button.view-gird__icon {
 
 .additional_info {
   text-transform: capitalize;
-  background-color: #CA202A;
+  background-color: var(--main__accent__color);
   text-align: center;
   font-size: 16px;
 }
@@ -4880,7 +4885,7 @@ button.view-gird__icon {
 
 .list-link__link:hover,
 .list-link__link:focus {
-  color: #CA202A;
+  color: var(--main__accent__color);
 }
 
 .list-link__btn {
@@ -5301,13 +5306,13 @@ button.view-gird__icon {
     bottom: 0;
     padding: 15px;
     text-align: center;
-    background-color: #CA202A;
+    background-color: var(--main__accent__color);
     color: #fff;
   }
 }
 
 .course-detail__view-more:hover {
-  color: #CA202A;
+  color: var(--main__accent__color);
 }
 
 .list-brief-content__item {
@@ -5395,7 +5400,7 @@ button.view-gird__icon {
 
 .list-brief__item__kind:hover,
 .list-brief__item__kind:focus {
-  color: #CA202A;
+  color: var(--main__accent__color);
 }
 
 .list-brief__item__content {
@@ -5408,7 +5413,7 @@ button.view-gird__icon {
 
 .list-brief__item__content:hover,
 .list-brief__item__content:focus {
-  color: #CA202A;
+  color: var(--main__accent__color);
 }
 
 .course-detail > .course-detail__content .list-brief::last-child {
@@ -5518,7 +5523,7 @@ button.view-gird__icon {
 
 .accordion__link:hover,
 .accordion__link:focus {
-  color: #CA202A;
+  color: var(--main__accent__color);
 }
 
 .accordion__link[aria-expanded="true"] i.accordion__icon::before {
@@ -5914,7 +5919,7 @@ Institution details pages
 }
 
 .our-team__name:hover {
-  color: #CA202A;
+  color: var(--main__accent__color);
 }
 
 .our-team__job {
@@ -6196,7 +6201,7 @@ Bundle details page
   height: 5px;
   -webkit-border-radius: 50%;
   border-radius: 50%;
-  background-color: #CA202A;
+  background-color: var(--main__accent__color);
 }
 
 .brief-course {
@@ -6315,7 +6320,7 @@ Bundle details page
 }
 
 .brief-course__buton__icon:hover {
-  background-color: #CA202A;
+  background-color: var(--main__accent__color);
   color: #fff;
 }
 
@@ -6378,7 +6383,7 @@ Bundle details page
 }
 
 .list-brief__top__title a:hover {
-  color: #CA202A;
+  color: var(--main__accent__color);
 }
 
 .brief-course .list-brief__top__sub {
@@ -6720,7 +6725,7 @@ Blog grid page
 }
 
 .intro-course__infor__name:hover {
-  color: #CA202A;
+  color: var(--main__accent__color);
 }
 
 .intro-course__infor__time {
@@ -7277,7 +7282,7 @@ Blog details sidebar
 .bg-details-right__item .list-categories__item .list-categories__link:hover,
 .bg-details-right__item .list-categories__item .list-categories__link:focus,
 .bg-details-right__item .list-categories__item .list-categories__link.active {
-  color: #CA202A;
+  color: var(--main__accent__color);
 }
 
 .bg-details-right .instructor-right__item {
@@ -7327,7 +7332,7 @@ Blog details sidebar
 .history-twitter__item a {
   display: inline-block;
   padding: 0 5px;
-  color: #CA202A;
+  color: var(--main__accent__color);
 }
 
 .history-twitter__item__top {
@@ -7342,7 +7347,7 @@ Blog details sidebar
   position: absolute;
   left: 0;
   top: 0;
-  color: #CA202A;
+  color: var(--main__accent__color);
 }
 
 /*==============================
@@ -7467,8 +7472,8 @@ Blog details sidebar
   -webkit-border-radius: 18px;
   border-radius: 18px;
   background-color: #fff;
-  border: solid 1px #CA202A;
-  color: #CA202A;
+  border: solid 1px var(--main__accent__color);
+  color: var(--main__accent__color);
   font-size: 14px;
   text-transform: capitalize;
   -webkit-transition: all 0.5s ease;
@@ -7915,7 +7920,7 @@ Blog details sidebar
 .section-specializationsl .header-section .view-wrapper .view-text {
   font-size: 14px;
   font-weight: 700;
-  color: #CA202A;
+  color: var(--main__accent__color);
 }
 
 .section-specializationsl .header-section .view-wrapper .view-text:hover {
@@ -7947,7 +7952,7 @@ Blog details sidebar
   position: absolute;
   width: 270px;
   height: 2px;
-  border: solid 1px #CA202A;
+  border: solid 1px var(--main__accent__color);
   bottom: 0;
   left: 0;
   right: 0;
@@ -8119,7 +8124,7 @@ Blog details sidebar
   position: absolute;
   width: 270px;
   height: 2px;
-  border: solid 1px #CA202A;
+  border: solid 1px var(--main__accent__color);
   top: 0;
   left: 0;
   right: 0;
@@ -8347,7 +8352,7 @@ Blog details sidebar
   right: 50%;
   height: 3px;
   width: 0%;
-  background-color: #CA202A;
+  background-color: var(--main__accent__color);
   -webkit-transition: all .3s;
   transition: all .3s;
 }
@@ -8508,7 +8513,7 @@ Blog details sidebar
 .coming-page__box__top h1.title-text {
   font-size: 80px;
   font-weight: 800;
-  color: #CA202A;
+  color: var(--main__accent__color);
 }
 
 @media (max-width: 575px) {
@@ -8565,7 +8570,7 @@ Blog details sidebar
   font-size: 50px;
   font-weight: 800;
   line-height: 1.4;
-  color: #CA202A;
+  color: var(--main__accent__color);
 }
 
 @media (max-width: 575px) {
@@ -8606,7 +8611,7 @@ Blog details sidebar
 }
 
 .contact-page__breadcrumb .active {
-  color: #CA202A !important;
+  color: var(--main__accent__color) !important;
 }
 
 .contact-page__breadcrumb .breadcrumb__link {
@@ -8614,7 +8619,7 @@ Blog details sidebar
 }
 
 .contact-page__breadcrumb .breadcrumb__link:hover:not(.active) {
-  color: #CA202A !important;
+  color: var(--main__accent__color) !important;
 }
 
 .cotact-page__box h4 {
@@ -8628,7 +8633,7 @@ Blog details sidebar
 
 .cotact-page__box .icon-contact::before {
   font-size: 16px;
-  color: #CA202A;
+  color: var(--main__accent__color);
 }
 
 .contact-page__box__left {
@@ -8832,7 +8837,7 @@ Blog details sidebar
 }
 
 .contact-page__box__right .contact-connect .contact-connect__item .contact-connect__link:hover {
-  color: #CA202A;
+  color: var(--main__accent__color);
   background: rgba(9, 193, 153, 0.08);
 }
 
@@ -9046,7 +9051,7 @@ Blog details sidebar
 
 .university-menu__item:hover,
 .university-menu__item:focus {
-  color: #CA202A;
+  color: var(--main__accent__color);
   box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
 }
 
@@ -9473,7 +9478,7 @@ Blog details sidebar
   display: inline-block;
   font-size: 14px;
   font-weight: 700;
-  color: #CA202A;
+  color: var(--main__accent__color);
 }
 
 .student-reviews-course-detail .view-wrapper .mini-oval {
@@ -9754,7 +9759,7 @@ Blog details sidebar
 .ask-course-detail .ask-course .view-wrapper .view-text {
   font-size: 14px;
   font-weight: 700;
-  color: #CA202A;
+  color: var(--main__accent__color);
 }
 
 .ask-course-detail .ask-course .view-wrapper .mini-oval {
@@ -9807,7 +9812,7 @@ Blog details sidebar
 }
 
 .ask-course-detail .ask-course__item__ask .title-text:hover {
-  color: #CA202A;
+  color: var(--main__accent__color);
 }
 
 .ask-course-detail .btn-view-more-ab-rb {
@@ -10035,7 +10040,7 @@ Blog details sidebar
 }
 
 .signin-form__tabs__link:hover {
-  color: #CA202A;
+  color: var(--main__accent__color);
 }
 
 .signin-form__tabs__link:focus {
@@ -10086,7 +10091,7 @@ Blog details sidebar
 }
 
 .signin-form__link:hover {
-  color: #CA202A;
+  color: var(--main__accent__color);
 }
 
 @media (max-width: 479px) {
@@ -10105,7 +10110,7 @@ Blog details sidebar
 }
 
 .signin-form__footer__link:hover {
-  color: #CA202A;
+  color: var(--main__accent__color);
 }
 
 @media (max-width: 479px) {
@@ -10173,7 +10178,7 @@ input[type="checkbox"]:checked + label:before {
   content: "\f00c";
   font-family: 'Font Awesome 5 Free';
   font-weight: 600;
-  background-color: #CA202A;
+  background-color: var(--main__accent__color);
   color: #fff;
   text-align: center;
 }
