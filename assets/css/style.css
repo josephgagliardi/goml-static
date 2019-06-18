@@ -6,6 +6,9 @@
 :root {
   /* main*/
   --main__accent__color: #C74E1A;
+
+  /* secondary*/
+  --secondary__accent__color: #E67242;
 }
 
 .contend-title,
@@ -592,20 +595,22 @@ img {
 .button-default:hover,
 .button-default:focus {
   border: solid 1px var(--main__accent__color);
-  background-color: #A22422;
+  background-color: var(--secondary__accent__color);
   color: #fff;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  text-decoration: underline;
 }
 
 .button-default .active:focus,
 .button-default .active:active {
   border: 1px solid transparent;
   border: solid 1px var(--main__accent__color);
-  background-color: #A22422;
+  background-color: var(--secondary__accent__color);
   color: #fff;
   -webkit-transition: 1s;
   transition: 1s;
+  text-decoration: underline;
 }
 
 .button-default:focus {
@@ -623,7 +628,7 @@ img {
 
 .button-default-lg:hover,
 .button-default-lg:focus {
-  background-color: #A22422;
+  background-color: var(--secondary__accent__color);
   color: #fff;
   text-decoration: underline;
 }
