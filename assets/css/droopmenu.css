@@ -38,7 +38,7 @@
 
 .droopmenu-inner,
 .droopmenu-boxed {
-  max-width: 1140px;
+  max-width: 1440px;
   position: relative;
   margin: 0 auto;
   z-index: 10;
@@ -64,9 +64,9 @@
 
 .dm-nav-brand a img,
 .droopmenu-brand img {
-  height: 35px;
+  height: 70px;
   position: relative;
-  top: 5px;
+  top: 10px;
 }
 
 .dm-nav-brand a,
@@ -171,15 +171,15 @@
 	------------------------------------------------------- */
 
 .droopmenu-header {
-  height: 70px;
+  height: 100px;
 }
 
 .dm-nav-brand a,
 .droopmenu-brand,
 .droopmenu > li > a,
 .droopmenu > li > span {
-  line-height: 70px;
-  height: 70px;
+  line-height: 100px;
+  height: 100px;
 }
 
 .droopmenu > li i {
