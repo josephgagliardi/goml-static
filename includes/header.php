@@ -54,8 +54,8 @@
     <div class="dm-search-wrapper">
       <div class="dm-modal-form">
         <form>
-          <input type="text" name="q" id="q" placeholder="Search...">
-          <label for="q"></label>
+          <input type="text" name="query" id="query" placeholder="Search...">
+          <label for="query"></label>
           <button type="submit">
             <i class="far fa-arrow-alt-circle-right"></i><span class="sr-only">Perform Search</span>
           </button>
