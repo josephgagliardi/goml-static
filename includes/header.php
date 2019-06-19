@@ -35,7 +35,7 @@
 <nav class="droopmenu-navbar">
   <div class="droopmenu-inner">
     <div class="droopmenu-header">
-      <a href="#" class="droopmenu-brand"><img src="/assets/img/logo/goml-logo.svg" alt="goml logo and return to home page"></a>
+      <a href="/" class="droopmenu-brand"><img src="/assets/img/logo/goml-logo.svg" alt="goml logo and return to home page"></a>
       <a href="#" role="button" class="droopmenu-toggle">
         <span>Menu</span>
       </a>
