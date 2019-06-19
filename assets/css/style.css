@@ -5471,18 +5471,18 @@ button.view-gird__icon {
   }
 }
 
-.accordion--course-single {
+.accordion--program-single {
   margin-bottom: 60px;
 }
 
 @media (max-width: 768px) {
-  .accordion--course-single {
+  .accordion--program-single {
     margin-bottom: 40px;
   }
 }
 
 @media (max-width: 479px) {
-  .accordion--course-single {
+  .accordion--program-single {
     margin-bottom: 20px;
   }
 }
