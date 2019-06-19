@@ -274,6 +274,8 @@
 <script src="/assets/js/course-single.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
 <script>
+	//Chop of the tailing param of the URL to find the Algolia ID 
+	//TODO: convert this to use the program name
 	var params = getParams(window.location.href);
 
 	var programID = params["id"];
