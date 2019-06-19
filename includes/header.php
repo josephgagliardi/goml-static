@@ -43,7 +43,7 @@
     <div class="droopmenu-nav">
       <ul class="droopmenu">
         <li><a href="/index.php">Home</a></li>
-        <li><a href="/course-listing.php">Degrees & Programs</a></li>
+        <li><a href="/program-listing.php">Degrees & Programs</a></li>
         <li><a href="/Institutions-listing.php">Institutions</a></li>
         <li><a href="/blog-grid.php">Blog</a></li>
       </ul>

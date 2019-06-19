@@ -4167,15 +4167,15 @@ view-course-grid.courses__wrapper {
 /*=============================================
 2.7 Course listing page
 =============================================*/
-.course-listing .header-filter__result {
+.program-listing .header-filter__result {
   display: none;
 }
 
-.course-listing .rating-start {
+.program-listing .rating-start {
   display: none;
 }
 
-.course-listing .courses__content {
+.program-listing .courses__content {
   -webkit-box-shadow: unset;
   box-shadow: unset;
   -webkit-transition: all 0.5s;
