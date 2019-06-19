@@ -42,132 +42,84 @@
       </div>
     </div>
   </section>
+  <section>
+    <div class="list-icons">
+      <div class="container-fluid">
+        <div class="row list-icons__list">
+          <div class="list-icons__item">
+            <a class="list-icons__link" href=" #">
+              <img class="list-icons__image" src="/assets/img/institutions/abraham-baldwin-agricultural-college.svg" alt=""></a>
+          </div>
+          <div class="list-icons__item"><a class="list-icons__link" href="#">
+              <img class="list-icons__image" src="/assets/img/institutions/albany-state.svg" alt=""></a>
+          </div>
+          <div class="list-icons__item"><a class="list-icons__link" href="#">
+              <img class="list-icons__image" src="/assets/img/institutions/atlanta-metro.svg" alt=""></a>
+          </div>
+          <div class="list-icons__item"><a class="list-icons__link" href="#">
+              <img class="list-icons__image" src="/assets/img/institutions/augusta-university.svg" alt=""></a>
+          </div>
+          <div class="list-icons__item"><a class="list-icons__link" href="#">
+              <img class="list-icons__image" src="/assets/img/institutions/clayton-state.svg" alt=""></a>
+          </div>
+          <div class="list-icons__item"><a class="list-icons__link" href="#">
+              <img class="list-icons__image" src="/assets/img/institutions/college-of-coastal-georgia.svg" alt=""></a>
+          </div>
+          <div class="list-icons__item"><a class="list-icons__link" href="#">
+              <img class="list-icons__image" src="/assets/img/institutions/columbus-state-university.svg" alt=""></a>
+          </div>
+          <div class="list-icons__item"><a class="list-icons__link" href="#">
+              <img class="list-icons__image" src="/assets/img/institutions/dalton-state.svg" alt=""></a>
+          </div>
+          <div class="list-icons__item"><a class="list-icons__link" href="#">
+              <img class="list-icons__image" src="/assets/img/institutions/east-georgia-state-college.svg" alt=""></a>
+          </div>
+          <div class="list-icons__item"><a class="list-icons__link" href="#">
+              <img class="list-icons__image" src="/assets/img/institutions/fort-valley-state-university.svg" alt=""></a>
+          </div>
+          <div class="list-icons__item"><a class="list-icons__link" href="#">
+              <img class="list-icons__image" src="/assets/img/institutions/georgia-college.svg" alt=""></a>
+          </div>
+          <div class="list-icons__item"><a class="list-icons__link" href="#">
+              <img class="list-icons__image" src="/assets/img/institutions/georgia-gwinnett-college.svg" alt=""></a>
+          </div>
+          <div class="list-icons__item"><a class="list-icons__link" href="#">
+              <img class="list-icons__image" src="/assets/img/institutions/georgia-highlands-college.svg" alt=""></a>
+          </div>
+          <div class="list-icons__item"><a class="list-icons__link" href="#">
+              <img class="list-icons__image" src="/assets/img/institutions/georgia-southern-university.svg" alt=""></a>
+          </div>
+          <div class="list-icons__item"><a class="list-icons__link" href="#">
+              <img class="list-icons__image" src="/assets/img/institutions/georgia-southwest-state-university.svg" alt=""></a>
+          </div>
+          <div class="list-icons__item"><a class="list-icons__link" href="#">
+              <img class="list-icons__image" src="/assets/img/institutions/georgia-state.svg" alt=""></a>
+          </div>
+          <div class="list-icons__item"><a class="list-icons__link" href="#">
+              <img class="list-icons__image" src="/assets/img/institutions/georgia-tech.svg" alt=""></a>
+          </div>
+          <div class="list-icons__item"><a class="list-icons__link" href="#">
+              <img class="list-icons__image" src="/assets/img/institutions/gordon.svg" alt=""></a>
+          </div>
+          <div class="list-icons__item"><a class="list-icons__link" href="#">
+              <img class="list-icons__image" src="/assets/img/institutions/kennesaw-state-university.svg" alt=""></a>
+          </div>
+          <div class="list-icons__item"><a class="list-icons__link" href="#">
+              <img class="list-icons__image" src="/assets/img/institutions/middle-georgia-state-college.svg" alt=""></a>
+          </div>
+          <div class="list-icons__item"><a class="list-icons__link" href="#">
+              <img class="list-icons__image" src="/assets/img/institutions/savannah-state-university.svg" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
   <section class="py-5">
     <div class="container">
       <div class="row">
         <div class="col-12">
           <p class="content-text text-center">From the port of Savannah to the Blue Ridge Mountains, the University System of Georgia (USG) is dedicated to making high-quality higher education accessible from every corner of the peach state. Whether you are starting school for the first time, looking for a career change, or need to finish a degree you started years ago, Georgia On My Line (GOML) is your go-to resource for accredited and respected online programs from University System of Georgia institutions.</p><br><br>
-          <h3 class="text-center related__title">Most Searched Online Programs</h3>
-          <div class="searched courses__list">
-            <div class="courses__item">
-              <div class="courses__wrapper">
-                <div class="courses__top">
-                  <div class="courses__top__wrapper"><img class="courses__top__image" src="assets/img/course-single/header-img-2.jpg" alt=""></div>
-                </div>
-                <div class="courses__content col-equal"><a class="courses__content__title" href="#">Bachelor
-                    of Science in Information Technology</a>
-                  <div class="courses__bottom">
-                    <a class="courses__col-left" href="#"><span class="courses__content__institutions">Kennesaw
-                        State University</span></a>
-                    <ul class="list-tags">
-
-                      <li>
-                        <button class="cpl" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="Credit for Prior Learning" data-original-title="" title="">cpl</button>
-                      </li>
-                      <li>
-                        <button class="ep" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="eMajor program" data-original-title="" title="">em</button>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="courses__icon bt-circle-fill-red"><i class="fas fa-book-reader"></i></div>
-              </div>
-            </div>
-            <div class="courses__item">
-              <div class="courses__wrapper">
-                <div class="courses__top">
-                  <div class="courses__top__wrapper"><img class="courses__top__image" src="assets/img/course-single/header-img-3.jpg" alt=""></div>
-                </div>
-                <div class="courses__content col-equal"><a class="courses__content__title" href="#">Master
-                    of Education in Early Childhood Education </a>
-                  <div class="courses__bottom">
-                    <a class="courses__col-left" href="#"><span class="courses__content__institutions">University
-                        of West Georgia</span></a>
-                    <ul class="list-tags">
-                      <li>
-                        <button class="cpl" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="Credit for Prior Learning" data-original-title="" title="">cpl</button>
-                      </li>
-                      <li>
-                        <button class="ep" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="eMajor program" data-original-title="" title="">em</button>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="courses__icon bt-circle-fill-red"><i class="fas fa-flask"></i></div>
-              </div>
-            </div>
-            <div class="courses__item">
-              <div class="courses__wrapper">
-                <div class="courses__top">
-                  <div class="courses__top__wrapper"><img class="courses__top__image" src="assets/img/course-single/header-img-4.jpg" alt=""></div>
-                </div>
-                <div class="courses__content col-equal"><a class="courses__content__title" href="#">Associate
-                    of Science in Financial Technology (Fintech)</a>
-                  <div class="courses__bottom">
-                    <a class="courses__col-left" href="#"><span class="courses__content__institutions">Middle
-                        Georgia State University</span></a>
-                    <ul class="list-tags">
-
-                      <li>
-                        <button class="cpl" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="Credit for Prior Learning" data-original-title="" title="">cpl</button>
-                      </li>
-                      <li>
-                        <button class="ep" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="eMajor program" data-original-title="" title="">em</button>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="courses__icon bt-circle-fill-red"><i class="fas fa-flask"></i></div>
-              </div>
-            </div>
-            <div class="courses__item">
-              <div class="courses__wrapper">
-                <div class="courses__top">
-                  <div class="courses__top__wrapper"><img class="courses__top__image" src="assets/img/course-single/header-img-5.jpg" alt=""></div>
-                </div>
-                <div class="courses__content col-equal"><a class="courses__content__title" href="#">Bachelor
-                    of Science in Information Technology</a>
-                  <div class="courses__bottom">
-                    <a class="courses__col-left" href="#"><span class="courses__content__institutions">Kennesaw
-                        State University</span></a>
-                    <ul class="list-tags">
-
-                      <li>
-                        <button class="cpl" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="Credit for Prior Learning" data-original-title="" title="">cpl</button>
-                      </li>
-                      <li>
-                        <button class="ep" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="eMajor program" data-original-title="" title="">em</button>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="courses__icon bt-circle-fill-red"><i class="fas fa-flask"></i></div>
-              </div>
-            </div>
-            <div class="courses__item">
-              <div class="courses__wrapper">
-                <div class="courses__top">
-                  <div class="courses__top__wrapper"><img class="courses__top__image" src="assets/img/course-single/header-img-6.jpg" alt=""></div>
-                </div>
-                <div class="courses__content col-equal"><a class="courses__content__title" href="#">Master
-                    of Education in Early Childhood Education </a>
-                  <div class="courses__bottom">
-                    <a class="courses__col-left" href="#"><span class="courses__content__institutions">University
-                        of West Georgia</span></a>
-                    <ul class="list-tags">
-                      <li>
-                        <button class="cpl" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="Credit for Prior Learning" data-original-title="" title="">cpl</button>
-                      </li>
-                      <li>
-                        <button class="ep" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="eMajor program" data-original-title="" title="">em</button>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="courses__icon bt-circle-fill-red"><i class="fas fa-flask"></i></div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </div>
@@ -180,8 +132,7 @@
       <div class="row mb-5 justify-content-around align-items-center item__left">
 
         <div class="col-lg-5">
-          <img class="item__icon" src="/assets/img/home/emajor-degree-icon.svg" alt="eMajor icone">
-          <h3 class="item__left__title">Your Search. Your Way. </h3>
+          <h3 class="item__left__title">Your Search. Your Way.</h3>
           <div class="item__left__content">
             <p>
               The newly designed Georgia On My Line website offers a truly user-friendly marketplace shopping experience for users. Search our database by college, area of study, degree level, and more. Narrow your results further by special features such as Credit for Prior Learning opportunities or specialized program accreditations. Find something you like? Request information to be contacted by our GOML support team or click Apply Now to go straight to the application at that institution. If you can shop online, you can use this site to find the degree that’s right for you.
@@ -198,7 +149,7 @@
       </div>
 
       <div class="row mb-5 justify-content-around align-items-center item__left">
-        <div class="col-lg-5 order-lg-2"><img class="item__icon" src="assets/img/home/online-learning.svg" alt="">
+        <div class="col-lg-5 order-lg-2">
           <h3 class="item__left__title">Over 20 Colleges and Universities</h3>
           <div class="item__left__content">
             <p>
@@ -216,7 +167,6 @@
       <div class="row mb-5 justify-content-around align-items-center item__left">
 
         <div class="col-lg-5">
-          <img class="item__icon" src="/assets/img/home/emajor-degree-icon.svg" alt="eMajor icone">
           <h3 class="item__left__title">Hundreds of Online Programs </h3>
           <div class="item__left__content">
             <p>
@@ -235,65 +185,6 @@
     </div>
 
   </section>
-  <section class="blog-home-wrapper">
-    <div class="container">
-      <div class="row">
-        <div class="list-course__header col-12">
-          <h2 class="list-course__header__title text-center">eCampus Blog</h2>
-          <div class="list-course__view-more float-right"><a class="list-course__header__btn"><span class="list-course__header__text">view
-                more</span></a>
-            <div class="list-course__header__icon">
-              <i class="fas fa-angle-right list-course__header__icon-arrow"></i>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12">
-          <div class="blog">
-            <div class="blog-col">
-              <div class="blog-col__item">
-                <div class="blog__item">
-                  <div class="blog__item__left"><a class="blog__item__link" href="#">
-                      <img class="blog__item__image" src="assets/img/home/blog-img-1.jpg" alt=""></a>
-                  </div>
-                  <div class="blog__item__right">
-                    <div class="blog__item__date">June 25, 2020</div><a class="blog__item__title" href="#">Learn From Top Tutors in Every Subject And Our ProjectsLearn From
-                      Top Tutors in Every Subject And Our ProjectsLearn From Top Tutors in Every
-                      Subject And Our Projects</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="blog-col">
-              <div class="blog-col__item">
-                <div class="blog__item">
-                  <div class="blog__item__left"><a class="blog__item__link" href="#">
-                      <img class="blog__item__image" src="assets/img/home/blog-img-2.jpg" alt=""></a>
-                  </div>
-                  <div class="blog__item__right">
-                    <div class="blog__item__date">June 25, 2020</div><a class="blog__item__title" href="#">Learn From Top Tutors in Every Subject And Our Projects</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="blog-col">
-              <div class="blog-col__item">
-                <div class="blog__item">
-                  <div class="blog__item__left"><a class="blog__item__link" href="#">
-                      <img class="blog__item__image" src="assets/img/home/blog-img-3.jpg" alt=""></a>
-                  </div>
-                  <div class="blog__item__right">
-                    <div class="blog__item__date">June 26, 2020</div><a class="blog__item__title" href="#">Learn From Top Tutors in Every Subject And Our Projects</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
 
 
 
@@ -301,7 +192,21 @@
 <?php include("includes/footer.php"); ?>
 <script src="/assets/js/typed.js"></script>
 <script src="../../homepage-search.js"></script>
+
 <script>
+  $(document).ready(function() {
+    $(".list-icons__item").on({
+      mouseenter: function() {
+        //stuff to do on mouse enter
+        $('.list-icons__item').not($(this)).addClass('active-item');
+      },
+      mouseleave: function() {
+        //stuff to do on mouse leave
+        $('.list-icons__item').not($(this)).removeClass('active-item');
+
+      }
+    });
+  });
   var typed = new Typed('.typed-words', {
     strings: ["Search for things like...", "Nexus degrees", "Fintech", "Information Technology",
       "Early Childhood Education"
@@ -313,6 +218,40 @@
     attr: 'placeholder',
     bindInputFocusEvents: true,
     loop: true
+  });
+
+  $('.list-icons__list').slick({
+    dots: false,
+    infinite: true,
+    speed: 2000,
+    autoplay: true,
+    autoplaySpeed: 8000,
+    slidesToShow: 6,
+    slidesToScroll: 3,
+    responsive: [{
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      }
+    ]
   });
 
 </script>
