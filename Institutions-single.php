@@ -223,6 +223,6 @@
 
 </main>
 <?php include("includes/footer.php"); ?>
-<script src="/assets/js/course-single.js"></script>
+<script src="/assets/js/program-single.js"></script>
 
 </html>

@@ -31,7 +31,7 @@
 			</div>
 			<div class="col-lg-9 col-md-9 col-sm-12">
 				<div class="bundle-header__about">
-					<div class="bundle-header__image" style="background-image: url(/assets/img/course-single/header-img-1.jpg)" data-overlay="6"></div>
+					<div class="bundle-header__image" style="background-image: url(/assets/img/program-single/header-img-1.jpg)" data-overlay="6"></div>
 					<h1 id="program__title" class="bundle-header__title">Master of Education in Early Childhood Education</h1>
 					<p id="institution__name" class="bundle-header__content">
 						University Of West Georgia
@@ -51,7 +51,7 @@
 						<div class="col-4">
 							<div class="additional_info rounded shadow p-3 p-lg-4 h-100">
 								<div class="card h-100 justify-content-center">
-									<img src="/assets/img/course-single/book.svg">
+									<img src="/assets/img/program-single/book.svg">
 									Degrees
 									<strong id="program__level"></strong>
 								</div>
@@ -60,7 +60,7 @@
 						<div class="col-4">
 							<div class="additional_info rounded shadow p-3 p-lg-4 h-100">
 								<div class="card h-100 justify-content-center">
-									<img src="/assets/img/course-single/graph.svg">
+									<img src="/assets/img/program-single/graph.svg">
 									Total Credit Hours
 									<strong id="total__hours"></strong>
 								</div>
@@ -69,7 +69,7 @@
 						<div class="col-4">
 							<div class="additional_info rounded shadow p-3 p-lg-4 h-100">
 								<div class="card h-100 justify-content-center">
-									<img src="/assets/img/course-single/piggy-bank.svg">
+									<img src="/assets/img/program-single/piggy-bank.svg">
 									Cost
 									<strong id="total__cost"></strong>
 								</div>
@@ -150,7 +150,7 @@
 						<div class="courses__item">
 							<div class="courses__wrapper">
 								<div class="courses__top">
-									<div class="courses__top__wrapper"><img class="courses__top__image" src="assets/img/course-single/header-img-1.jpg" alt=""></div>
+									<div class="courses__top__wrapper"><img class="courses__top__image" src="assets/img/program-single/header-img-1.jpg" alt=""></div>
 								</div>
 								<div class="courses__content col-equal"><a class="courses__content__title" href="#">Bachelor of Science in Information Technology</a>
 									<a class="courses__col-left" href="#"><span class="courses__content__institutions">Kennesaw State University</span></a>
@@ -171,7 +171,7 @@
 						<div class="courses__item">
 							<div class="courses__wrapper">
 								<div class="courses__top">
-									<div class="courses__top__wrapper"><img class="courses__top__image" src="assets/img/course-single/header-img-2.jpg" alt=""></div>
+									<div class="courses__top__wrapper"><img class="courses__top__image" src="assets/img/program-single/header-img-2.jpg" alt=""></div>
 								</div>
 								<div class="courses__content col-equal"><a class="courses__content__title" href="#">Master of Education in Early Childhood Education </a>
 									<a class="courses__col-left" href="#"><span class="courses__content__institutions">University of West Georgia</span></a>
@@ -192,7 +192,7 @@
 						<div class="courses__item">
 							<div class="courses__wrapper">
 								<div class="courses__top">
-									<div class="courses__top__wrapper"><img class="courses__top__image" src="assets/img/course-single/header-img-3.jpg" alt=""></div>
+									<div class="courses__top__wrapper"><img class="courses__top__image" src="assets/img/program-single/header-img-3.jpg" alt=""></div>
 								</div>
 								<div class="courses__content col-equal"><a class="courses__content__title" href="#">Associate of Science in Financial Technology (Fintech)</a>
 									<a class="courses__col-left" href="#"><span class="courses__content__institutions">Middle Georgia State University</span></a>
@@ -213,7 +213,7 @@
 						<div class="courses__item">
 							<div class="courses__wrapper">
 								<div class="courses__top">
-									<div class="courses__top__wrapper"><img class="courses__top__image" src="assets/img/course-single/header-img-4.jpg" alt=""></div>
+									<div class="courses__top__wrapper"><img class="courses__top__image" src="assets/img/program-single/header-img-4.jpg" alt=""></div>
 								</div>
 								<div class="courses__content col-equal"><a class="courses__content__title" href="#">Bachelor of Science in Information Technology</a>
 									<a class="courses__col-left" href="#"><span class="courses__content__institutions">Kennesaw State University</span></a>
@@ -234,7 +234,7 @@
 						<div class="courses__item">
 							<div class="courses__wrapper">
 								<div class="courses__top">
-									<div class="courses__top__wrapper"><img class="courses__top__image" src="assets/img/course-single/header-img-5.jpg" alt=""></div>
+									<div class="courses__top__wrapper"><img class="courses__top__image" src="assets/img/program-single/header-img-5.jpg" alt=""></div>
 								</div>
 								<div class="courses__content col-equal"><a class="courses__content__title" href="#">Master of Education in Early Childhood Education </a>
 									<a class="courses__col-left" href="#"><span class="courses__content__institutions">University of West Georgia</span></a>
@@ -271,7 +271,7 @@
 </main>
 
 <?php include("includes/footer.php"); ?>
-<script src="/assets/js/course-single.js"></script>
+<script src="/assets/js/program-single.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
 <script>
 	//Chop of the tailing param of the URL to find the Algolia ID 
@@ -288,6 +288,7 @@
 		console.log(program);
 		hours = program["Total Credit Hours"] ? program["Total Credit Hours"] : 'N/A';
 		Object.entries(program).forEach(([key, value]) => {
+			console.log('' + key + ':' +  value + '');
 			var block = `<div class="bundle-list"><div class="bundle" id="list-link-5"><h2 class="bundle__title">${toTitleCase(key)}</h2><div class="bundle__content"><p class="detail__infor__sub">${value}</p></div></div></div>`;
 			if (key !== null && (value !== null && value !== '')) {
 				$('.bundles').append(block);

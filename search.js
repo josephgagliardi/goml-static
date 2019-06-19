@@ -39,10 +39,10 @@ search.addWidget(
       favoritedCount = item['favorited_count']
       return `
             <div class="courses__top">
-               <div class="courses__top__wrapper"><img class="courses__top__image" src="/assets/img/course-single/header-img-1.jpg" alt="">${favoritedIcon}</div>
+               <div class="courses__top__wrapper"><img class="courses__top__image" src="/assets/img/program-single/header-img-1.jpg" alt="">${favoritedIcon}</div>
             </div>
             <div class="courses__content">
-               <a class="courses__content__title" href="/course-single.php?id=${item["objectID"]}">${item["Program Name"]}</a>
+               <a class="courses__content__title" href="/program-single.php?id=${item["objectID"]}">${item["Program Name"]}</a>
                <div class="courses__bottom">
                ${item["Institution"]}
                   <a class="courses__col-left" href="#"><span class="courses__content__institutions">${item["Area of Study"]}</span></a>
