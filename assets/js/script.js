@@ -37,21 +37,19 @@ $(document).ready(function () {
 
 jQuery(function ($) {
   $('.droopmenu-navbar').droopmenu({
-    dmArrow: false,
-    dmArrowDirection: 'dmarrowdown',
+    dmOffCanvas: true,
     dmSticky: true, // Make menu sticky becomes fixed on scrolling to top of page: true or false - Default is false
-    dmAnimationEffect: 'dmslidedown',
-    dmCentered: false
+    dmAnimationEffect: 'dmscale'
   });
 });
 
 /*	--------------------------------------------------
-   :: Nav Modal search 
--------------------------------------------------- */
+	:: Modal search 
+	-------------------------------------------------- */
 jQuery(function ($) {
   var searchBody = $('body'),
     searchClose = $('.dm-search-close'),
-    searchToggle = $('.droopmenu-open-search button');
+    searchToggle = $('.droopmenu-open-search a');
 
   searchToggle.on('click', function (e) {
     e.preventDefault();
