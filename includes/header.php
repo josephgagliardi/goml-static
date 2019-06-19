@@ -1,14 +1,14 @@
 <header class="droopmenu-navbar" role="banner">
   <div class="droopmenu-inner">
     <div class="droopmenu-header">
-      <a href="#" class="droopmenu-brand"><img src="/assets/img/logo/goml-logo.svg" alt="goml logo and return to home page"></a>
+      <a href="/" class="droopmenu-brand"><img src="/assets/img/logo/goml-logo.svg" alt="goml logo and return to home page"></a>
       <a href="#" class="droopmenu-toggle"></a>
     </div><!-- droopmenu-header -->
     <nav class="droopmenu-nav">
       <ul class="droopmenu">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Degrees and Programs</a></li>
-        <li><a href="#">Institutions</a></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="/program-listing.php">Degrees and Programs</a></li>
+        <li><a href="/Institutions-listing.php">Institutions</a></li>
         <li>
           <a href="#">Future Students</a>
           <ul class="droopmenu-grid droopmenu-grid-3">
