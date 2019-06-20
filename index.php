@@ -44,7 +44,7 @@
   </section>
   <section>
     <div class="list-icons">
-      <div class="container-fluid">
+      <div class="container">
         <div class="row list-icons__list">
           <div class="list-icons__item">
             <a class="list-icons__link" href=" #">
@@ -113,13 +113,13 @@
         </div>
       </div>
     </div>
-
   </section>
   <section class="py-5">
     <div class="container">
       <div class="row">
-        <div class="col-12">
-          <p class="content-text text-center">From the port of Savannah to the Blue Ridge Mountains, the University System of Georgia (USG) is dedicated to making high-quality higher education accessible from every corner of the peach state. Whether you are starting school for the first time, looking for a career change, or need to finish a degree you started years ago, Georgia On My Line (GOML) is your go-to resource for accredited and respected online programs from University System of Georgia institutions.</p><br><br>
+        <div class="col-12 text-center">
+          <span class="spot-light-title">From the port of Savannah to the Blue Ridge Mountains.</span>
+          <p>The University System of Georgia (USG) is dedicated to making high-quality higher education accessible from every corner of the peach state. Whether you are starting school for the first time, looking for a career change, or need to finish a degree you started years ago, Georgia On My Line (GOML) is your go-to resource for accredited and respected online programs from University System of Georgia institutions.</p>
         </div>
       </div>
     </div>
@@ -137,7 +137,7 @@
             <p>
               The newly designed Georgia On My Line website offers a truly user-friendly marketplace shopping experience for users. Search our database by college, area of study, degree level, and more. Narrow your results further by special features such as Credit for Prior Learning opportunities or specialized program accreditations. Find something you like? Request information to be contacted by our GOML support team or click Apply Now to go straight to the application at that institution. If you can shop online, you can use this site to find the degree that’s right for you.
             </p>
-            <p><a href="#">View More Programs</a></p>
+            <p><a href="/program-listing.php" class="button-outline shadow">View More Programs</a></p>
           </div>
         </div>
         <div class="col-lg-7">
@@ -167,12 +167,12 @@
       <div class="row mb-5 justify-content-around align-items-center item__left">
 
         <div class="col-lg-5">
-          <h3 class="item__left__title">Hundreds of Online Programs </h3>
+          <h3 class="item__left__title">Hundreds of Online Programs</h3>
           <div class="item__left__content">
             <p>
               The GOML degree marketplace includes over ___ online programs available throughout the University System of Georgia. From agriculture to cybersecurity, Georgia’s colleges and universities offer a wide variety of online curriculums to peak your interest and prepare you for today’s economic landscape.
             </p>
-            <p><a href="#">View More Programs</a></p>
+            <p><a href="/program-listing.php" class="button-outline shadow">View More Programs</a></p>
           </div>
         </div>
         <div class="col-lg-7">
@@ -224,6 +224,7 @@
     dots: false,
     infinite: true,
     speed: 2000,
+    arrows: false,
     autoplay: true,
     autoplaySpeed: 8000,
     slidesToShow: 6,
@@ -233,22 +234,20 @@
         settings: {
           slidesToShow: 4,
           slidesToScroll: 3,
-          infinite: true,
-          dots: true
         }
       },
       {
         breakpoint: 600,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 3
+          slidesToScroll: 2
         }
       },
       {
         breakpoint: 480,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2
+          slidesToScroll: 1
         }
       }
     ]
