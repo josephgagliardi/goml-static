@@ -16,7 +16,7 @@
           <div class="university-menu">
             <div class="row">
               <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                <a class="university-menu__item col-equal" href="/Institutions-single.php">
+                <a class="university-menu__item col-equal" href="/institutions-single.php">
                   <div class="item-top"><img src="/assets/img/institutions/abraham-baldwin-agricultural-college.svg" alt=""></div>
                   <div class="item-body">
                     Abraham Baldwin Agricultural College
@@ -76,6 +76,38 @@
                   <div class="item-top"><img src="/assets/img/institutions/dalton-state.svg" alt=""></div>
                   <div class="item-body">
                     Dalton State College
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                <a class="university-menu__item col-equal" href="#">
+                  <div class="item-top"><img src="/assets/img/institutions/east-georgia-state-college.svg" alt=""></div>
+                  <div class="item-body">
+                    East Georgia State College
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                <a class="university-menu__item col-equal" href="#">
+                  <div class="item-top"><img src="/assets/img/institutions/fort-valley-state-university.svg" alt=""></div>
+                  <div class="item-body">
+                    Fort Valley State University
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                <a class="university-menu__item col-equal" href="#">
+                  <div class="item-top"><img src="/assets/img/institutions/georgia-college.svg" alt=""></div>
+                  <div class="item-body">
+                    Georgia College
+                  </div>
+                </a>
+              </div>
+              <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                <a class="university-menu__item col-equal" href="#">
+                  <div class="item-top"><img src="/assets/img/institutions/georgia-gwinnett-college.svg" alt=""></div>
+                  <div class="item-body">
+                    Georgia Gwinnett College
                   </div>
                 </a>
               </div>
