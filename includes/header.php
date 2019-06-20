@@ -5,10 +5,10 @@
       <a href="#" class="droopmenu-toggle"></a>
     </div><!-- droopmenu-header -->
     <nav class="droopmenu-nav">
-      <ul class="droopmenu">
+      <ul class="droopmenu droopmenu-right">
         <li><a href="/">Home</a></li>
         <li><a href="/program-listing.php">Degrees and Programs</a></li>
-        <li><a href="/Institutions-listing.php">Institutions</a></li>
+        <li><a href="/institutions-listing.php">Institutions</a></li>
         <li>
           <a href="#">Future Students</a>
           <ul class="droopmenu-grid droopmenu-grid-3">
@@ -36,31 +36,5 @@
         </li>
       </ul>
     </nav><!-- droopmenu-nav -->
-
-    <div class="droopmenu-extra">
-      <ul class="droopmenu">
-        <li class="droopmenu-open-search">
-          <a href="#"><i class="fas fa-search"></i></a>
-        </li>
-      </ul>
-    </div><!-- droopmenu-extra -->
   </div><!-- droopmenu-inner -->
-
-  <div class="dm-modal-search dm-search-slidedown">
-    <div class="dm-search-overlay"></div>
-    <a href="#" class="dm-search-close">
-      <i class="fas fa-times"></i><span class="sr-only">Close Search</span>
-    </a>
-    <div class="dm-search-wrapper">
-      <div class="dm-modal-form">
-        <form>
-          <input type="text" name="query" id="query" placeholder="Search...">
-          <label for="query"></label>
-          <button type="submit">
-            <i class="far fa-arrow-alt-circle-right"></i><span class="sr-only">Perform Search</span>
-          </button>
-        </form>
-      </div>
-    </div>
-  </div><!-- dm-modal-search -->
 </header><!-- droopmenu-navbar  -->

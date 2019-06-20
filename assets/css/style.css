@@ -310,7 +310,6 @@ img {
   display: inline-block;
   max-width: 100%;
   height: auto;
-  image-rendering: -webkit-optimize-contrast;
 }
 
 /*----------  Helpers  ----------*/
@@ -462,9 +461,6 @@ img {
   font-weight: 700;
 }
 
-.hiden {
-  display: none;
-}
 
 /*----------  Text  ----------*/
 .content-text {
@@ -1640,7 +1636,14 @@ button.button-text:focus {
   box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
 }
 
-.courses__item.
+.courses__item. {
+
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  width: 100%;
+
 }
 
 .courses__top {
@@ -1677,6 +1680,7 @@ button.button-text:focus {
 .courses__content__title {
   display: block;
   margin-bottom: 8px;
+  color: #000;
 }
 
 .courses__content__title:hover {
@@ -1702,9 +1706,8 @@ button.button-text:focus {
 }
 
 
-.courses__col-left {
-  display: inline-block;
-  vertical-align: middle;
+.area-of-study {
+  margin-top: 10px;
 }
 
 .courses__col-right {
@@ -2654,11 +2657,8 @@ button.button-text:focus {
 /*==============================
 =      Courses                 =
 ==============================*/
-.courses__wrapper,
-view-course-grid.courses__wrapper {
-  border: solid 1px rgba(232, 232, 232);
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
+#courses {
+  margin-bottom: 50px;
 }
 
 .courses__top__wrapper:before {
@@ -2683,6 +2683,7 @@ view-course-grid.courses__wrapper {
 
 .courses__bottom {
   border-top: solid 1px rgba(232, 232, 232, 0.8);
+  margin-top: 10px;
 }
 
 .courses__content__title {
@@ -2694,7 +2695,7 @@ view-course-grid.courses__wrapper {
   color: var(--main__accent__color);
 }
 
-.courses__content__institutions {
+.courses__content__aos {
   font-size: 0;
   display: block;
   margin-top: 8px;
@@ -2716,7 +2717,6 @@ view-course-grid.courses__wrapper {
 
 
 .courses__content__institutions {
-  text-align: left;
   font-size: 14px;
   color: #545555;
   text-transform: capitalize;
@@ -2765,6 +2765,49 @@ view-course-grid.courses__wrapper {
 
 }
 
+/*Flex items*/
+.ais-Hits-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ais-Hits-item {
+  display: flex;
+  padding: 0.9em;
+  width: 100%;
+}
+
+@media all and (max-width: 765em) {
+  .ais-Hits-item {
+    width: 33.33%;
+
+  }
+}
+
+@media all and (max-width: 1200px) {
+  .ais-Hits-item {
+    width: 50%;
+  }
+}
+
+.list-content {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: 1px solid transparent;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  border: solid 1px #d6d6d6;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  color: #545555;
+}
+
+.list-content:hover {
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+}
+
 /*=====  End of Courses  ======*/
 
 .col-left {
@@ -2797,10 +2840,22 @@ view-course-grid.courses__wrapper {
 }
 
 /*==============================
-=    5. The best Features      =
+=    Spot Light      =
+==============================*/
+
+.spot-light-title {
+  font-size: 2.625rem;
+  margin-bottom: 20px;
+  display: block;
+  font-weight: 700;
+  color: #000;
+}
+
+/*==============================
+=    The best Features      =
 ==============================*/
 .best-features {
-  margin-bottom: 100px;
+  margin: 100px 0;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#ffffff), color-stop(52%, #f7bda6), color-stop(52%, #ffffff));
   background-image: -webkit-linear-gradient(bottom, #ffffff, #f7bda6 52%, #ffffff);
   background-image: linear-gradient(to top, #ffffff, #f7bda6 52%, #ffffff);
@@ -2861,16 +2916,6 @@ view-course-grid.courses__wrapper {
   margin-bottom: 0px;
 }
 
-.item__left__content a {
-  padding: 5px;
-  border-radius: 3px;
-  background: #03a6f4b8;
-  color: #67050a;
-}
-
-.item__left__content a:hover {
-  padding: 10px;
-}
 
 .item__left__content:last-of-type {
   color: #000;
@@ -3683,6 +3728,7 @@ view-course-grid.courses__wrapper {
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: scroll;
+  padding: 70px 0 20px 0;
 }
 
 .footer .img-background:after {
@@ -3707,7 +3753,7 @@ view-course-grid.courses__wrapper {
 
 .footer__logo {
   display: inline-block;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
 }
 
 .footer__top__title {
@@ -3768,7 +3814,7 @@ view-course-grid.courses__wrapper {
 }
 
 .footer__item__sub {
-  margin-bottom: 29px;
+  margin-bottom: 18px;
 }
 
 .footer__item__title {
@@ -3777,6 +3823,7 @@ view-course-grid.courses__wrapper {
   font-size: 22px;
   color: #fff;
   line-height: 1.2;
+  font-weight: 700;
 }
 
 .footer__content {
@@ -3798,7 +3845,7 @@ view-course-grid.courses__wrapper {
 
 .footer__bottom {
   position: relative;
-  padding: 18px 0;
+  padding: 20px 0;
   border-top: 1px solid rgba(232, 232, 232, 0.3);
   font-size: 14px;
   color: #FFF;
@@ -3846,15 +3893,15 @@ view-course-grid.courses__wrapper {
 }
 
 .footer-link__link {
-  color: #939db4;
+  color: #FFF;
   font-size: 16px;
   line-height: 30px;
-  text-transform: capitalize;
   cursor: pointer;
 }
 
 .footer-link__link:hover {
-  color: var(--main__accent__color);
+  color: #FFF;
+  text-decoration: underline !important;
 }
 
 .footer-link__link--contact {
@@ -5702,10 +5749,9 @@ ul.list-tags {
 
 
 /*=============================================
-Institution details pages
-  Institution header
-  Course gird
-  Our team
+Institution details pages 
+Institution header 
+Course gird
 =============================================*/
 
 .inst-main {
@@ -10200,6 +10246,7 @@ input[type="checkbox"]:checked + label:before {
   margin-left: 20px;
   font-size: 24px;
   cursor: pointer;
+  display: none;
 }
 
 @media(min-width: 992px) {
