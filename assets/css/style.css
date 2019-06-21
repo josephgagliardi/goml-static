@@ -1909,7 +1909,8 @@ button.button-text:focus {
   padding: 11px 0;
 }
 
-.form-search__input-group {
+
+form.ais-SearchBox-form {
   overflow: hidden;
   -webkit-border-radius: 3px;
   border-radius: 3px;
@@ -1917,7 +1918,6 @@ button.button-text:focus {
   background-color: #fefefe;
   position: relative;
 }
-
 
 .form-search__btn-group {
   display: inline-block;
@@ -1972,8 +1972,8 @@ button.button-text:focus {
   color: #545555;
 }
 
-.form-search__button {
-  padding: 5px 10px;
+.btn.form-search__button {
+  padding: 0px 0px 3px 10px;
   margin-left: 0;
   border: none;
   -webkit-box-shadow: none;
@@ -2738,9 +2738,17 @@ button.button-text:focus {
 
 .list-view .courses__top,
 .list-view .courses__content {
-  width: 49%;
+  width: 100%;
   display: inline-block;
   vertical-align: top;
+}
+
+.list-view .courses__top__wrapper img {
+  display: none;
+}
+
+.list-view .courses__top__wrapper:before {
+  padding-top: 0;
 }
 
 @media (max-width: 991px) {
