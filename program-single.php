@@ -20,9 +20,9 @@
                 <li class="list-link__item"><a class="list-link__link" href="#list-link-5">Dates & Deadlines</a></li>
                 <li class="list-link__item"><a class="list-link__link" href="#list-link-6">Tuition & Fees</a></li> -->
               </ul>
-              <div class="mt-4 p-3">
-                <a class="btn button-default btn-block list-link__btn" href="#">Apply Now</a>
-                <a class="btn button-outline-02 btn-block list-link__btn" href="#">Request Info</a>
+              <div id="quickLinks" class="mt-4 p-3">
+                <a class="btn button-default btn-block list-link__btn" id="applynowlink" href="#">Apply Now</a>
+                <a class="btn button-outline-02 btn-block list-link__btn" id="instPageLink" href="#">Request Info</a>
                 <a class="mt-4 btn-block" href="#"><i class="fas fa-clipboard-list"></i> View Curriculum</a>
               </div>
             </nav>
@@ -175,7 +175,7 @@
 			var block = `<div class="bundle-list"><div class="bundle" id="${anchor}"><h2 class="bundle__title" name="${toTitleCase(key)}">${toTitleCase(key)}</h2><div class="bundle__content"><p class="detail__infor__sub">${value}</p></div></div></div>`;
 			var listLink = `<li class="list-link__item"><a class="list-link__link" href="#${anchor}">${toTitleCase(key)}</a></li>`;
 		
-			if (key !== null && (value !== null && value !== '')) {
+			if (key !== null && (value !== null && value !== '' && key !== 'Institution')) {
 				$('.bundles').append(block);
 				$('.list-link__list').append(listLink);
 			};
@@ -186,7 +186,9 @@
 		document.getElementById('program__level').innerHTML = program["Degree Level"];
 		document.getElementById('total__hours').innerHTML = hours;
 		document.getElementById('total__cost').innerHTML = program["Per Credit Hour Tuition"];
-	});
+    document.getElementById('applynowlink').href = program["Admissons Link"];
+    document.getElementById('instPageLink').href = '/institutions-single.php?query=' + program["Institution"].replace(/\s+/g, '-').toLowerCase();
+     });
 
 
   function toTitleCase(str) {
