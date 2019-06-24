@@ -23,7 +23,7 @@
               <div id="quickLinks" class="mt-4 p-3">
                 <a class="btn button-default btn-block list-link__btn" id="applynowlink" href="#">Apply Now</a>
                 <a class="btn button-outline-02 btn-block list-link__btn" id="instPageLink" href="#">Request Info</a>
-                <a class="mt-4 btn-block" href="#"><i class="fas fa-clipboard-list"></i> View Curriculum</a>
+                <a class="mt-4 btn-block" id="curric-link" href="#"><i class="fas fa-clipboard-list"></i> View Curriculum</a>
               </div>
             </nav>
           </div>
@@ -174,8 +174,8 @@
 			var anchor = key.replace(/\s+/g, '-').toLowerCase();
 			var block = `<div class="bundle-list"><div class="bundle" id="${anchor}"><h2 class="bundle__title" name="${toTitleCase(key)}">${toTitleCase(key)}</h2><div class="bundle__content"><p class="detail__infor__sub">${value}</p></div></div></div>`;
 			var listLink = `<li class="list-link__item"><a class="list-link__link" href="#${anchor}">${toTitleCase(key)}</a></li>`;
-		
-			if (key !== null && (value !== null && value !== '' && key !== 'Institution')) {
+		  var exceptionList = ['Institution', 'objectID', 'Admissons Link', 'Curriculum Link'];
+			if (key !== null && (value !== null && value !== '' && key !== 'Institution' && !exceptionList.includes(key))) {
 				$('.bundles').append(block);
 				$('.list-link__list').append(listLink);
 			};
@@ -188,6 +188,7 @@
 		document.getElementById('total__cost').innerHTML = program["Per Credit Hour Tuition"];
     document.getElementById('applynowlink').href = program["Admissons Link"];
     document.getElementById('instPageLink').href = '/institutions-single.php?query=' + program["Institution"].replace(/\s+/g, '-').toLowerCase();
+    document.getElementById('curric-link').href = program["Curriculum Link"];
      });
 
 

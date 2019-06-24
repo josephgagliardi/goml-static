@@ -28,7 +28,7 @@
         </div>
         <div class="col-md-9">
           <div class="inst-main">
-            <!-- <h1 class="inst-main__title">Abraham Baldwin Agricultural College</h1>
+            <h1 class="inst-main__title">Abraham Baldwin Agricultural College</h1>
             <div class="inst-main__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vulputate fringilla tellus, in lacinia eros ullamcorper eget. Nam dolor enim, tincidunt eu felis eu, lacinia pretium nisi. In sed dolor dignissim, rutrum massa ac, egestas ex. Nulla congue placerat lacus, sed dignissim leo varius at. Aenean sodales sem velit, in volutpat ligula eleifend id. In hendrerit sagittis odio ac rhoncus. Curabitur at eros quam. Donec sed turpis in risus convallis ullamcorper. Quisque ac odio sit amet nisi rhoncus luctus et vel ex. Aliquam luctus sagittis blandit. Cras vel diam ac leo sagittis finibus vel non magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a justo id tortor porttitor sagittis.
             </div>
             <div class="bundle" id="list-link-1">
@@ -217,7 +217,7 @@
         <li class="breadcrumb-item active"><a class="breadcrumb__link active" href="#">Abraham Baldwin Agricultural College</a></li>
       </ul>
     </nav>
-  </div> -->
+  </div>
 
 
 
@@ -240,11 +240,18 @@
     var index = client.initIndex('goml_INSTITUTIONS');
     
 
-    index.getObjects([institution], function(err, content) {
+    index.search(institution, function(err, content) {
       if (err) throw err;
-      console.log(content);
-      institution = content['results'][0];
-      console.log(institution);
+  
+      institution = content['hits'][0];
+      document.getElementById('website-link').href = institution["Institution Website"];
+  
+      // $('.inst-main').append(`<h1 class="inst-main__title">` + institution['Institution Name'] + `</h1>`);
+      // $('.inst-main__title').append(`<div class="inst-main__content">` + institution['Accreditation']);
+      $('.inst-main__title').innerHTML = institution['Institution Name'];
+
+      
+      $('.inst-main__content').text = institution[''];
       });
     // index.getObjects([programID.toString()], function(err, content) {
     //   if (err) throw err;
@@ -275,7 +282,7 @@
     //   document.getElementById('instPageLink').href = '/institutions-single.php?query=' + program["Institution"].replace(/\s+/g, '-').toLowerCase();
     //    });
 
-
+    $('.inst-main__title').innerHTML = institution['Institution Name'];
     function toTitleCase(str) {
       return str.replace(
         /\w\S*/g,
