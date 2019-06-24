@@ -25,7 +25,7 @@
               </div>
               <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
                 <a class="university-menu__item col-equal" href="#">
-                  <div class="item-top"><img src="/assets/img/institutions/albany-state.svg" alt=""></div>
+                  <div class="item-top"><img src="/assets/img/institutions/albany-state-university.svg" alt=""></div>
                   <div class="item-body">
                     Albany State University
                   </div>

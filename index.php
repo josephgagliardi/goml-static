@@ -51,7 +51,7 @@
               <img class="list-icons__image" src="/assets/img/institutions/abraham-baldwin-agricultural-college.svg" alt=""></a>
           </div>
           <div class="list-icons__item"><a class="list-icons__link" href="#">
-              <img class="list-icons__image" src="/assets/img/institutions/albany-state.svg" alt=""></a>
+              <img class="list-icons__image" src="/assets/img/institutions/albany-state-university.svg" alt=""></a>
           </div>
           <div class="list-icons__item"><a class="list-icons__link" href="#">
               <img class="list-icons__image" src="/assets/img/institutions/atlanta-metropolitan-state-college.svg" alt=""></a>
