@@ -174,7 +174,7 @@
 			var anchor = key.replace(/\s+/g, '-').toLowerCase();
 			var block = `<div class="bundle-list"><div class="bundle" id="${anchor}"><h2 class="bundle__title" name="${toTitleCase(key)}">${toTitleCase(key)}</h2><div class="bundle__content"><p class="detail__infor__sub">${value}</p></div></div></div>`;
 			var listLink = `<li class="list-link__item"><a class="list-link__link" href="#${anchor}">${toTitleCase(key)}</a></li>`;
-		  var exceptionList = ['Institution', 'objectID', 'Admissons Link', 'Curriculum Link'];
+		  var exceptionList = ['Institution', 'objectID', 'Admissons Link', 'Curriculum Link', 'Program Name', 'Total Credit Hours', 'Degree Level', 'Area of Study'];
 			if (key !== null && (value !== null && value !== '' && key !== 'Institution' && !exceptionList.includes(key))) {
 				$('.bundles').append(block);
 				$('.list-link__list').append(listLink);
@@ -189,6 +189,10 @@
     document.getElementById('applynowlink').href = program["Admissons Link"];
     document.getElementById('instPageLink').href = '/institutions-single.php?query=' + program["Institution"].replace(/\s+/g, '-').toLowerCase();
     document.getElementById('curric-link').href = program["Curriculum Link"];
+      if (program["Dates and Deadlines"] != null && program["Dates and Deadlines"].length > 0) {
+        var deadlineLink = `<a class="mt-4 btn-block" id="deadlines-link" href="${program["Dates and Deadlines"]}"><i class="fas fa-calendar"></i> Dates & Deadlines</a>`;
+        $('#quickLinks').append(deadlineLink);
+      };
      });
 
 
