@@ -21,14 +21,14 @@
               </nav>
               <div class="mt-4 p-3">
                 <a class="btn button-default btn-block list-link__btn" href="#">Apply Now</a>
-                <a class="btn button-outline-02 btn-block list-link__btn" href="#">Request Info</a>
+                <a class="btn button-outline-02 btn-block list-link__btn" id="website-link" href="#">Visit Website</a>
               </div>
             </div>
           </div>
         </div>
         <div class="col-md-9">
           <div class="inst-main">
-            <h1 class="inst-main__title">Abraham Baldwin Agricultural College</h1>
+            <!-- <h1 class="inst-main__title">Abraham Baldwin Agricultural College</h1>
             <div class="inst-main__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vulputate fringilla tellus, in lacinia eros ullamcorper eget. Nam dolor enim, tincidunt eu felis eu, lacinia pretium nisi. In sed dolor dignissim, rutrum massa ac, egestas ex. Nulla congue placerat lacus, sed dignissim leo varius at. Aenean sodales sem velit, in volutpat ligula eleifend id. In hendrerit sagittis odio ac rhoncus. Curabitur at eros quam. Donec sed turpis in risus convallis ullamcorper. Quisque ac odio sit amet nisi rhoncus luctus et vel ex. Aliquam luctus sagittis blandit. Cras vel diam ac leo sagittis finibus vel non magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a justo id tortor porttitor sagittis.
             </div>
             <div class="bundle" id="list-link-1">
@@ -217,12 +217,87 @@
         <li class="breadcrumb-item active"><a class="breadcrumb__link active" href="#">Abraham Baldwin Agricultural College</a></li>
       </ul>
     </nav>
-  </div>
+  </div> -->
 
 
 
 </main>
 <?php include("includes/footer.php"); ?>
 <script src="/assets/js/program-single.js"></script>
+<script type="text/javascript">
+  // document.getElementById('website-link').href = program["Institution Website"];
+
+
+    //TODO: Add a switch case on the objects Institution value and convert the result to a anchorized format for mapping to an svg
+
+    //Chop of the tailing param of the URL to find the Algolia ID 
+    //TODO: convert this to use the program name
+    var params = getParams(window.location.href);
+    var institution = toTitleCase(params["query"].replace(/-/g, ' '));
+    console.log(institution);
+    // var programID = params["id"];
+    var client = algoliasearch('JBY4H547QZ', '133c145ebb78c84a04aefb61c32dba1d');
+    var index = client.initIndex('goml_INSTITUTIONS');
+    
+
+    index.getObjects([institution], function(err, content) {
+      if (err) throw err;
+      console.log(content);
+      institution = content['results'][0];
+      console.log(institution);
+      });
+    // index.getObjects([programID.toString()], function(err, content) {
+    //   if (err) throw err;
+    //   program = content['results'][0];
+    //   console.log(program);
+    //   hours = program["Total Credit Hours"] ? program["Total Credit Hours"] : 'N/A';
+      
+    //   var logoImage = `<img id="institution-logo-image" src="/assets/img/institutions/${program["Institution"].replace(/\s+/g, '-').toLowerCase()}.svg" alt="${program["Institution"]} logo">`; 
+    //   $('.institutions-logo-single').append(logoImage);
+    //   Object.entries(program).forEach(([key, value]) => {
+    //     console.log('' + key + ':' +  value + '');
+    //     var anchor = key.replace(/\s+/g, '-').toLowerCase();
+    //     var block = `<div class="bundle-list"><div class="bundle" id="${anchor}"><h2 class="bundle__title" name="${toTitleCase(key)}">${toTitleCase(key)}</h2><div class="bundle__content"><p class="detail__infor__sub">${value}</p></div></div></div>`;
+    //     var listLink = `<li class="list-link__item"><a class="list-link__link" href="#${anchor}">${toTitleCase(key)}</a></li>`;
+      
+    //     if (key !== null && (value !== null && value !== '' && key !== 'Institution')) {
+    //       $('.bundles').append(block);
+    //       $('.list-link__list').append(listLink);
+    //     };
+    //   });
+    //   // console.log(program["Program Name"]);
+    //   document.getElementById('program__title').innerHTML = program["Program Name"];
+    //   document.getElementById('institution__name').innerHTML = program["Institution"];
+    //   document.getElementById('program__level').innerHTML = program["Degree Level"];
+    //   document.getElementById('total__hours').innerHTML = hours;
+    //   document.getElementById('total__cost').innerHTML = program["Per Credit Hour Tuition"];
+    //   document.getElementById('applynowlink').href = program["Admissons Link"];
+    //   document.getElementById('instPageLink').href = '/institutions-single.php?query=' + program["Institution"].replace(/\s+/g, '-').toLowerCase();
+    //    });
+
+
+    function toTitleCase(str) {
+      return str.replace(
+        /\w\S*/g,
+        function(txt) {
+          return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+        }
+      );
+    };
+
+    function getParams(url) {
+      var params = {};
+      var parser = document.createElement('a');
+      parser.href = url;
+      var query = parser.search.substring(1);
+      var vars = query.split('&');
+      for (var i = 0; i < vars.length; i++) {
+        var pair = vars[i].split('=');
+        params[pair[0]] = decodeURIComponent(pair[1]);
+      }
+      return params;
+    };
+
+</script>
 
 </html>
