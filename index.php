@@ -105,7 +105,7 @@
               <img class="list-icons__image" src="/assets/img/institutions/kennesaw-state-university.svg" alt=""></a>
           </div>
           <div class="list-icons__item"><a class="list-icons__link" href="#">
-              <img class="list-icons__image" src="/assets/img/institutions/middle-georgia-state-college.svg" alt=""></a>
+              <img class="list-icons__image" src="/assets/img/institutions/middle-georgia-state-university.svg" alt=""></a>
           </div>
           <div class="list-icons__item"><a class="list-icons__link" href="#">
               <img class="list-icons__image" src="/assets/img/institutions/savannah-state-university.svg" alt=""></a>
