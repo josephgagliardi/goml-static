@@ -25,7 +25,7 @@
                     <div class="select__arrow"><i class="fas fa-chevron-down"></i></div>
                   </div>
                 </div>
-                <div class="col-md-6 border-left">
+                <div id="searchBox" class="col-md-6 border-left">
                   <div class="main-search-input-item">
                     <input class="typed-words" type="text" placeholder="" value="">
                   </div>

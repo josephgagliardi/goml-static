@@ -154,9 +154,30 @@
   //TODO: convert this to use the program name
   var params = getParams(window.location.href);
 
-  var programID = params["id"];
-  var client = algoliasearch('JBY4H547QZ', '133c145ebb78c84a04aefb61c32dba1d');
-  var index = client.initIndex('goml_DEMO');
+	var programID = params["id"];
+	var client = algoliasearch('JBY4H547QZ', '133c145ebb78c84a04aefb61c32dba1d');
+	var index = client.initIndex('goml_DEMO');
+	
+	index.getObjects([programID.toString()], function(err, content) {
+		if (err) throw err;
+		program = content['results'][0];
+		console.log(program);
+		hours = program["Total Credit Hours"] ? program["Total Credit Hours"] : 'N/A';
+		Object.entries(program).forEach(([key, value]) => {
+			console.log('' + key + ':' +  value + '');
+			var block = `<div class="bundle-list"><div class="bundle" id="${toTitleCase(key)}"><h2 class="bundle__title">${toTitleCase(key)}</h2><div class="bundle__content"><p class="detail__infor__sub">${value}</p></div></div></div>`;
+			var listLink = `<li class="list-link__item"><a class="list-link__link" href="#${toTitleCase(key)}">${toTitleCase(key)}</a></li>`
+			if (key !== null && (value !== null && value !== '')) {
+				$('.bundles').append(block);
+			};
+		});
+		// console.log(program["Program Name"]);
+		document.getElementById('program__title').innerHTML = program["Program Name"];
+		document.getElementById('institution__name').innerHTML = program["Institution"];
+		document.getElementById('program__level').innerHTML = program["Degree Level"];
+		document.getElementById('total__hours').innerHTML = hours;
+		document.getElementById('total__cost').innerHTML = program["Per Credit Hour Tuition"];
+	});
 
   index.getObjects([programID.toString()], function(err, content) {
     if (err) throw err;
