@@ -7460,7 +7460,7 @@ Blog details sidebar
 .main-search-input {
   margin-top: 50px;
   border-radius: 50px;
-  width: 100%;
+  width: 100% !important;
   background-color: #fff;
   box-shadow: 0 20px 30px 0 rgba(0, 0, 0, .1);
   align-items: flex-start;
@@ -7510,8 +7510,18 @@ Blog details sidebar
   height: 44px;
   line-height: 44px;
   box-shadow: none;
+  width: 90%;
+  border: none;
 }
 
+form.ais-SearchBox-form {
+  border: none;
+}
+
+.ais-SearchBox {
+  width: 90%;
+  margin: 0 auto;
+}
 
 .main-search-input button.button {
   font-size: 18px;
