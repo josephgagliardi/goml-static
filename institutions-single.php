@@ -21,7 +21,7 @@
               </nav>
               <div class="mt-4 p-3">
                 <a class="btn button-default btn-block list-link__btn" href="#">Apply Now</a>
-                <a class="btn button-outline-02 btn-block list-link__btn" id="instPageLink" href="#">Request Info</a>
+                <a class="btn button-outline-02 btn-block list-link__btn" id="instPageLink" href="/contact-form.php">Request Info</a>
                 <a class="btn button-outline-02 btn-block list-link__btn" id="website-link" href="#">Visit Website</a>
 
               </div>
@@ -101,17 +101,7 @@
                         <div class="list-brief__top row">
                           <div class="list-brief__top__title col-9 text-truncate"><a href="#">Bachelor of Science in Information Technology</a></div>
                           <div class="col-3">
-                            <ul class="list-tags">
-                              <li>
-                                <button class="aos" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="Area of Study" data-original-title="" title="">aos</button>
-                              </li>
-                              <li>
-                                <button class="cpl" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="Credit for Prior Learning" data-original-title="" title="">cpl</button>
-                              </li>
-                              <li>
-                                <button class="ep" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="eMajor program" data-original-title="" title="">em</button>
-                              </li>
-                            </ul>
+                            
                           </div>
                         </div>
                       </div>
@@ -119,17 +109,7 @@
                         <div class="list-brief__top row">
                           <div class="list-brief__top__title col-9 text-truncate"><a href="#">Associate of Science in Financial Technology (Fintech)</a></div>
                           <div class="col-3">
-                            <ul class="list-tags">
-                              <li>
-                                <button class="aos" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="Area of Study" data-original-title="" title="">aos</button>
-                              </li>
-                              <li>
-                                <button class="cpl" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="Credit for Prior Learning" data-original-title="" title="">cpl</button>
-                              </li>
-                              <li>
-                                <button class="ep" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="eMajor program" data-original-title="" title="">em</button>
-                              </li>
-                            </ul>
+                            
                           </div>
                         </div>
                       </div>
@@ -137,17 +117,7 @@
                         <div class="list-brief__top row">
                           <div class="list-brief__top__title col-9 text-truncate"><a href="#">Master of Education in Early Childhood Education</a></div>
                           <div class="col-3">
-                            <ul class="list-tags">
-                              <li>
-                                <button class="aos" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="Area of Study" data-original-title="" title="">aos</button>
-                              </li>
-                              <li>
-                                <button class="cpl" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="Credit for Prior Learning" data-original-title="" title="">cpl</button>
-                              </li>
-                              <li>
-                                <button class="ep" type="button" data-container="body" data-trigger="hover click" data-toggle="popover" data-placement="top" data-content="eMajor program" data-original-title="" title="">em</button>
-                              </li>
-                            </ul>
+                            
                           </div>
                         </div>
                       </div>
