@@ -21,7 +21,7 @@
                 <li class="list-link__item"><a class="list-link__link" href="#list-link-6">Tuition & Fees</a></li> -->
               </ul>
               <div id="quickLinks" class="mt-4 p-3">
-                <a class="btn button-default btn-block list-link__btn" id="applynowlink" href="#">Apply Now</a>
+                <a class="btn button-default btn-block list-link__btn" target="_blank" id="applynowlink" href="#">Apply Now</a>
                 <a class="btn button-outline-02 btn-block list-link__btn" id="instPageLink" href="#">Request Info</a>
                 <a class="mt-4 btn-block" id="curric-link" href="#"><i class="fas fa-clipboard-list"></i> View Curriculum</a>
               </div>
@@ -167,14 +167,14 @@
 		console.log(program);
 		hours = program["Total Credit Hours"] ? program["Total Credit Hours"] : 'N/A';
 		
-		var logoImage = `<img id="institution-logo-image" src="/assets/img/institutions/${program["Institution"].replace(/\s+/g, '-').toLowerCase()}.svg" alt="${program["Institution"]} logo">`; 
+		var logoImage = `<a href="/institutions-single.php?query=${program['Institution'].replace(/\s+/g, '-').toLowerCase()}"><img id="institution-logo-image" src="/assets/img/institutions/${program["Institution"].replace(/\s+/g, '-').toLowerCase()}.svg" alt="${program["Institution"]} logo"></a>`; 
 		$('.institutions-logo-single').append(logoImage);
 		Object.entries(program).forEach(([key, value]) => {
 			console.log('' + key + ':' +  value + '');
 			var anchor = key.replace(/\s+/g, '-').toLowerCase();
 			var block = `<div class="bundle-list"><div class="bundle" id="${anchor}"><h2 class="bundle__title" name="${toTitleCase(key)}">${toTitleCase(key)}</h2><div class="bundle__content"><p class="detail__infor__sub">${value}</p></div></div></div>`;
 			var listLink = `<li class="list-link__item"><a class="list-link__link" href="#${anchor}">${toTitleCase(key)}</a></li>`;
-		  var exceptionList = ['Institution', 'objectID', 'Admissons Link', 'Curriculum Link', 'Program Name', 'Total Credit Hours', 'Degree Level', 'Area of Study', 'Dates and Deadlines'];
+		  var exceptionList = ['Institution', 'objectID', 'Admissons Link', 'Curriculum Link', 'Program Name', 'Total Credit Hours', 'Degree Level', 'Area of Study', 'Dates and Deadlines', 'Tuition and Fees Link'];
 			if (key !== null && (value !== null && value !== '' && key !== 'Institution' && !exceptionList.includes(key))) {
 				$('.bundles').append(block);
 				$('.list-link__list').append(listLink);
@@ -190,8 +190,14 @@
     document.getElementById('instPageLink').href = '/institutions-single.php?query=' + program["Institution"].replace(/\s+/g, '-').toLowerCase();
     document.getElementById('curric-link').href = program["Curriculum Link"];
       if (program["Dates and Deadlines"] != null && program["Dates and Deadlines"].length > 0) {
-        var deadlineLink = `<a class="mt-4 btn-block" id="deadlines-link" href="${program["Dates and Deadlines"]}"><i class="fas fa-calendar"></i> Dates & Deadlines</a>`;
+        var deadlineLink = `<a class="mt-4 btn-block" id="deadlines-link" target="_blank" href="${program["Dates and Deadlines"]}"><i class="fas fa-calendar"></i> Dates & Deadlines</a>`;
+
         $('#quickLinks').append(deadlineLink);
+        
+      };
+      if(program["Tuition and Fees Link"] != null && program["Tuition and Fees Link"].length > 0) {
+        var feesLink = `<a class="mt-4 btn-block" id="fees-link" target="_blank" href="${program["Tuition and Fees Link"]}"><i class="fas fa-dollar-sign"></i> Tuition and Fees</a>`;
+        $('#quickLinks').append(feesLink);
       };
      });
 

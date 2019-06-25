@@ -21,7 +21,9 @@
               </nav>
               <div class="mt-4 p-3">
                 <a class="btn button-default btn-block list-link__btn" href="#">Apply Now</a>
+                <a class="btn button-outline-02 btn-block list-link__btn" id="instPageLink" href="#">Request Info</a>
                 <a class="btn button-outline-02 btn-block list-link__btn" id="website-link" href="#">Visit Website</a>
+
               </div>
             </div>
           </div>
@@ -234,7 +236,7 @@
     //TODO: convert this to use the program name
     var params = getParams(window.location.href);
     var institution = toTitleCase(params["query"].replace(/-/g, ' '));
-    console.log(institution);
+    
     // var programID = params["id"];
     var client = algoliasearch('JBY4H547QZ', '133c145ebb78c84a04aefb61c32dba1d');
     var index = client.initIndex('goml_INSTITUTIONS');
@@ -243,20 +245,23 @@
     index.search(institution, function(err, content) {
       if (err) throw err;
   
-      institution = content['hits'][0];
-      document.getElementById('website-link').href = institution["Institution Website"];
+        const institution = content['hits'][0];
+      console.log(institution);
+        document.getElementById('website-link').href = institution["Institution Website"];
   
       // $('.inst-main').append(`<h1 class="inst-main__title">` + institution['Institution Name'] + `</h1>`);
       // $('.inst-main__title').append(`<div class="inst-main__content">` + institution['Accreditation']);
-      $('.inst-main__title').innerHTML = institution['Institution Name'];
-
-      
-      $('.inst-main__content').text = institution[''];
+        $('.inst-main').append(`<h1 class="inst-main__title">${institution['Institution Name']}</h1>`);
       });
+
+    $( document ).ready(function() {
+        $('.inst-main').append(`<h1 class="inst-main__title">${institution['Institution Name']}</h1>`);
+    });
+      
     // index.getObjects([programID.toString()], function(err, content) {
-    //   if (err) throw err;
-    //   program = content['results'][0];
-    //   console.log(program);
+      // if (err) throw err;
+      // program = content['results'][0];
+      // console.log(program);
     //   hours = program["Total Credit Hours"] ? program["Total Credit Hours"] : 'N/A';
       
     //   var logoImage = `<img id="institution-logo-image" src="/assets/img/institutions/${program["Institution"].replace(/\s+/g, '-').toLowerCase()}.svg" alt="${program["Institution"]} logo">`; 
@@ -280,7 +285,7 @@
     //   document.getElementById('total__cost').innerHTML = program["Per Credit Hour Tuition"];
     //   document.getElementById('applynowlink').href = program["Admissons Link"];
     //   document.getElementById('instPageLink').href = '/institutions-single.php?query=' + program["Institution"].replace(/\s+/g, '-').toLowerCase();
-    //    });
+  
 
     $('.inst-main__title').innerHTML = institution['Institution Name'];
     function toTitleCase(str) {

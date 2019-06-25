@@ -11,28 +11,29 @@
         <li><a href="/institutions-listing.php">Institutions</a></li>
         <li>
           <a href="#">Future Students</a>
-          <ul class="droopmenu-grid droopmenu-grid-3">
-            <li class="droopmenu-grid-container">
-              <div class="droopmenu-row">
-                <ul class="droopmenu-col droopmenu-col6">
-                  <li><a href="#">USG eCore</a></li>
-                  <li><a href="#">USG eMajor</a></li>
-                  <li><a href="#">GA Futures</a></li>
-                </ul>
-                <ul class="droopmenu-col droopmenu-col6">
-                  <li><a href="#">GA Tracs</a></li>
-                  <li><a href="#">University System of Georgia</a></li>
-                </ul>
-              </div>
-            </li>
+          <ul>
+            <li><a href="https://goml.readi.info/">Online Readiness Assessment</a></li>
+            <li><a href="#">FAQ</a></li>
           </ul>
         </li>
         <li>
           <a href="#">Other Resources</a>
-          <ul>
-            <li><a href="#">Online Readiness Assessment</a></li>
-            <li><a href="#">FAQ</a></li>
+          <ul class="droopmenu-grid droopmenu-grid-3">
+            <li class="droopmenu-grid-container">
+              <div class="droopmenu-row">
+                <ul class="droopmenu-col droopmenu-col6">
+                  <li><a href="https://ecore.usg.edu/">USG eCore</a></li>
+                  <li><a href="https://emajor.usg.edu/">USG eMajor</a></li>
+                  <li><a href="https://www.gafutures.org/">GA Futures</a></li>
+                </ul>
+                <ul class="droopmenu-col droopmenu-col6">
+                  <li><a href="https://www.gatracs.org/">GA Tracs</a></li>
+                  <li><a href="https://www.usg.edu/">University System of Georgia</a></li>
+                </ul>
+              </div>
+            </li>
           </ul>
+
         </li>
       </ul>
     </nav><!-- droopmenu-nav -->
