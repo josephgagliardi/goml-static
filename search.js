@@ -37,7 +37,7 @@ search.addWidget(
         hours = item["Total Credit Hours"] ? item["Total Credit Hours"] : 'N/A';
         favoritedIcon = itemFavorited(item['objectID']) ? `<i class="fas fa-heart" onclick="favoriteDegree(this, ${item["objectID"]}, ${item["favorited_count"]});"></i>` : `<i class="far fa-heart" onclick="favoriteDegree(this, ${item["objectID"]}, ${item["favorited_count"]})"></i>`;
         favoritedCount = item['favorited_count']
-        switch(item['Area of Study']) {
+        switch (item['Area of Study']) {
           case 'Healthcare':
             icon = 'fa-notes-medical'
             break;
@@ -72,7 +72,7 @@ search.addWidget(
         return `
           <div class="list-content">
               <div class="courses__top">
-                 <div class="courses__top__wrapper"><img class="courses__top__image" style="fill: #fff !important;" src="/assets/img/institutions/${item['Institution'].replace(/\s+/g, '-').toLowerCase()}.svg" alt="">${favoritedIcon}</div>
+                 <div class="courses__top__wrapper"><img class="courses__top__image" style="fill: #fff !important;" src="/assets/img/institutions/white/${item['Institution'].replace(/\s+/g, '-').toLowerCase()}.svg" alt="">${favoritedIcon}</div>
               </div>
             <div class="courses__content">
                <a class="courses__content__title" href="/program-single.php?id=${item["objectID"]}">${item["Program Name"]}</a>
