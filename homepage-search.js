@@ -7,8 +7,15 @@ const searchClient = algoliasearch(
 
 
 const autocomplete = instantsearch.connectors.connectAutocomplete(
-  ({ indices, refine, widgetParams }, isFirstRendering) => {
-    const { container, onSelectChange } = widgetParams;
+  ({
+    indices,
+    refine,
+    widgetParams
+  }, isFirstRendering) => {
+    const {
+      container,
+      onSelectChange
+    } = widgetParams;
 
     if (isFirstRendering) {
       container.html('<select id="ais-autocomplete"></select>');
@@ -23,7 +30,7 @@ const autocomplete = instantsearch.connectors.connectAutocomplete(
           refine(this.getValue());
         },
         score() {
-          return function() {
+          return function () {
             return 1;
           };
         },
@@ -57,6 +64,7 @@ search.addWidget(
     showSubmit: true,
     showReset: false,
     searchAsYouType: true,
+
     placeholder: 'Your future is merely a search away...',
     cssClasses: {
       item: 'border-left',
@@ -69,27 +77,18 @@ search.addWidget(
 
 search.addWidget(
   instantsearch.widgets.hits({
-    container: '.list - icons',
-
+    container: '.hit-container',
     templates: {
       item: function (item) {
         return `
-        <div class="list-content">
-            <div class="courses__top">
-               <div class="courses__top__wrapper">
-               <img class="courses__top__image" src="/assets/img/program-single/header-img-1.jpg" alt=""></div>
-            </div>
-          <div class="courses__content">
-             <a class="courses__content__title" href="/program-single.php?id=${item.objectID}">
-             ${item['Program Name']}
-             </a>
-              <span class="courses__content__institutions">${item.Institution}</span>
-             <div class="courses__bottom">
-                 <div class="area-of-study">
-                    ${item['Area of Study']}
-                  <div>
-              </div>
-        </div>  
+        <div class="inst-list-wrapper">
+        <figure>
+            <img class="inst-icon" src="/assets/img/institutions/icons/${item['Institution'].replace(/\s+/g, '-').toLowerCase()}.svg" alt="">
+            <figcaption>
+            <p class="inst">${item.Institution}</p>
+            <p class="prog-name">${item['Program Name']}</p>
+            </figcaption>
+        </figure>
         </div>
       `;
       },
