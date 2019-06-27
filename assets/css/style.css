@@ -7566,12 +7566,13 @@ form.ais-SearchBox-form {
 .hit-container .ais-Hits {
   background-color: #FFF;
   text-align: left;
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
 }
 
 .hit-container .ais-Hits .inst-list-wrapper {
   width: 100%;
-  border-bottom: solid 1px #d6d6d6;
 }
+
 
 .hit-container .ais-Hits figure {
   margin-bottom: 20px;
@@ -7583,6 +7584,12 @@ form.ais-SearchBox-form {
 
 .hit-container .ais-Hits .ais-Hits-item {
   width: 100%;
+  border-bottom: solid 1px #d6d6d6;
+  padding: 20px 20px 15px 20px;
+}
+
+.hit-container .ais-Hits .ais-Hits-item:last-child {
+  border-bottom: none;
 }
 
 .hit-container .ais-Hits .inst-icon {
