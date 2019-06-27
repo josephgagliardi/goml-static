@@ -69,7 +69,7 @@ search.addWidget(
 
 search.addWidget(
   instantsearch.widgets.hits({
-    container: '.list-icons',
+    container: '.list - icons',
 
     templates: {
       item: function (item) {
