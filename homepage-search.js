@@ -45,6 +45,8 @@ search.addWidget(
       item: function (item) {
         
         var instLink = `<a href="/program-listing.php?query="${item['Institution']}>`;
+        // Alternatively - link inst logo to inst info page?
+        // var instLink = `<a href="/institutions-single.php">`;
         var programLink = `<a href="/program-single.php?id=${item['objectID']}">`;
         return `
         <div class="inst-list-wrapper">
