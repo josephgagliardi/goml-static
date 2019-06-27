@@ -4,43 +4,22 @@
 <?php include("includes/header.php"); ?>
 <main>
   <section class="banner" style="background-image: url(/assets/img/home/main-search-background-02.jpg);">
-    <div class="main-search-inner">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <h1 data-aos="fade-up" data-aos-delay="100" id="site-headline">Success is Just a Search Away.</h1>
-            <h2 data-aos="fade-up" data-aos-delay="200">Explore online degrees and certificates from across the University System of Georgia.</h2>
-            <div class="main-search-input" data-aos="fade-up" data-aos-delay="300">
-              <div class="row">
-                <div class="col-md-3">
-                  <div class="select">
-                    <label for="dtype" class="sr-only">Degree Levels</label>
-                    <select id="dtype" name="dtype">
-                      <option label="All Degree Levels" selected>All Degree Levels</option>
-                      <option label="Certificate">Certificate</option>
-                      <option label="Bachelor's">Bachelor's</option>
-                      <option label="Master's">Master's</option>
-                      <option label="Doctorate">Doctorate</option>
-                    </select>
-                    <div class="select__arrow"><i class="fas fa-chevron-down"></i></div>
-                  </div>
-                </div>
-                <div class="col-md-6 border-left">
-                  <div class="main-search-input-item">
-                    <input class="typed-words" type="text" placeholder="" value="">
-                  </div>
-                </div>
-                <div class="col-md-3">
-                  <button class="button button-outline float-md-right">Search<i class="fas fa-search"></i></button>
-                </div>
-              </div><!-- End of Row -->
+  <div class="main-search-inner">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <h1 data-aos="fade-up" data-aos-delay="100" id="site-headline" class="aos-init aos-animate">Success is Just a Search Away.</h1>
+              <h2 data-aos="fade-up" data-aos-delay="200" class="aos-init aos-animate">Explore online degrees and certificates from across the University System of Georgia.</h2>
+              <div class="main-search-input aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+                <div id="searchBox" class="row">
 
+
+              </div>
             </div>
           </div>
+          <!-- Features Categories -->
         </div>
-        <!-- Features Categories -->
       </div>
-    </div>
   </section>
   <section>
     <div class="list-icons">
@@ -51,16 +30,16 @@
               <img class="list-icons__image" src="/assets/img/institutions/abraham-baldwin-agricultural-college.svg" alt=""></a>
           </div>
           <div class="list-icons__item"><a class="list-icons__link" href="#">
-              <img class="list-icons__image" src="/assets/img/institutions/albany-state.svg" alt=""></a>
+              <img class="list-icons__image" src="/assets/img/institutions/albany-state-university.svg" alt=""></a>
           </div>
           <div class="list-icons__item"><a class="list-icons__link" href="#">
-              <img class="list-icons__image" src="/assets/img/institutions/atlanta-metro.svg" alt=""></a>
+              <img class="list-icons__image" src="/assets/img/institutions/atlanta-metropolitan-state-college.svg" alt=""></a>
           </div>
           <div class="list-icons__item"><a class="list-icons__link" href="#">
               <img class="list-icons__image" src="/assets/img/institutions/augusta-university.svg" alt=""></a>
           </div>
           <div class="list-icons__item"><a class="list-icons__link" href="#">
-              <img class="list-icons__image" src="/assets/img/institutions/clayton-state.svg" alt=""></a>
+              <img class="list-icons__image" src="/assets/img/institutions/clayton-state-university.svg" alt=""></a>
           </div>
           <div class="list-icons__item"><a class="list-icons__link" href="#">
               <img class="list-icons__image" src="/assets/img/institutions/college-of-coastal-georgia.svg" alt=""></a>
@@ -69,7 +48,7 @@
               <img class="list-icons__image" src="/assets/img/institutions/columbus-state-university.svg" alt=""></a>
           </div>
           <div class="list-icons__item"><a class="list-icons__link" href="#">
-              <img class="list-icons__image" src="/assets/img/institutions/dalton-state.svg" alt=""></a>
+              <img class="list-icons__image" src="/assets/img/institutions/dalton-state-college.svg" alt=""></a>
           </div>
           <div class="list-icons__item"><a class="list-icons__link" href="#">
               <img class="list-icons__image" src="/assets/img/institutions/east-georgia-state-college.svg" alt=""></a>
@@ -90,7 +69,7 @@
               <img class="list-icons__image" src="/assets/img/institutions/georgia-southern-university.svg" alt=""></a>
           </div>
           <div class="list-icons__item"><a class="list-icons__link" href="#">
-              <img class="list-icons__image" src="/assets/img/institutions/georgia-southwest-state-university.svg" alt=""></a>
+              <img class="list-icons__image" src="/assets/img/institutions/georgia-southwestern-state-university.svg" alt=""></a>
           </div>
           <div class="list-icons__item"><a class="list-icons__link" href="#">
               <img class="list-icons__image" src="/assets/img/institutions/georgia-state.svg" alt=""></a>
@@ -105,7 +84,7 @@
               <img class="list-icons__image" src="/assets/img/institutions/kennesaw-state-university.svg" alt=""></a>
           </div>
           <div class="list-icons__item"><a class="list-icons__link" href="#">
-              <img class="list-icons__image" src="/assets/img/institutions/middle-georgia-state-college.svg" alt=""></a>
+              <img class="list-icons__image" src="/assets/img/institutions/middle-georgia-state-university.svg" alt=""></a>
           </div>
           <div class="list-icons__item"><a class="list-icons__link" href="#">
               <img class="list-icons__image" src="/assets/img/institutions/savannah-state-university.svg" alt=""></a>

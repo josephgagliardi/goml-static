@@ -37,19 +37,53 @@ search.addWidget(
         hours = item["Total Credit Hours"] ? item["Total Credit Hours"] : 'N/A';
         favoritedIcon = itemFavorited(item['objectID']) ? `<i class="fas fa-heart" onclick="favoriteDegree(this, ${item["objectID"]}, ${item["favorited_count"]});"></i>` : `<i class="far fa-heart" onclick="favoriteDegree(this, ${item["objectID"]}, ${item["favorited_count"]})"></i>`;
         favoritedCount = item['favorited_count']
+        switch (item['Area of Study']) {
+          case 'Healthcare':
+            icon = 'fa-notes-medical'
+            break;
+          case 'Business':
+            icon = 'fa-briefcase'
+            break;
+          case 'Social Sciences':
+            icon = 'fa-user-astronaut'
+            break;
+          case 'Technology/Computer Science':
+            icon = 'fa-laptop-code'
+            break;
+          case 'Performing Arts':
+            icon = 'fa-theater-masks'
+            break;
+          case 'Physical Sciences':
+            icon = 'fa-gem'
+            break;
+          case 'History':
+            icon = 'fa-landmark'
+            break;
+          case 'English':
+            icon = 'fa-book'
+            break;
+          case 'Education':
+            icon = 'fa-school'
+            break;
+          default:
+            icon = 'fa-briefcase'
+            break;
+        }
         return `
           <div class="list-content">
               <div class="courses__top">
-                 <div class="courses__top__wrapper"><img class="courses__top__image" src="/assets/img/program-single/header-img-1.jpg" alt="">${favoritedIcon}</div>
+                 <div class="courses__top__wrapper"><img class="courses__top__image" src="/assets/img/institutions/white/${item['Institution'].replace(/\s+/g, '-').toLowerCase()}.svg" alt="">${favoritedIcon}</div>
               </div>
             <div class="courses__content">
                <a class="courses__content__title" href="/program-single.php?id=${item["objectID"]}">${item["Program Name"]}</a>
-                <span class="courses__content__institutions">${item["Institution"]}</span>
+                <a href="/program-listing.php?refinementList%5BInstitution%5D%5B0%5D=${item["Institution"]}"><span class="courses__content__institutions">${item["Institution"]}</span></a>
                <div class="courses__bottom">
+                  <a href="/program-listing.php?refinementList%5BArea%20of%20Study%5D%5B0%5D=${item["Area of Study"]}">
                    <div class="area-of-study">
                       ${item["Area of Study"]}
                     <div>
-                    
+                    <i class="fas ${icon} column-left__icon"></i>
+                    </a>
                 </div>
           </div>  
           </div>`;
@@ -146,6 +180,27 @@ search.addWidget(
     limit: 5,
     showMore: true,
     searchablePlaceholder: 'Refine by Discipline...',
+    sortBy: ['name:asc'],
+    cssClasses: {
+      item: 'list-categories__item',
+      count: 'badge pull-right select__number',
+      active: 'active',
+      label: 'list-categories__link',
+      checkbox: 'filter__checkbox',
+      showMore: 'see-more-button-text'
+    }
+  })
+);
+
+
+search.addWidget(
+  instantsearch.widgets.refinementList({
+    container: '#collab__filter',
+    attribute: 'Collaborative',
+    operator: 'or',
+    limit: 5,
+    showMore: true,
+    searchablePlaceholder: 'Refine by Collaborative...',
     sortBy: ['name:asc'],
     cssClasses: {
       item: 'list-categories__item',

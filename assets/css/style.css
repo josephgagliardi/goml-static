@@ -1655,19 +1655,15 @@ button.button-text:focus {
   visibility: visible;
 }
 
-.courses__top__wrapper {
-  position: relative;
-  overflow: hidden;
-}
 
-.courses__top__image {
+/*.courses__top__image {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: auto;
   min-height: 100%;
-}
+}*/
 
 
 .courses__content {
@@ -2661,10 +2657,19 @@ form.ais-SearchBox-form {
   margin-bottom: 50px;
 }
 
-.courses__top__wrapper:before {
+/*=.courses__top__wrapper:before {
   content: '';
   display: block;
   padding-top: 61%;
+}*/
+
+.courses__top__wrapper img {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  height: 180px;
+  padding: 30px;
+
 }
 
 
@@ -2679,6 +2684,7 @@ form.ais-SearchBox-form {
 
 .courses__top__wrapper {
   position: relative;
+  background-color: var(--main__accent__color);
 }
 
 .courses__bottom {
@@ -7460,7 +7466,7 @@ Blog details sidebar
 .main-search-input {
   margin-top: 50px;
   border-radius: 50px;
-  width: 100%;
+  width: 100% !important;
   background-color: #fff;
   box-shadow: 0 20px 30px 0 rgba(0, 0, 0, .1);
   align-items: flex-start;
@@ -7510,8 +7516,18 @@ Blog details sidebar
   height: 44px;
   line-height: 44px;
   box-shadow: none;
+  width: 90%;
+  border: none;
 }
 
+form.ais-SearchBox-form {
+  border: none;
+}
+
+.ais-SearchBox {
+  width: 90%;
+  margin: 0 auto;
+}
 
 .main-search-input button.button {
   font-size: 18px;

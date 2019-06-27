@@ -41,6 +41,14 @@
             </div>
 
           </div>
+          <div class="column-left__item">
+            <h1 class="column-left__title">Collaborative</h1>
+            <div class="select list-selector"><a class="column-left__button-drop" href="#collab__filter" data-toggle="collapse"><span class="column-left__button-drop__text">Collaborative</span><i class="fas fa-angle-down column-left__icon"></i></a>
+              <div class="list-categories" id="collab__filter">
+              </div>
+            </div>
+
+          </div>
 
         </div>
         <!-- Active Filters and Stats -->
@@ -77,7 +85,7 @@
     </div>
   </div>
 </main> <?php include("includes/footer.php"); ?>
-<script src="/assets/js/couse-listing.js"></script>
+<script src="/assets/js/program-listing.js"></script>
 <script src="../../search.js"></script>
 
 </html>

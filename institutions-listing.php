@@ -25,7 +25,7 @@
               </div>
               <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
                 <a class="university-menu__item col-equal" href="#">
-                  <div class="item-top"><img src="/assets/img/institutions/albany-state.svg" alt=""></div>
+                  <div class="item-top"><img src="/assets/img/institutions/albany-state-university.svg" alt=""></div>
                   <div class="item-body">
                     Albany State University
                   </div>
@@ -33,7 +33,7 @@
               </div>
               <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
                 <a class="university-menu__item col-equal" href="#">
-                  <div class="item-top"><img src="/assets/img/institutions/atlanta-metro.svg" alt=""></div>
+                  <div class="item-top"><img src="/assets/img/institutions/atlanta-metropolitan-state-college.svg" alt=""></div>
                   <div class="item-body">
                     Atlanta Metropolitan State College
                   </div>
@@ -49,7 +49,7 @@
               </div>
               <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
                 <a class="university-menu__item col-equal" href="#">
-                  <div class="item-top"><img src="/assets/img/institutions/clayton-state.svg" alt=""></div>
+                  <div class="item-top"><img src="/assets/img/institutions/clayton-state-university.svg" alt=""></div>
                   <div class="item-body">
                     College of Coastal Georgia
                   </div>
@@ -73,7 +73,7 @@
               </div>
               <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
                 <a class="university-menu__item col-equal" href="#">
-                  <div class="item-top"><img src="/assets/img/institutions/dalton-state.svg" alt=""></div>
+                  <div class="item-top"><img src="/assets/img/institutions/dalton-state-college.svg" alt=""></div>
                   <div class="item-body">
                     Dalton State College
                   </div>
