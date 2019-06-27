@@ -233,7 +233,6 @@ section {
 
 body {
   line-height: 1;
-  font-family: 'Open Sans', Arial, sans-serif;
 }
 
 ol,
@@ -262,8 +261,7 @@ table {
 /*	TYPOGRAPHY
 –––––––––––––––––––––––––––*/
 body {
-  /*font-family: 'Open Sans', sans-serif;*/
-  font-family: 'Quicksand', sans-serif !important;
+  font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
