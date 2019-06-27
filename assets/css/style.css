@@ -1655,19 +1655,15 @@ button.button-text:focus {
   visibility: visible;
 }
 
-.courses__top__wrapper {
-  position: relative;
-  overflow: hidden;
-}
 
-.courses__top__image {
+/*.courses__top__image {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: auto;
   min-height: 100%;
-}
+}*/
 
 
 .courses__content {
@@ -2661,10 +2657,19 @@ form.ais-SearchBox-form {
   margin-bottom: 50px;
 }
 
-.courses__top__wrapper:before {
+/*=.courses__top__wrapper:before {
   content: '';
   display: block;
   padding-top: 61%;
+}*/
+
+.courses__top__wrapper img {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  height: 180px;
+  padding: 30px;
+
 }
 
 
@@ -2679,6 +2684,7 @@ form.ais-SearchBox-form {
 
 .courses__top__wrapper {
   position: relative;
+  background-color: var(--main__accent__color);
 }
 
 .courses__bottom {
