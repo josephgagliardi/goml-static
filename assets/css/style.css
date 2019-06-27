@@ -2663,13 +2663,24 @@ form.ais-SearchBox-form {
   padding-top: 61%;
 }*/
 
-.courses__top__wrapper img {
-  display: table-cell;
-  vertical-align: middle;
+.courses__top__wrapper {
+  position: relative;
+  background-color: #000;
   text-align: center;
-  height: 180px;
   padding: 30px;
+  width: 100%;
+}
 
+.courses__top__wrapper img {
+  display: inline-block;
+  vertical-align: top;
+  height: 180px;
+  width: 100%;
+  margin: auto;
+}
+
+.courses__top {
+  position: relative;
 }
 
 
@@ -2678,14 +2689,9 @@ form.ais-SearchBox-form {
   padding: 0 15px;
 }
 
-.courses__top {
-  position: relative;
-}
 
-.courses__top__wrapper {
-  position: relative;
-  background-color: var(--main__accent__color);
-}
+
+
 
 .courses__bottom {
   border-top: solid 1px rgba(232, 232, 232, 0.8);
@@ -2753,8 +2759,9 @@ form.ais-SearchBox-form {
   display: none;
 }
 
-.list-view .courses__top__wrapper:before {
+.list-view .courses__top__wrapper {
   padding-top: 0;
+  display: none;
 }
 
 @media (max-width: 991px) {
@@ -2768,7 +2775,7 @@ form.ais-SearchBox-form {
     width: 100%;
   }
 
-  .list-view .courses__top__wrapper:before {
+  .list-view .courses__top__wrapper {
     padding-top: 0;
   }
 
