@@ -214,7 +214,6 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  /*font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;*/
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -234,6 +233,7 @@ section {
 
 body {
   line-height: 1;
+  font-family: 'Open Sans', Arial, sans-serif;
 }
 
 ol,
@@ -7562,6 +7562,44 @@ form.ais-SearchBox-form {
 .main-search-input button.button i {
   margin-left: 10px;
 }
+
+.hit-container .ais-Hits {
+  background-color: #FFF;
+  text-align: left;
+}
+
+.hit-container .ais-Hits .inst-list-wrapper {
+  width: 100%;
+  border-bottom: solid 1px #d6d6d6;
+}
+
+.hit-container .ais-Hits figure {
+  margin-bottom: 20px;
+}
+
+.hit-container .ais-Hits figcaption {
+  display: table;
+}
+
+.hit-container .ais-Hits .ais-Hits-item {
+  width: 100%;
+}
+
+.hit-container .ais-Hits .inst-icon {
+  height: 70px;
+  width: 70px;
+  float: left;
+  margin-right: 20px;
+}
+
+.hit-container .ais-Hits .inst {
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+  padding-top: 10px;
+}
+
+.hit-container .ais-Hits .prog-name {}
 
 @media (max-width: 767px) {
   .main-search-input {
