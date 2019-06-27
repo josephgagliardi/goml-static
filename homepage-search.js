@@ -8,6 +8,9 @@ const searchClient = algoliasearch(
 const search = instantsearch({
   indexName: 'goml_DEMO',
   searchClient,
+  searchParameters: {
+      hitsPerPage: 4
+  },
   searchFunction(helper) {
       const container = document.querySelector('.hit-container');
 
