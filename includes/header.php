@@ -18,22 +18,13 @@
         </li>
         <li>
           <a href="#">Other Resources</a>
-          <ul class="droopmenu-grid droopmenu-grid-3">
-            <li class="droopmenu-grid-container">
-              <div class="droopmenu-row">
-                <ul class="droopmenu-col droopmenu-col6">
-                  <li><a href="https://ecore.usg.edu/">USG eCore</a></li>
-                  <li><a href="https://emajor.usg.edu/">USG eMajor</a></li>
-                  <li><a href="https://www.gafutures.org/">GA Futures</a></li>
-                </ul>
-                <ul class="droopmenu-col droopmenu-col6">
-                  <li><a href="https://www.gatracs.org/">GA Tracs</a></li>
-                  <li><a href="https://www.usg.edu/">University System of Georgia</a></li>
-                </ul>
-              </div>
-            </li>
+          <ul>
+            <li><a href="https://www.usg.edu/">USG <span class="sr-only">(University System of Georgia)</span></a></li>
+            <li><a href="https://ecore.usg.edu/">USG eCore</a></li>
+            <li><a href="https://emajor.usg.edu/">USG eMajor</a></li>
+            <li><a href="https://www.gafutures.org/">GA Futures</a></li>
+            <li><a href="https://www.gatracs.org/">GA Tracs</a></li>
           </ul>
-
         </li>
       </ul>
     </nav><!-- droopmenu-nav -->

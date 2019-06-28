@@ -26,8 +26,10 @@
               </ul>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-4 footer__item">
-              <h3 class="footer__item__title">Future Students</h3>
+              <h3 class="footer__item__title">Other Resources</h3>
               <ul class="footer-link__list">
+                <li class="footer-link__item"><a href="https://www.usg.edu/" class="footer-link__link ">USG (University System of Georgia)</a>
+                </li>
                 <li class="footer-link__item"><a href="https://ecore.usg.edu/" class="footer-link__link ">USG eCore</a>
                 </li>
                 <li class="footer-link__item"><a href="https://emajor.usg.edu/" class="footer-link__link ">USG eMajor</a>
@@ -39,7 +41,7 @@
               </ul>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-4 footer__item">
-              <h3 class="footer__item__title">Other Resources</h3>
+              <h3 class="footer__item__title">Future Students</h3>
               <ul class="footer-link__list">
                 <li class="footer-link__item"><a href="#" class="footer-link__link ">Online Readiness Assessment</a>
                 </li>
