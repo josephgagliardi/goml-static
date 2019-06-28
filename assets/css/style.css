@@ -7577,7 +7577,7 @@ form.ais-SearchBox-form:after {
   box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
   width: 76%;
   position: absolute;
-  top: 0;
+  top: 9px;
   left: 0;
 }
 
@@ -7585,20 +7585,35 @@ form.ais-SearchBox-form:after {
   width: 100%;
 }
 
+.hit-container .ais-Hits .inst-list-wrapper a {
+  text-decoration: none;
+  position: relative;
+  top: 0;
+  transition: 300ms ease, -webkit-transform 300ms ease;
+  transition: 300ms ease, transform 300ms ease;
+}
+
+.hit-container .ais-Hits .inst-list-wrapper a:hover {
+  background-color: #f5f5f5;
+  top: -5px;
+}
+
 
 .hit-container .ais-Hits figure {
   margin-bottom: 10px;
+
 }
 
 .hit-container .ais-Hits figcaption {
   display: table;
   vertical-align: text-top;
+
 }
 
 .hit-container .ais-Hits .ais-Hits-item {
   width: 100%;
   border-bottom: solid 1px #d6d6d6;
-  padding: 10px 20px 10px 20px;
+  padding: 15px 20px 10px 20px;
 }
 
 .hit-container .ais-Hits .ais-Hits-item:last-child {

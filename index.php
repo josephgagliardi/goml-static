@@ -14,9 +14,7 @@
               <div class="row">
                 <div class="col-3 border-right">
                   <div id="menu-select">
-
                   </div>
-
                   <div class="select__arrow"><i class="fas fa-chevron-down"></i></div>
                   <div class="border-right"></div>
                 </div>
