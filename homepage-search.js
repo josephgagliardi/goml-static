@@ -9,20 +9,22 @@ const search = instantsearch({
   indexName: 'goml_DEMO',
   searchClient,
   searchParameters: {
-      hitsPerPage: 4
+    hitsPerPage: 4
   },
   searchFunction(helper) {
-      const container = document.querySelector('.hit-container');
+    const container = document.querySelector('.hit-container');
 
-      if (helper.state.query === '') {
-        container.style.display = 'none';
-      } else {
-        container.style.display = '';
-      }
-
-      helper.search();
+    if (helper.state.query === '') {
+      container.style.display = 'none';
+    } else {
+      container.style.display = '';
     }
+
+    helper.search();
+  }
 });
+
+
 
 search.addWidget(
   instantsearch.widgets.searchBox({
@@ -41,6 +43,7 @@ search.addWidget(
     }
   })
 );
+
 
 search.addWidget(
   instantsearch.widgets.hits({
@@ -72,6 +75,22 @@ search.addWidget(
   })
 );
 
+search.addWidget(
+  instantsearch.widgets.menuSelect({
+    container: '#menu-select',
+    attribute: 'Degree Level',
+    templates: {
+      defaultOption: 'Degree Levels',
+    },
+    cssClasses: {
+      root: '',
+      select: [
+      'select'
+    ],
+    },
+  })
+);
+
+
 
 search.start();
-

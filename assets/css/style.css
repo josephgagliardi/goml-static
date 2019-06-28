@@ -7479,10 +7479,11 @@ Blog details sidebar
   max-height: 68px;
 }
 
-.main-search-input .select select {
+
+.main-search-input .ais-MenuSelect select {
   width: 100%;
   cursor: pointer;
-  border: 0;
+  border: none;
   background: #FFF;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -7521,7 +7522,7 @@ Blog details sidebar
   height: 44px;
   line-height: 44px;
   box-shadow: none;
-  width: 75%;
+  width: 76%;
   border: none;
   float: left;
 }
@@ -7566,11 +7567,18 @@ form.ais-SearchBox-form:after {
   margin-left: 10px;
 }
 
+.hit-container {
+  position: relative;
+}
+
 .hit-container .ais-Hits {
   background-color: #FFF;
   text-align: left;
   box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
   width: 76%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .hit-container .ais-Hits .inst-list-wrapper {
