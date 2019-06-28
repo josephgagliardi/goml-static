@@ -7521,17 +7521,22 @@ Blog details sidebar
   height: 44px;
   line-height: 44px;
   box-shadow: none;
-  width: 90%;
+  width: 75%;
   border: none;
+  float: left;
 }
 
 form.ais-SearchBox-form {
   border: none;
 }
 
+form.ais-SearchBox-form:after {
+  content: '';
+  clear: both;
+}
+
 .ais-SearchBox {
-  width: 90%;
-  margin: 0 auto;
+  width: 100%;
 }
 
 .main-search-input button.button {
@@ -7565,6 +7570,7 @@ form.ais-SearchBox-form {
   background-color: #FFF;
   text-align: left;
   box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+  width: 76%;
 }
 
 .hit-container .ais-Hits .inst-list-wrapper {
@@ -7573,17 +7579,18 @@ form.ais-SearchBox-form {
 
 
 .hit-container .ais-Hits figure {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .hit-container .ais-Hits figcaption {
   display: table;
+  vertical-align: text-top;
 }
 
 .hit-container .ais-Hits .ais-Hits-item {
   width: 100%;
   border-bottom: solid 1px #d6d6d6;
-  padding: 20px 20px 15px 20px;
+  padding: 10px 20px 10px 20px;
 }
 
 .hit-container .ais-Hits .ais-Hits-item:last-child {
@@ -7591,8 +7598,8 @@ form.ais-SearchBox-form {
 }
 
 .hit-container .ais-Hits .inst-icon {
-  height: 70px;
-  width: 70px;
+  height: 3.125rem;
+  width: 3.125rem;
   float: left;
   margin-right: 20px;
 }
@@ -7601,7 +7608,6 @@ form.ais-SearchBox-form {
   font-weight: 700;
   font-size: 1.125rem;
   line-height: 1.5rem;
-  padding-top: 10px;
 }
 
 .hit-container .ais-Hits .prog-name {}
