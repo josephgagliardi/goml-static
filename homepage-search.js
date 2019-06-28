@@ -9,20 +9,22 @@ const search = instantsearch({
   indexName: 'goml_DEMO',
   searchClient,
   searchParameters: {
-      hitsPerPage: 4
+    hitsPerPage: 4
   },
   searchFunction(helper) {
-      const container = document.querySelector('.hit-container');
+    const container = document.querySelector('.hit-container');
 
-      if (helper.state.query === '') {
-        container.style.display = 'none';
-      } else {
-        container.style.display = '';
-      }
-
-      helper.search();
+    if (helper.state.query === '') {
+      container.style.display = 'none';
+    } else {
+      container.style.display = '';
     }
+
+    helper.search();
+  }
 });
+
+
 
 search.addWidget(
   instantsearch.widgets.searchBox({
@@ -42,6 +44,7 @@ search.addWidget(
   })
 );
 
+
 search.addWidget(
   instantsearch.widgets.hits({
     container: '.hit-container',
@@ -54,17 +57,15 @@ search.addWidget(
         var programLink = `<a href="/program-single.php?id=${item['objectID']}">`;
         return `
         <div class="inst-list-wrapper">
+        ${programLink}
         <figure>
-        ${instLink}
             <img class="inst-icon" src="/assets/img/institutions/icons/${item['Institution'].replace(/\s+/g, '-').toLowerCase()}.svg" alt="">
-        </a>
             <figcaption>
-            ${programLink}
-            <p class="inst">${item['Program Name']}</p></a>
-            ${instLink}
-            <p class="prog-name">${item.Institution}</p></a>
+            <p class="inst">${item['Program Name']}</p>
+            <p class="prog-name">${item.Institution}</p>
             </figcaption>
-        </figure>
+          </figure>
+        </a>
         </div>
       `;
       },
@@ -72,6 +73,22 @@ search.addWidget(
   })
 );
 
+search.addWidget(
+  instantsearch.widgets.menuSelect({
+    container: '#menu-select',
+    attribute: 'Degree Level',
+    templates: {
+      defaultOption: 'Degree Levels',
+    },
+    cssClasses: {
+      root: '',
+      select: [
+      'select'
+    ],
+    },
+  })
+);
+
+
 
 search.start();
-
