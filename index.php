@@ -120,7 +120,7 @@
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
-          <span class="spot-light-title">From the port of Savannah to the Blue Ridge Mountains.</span>
+          <h2 class="spot-light-title">From the port of Savannah to the Blue Ridge Mountains.</h2>
           <p>The University System of Georgia (USG) is dedicated to making high-quality higher education accessible from every corner of the peach state. Whether you are starting school for the first time, looking for a career change, or need to finish a degree you started years ago, Georgia On My Line (GOML) is your go-to resource for accredited and respected online programs from University System of Georgia institutions.</p>
         </div>
       </div>
@@ -129,12 +129,11 @@
   <section class="best-features">
     <div class="container">
       <div class="list-course__header">
-        <h2 class="list-course__header__title">The University System of Georgia at your Fingertips</h2>
       </div>
       <div class="row mb-5 justify-content-around align-items-center item__left">
 
         <div class="col-lg-5">
-          <h3 class="item__left__title">Your Search. Your Way.</h3>
+          <h3 class="item__left__title">The University System of Georgia at your Fingertips</h3>
           <div class="item__left__content">
             <p>
               The newly designed Georgia On My Line website offers a truly user-friendly marketplace shopping experience for users. Search our database by college, area of study, degree level, and more. Narrow your results further by special features such as Credit for Prior Learning opportunities or specialized program accreditations. Find something you like? Request information to be contacted by our GOML support team or click Apply Now to go straight to the application at that institution. If you can shop online, you can use this site to find the degree that’s right for you.
@@ -142,11 +141,8 @@
             <p><a href="/program-listing.php" class="button-outline shadow">View More Programs</a></p>
           </div>
         </div>
-        <div class="col-lg-7">
-          <div class="image-container">
-            <img src="/assets/img/home/01.png" data-aos="zoom-in" data-aos-delay="100" alt="male student walking with backpack and books">
-            <img class="img-1" src="/assets/img/home/02.png" data-aos="zoom-in" data-aos-delay="200" alt="">
-          </div>
+        <div class="col-lg-7 p-5">
+          <img src="/assets/img/home/1-atyourfingertips.svg" data-aos="fade-up" alt="">
         </div>
       </div>
 
@@ -159,11 +155,8 @@
             </p>
           </div>
         </div>
-        <div class="col-7 order-lg-1">
-          <div class="image-container">
-            <img src="/assets/img/home/03.jpg" data-aos="zoom-in" data-aos-delay="100" alt="male student walking with backpack and books">
-            <img class="img-2" src="/assets/img/home/04.jpg" data-aos="zoom-in" data-aos-delay="200" alt="">
-          </div>
+        <div class="col-7 order-lg-1 p-5">
+          <img src="/assets/img/home/2-institutions.svg" data-aos="fade-up" alt="">
         </div>
       </div>
       <div class="row mb-5 justify-content-around align-items-center item__left">
@@ -177,11 +170,8 @@
             <p><a href="/program-listing.php" class="button-outline shadow">View More Programs</a></p>
           </div>
         </div>
-        <div class="col-lg-7">
-          <div class="image-container">
-            <img src="/assets/img/home/01.png" data-aos="zoom-in" data-aos-delay="100" alt="male student walking with backpack and books">
-            <img class="img-1" src="/assets/img/home/02.png" data-aos="zoom-in" data-aos-delay="200" alt="">
-          </div>
+        <div class="col-lg-7 p-5">
+          <img src="/assets/img/home/3-onlineprograms.svg" data-aos="fade-up" alt="">
         </div>
       </div>
     </div>
