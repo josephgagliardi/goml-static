@@ -11,12 +11,16 @@
             <h1 data-aos="fade-up" data-aos-delay="100" id="site-headline" class="aos-init aos-animate">Success is Just a Search Away.</h1>
             <h2 data-aos="fade-up" data-aos-delay="200" class="aos-init aos-animate">Explore online degrees and certificates from across the University System of Georgia.</h2>
             <div class="main-search-input aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
-              <div id="searchBox" class="row">
-
-
-              </div>
-              <div class="hit-container">
-
+              <div class="row">
+                <div class="col-3">
+                  <div class="refine-container"></div>
+                </div>
+                <div class="col-9">
+                  <div id="searchBox"></div>
+                  <div class="search-container"></div>
+                  <div class="hit-container">
+                  </div>
+                </div>
               </div>
             </div>
           </div>

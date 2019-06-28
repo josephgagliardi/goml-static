@@ -30,12 +30,14 @@ search.addWidget(
     showSubmit: true,
     showReset: false,
     searchAsYouType: true,
-
     placeholder: 'Your future is merely a search away...',
     cssClasses: {
       item: 'border-left',
       input: 'typed-words',
-      submit: 'button button-outline float-md-right'
+      submit: 'button button-outline float-right'
+    },
+    templates: {
+      submit: 'submit <i class="fas fa-search"></i>',
     }
   })
 );
