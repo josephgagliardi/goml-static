@@ -100,6 +100,18 @@
           <div class="list-icons__item"><a class="list-icons__link" href="/institutions-single.php">
               <img class="list-icons__image" src="/assets/img/institutions/savannah-state-university.svg" alt=""></a>
           </div>
+          <div class="list-icons__item"><a class="list-icons__link" href="/institutions-single.php">
+              <img class="list-icons__image" src="/assets/img/institutions/south-georgia-state-college.svg" alt=""></a>
+          </div>
+          <div class="list-icons__item"><a class="list-icons__link" href="/institutions-single.php">
+              <img class="list-icons__image" src="/assets/img/institutions/university-georgia.svg" alt=""></a>
+          </div>
+          <div class="list-icons__item"><a class="list-icons__link" href="/institutions-single.php">
+              <img class="list-icons__image" src="/assets/img/institutions/university-of-west-georgia.svg" alt=""></a>
+          </div>
+          <div class="list-icons__item"><a class="list-icons__link" href="/institutions-single.php">
+              <img class="list-icons__image" src="/assets/img/institutions/valdosta-state-university.svg" alt=""></a>
+          </div>
         </div>
       </div>
     </div>
