@@ -12,14 +12,16 @@
             <h2 data-aos="fade-up" data-aos-delay="200" class="aos-init aos-animate">Explore online degrees and certificates from across the University System of Georgia.</h2>
             <div class="main-search-input aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
               <div class="row">
-                <div class="col-3 border-right">
+                <div class="col-md-3 border-right">
                   <div id="menu-select">
                   </div>
                   <div class="select__arrow"><i class="fas fa-chevron-down"></i></div>
                   <div class="border-right"></div>
                 </div>
-                <div class="col-9">
-                  <div id="searchBox"></div>
+                <div class="col-md-9">
+                  <div id="searchBox">
+                    <div id="voicesearch"></div>
+                  </div>
                   <div class="search-container"></div>
                   <div class="hit-container">
                   </div>
