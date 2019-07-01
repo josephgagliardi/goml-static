@@ -116,7 +116,7 @@
   float: left;
 }
 
-@media (max-width: 990px) {
+@media (max-width: 1130px) {
   .droopmenu > li {
     font-size: 13px;
   }
@@ -241,6 +241,7 @@
 .droopmenu li:hover > a,
 .droopmenu li li:hover > a {
   color: var(--main__accent__color);
+  text-decoration: underline;
 }
 
 .droopmenu li ul li a {
@@ -1668,7 +1669,7 @@ button.dm-search-close:focus {
   display: none;
   float: right;
   right: 0;
-  top: 16px;
+  top: 32px;
 }
 
 .droopmenu-toggle i {
@@ -2048,10 +2049,10 @@ button.dm-search-close:focus {
 
 
 /*	-------------------------------------------------------
-	:: Droopmenu | RESPONSIVE STYLES > = 768
+	:: Droopmenu | RESPONSIVE STYLES > = 950
 	------------------------------------------------------- */
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 950px) {
 
   .droopmenu-nav,
   .droopmenu li > ul {
@@ -2245,7 +2246,7 @@ button.dm-search-close:focus {
 
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 950px) {
 
   .droopmenu {
     position: static;

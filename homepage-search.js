@@ -73,6 +73,7 @@ search.addWidget(
   })
 );
 
+
 search.addWidget(
   instantsearch.widgets.menuSelect({
     container: '#menu-select',
@@ -88,6 +89,8 @@ search.addWidget(
     },
   })
 );
+
+
 
 
 
