@@ -2802,21 +2802,24 @@ form.ais-SearchBox-form {
 .ais-Hits-item {
   display: flex;
   padding: 0.9em;
-  width: 100%;
+  width: 33.33%;
 }
 
-@media all and (max-width: 765em) {
-  .ais-Hits-item {
-    width: 33.33%;
-
-  }
-}
-
-@media all and (max-width: 1200px) {
+@media all and (max-width: 991px) {
   .ais-Hits-item {
     width: 50%;
   }
 }
+
+@media all and (max-width: 765px) {
+  .ais-Hits-item {
+    width: 100%;
+  }
+}
+
+
+
+
 
 .list-content {
   background-color: #fff;
