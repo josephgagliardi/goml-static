@@ -45,7 +45,7 @@ search.addWidget(
             icon = 'fa-briefcase'
             break;
           case 'Social Sciences':
-            icon = 'fa-user-astronaut'
+            icon = 'fa-brain'
             break;
           case 'Technology/Computer Science':
             icon = 'fa-laptop-code'
@@ -54,7 +54,7 @@ search.addWidget(
             icon = 'fa-theater-masks'
             break;
           case 'Physical Sciences':
-            icon = 'fa-gem'
+            icon = 'fa-leaf'
             break;
           case 'History':
             icon = 'fa-landmark'
@@ -63,7 +63,7 @@ search.addWidget(
             icon = 'fa-book'
             break;
           case 'Education':
-            icon = 'fa-school'
+            icon = 'fa-apple-alt'
             break;
           default:
             icon = 'fa-briefcase'
@@ -79,10 +79,10 @@ search.addWidget(
                 <a href="/program-listing.php?refinementList%5BInstitution%5D%5B0%5D=${item["Institution"]}"><span class="courses__content__institutions">${item["Institution"]}</span></a>
                <div class="courses__bottom">
                   <a href="/program-listing.php?refinementList%5BArea%20of%20Study%5D%5B0%5D=${item["Area of Study"]}">
-                   <div class="area-of-study">
+                   <div class="area-of-study d-flex align-items-center">
+                      <i class="fas ${icon} column-left__icon"></i>
                       ${item["Area of Study"]}
                     <div>
-                    <i class="fas ${icon} column-left__icon"></i>
                     </a>
                 </div>
           </div>  

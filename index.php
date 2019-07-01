@@ -26,8 +26,24 @@
                   <div class="hit-container">
                   </div>
                 </div>
+                <div class="col-12">
+                  <div class="usg-icon-container">
+                    <div class="row">
+                      <div class="col-2">
+                        <div class="usg-icon">
+                          <img src="/assets/img/home/usg-icon-logo.svg" alt="USG Icon">
+                        </div>
+                      </div>
+                      <div class="col-10 text-left">
+                        A University System of Georgia Service
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
               </div>
             </div>
+
           </div>
         </div>
         <!-- Features Categories -->
