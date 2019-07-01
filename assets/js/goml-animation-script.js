@@ -39,7 +39,8 @@ jQuery(function ($) {
   $('.droopmenu-navbar').droopmenu({
     dmOffCanvas: true,
     dmSticky: true, // Make menu sticky becomes fixed on scrolling to top of page: true or false - Default is false
-    dmAnimationEffect: 'dmscale'
+    dmAnimationEffect: 'dmscale',
+    dmBreakpoint: 950
   });
 });
 
