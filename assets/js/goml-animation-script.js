@@ -5,9 +5,10 @@ AOS.init({
 })
 
 /*	--------------------------------------------------
-:: Enable bootstrap popovers
+:: Enable bootstrap popovers - For the AOS badges that are no longer in use on cards.
 -------------------------------------------------- */
-$('[data-toggle="popover"]').popover()
+
+//$('[data-toggle="popover"]').popover()
 
 /*	--------------------------------------------------
 :: Scroll to top button 

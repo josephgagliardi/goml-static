@@ -49,7 +49,7 @@ search.addWidget(
   instantsearch.widgets.hits({
     container: '.hit-container',
     templates: {
-      empty: '<p class="info">No results were found with your current filters. Try to remove some filters or change the search query.</p>',
+      empty: '<p class="no-results"><i class="fas fa-exclamation-triangle"></i> No results were found. Try to remove some filters or change the search query.</p>',
       item: function (item) {
         var instLink = `<a href="/program-listing.php?query=${item['Institution']}">`;
         // Alternatively - link inst logo to inst info page?
