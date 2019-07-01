@@ -7473,7 +7473,6 @@ Blog details sidebar
   box-shadow: 0 20px 30px 0 rgba(0, 0, 0, .1);
   align-items: flex-start;
   padding: 9px;
-  max-height: 68px;
 }
 
 
@@ -7680,6 +7679,10 @@ form.ais-SearchBox-form:after {
   .hit-container .ais-Hits {
     width: 100%;
     border-radius: 5px;
+  }
+
+  .main-search-input button.button i {
+    margin: 0;
   }
 
   .main-search-input {
@@ -10418,10 +10421,6 @@ input[type="checkbox"]:checked + label:before {
 }
 
 @media(max-width: 992px) {
-  .container {
-    padding-left: 8px !important;
-    padding-right: 8px !important
-  }
 
   #site-headline {
     font-size: 2.5rem;
