@@ -10,44 +10,36 @@
           <div class="col-md-12 text-center">
             <h1 data-aos="fade-up" data-aos-delay="100" id="site-headline" class="aos-init aos-animate">Success is Just a Search Away.</h1>
             <h2 data-aos="fade-up" data-aos-delay="200" class="aos-init aos-animate">Explore online degrees and certificates from across the University System of Georgia.</h2>
-            <div class="main-search-input aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
-              <div class="row">
-                <div class="col-md-3 border-right">
-                  <div id="menu-select">
-                  </div>
-                  <div class="select__arrow"><i class="fas fa-chevron-down"></i></div>
-                  <div class="border-right"></div>
-                </div>
-                <div class="col-md-9">
-                  <div id="searchBox">
-                    <div id="voicesearch"></div>
-                  </div>
-                  <div class="search-container"></div>
-                  <div class="hit-container">
-                  </div>
-                </div>
-                <div class="col-12">
-                  <div class="usg-icon-container">
-                    <div class="row">
-                      <div class="col-2">
-                        <div class="usg-icon">
-                          <img src="/assets/img/home/usg-icon-logo.svg" alt="USG Icon">
-                        </div>
-                      </div>
-                      <div class="col-10 text-left">
-                        A University System of Georgia Service
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-
           </div>
         </div>
-        <!-- Features Categories -->
       </div>
+
+
+      <div class="container">
+        <div class="main-search-input aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+          <div class="row">
+            <div class="col-md-3 border-right">
+              <div id="menu-select">
+              </div>
+              <div class="select__arrow"><i class="fas fa-chevron-down"></i></div>
+              <div class="border-right"></div>
+            </div>
+            <div class="col-md-9">
+              <div id="searchBox">
+                <div id="voicesearch"></div>
+              </div>
+              <div class="search-container"></div>
+              <div class="hit-container">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+      <!-- Features Categories -->
+
     </div>
   </section>
   <section>
@@ -174,7 +166,7 @@
             <p><a href="/institutions-listing.php" class="button-outline shadow">View Institutions</a></p>
           </div>
         </div>
-        <div class="col-7 order-lg-1 p-5">
+        <div class="col-lg-7 order-lg-1 p-5">
           <img src="/assets/img/home/2-institutions.svg" data-aos="fade-up" alt="">
         </div>
       </div>
@@ -255,7 +247,7 @@
         }
       },
       {
-        breakpoint: 480,
+        breakpoint: 576,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1
