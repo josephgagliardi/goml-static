@@ -36,10 +36,10 @@ search.addWidget(
     cssClasses: {
       item: 'border-left',
       input: 'typed-words',
-      submit: 'button button-outline float-right'
+      submit: 'button button-outline float-right d-flex'
     },
     templates: {
-      submit: 'submit <i class="fas fa-search"></i>',
+      submit: '<div class="d-none d-sm-none d-md-block">submit</div> <i class="fas fa-search align-self-center"></i>',
     }
   })
 );
