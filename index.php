@@ -140,7 +140,7 @@
             <p>
               The newly designed Georgia On My Line website offers a truly user-friendly marketplace shopping experience for users. Search our database by college, area of study, degree level, and more. Narrow your results further by special features such as Credit for Prior Learning opportunities or specialized program accreditations. Find something you like? Request information to be contacted by our GOML support team or click Apply Now to go straight to the application at that institution. If you can shop online, you can use this site to find the degree that’s right for you.
             </p>
-            <p><a href="/program-listing.php" class="button-outline shadow">View More Programs</a></p>
+            <p><a href="/program-listing.php" class="button-outline shadow">Search Programs</a></p>
           </div>
         </div>
         <div class="col-lg-7 p-5">
@@ -155,6 +155,7 @@
             <p>
               Searching for an online degree can be a daunting task, and it can sometimes be difficult to decipher the legitimacy of an online program. The Georgia On My Line degree marketplace allows you to search hundreds of online degrees and certificates offered through regionally accredited USG institutions you know and trust. You can have peace of mind knowing every institution on our site is accredited by the Southern Association of Colleges and Schools Commission on Colleges (SACSCOC) and is well respected throughout Georgia, the Southeast, and the world.
             </p>
+            <p><a href="/institutions-listing.php" class="button-outline shadow">View Institutions</a></p>
           </div>
         </div>
         <div class="col-7 order-lg-1 p-5">
@@ -169,7 +170,7 @@
             <p>
               The GOML degree marketplace includes over ___ online programs available throughout the University System of Georgia. From agriculture to cybersecurity, Georgia’s colleges and universities offer a wide variety of online curriculums to peak your interest and prepare you for today’s economic landscape.
             </p>
-            <p><a href="/program-listing.php" class="button-outline shadow">View More Programs</a></p>
+            <p><a href="/program-listing.php" class="button-outline shadow">View All Programs</a></p>
           </div>
         </div>
         <div class="col-lg-7 p-5">

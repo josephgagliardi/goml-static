@@ -72,7 +72,7 @@ search.addWidget(
         return `
           <div class="list-content">
               <div class="courses__top">
-                 <div class="courses__top__wrapper"><img class="courses__top__image align-self-center" src="/assets/img/institutions/white/${item['Institution'].replace(/\s+/g, '-').toLowerCase()}.svg" alt="">${favoritedIcon}</div>
+                 <div class="courses__top__wrapper"><img class="courses__top__image align-self-center" src="/assets/img/institutions/${item['Institution'].replace(/\s+/g, '-').toLowerCase()}.svg" alt="">${favoritedIcon}</div>
               </div>
             <div class="courses__content">
                <a class="courses__content__title" href="/program-single.php?id=${item["objectID"]}">${item["Program Name"]}</a>

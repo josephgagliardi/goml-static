@@ -2663,10 +2663,11 @@ form.ais-SearchBox-form {
 
 .courses__top__wrapper {
   position: relative;
-  background-color: #000;
+  background-color: #FFF;
   text-align: center;
   padding: 30px;
   width: 100%;
+  border-bottom: solid 1px rgba(232, 232, 232, 0.8);
 }
 
 .courses__top__wrapper img {
@@ -4856,7 +4857,7 @@ button.view-gird__icon {
 
 .institutions-logo-single img {
   max-height: 175px;
-  margin: 20px 15px 10px 15px;
+  margin: 20px 20px 10px 20px;
 }
 
 #menu-left {
@@ -4871,7 +4872,7 @@ button.view-gird__icon {
   border: solid 1px #d6d6d6;
   text-align: center;
   transform: translate(0, 0);
-  /* For browsers don't support translate3d. */
+  /* For browsers that don't support translate3d. */
   transform: translate3d(0, 0, 0);
   will-change: position, transform;
 }
@@ -7593,6 +7594,10 @@ form.ais-SearchBox-form:after {
 
 .hit-container {
   position: relative;
+}
+
+.hit-container .no-results {
+  padding: 15px 20px 10px 20px;
 }
 
 .hit-container .ais-Hits {
