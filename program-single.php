@@ -185,7 +185,12 @@
                 ]
               },
 
-              options: {}
+              options: {
+                title: {
+                    display: true,
+                    text: 'Annual Tuitions vs. Earnings'
+                }
+              }
           });
       });
   });
