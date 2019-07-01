@@ -61,7 +61,22 @@
             </div>
           </div>
         </div>
-        <div class="bundles"></div>
+        <div class="bundles">
+        </div>
+        <br />
+        <br />
+        <div class="bundle-list">
+          <div class="bundle" id="career-outlook">
+            <h2 class="bundle__title">Career Outlook</h2>
+            <div class="bundle__content">
+              <p class="detail__infor__sub">
+
+
+
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -83,53 +98,52 @@
 <script src="/assets/js/program-single.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
 <script>
-
   var params = getParams(window.location.href);
 
-	var programID = params["id"];
-	var client = algoliasearch('JBY4H547QZ', '133c145ebb78c84a04aefb61c32dba1d');
-	var index = client.initIndex('goml_DEMO');
-	
-	index.getObjects([programID.toString()], function(err, content) {
-		if (err) throw err;
-		program = content['results'][0];
+  var programID = params["id"];
+  var client = algoliasearch('JBY4H547QZ', '133c145ebb78c84a04aefb61c32dba1d');
+  var index = client.initIndex('goml_DEMO');
 
-		hours = program["Total Credit Hours"] ? program["Total Credit Hours"] : 'N/A';
+  index.getObjects([programID.toString()], function(err, content) {
+    if (err) throw err;
+    program = content['results'][0];
+
+    hours = program["Total Credit Hours"] ? program["Total Credit Hours"] : 'N/A';
     pchcost = program["Per Credit Hour Tuition"] !== '' ? "$" + program["Per Credit Hour Tuition"] : '$199';
-		
-		var logoImage = `<a href="/institutions-single.php?query=${program['Institution'].replace(/\s+/g, '-').toLowerCase()}"><img id="institution-logo-image" src="/assets/img/institutions/${program["Institution"].replace(/\s+/g, '-').toLowerCase()}.svg" alt="${program["Institution"]} logo"></a>`; 
-		$('.institutions-logo-single').append(logoImage);
-		Object.entries(program).forEach(([key, value]) => {
-			// console.log('' + key + ':' +  value + '');
-			var anchor = key.replace(/\s+/g, '-').toLowerCase();
-			var block = `<div class="bundle-list"><div class="bundle" id="${anchor}"><h2 class="bundle__title" name="${toTitleCase(key)}">${toTitleCase(key)}</h2><div class="bundle__content"><p class="detail__infor__sub">${value}</p></div></div></div>`;
-			var listLink = `<li class="list-link__item"><a class="list-link__link" href="#${anchor}">${toTitleCase(key)}</a></li>`;
-		  var exceptionList = ['Institution', 'objectID', 'Admissons Link', 'Curriculum Link', 'Program Name', 'Total Credit Hours', 'Degree Level', 'Area of Study', 'Dates and Deadlines', 'Tuition and Fees Link', 'Per Credit Hour Tuition'];
-			if (key !== null && (value !== null && value !== '' && !exceptionList.includes(key))) {
-				$('.bundles').append(block);
-				$('.list-link__list').append(listLink);
-			};
-		});
-		// console.log(program["Program Name"]);
-		document.getElementById('program__title').innerHTML = program["Program Name"];
-		document.getElementById('institution__name').innerHTML = program["Institution"];
-		document.getElementById('program__level').innerHTML = program["Degree Level"];
-		document.getElementById('total__hours').innerHTML = hours;
-		document.getElementById('total__cost').innerHTML = pchcost;
+
+    var logoImage = `<a href="/institutions-single.php?query=${program['Institution'].replace(/\s+/g, '-').toLowerCase()}"><img id="institution-logo-image" src="/assets/img/institutions/${program["Institution"].replace(/\s+/g, '-').toLowerCase()}.svg" alt="${program["Institution"]} logo"></a>`;
+    $('.institutions-logo-single').append(logoImage);
+    Object.entries(program).forEach(([key, value]) => {
+      // console.log('' + key + ':' +  value + '');
+      var anchor = key.replace(/\s+/g, '-').toLowerCase();
+      var block = `<div class="bundle-list"><div class="bundle" id="${anchor}"><h2 class="bundle__title" name="${toTitleCase(key)}">${toTitleCase(key)}</h2><div class="bundle__content"><p class="detail__infor__sub">${value}</p></div></div></div>`;
+      var listLink = `<li class="list-link__item"><a class="list-link__link" href="#${anchor}">${toTitleCase(key)}</a></li>`;
+      var exceptionList = ['Institution', 'objectID', 'Admissons Link', 'Curriculum Link', 'Program Name', 'Total Credit Hours', 'Degree Level', 'Area of Study', 'Dates and Deadlines', 'Tuition and Fees Link', 'Per Credit Hour Tuition'];
+      if (key !== null && (value !== null && value !== '' && !exceptionList.includes(key))) {
+        $('.bundles').append(block);
+        $('.list-link__list').append(listLink);
+      };
+    });
+    // console.log(program["Program Name"]);
+    document.getElementById('program__title').innerHTML = program["Program Name"];
+    document.getElementById('institution__name').innerHTML = program["Institution"];
+    document.getElementById('program__level').innerHTML = program["Degree Level"];
+    document.getElementById('total__hours').innerHTML = hours;
+    document.getElementById('total__cost').innerHTML = pchcost;
     document.getElementById('applynowlink').href = program["Admissons Link"];
     document.getElementById('instPageLink').href = '/institutions-single.php?query=' + program["Institution"].replace(/\s+/g, '-').toLowerCase();
     document.getElementById('curric-link').href = program["Curriculum Link"];
-      if (program["Dates and Deadlines"] != null && program["Dates and Deadlines"].length > 0) {
-        var deadlineLink = `<a class="mt-4 btn-block" id="deadlines-link" target="_blank" href="${program["Dates and Deadlines"]}"><i class="fas fa-calendar"></i> Dates & Deadlines</a>`;
+    if (program["Dates and Deadlines"] != null && program["Dates and Deadlines"].length > 0) {
+      var deadlineLink = `<a class="mt-4 btn-block" id="deadlines-link" target="_blank" href="${program["Dates and Deadlines"]}"><i class="fas fa-calendar"></i> Dates & Deadlines</a>`;
 
-        $('#quickLinks').append(deadlineLink);
-        
-      };
-      if(program["Tuition and Fees Link"] != null && program["Tuition and Fees Link"].length > 0) {
-        var feesLink = `<a class="mt-4 btn-block" id="fees-link" target="_blank" href="${program["Tuition and Fees Link"]}"><i class="fas fa-dollar-sign"></i> Tuition and Fees</a>`;
-        $('#quickLinks').append(feesLink);
-      };
-     });
+      $('#quickLinks').append(deadlineLink);
+
+    };
+    if (program["Tuition and Fees Link"] != null && program["Tuition and Fees Link"].length > 0) {
+      var feesLink = `<a class="mt-4 btn-block" id="fees-link" target="_blank" href="${program["Tuition and Fees Link"]}"><i class="fas fa-dollar-sign"></i> Tuition and Fees</a>`;
+      $('#quickLinks').append(feesLink);
+    };
+  });
 
 
   function toTitleCase(str) {
