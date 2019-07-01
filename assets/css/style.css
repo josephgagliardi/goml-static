@@ -1702,7 +1702,15 @@ button.button-text:focus {
 
 .area-of-study {
   margin-top: 10px;
+  font-size: 14px;
 }
+
+.area-of-study .column-left__icon {
+  vertical-align: middle;
+  text-align: center;
+  margin-right: 9px;
+}
+
 
 .courses__col-right {
   display: inline-block;
@@ -4017,17 +4025,6 @@ form.ais-SearchBox-form {
     width: 100%;
     margin-bottom: 5px;
   }
-}
-
-.column-left__icon::before {
-  -webkit-transition: -webkit-transform 0.5s ease-in-out;
-  transition: -webkit-transform 0.5s ease-in-out;
-  transition: transform 0.5s ease-in-out;
-  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
-  -webkit-transform: rotate(0);
-  -ms-transform: rotate(0);
-  transform: rotate(0);
-  font-size: 14px;
 }
 
 .column-left__link:hover {
