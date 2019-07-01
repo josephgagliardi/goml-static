@@ -70,7 +70,7 @@
             <h2 class="bundle__title">Career Outlook</h2>
             <div class="bundle__content">
               <p class="detail__infor__sub">
-                <canvas id="myChart" width="200" height="200"></canvas>
+                <canvas id="myChart"></canvas>
                 <!-- <canvas id="bar-chart" width="800" height="450"></canvas> -->
                 <!-- <canvas id="bar-chart-grouped" width="800" height="450"></canvas> -->
               </p>
@@ -189,7 +189,8 @@
                 title: {
                     display: true,
                     text: 'Annual Tuitions vs. Earnings'
-                }
+                }, 
+                responsive: true
               }
           });
       });
