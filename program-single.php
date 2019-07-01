@@ -71,8 +71,8 @@
             <div class="bundle__content">
               <p class="detail__infor__sub">
                 <canvas id="myChart" width="200" height="200"></canvas>
-
-
+                <!-- <canvas id="bar-chart" width="800" height="450"></canvas> -->
+                <!-- <canvas id="bar-chart-grouped" width="800" height="450"></canvas> -->
               </p>
             </div>
           </div>
@@ -146,26 +146,37 @@
 
     var ctx = $('#myChart');
 
-    let url = `https://api.data.gov/ed/collegescorecard/v1/schools?api_key=6lZ3mGdHSfNDUu8NgEgv8l6I1b8W3pcfO0zHLB3q&fields=school.name,id,latest.aid.median_debt.completers.overall,latest.repayment.1_yr_repayment.completers,latest.earnings.10_yrs_after_entry.working_not_enrolled.mean_earnings&school.name=${program["Institution"]}`;
+    // let url = `https://api.data.gov/ed/collegescorecard/v1/schools?api_key=6lZ3mGdHSfNDUu8NgEgv8l6I1b8W3pcfO0zHLB3q&fields=,attendance.academic_year,latest.earnings.10_yrs_after_entry.working_not_enrolled.mean_earnings&school.name=${program["Institution"]}`;
+    let url =`https://api.data.gov/ed/collegescorecard/v1/schools?api_key=6lZ3mGdHSfNDUu8NgEgv8l6I1b8W3pcfO0zHLB3q&fields=school.name,latest.aid.median_debt.completers.overall,latest.cost.avg_net_price.overall,latest.cost.tuition.out_of_state,latest.cost.tuition.in_state&school.name=University%20of%20West%20Georgia`;
     fetch(url)
       .then(function(response) {
         return response.json();
       })
       .then(function(myJson) {
+        console.log(myJson['results']);
         if (myJson['metadata']['total'] == '0'){return;}
         var avgEarningsAfter10years = myJson['results'][0]["latest.earnings.10_yrs_after_entry.working_not_enrolled.mean_earnings"];
+        var out_of_state_tuition = myJson['results'][0]["latest.cost.tuition.out_of_state"];
+        var in_state_tuition = myJson['results'][0]["latest.cost.tuition.in_state"];
         var medianDebt = myJson['results'][0]["latest.aid.median_debt.completers.overall"];
           var data = [{x:'Earnings After 10 Years', y: avgEarningsAfter10years}, {x:'Median Debt', y:medianDebt}];        
           var myBarChart = new Chart(ctx, {
               type: 'bar',
               data: {
-                  labels: ['Earnings After 10 Years', 'Median Debt'],
-                  datasets: [{
-                      label: program["Institution"],
+                  datasets: [
+                  {
+                      label: 'In-State',
                       backgroundColor: 'rgb(199, 78, 26, 1)',
                       borderColor: 'rgb(199, 78, 26, 1)',
-                      data: [avgEarningsAfter10years, medianDebt]
-                  }]
+                      data: [in_state_tuition]
+                  },
+                  {
+                      label: 'Out of State',
+                      backgroundColor: 'rgb(133, 78, 26, 1)',
+                      borderColor: 'rgb(122, 78, 26, 1)',
+                      data: [out_of_state_tuition]
+                  }
+                ]
               },
 
               options: {}
@@ -195,6 +206,7 @@
     }
     return params;
   };
+
 
   
 
