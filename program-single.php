@@ -70,7 +70,7 @@
             <h2 class="bundle__title">Career Outlook</h2>
             <div class="bundle__content">
               <p class="detail__infor__sub">
-
+                <canvas id="myChart" width="200" height="200"></canvas>
 
 
               </p>
@@ -143,6 +143,34 @@
       var feesLink = `<a class="mt-4 btn-block" id="fees-link" target="_blank" href="${program["Tuition and Fees Link"]}"><i class="fas fa-dollar-sign"></i> Tuition and Fees</a>`;
       $('#quickLinks').append(feesLink);
     };
+
+    var ctx = $('#myChart');
+
+    let url = `https://api.data.gov/ed/collegescorecard/v1/schools?api_key=6lZ3mGdHSfNDUu8NgEgv8l6I1b8W3pcfO0zHLB3q&fields=school.name,id,latest.aid.median_debt.completers.overall,latest.repayment.1_yr_repayment.completers,latest.earnings.10_yrs_after_entry.working_not_enrolled.mean_earnings&school.name=${program["Institution"]}`;
+    fetch(url)
+      .then(function(response) {
+        return response.json();
+      })
+      .then(function(myJson) {
+        if (myJson['metadata']['total'] == '0'){return;}
+        var avgEarningsAfter10years = myJson['results'][0]["latest.earnings.10_yrs_after_entry.working_not_enrolled.mean_earnings"];
+        var medianDebt = myJson['results'][0]["latest.aid.median_debt.completers.overall"];
+          var data = [{x:'Earnings After 10 Years', y: avgEarningsAfter10years}, {x:'Median Debt', y:medianDebt}];        
+          var myBarChart = new Chart(ctx, {
+              type: 'bar',
+              data: {
+                  labels: ['Earnings After 10 Years', 'Median Debt'],
+                  datasets: [{
+                      label: program["Institution"],
+                      backgroundColor: 'rgb(199, 78, 26, 1)',
+                      borderColor: 'rgb(199, 78, 26, 1)',
+                      data: [avgEarningsAfter10years, medianDebt]
+                  }]
+              },
+
+              options: {}
+          });
+      });
   });
 
 
@@ -167,6 +195,8 @@
     }
     return params;
   };
+
+  
 
 </script>
 
