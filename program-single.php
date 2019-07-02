@@ -174,14 +174,15 @@
         })};
           if (medianDebt != ''){data.push({
               label: 'Median Debt Completers Overall',
-                  backgroundColor: 'rgb(230, 114, 65, 1)',
-                  borderColor: 'rgb(230, 114, 65, 1)',
+              backgroundColor: 'rgb(72, 22, 1, 1)',
+              borderColor: 'rgb(72, 22, 1, 1)',
+
               data: [medianDebt]
           })};  
         if (avgEarningsAfter10years != ''){data.push({
             label: 'Median Earnings after 10 years',
-                backgroundColor: 'rgb(72, 22, 1, 1)',
-                borderColor: 'rgb(72, 22, 1, 1)',
+            backgroundColor: 'rgb(230, 114, 65, 1)',
+            borderColor: 'rgb(230, 114, 65, 1)',
             data: [avgEarningsAfter10years]
         })};        
           var myBarChart = new Chart(ctx, {
