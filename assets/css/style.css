@@ -4982,6 +4982,16 @@ button.view-gird__icon {
   }
 }
 
+.bundle__title::before {
+  content: "";
+  display: block;
+  height: 120px;
+  /* fixed header height*/
+  margin: -120px 0 0;
+  /* negative fixed header height */
+}
+
+
 .bundle__title,
 .related__title {
   margin-bottom: 24px;
@@ -4989,6 +4999,8 @@ button.view-gird__icon {
   color: #000;
   text-transform: capitalize;
 }
+
+
 
 @media (max-width: 768px) {
 
