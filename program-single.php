@@ -149,7 +149,7 @@
         var careerlink = `<li class="list-link__item"><a class="list-link__link" href="#career-outlook">Career Outlook</a></li>`;
         $('.list-link__list').append(careerlink);
         var careerblock = `<div class="bundle-list"><div class="bundle" id="career-outlook"><h2 class="bundle__title" name="Career Outlook">Career Outlook</h2><div class="bundle__content"><p class="detail__infor__sub"><canvas id="myChart"></canvas></p></div></div></div>`;
-        // var careerheadline = `<h2 class="bundle__title" name="career-outlook">Career Outlook</h2><canvas id="myChart"></canvas>`;
+
         $('.bundles').append(careerblock);
         var avgEarningsAfter10years = myJson['results'][0]["latest.earnings.10_yrs_after_entry.working_not_enrolled.mean_earnings"];
         var out_of_state_tuition = myJson['results'][0]["latest.cost.tuition.out_of_state"];
@@ -177,7 +177,7 @@
               data: [medianDebt]
           })};  
         if (avgEarningsAfter10years != ''){data.push({
-            label: 'Median Earnings after 10 years',
+            label: 'Median Annual Earnings after 10 years',
             backgroundColor: 'rgb(230, 114, 65, 1)',
             borderColor: 'rgb(230, 114, 65, 1)',
             data: [avgEarningsAfter10years]
