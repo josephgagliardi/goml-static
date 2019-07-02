@@ -109,7 +109,7 @@
       var anchor = key.replace(/\s+/g, '-').toLowerCase();
       var block = `<div class="bundle-list"><div class="bundle" id="${anchor}"><h2 class="bundle__title" name="${toTitleCase(key)}">${toTitleCase(key)}</h2><div class="bundle__content"><p class="detail__infor__sub">${value}</p></div></div></div>`;
       var listLink = `<li class="list-link__item"><a class="list-link__link" href="#${anchor}">${toTitleCase(key)}</a></li>`;
-      var exceptionList = ['Institution', 'objectID', 'Admissons Link', 'Curriculum Link', 'Program Name', 'Total Credit Hours', 'Degree Level', 'Area of Study', 'Dates and Deadlines', 'Tuition and Fees Link', 'Per Credit Hour Tuition', 'Collaborative'];
+      var exceptionList = ['Institution', 'objectID', 'Admissons Link', 'Curriculum Link', 'Program Name', 'Total Credit Hours', 'Degree Level', 'Area of Study', 'Dates and Deadlines', 'Tuition and Fees Link', 'Per Credit Hour Tuition', 'Collaborative', 'Credit for Prior Learning'];
       if (key !== null && (value !== null && value !== '' && !exceptionList.includes(key))) {
         $('.bundles').append(block);
         $('.list-link__list').append(listLink);
@@ -191,7 +191,22 @@
               options: {
                 animation: {
                         duration: 2200,
-                        easing: 'easeInOutCubic'
+                        easing: 'easeInOutCubic',
+                        onComplete: function () {
+                            var chartInstance = this.chart,
+                                ctx = chartInstance.ctx;
+                            ctx.font = Chart.helpers.fontString(Chart.defaults.global.defaultFontSize, Chart.defaults.global.defaultFontStyle, Chart.defaults.global.defaultFontFamily);
+                            ctx.textAlign = 'center';
+                            ctx.textBaseline = 'bottom';
+
+                            this.data.datasets.forEach(function (dataset, i) {
+                                var meta = chartInstance.controller.getDatasetMeta(i);
+                                meta.data.forEach(function (bar, index) {
+                                    var data = dataset.data[index];                            
+                                    ctx.fillText('$' + data, bar._model.x, bar._model.y - 5);
+                                });
+                            });
+                        }
                       },
                 scales: {
                     yAxes: [{
