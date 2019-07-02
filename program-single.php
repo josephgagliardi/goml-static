@@ -134,6 +134,10 @@
       var feesLink = `<a class="mt-4 btn-block" id="fees-link" target="_blank" href="${program["Tuition and Fees Link"]}"><i class="fas fa-dollar-sign"></i> Tuition and Fees</a>`;
       $('#quickLinks').append(feesLink);
     };
+    if (program["Credit for Prior Learning"] != null && program["Credit for Prior Learning"].length > 0) {
+      var cplLink = `<a class="mt-4 btn-block" id="fees-link" target="_blank" href="${program["Credit for Prior Learning"]}"><i class="fas fa-book"></i> Credit for Prior Learning</a>`;
+      $('#quickLinks').append(cplLink);
+    };
 
   
   

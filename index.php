@@ -61,79 +61,79 @@
       <div class="container">
         <div class="row list-icons__list">
           <div class="list-icons__item">
-            <a class="list-icons__link" href=" #">
+            <a class="list-icons__link" href="/program-listing.php?refinementList%5BInstitution%5D%5B0%5D=abraham baldwin agricultural college">
               <img class="list-icons__image" src="/assets/img/institutions/abraham-baldwin-agricultural-college.svg" alt=""></a>
           </div>
-          <div class="list-icons__item"><a class="list-icons__link" href="/institutions-single.php">
+          <div class="list-icons__item"><a class="list-icons__link" href="/program-listing.php?refinementList%5BInstitution%5D%5B0%5D=albany state university">
               <img class="list-icons__image" src="/assets/img/institutions/albany-state-university.svg" alt=""></a>
           </div>
-          <div class="list-icons__item"><a class="list-icons__link" href="/institutions-single.php">
+          <div class="list-icons__item"><a class="list-icons__link" href="/program-listing.php?refinementList%5BInstitution%5D%5B0%5D=atlanta metropolitan state college">
               <img class="list-icons__image" src="/assets/img/institutions/atlanta-metropolitan-state-college.svg" alt=""></a>
           </div>
-          <div class="list-icons__item"><a class="list-icons__link" href="/institutions-single.php">
+          <div class="list-icons__item"><a class="list-icons__link" href="/program-listing.php?refinementList%5BInstitution%5D%5B0%5D=augusta university">
               <img class="list-icons__image" src="/assets/img/institutions/augusta-university.svg" alt=""></a>
           </div>
-          <div class="list-icons__item"><a class="list-icons__link" href="/institutions-single.php">
+          <div class="list-icons__item"><a class="list-icons__link" href="/program-listing.php?refinementList%5BInstitution%5D%5B0%5D=clayton state university">
               <img class="list-icons__image" src="/assets/img/institutions/clayton-state-university.svg" alt=""></a>
           </div>
-          <div class="list-icons__item"><a class="list-icons__link" href="/institutions-single.php">
+          <div class="list-icons__item"><a class="list-icons__link" href="/program-listing.php?refinementList%5BInstitution%5D%5B0%5D=college of coastal georgia">
               <img class="list-icons__image" src="/assets/img/institutions/college-of-coastal-georgia.svg" alt=""></a>
           </div>
-          <div class="list-icons__item"><a class="list-icons__link" href="/institutions-single.php">
+          <div class="list-icons__item"><a class="list-icons__link" href="/program-listing.php?refinementList%5BInstitution%5D%5B0%5D=columbus state university">
               <img class="list-icons__image" src="/assets/img/institutions/columbus-state-university.svg" alt=""></a>
           </div>
-          <div class="list-icons__item"><a class="list-icons__link" href="/institutions-single.php">
+          <div class="list-icons__item"><a class="list-icons__link" href="/program-listing.php?refinementList%5BInstitution%5D%5B0%5D=dalton state college">
               <img class="list-icons__image" src="/assets/img/institutions/dalton-state-college.svg" alt=""></a>
           </div>
-          <div class="list-icons__item"><a class="list-icons__link" href="/institutions-single.php">
+          <div class="list-icons__item"><a class="list-icons__link" href="/program-listing.php?refinementList%5BInstitution%5D%5B0%5D=east georgia state college">
               <img class="list-icons__image" src="/assets/img/institutions/east-georgia-state-college.svg" alt=""></a>
           </div>
-          <div class="list-icons__item"><a class="list-icons__link" href="/institutions-single.php">
+          <div class="list-icons__item"><a class="list-icons__link" href="/program-listing.php?refinementList%5BInstitution%5D%5B0%5D=fort valley state university">
               <img class="list-icons__image" src="/assets/img/institutions/fort-valley-state-university.svg" alt=""></a>
           </div>
-          <div class="list-icons__item"><a class="list-icons__link" href="/institutions-single.php">
+          <div class="list-icons__item"><a class="list-icons__link" href="/program-listing.php?refinementList%5BInstitution%5D%5B0%5D=georgia college">
               <img class="list-icons__image" src="/assets/img/institutions/georgia-college.svg" alt=""></a>
           </div>
-          <div class="list-icons__item"><a class="list-icons__link" href="/institutions-single.php">
+          <div class="list-icons__item"><a class="list-icons__link" href="/program-listing.php?refinementList%5BInstitution%5D%5B0%5D=georgia gwinnett college">
               <img class="list-icons__image" src="/assets/img/institutions/georgia-gwinnett-college.svg" alt=""></a>
           </div>
-          <div class="list-icons__item"><a class="list-icons__link" href="/institutions-single.php">
+          <div class="list-icons__item"><a class="list-icons__link" href="/program-listing.php?refinementList%5BInstitution%5D%5B0%5D=georgia highlands college">
               <img class="list-icons__image" src="/assets/img/institutions/georgia-highlands-college.svg" alt=""></a>
           </div>
-          <div class="list-icons__item"><a class="list-icons__link" href="/institutions-single.php">
+          <div class="list-icons__item"><a class="list-icons__link" href="/program-listing.php?refinementList%5BInstitution%5D%5B0%5D=georgia southern university">
               <img class="list-icons__image" src="/assets/img/institutions/georgia-southern-university.svg" alt=""></a>
           </div>
-          <div class="list-icons__item"><a class="list-icons__link" href="/institutions-single.php">
+          <div class="list-icons__item"><a class="list-icons__link" href="/program-listing.php?refinementList%5BInstitution%5D%5B0%5D=georgia southwestern state university">
               <img class="list-icons__image" src="/assets/img/institutions/georgia-southwestern-state-university.svg" alt=""></a>
           </div>
-          <div class="list-icons__item"><a class="list-icons__link" href="/institutions-single.php">
+          <div class="list-icons__item"><a class="list-icons__link" href="/program-listing.php?refinementList%5BInstitution%5D%5B0%5D=georgia state">
               <img class="list-icons__image" src="/assets/img/institutions/georgia-state.svg" alt=""></a>
           </div>
-          <div class="list-icons__item"><a class="list-icons__link" href="/institutions-single.php">
+          <div class="list-icons__item"><a class="list-icons__link" href="/program-listing.php?refinementList%5BInstitution%5D%5B0%5D=georgia tech">
               <img class="list-icons__image" src="/assets/img/institutions/georgia-tech.svg" alt=""></a>
           </div>
-          <div class="list-icons__item"><a class="list-icons__link" href="/institutions-single.php">
+          <div class="list-icons__item"><a class="list-icons__link" href="/program-listing.php?refinementList%5BInstitution%5D%5B0%5D=gordon">
               <img class="list-icons__image" src="/assets/img/institutions/gordon.svg" alt=""></a>
           </div>
-          <div class="list-icons__item"><a class="list-icons__link" href="/institutions-single.php">
+          <div class="list-icons__item"><a class="list-icons__link" href="/program-listing.php?refinementList%5BInstitution%5D%5B0%5D=kennesaw state university">
               <img class="list-icons__image" src="/assets/img/institutions/kennesaw-state-university.svg" alt=""></a>
           </div>
-          <div class="list-icons__item"><a class="list-icons__link" href="/institutions-single.php">
+          <div class="list-icons__item"><a class="list-icons__link" href="/program-listing.php?refinementList%5BInstitution%5D%5B0%5D=middle georgia state university">
               <img class="list-icons__image" src="/assets/img/institutions/middle-georgia-state-university.svg" alt=""></a>
           </div>
-          <div class="list-icons__item"><a class="list-icons__link" href="/institutions-single.php">
+          <div class="list-icons__item"><a class="list-icons__link" href="/program-listing.php?refinementList%5BInstitution%5D%5B0%5D=savannah state university">
               <img class="list-icons__image" src="/assets/img/institutions/savannah-state-university.svg" alt=""></a>
           </div>
-          <div class="list-icons__item"><a class="list-icons__link" href="/institutions-single.php">
+          <div class="list-icons__item"><a class="list-icons__link" href="/program-listing.php?refinementList%5BInstitution%5D%5B0%5D=south georgia state college">
               <img class="list-icons__image" src="/assets/img/institutions/south-georgia-state-college.svg" alt=""></a>
           </div>
-          <div class="list-icons__item"><a class="list-icons__link" href="/institutions-single.php">
+          <div class="list-icons__item"><a class="list-icons__link" href="/program-listing.php?refinementList%5BInstitution%5D%5B0%5D=university georgia">
               <img class="list-icons__image" src="/assets/img/institutions/university-georgia.svg" alt=""></a>
           </div>
-          <div class="list-icons__item"><a class="list-icons__link" href="/institutions-single.php">
+          <div class="list-icons__item"><a class="list-icons__link" href="/program-listing.php?refinementList%5BInstitution%5D%5B0%5D=university of west georgia">
               <img class="list-icons__image" src="/assets/img/institutions/university-of-west-georgia.svg" alt=""></a>
           </div>
-          <div class="list-icons__item"><a class="list-icons__link" href="/institutions-single.php">
+          <div class="list-icons__item"><a class="list-icons__link" href="/program-listing.php?refinementList%5BInstitution%5D%5B0%5D=valdosta state university">
               <img class="list-icons__image" src="/assets/img/institutions/valdosta-state-university.svg" alt=""></a>
           </div>
         </div>
