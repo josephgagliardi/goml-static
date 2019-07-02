@@ -10448,3 +10448,7 @@ input[type="checkbox"]:checked + label:before {
     max-width: 1440px !important
   }
 }
+
+#myChart {
+  margin-top: -100px;
+}

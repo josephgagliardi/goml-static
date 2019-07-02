@@ -66,16 +66,7 @@
         <br />
         <br />
         <div class="bundle-list">
-          <div class="bundle" id="career-outlook">
-            <h2 class="bundle__title">Career Outlook</h2>
-            <div class="bundle__content">
-              <p class="detail__infor__sub">
-                <canvas id="myChart"></canvas>
-                <!-- <canvas id="bar-chart" width="800" height="450"></canvas> -->
-                <!-- <canvas id="bar-chart-grouped" width="800" height="450"></canvas> -->
-              </p>
-            </div>
-          </div>
+            <canvas id="myChart"></canvas>
         </div>
       </div>
     </div>
@@ -144,21 +135,27 @@
       $('#quickLinks').append(feesLink);
     };
 
-    var ctx = $('#myChart');
-
-    // let url = `https://api.data.gov/ed/collegescorecard/v1/schools?api_key=6lZ3mGdHSfNDUu8NgEgv8l6I1b8W3pcfO0zHLB3q&fields=,attendance.academic_year,latest.earnings.10_yrs_after_entry.working_not_enrolled.mean_earnings&school.name=${program["Institution"]}`;
+  
+  
     let url =`https://api.data.gov/ed/collegescorecard/v1/schools?api_key=6lZ3mGdHSfNDUu8NgEgv8l6I1b8W3pcfO0zHLB3q&fields=school.name,latest.aid.median_debt.completers.overall,latest.cost.avg_net_price.overall,latest.cost.tuition.out_of_state,latest.cost.tuition.in_state,latest.earnings.10_yrs_after_entry.working_not_enrolled.mean_earnings,latest.aid.median_debt.completers.overall&school.name=${program["Institution"]}`;
     fetch(url)
       .then(function(response) {
         return response.json();
       })
       .then(function(myJson) {
+        console.log(myJson);
         if (myJson['metadata']['total'] == '0'){return;}
+        var ctx = $('#myChart');
+        var careerlink = `<li class="list-link__item"><a class="list-link__link" href="#career-outlook">Career Outlook</a></li>`;
+        $('.list-link__list').append(careerlink);
+        var careerblock = `<div class="bundle-list"><div class="bundle" id="career-outlook"><h2 class="bundle__title" name="Career Outlook">Career Outlook</h2><div class="bundle__content"><p class="detail__infor__sub"><canvas id="myChart"></canvas></p></div></div></div>`;
+        // var careerheadline = `<h2 class="bundle__title" name="career-outlook">Career Outlook</h2><canvas id="myChart"></canvas>`;
+        $('.bundles').append(careerblock);
         var avgEarningsAfter10years = myJson['results'][0]["latest.earnings.10_yrs_after_entry.working_not_enrolled.mean_earnings"];
         var out_of_state_tuition = myJson['results'][0]["latest.cost.tuition.out_of_state"];
         var in_state_tuition = myJson['results'][0]["latest.cost.tuition.in_state"];
         var medianDebt = myJson['results'][0]["latest.aid.median_debt.completers.overall"];
-      
+    
         data = [];
         if (in_state_tuition != ''){data.push({
             label: 'In-State Tuition',
@@ -174,8 +171,8 @@
         })};
           if (medianDebt != ''){data.push({
               label: 'Median Debt Completers Overall',
-              backgroundColor: 'rgb(72, 22, 1, 1)',
-              borderColor: 'rgb(72, 22, 1, 1)',
+              backgroundColor: 'rgb(168,169,173)',
+              borderColor: 'rgb(168,169,173)',
 
               data: [medianDebt]
           })};  
@@ -211,7 +208,7 @@
                     },
                 title: {
                     display: true,
-                    text: 'Annual Tuitions vs. Earnings'
+                    text: 'Tuition vs. Earnings - Provided by data.gov '
                 }, 
                 responsive: true
               }
