@@ -191,6 +191,23 @@
               },
 
               options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            // Include a dollar sign in the ticks
+                            callback: function(value, index, values) {
+                                return '$' + value;
+                            }
+                        }
+                    }]
+                },
+                tooltips: {
+                    callbacks: {
+                        label: function(tooltipItems, data) {
+                            return "$" + tooltipItems.yLabel.toString();
+                        }
+                      }
+                    },
                 title: {
                     display: true,
                     text: 'Annual Tuitions vs. Earnings'
@@ -200,7 +217,6 @@
           });
       });
   });
-
 
   function toTitleCase(str) {
     return str.replace(
