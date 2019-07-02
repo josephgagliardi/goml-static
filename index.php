@@ -32,9 +32,23 @@
               <div class="hit-container">
               </div>
             </div>
+
           </div>
         </div>
 
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="d-flex align-items-center justify-content-center mt-5 info">
+              <div class="mr-3">
+                <img src="/assets/img/home/usg-icon-logo.svg" alt="usg icon">
+              </div>
+              <div>A University System of Georgia Service.</div>
+            </div>
+          </div>
+        </div>
       </div>
 
 
