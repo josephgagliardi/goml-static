@@ -189,6 +189,10 @@
               },
 
               options: {
+                animation: {
+                        duration: 2200,
+                        easing: 'easeInOutCubic'
+                      },
                 scales: {
                     yAxes: [{
                         ticks: {
