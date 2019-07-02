@@ -70,9 +70,9 @@
             <h2 class="bundle__title">Career Outlook</h2>
             <div class="bundle__content">
               <p class="detail__infor__sub">
-
-
-
+                <canvas id="myChart"></canvas>
+                <!-- <canvas id="bar-chart" width="800" height="450"></canvas> -->
+                <!-- <canvas id="bar-chart-grouped" width="800" height="450"></canvas> -->
               </p>
             </div>
           </div>
@@ -118,7 +118,7 @@
       var anchor = key.replace(/\s+/g, '-').toLowerCase();
       var block = `<div class="bundle-list"><div class="bundle" id="${anchor}"><h2 class="bundle__title" name="${toTitleCase(key)}">${toTitleCase(key)}</h2><div class="bundle__content"><p class="detail__infor__sub">${value}</p></div></div></div>`;
       var listLink = `<li class="list-link__item"><a class="list-link__link" href="#${anchor}">${toTitleCase(key)}</a></li>`;
-      var exceptionList = ['Institution', 'objectID', 'Admissons Link', 'Curriculum Link', 'Program Name', 'Total Credit Hours', 'Degree Level', 'Area of Study', 'Dates and Deadlines', 'Tuition and Fees Link', 'Per Credit Hour Tuition'];
+      var exceptionList = ['Institution', 'objectID', 'Admissons Link', 'Curriculum Link', 'Program Name', 'Total Credit Hours', 'Degree Level', 'Area of Study', 'Dates and Deadlines', 'Tuition and Fees Link', 'Per Credit Hour Tuition', 'Collaborative'];
       if (key !== null && (value !== null && value !== '' && !exceptionList.includes(key))) {
         $('.bundles').append(block);
         $('.list-link__list').append(listLink);
@@ -143,6 +143,57 @@
       var feesLink = `<a class="mt-4 btn-block" id="fees-link" target="_blank" href="${program["Tuition and Fees Link"]}"><i class="fas fa-dollar-sign"></i> Tuition and Fees</a>`;
       $('#quickLinks').append(feesLink);
     };
+
+    var ctx = $('#myChart');
+
+    // let url = `https://api.data.gov/ed/collegescorecard/v1/schools?api_key=6lZ3mGdHSfNDUu8NgEgv8l6I1b8W3pcfO0zHLB3q&fields=,attendance.academic_year,latest.earnings.10_yrs_after_entry.working_not_enrolled.mean_earnings&school.name=${program["Institution"]}`;
+    let url =`https://api.data.gov/ed/collegescorecard/v1/schools?api_key=6lZ3mGdHSfNDUu8NgEgv8l6I1b8W3pcfO0zHLB3q&fields=school.name,latest.aid.median_debt.completers.overall,latest.cost.avg_net_price.overall,latest.cost.tuition.out_of_state,latest.cost.tuition.in_state,latest.earnings.10_yrs_after_entry.working_not_enrolled.mean_earnings&school.name=${program["Institution"]}`;
+    fetch(url)
+      .then(function(response) {
+        return response.json();
+      })
+      .then(function(myJson) {
+        console.log(myJson['results']);
+        if (myJson['metadata']['total'] == '0'){return;}
+        var avgEarningsAfter10years = myJson['results'][0]["latest.earnings.10_yrs_after_entry.working_not_enrolled.mean_earnings"];
+        var out_of_state_tuition = myJson['results'][0]["latest.cost.tuition.out_of_state"];
+        var in_state_tuition = myJson['results'][0]["latest.cost.tuition.in_state"];
+        var medianDebt = myJson['results'][0]["latest.aid.median_debt.completers.overall"];
+          var data = [{x:'Earnings After 10 Years', y: avgEarningsAfter10years}, {x:'Median Debt', y:medianDebt}];        
+          var myBarChart = new Chart(ctx, {
+              type: 'bar',
+              data: {
+                  datasets: [
+                  {
+                      label: 'In-State',
+                      backgroundColor: 'rgb(199, 78, 26, 1)',
+                      borderColor: 'rgb(199, 78, 26, 1)',
+                      data: [in_state_tuition]
+                  },
+                  {
+                      label: 'Out of State',
+                      backgroundColor: 'rgb(36, 198, 218, 1)',
+                      borderColor: 'rgb(36, 198, 218, 1)',
+                      data: [out_of_state_tuition]
+                  },
+                                    {
+                      label: 'Annual Earnings after 10 years (Median)',
+                      backgroundColor: 'rgb(230, 114, 65, 1)',
+                      borderColor: 'rgb(230, 114, 65, 1)',
+                      data: [avgEarningsAfter10years]
+                  },
+                ]
+              },
+
+              options: {
+                title: {
+                    display: true,
+                    text: 'Annual Tuitions vs. Earnings'
+                }, 
+                responsive: true
+              }
+          });
+      });
   });
 
 
@@ -167,6 +218,9 @@
     }
     return params;
   };
+
+
+  
 
 </script>
 
