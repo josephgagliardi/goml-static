@@ -7478,6 +7478,17 @@ Blog details sidebar
   color: #FFF;
 }
 
+.main-search-inner .info {
+  color: #FFF;
+  line-height: 2px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.main-search-inner .info img {
+  height: 20px;
+  margin-top: 5px;
+}
 
 
 .main-search-input {
@@ -7631,6 +7642,7 @@ form.ais-SearchBox-form:after {
   top: 9px;
   left: 0;
   border-radius: 0px 0px 5px 5px;
+  z-index: 5;
 }
 
 .hit-container .ais-Hits .inst-list-wrapper {
