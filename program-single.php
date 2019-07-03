@@ -92,8 +92,8 @@
   var params = getParams(window.location.href);
 
   var programID = params["id"];
-  var client = algoliasearch('JBY4H547QZ', '133c145ebb78c84a04aefb61c32dba1d');
-  var index = client.initIndex('goml_DEMO');
+  var algoliaclient = algoliasearch('JBY4H547QZ', '133c145ebb78c84a04aefb61c32dba1d');
+  var index = algoliaclient.initIndex('goml_DEMO');
 
   index.getObjects([programID.toString()], function(err, content) {
     if (err) throw err;
@@ -138,6 +138,7 @@
       var cplLink = `<a class="mt-4 btn-block" id="fees-link" target="_blank" href="${program["Credit for Prior Learning"]}"><i class="fas fa-book"></i> Credit for Prior Learning</a>`;
       $('#quickLinks').append(cplLink);
     };
+    var shareLink = `<a class="mt-4 btn-block" id="share-link" href="${program["Tuition and Fees Link"]}"><i class="fas fa-dollar-sign"></i> Tuition and Fees</a>`;
 
   
   
@@ -147,7 +148,7 @@
         return response.json();
       })
       .then(function(myJson) {
-        console.log(myJson);
+        // console.log(myJson);
         if (myJson['metadata']['total'] == '0'){return;}
         var ctx = $('#myChart');
         var careerlink = `<li class="list-link__item"><a class="list-link__link" href="#career-outlook">Career Outlook</a></li>`;
@@ -261,8 +262,58 @@
     return params;
   };
 
+  // get User Information via Client.JS for saving searches and other stuff -- put this in its own module called search saver
+  var user_Info = [];
+  var client = new ClientJS(); // Create A New Client Object
 
-  
+  var fingerprint = client.getFingerprint(); // Calculate Device/Browser Fingerprint
+
+  // Custom fingerprint -- take in string of datapoints and return custom 32 bit integer version
+
+  var ua = client.getBrowserData().ua;
+  var canvasPrint = client.getCanvasPrint();
+
+  var fingerprint = client.getCustomFingerprint(ua, canvasPrint);
+
+  var userAgent = client.getUserAgent(); // Get User Agent String
+
+  var userAgentLowerCase = client.getUserAgentLowerCase(); // Get User Agent String
+
+  var browser = client.getBrowser(); // Get Browser
+
+  var browserVersion = client.getBrowserVersion(); // Get Browser Version
+
+  var isIE = client.isIE(); // Check For IE
+
+  var OS = client.getOS(); // Get OS Version
+  var device = client.getDevice(); // Get Device
+  var deviceType = client.getDeviceType(); // Get Device Type
+  var deviceVendor = client.getDeviceVendor(); // Get Device Vendor
+  var CPU = client.getCPU(); // Get CPU Architecture
+  var isMobile = client.isMobile(); // Check For Mobile
+  var screenPrint = client.getScreenPrint(); // Get Screen Print
+  var timeZone = client.getTimeZone(); // Get Time Zone
+  var language = client.getLanguage(); // Get User Language
+  // var systemLanguage = client.systemLanguage(); // Get System Language
+  user_Info.unshift(ua, canvasPrint, userAgent, userAgentLowerCase, browser, browserVersion, isIE, OS, device, deviceType, deviceVendor, CPU, isMobile, screenPrint, timeZone, language);
+
+  // If the ID does not exist it will be created in Algolia
+  // If the ID does exist it will be overwritten (updated but really replaced)
+  function saveSearch(){
+    const objects = [{
+      objectID: 'xeB9qrst',
+      firstname: 'Jimmie',
+      lastname: 'Barninger',
+      savedSearch: program,
+      userDetails: user_Info
+    }];
+    var savedSearches = algoliaclient.initIndex('saved_Searches');
+    console.log(savedSearches);
+    savedSearches.addObjects(objects, (err, content) => {
+      console.log(content);
+    });
+
+  }
 
 </script>
 

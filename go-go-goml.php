@@ -1,46 +1,37 @@
+<?php
+require __DIR__ . '/vendor/autoload.php'; 
+$searchID = (isset($_GET['pid']) && !empty($_GET['pid'])) ? $_GET["pid"] : null;
 
+$client = Algolia\AlgoliaSearch\SearchClient::create(
+	'JBY4H547QZ',
+	'87081fa12236159a1437cc0fdd06de70'
+);
+$index = $client->initIndex('saved_Searches');
+
+// IMPORTANT: objectID must be the only searchable ID on this index 
+$savedSearch = $index->search('searchID');
+var_dump($savedSearch['hits']);
+
+// Check the saved search - should only be a single value
+
+// echo($index);
+// var_dump($index->search('nursing'));
+
+
+// var_dump($searchID);
+// header("Location: /program-listing.php"); 
+
+
+?>
 <html>
 <head>
 	<meta charset="UTF-8">
 	<title>Go Go GOML!</title>
 
-	  		
 </head>
 <body>
- <?php include("includes/footer.php"); ?> 	
+	
 </body>
-	<script>
-		$userInfo = [];
-		var client = new ClientJS(); // Create A New Client Object
-
-		var fingerprint = client.getFingerprint(); // Calculate Device/Browser Fingerprint
-
-		alert( fingerprint );
-
-		// Custom fingerprint -- take in string of datapoints and return custom 32 bit integer version
-
-		var ua = client.getBrowserData().ua;
-		var canvasPrint = client.getCanvasPrint();
-
-		var fingerprint = client.getCustomFingerprint(ua, canvasPrint);
-
-		console.log( fingerprint );
-
-		var userAgent = client.getUserAgent(); // Get User Agent String
-
-		var userAgentLowerCase = client.getUserAgentLowerCase(); // Get User Agent String
-
-		var browser = client.getBrowser(); // Get Browser
-
-		var browserVersion = client.getBrowserVersion(); // Get Browser Version
-
-		var isIE = client.isIE(); // Check For IE
-
-		var OS = client.getOS(); // Get OS Version
-		$userInfo.push(ua, canvasPrint, userAgent, userAgentLowerCase, browser, browserVersion, isIE, OS);
-		
-	</script>
-
 </html>
 <!--GO GO GOML
 //always send to the degrees page
