@@ -85,9 +85,10 @@
   </div>
 </footer>
 <!-- Node Modules -->
-<script src="/node_modules/clientjs/dist/jquery.min.js"></script>
+<script src="/node_modules/jquery/dist/jquery.min.js"></script>
 <script src="/node_modules/clientjs/dist/client.min.js"></script>
 <script src="/node_modules/algoliasearch/dist/algoliasearchLite.min.js"></script>
+<script src="/node_modules/instantsearch.js/dist/instantsearch.production.min.js"></script>
 
 <!-- Base -->
 <script src="/assets/lib/js/bootstrap.min.js"></script>
@@ -106,6 +107,7 @@
 <script src="/assets/js/goml-animation-script.js"></script>
 
 
+<!-- Hosted Libraries -->
 <script src="//cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
 <script src="https://polyfill.io/v3/polyfill.min.js?features=default,Array.prototype.find,Array.prototype.includes"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/js/standalone/selectize.js"></script>
