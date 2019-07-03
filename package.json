@@ -6,7 +6,9 @@
   "dependencies": {
     "algoliasearch": "^3.33.0",
     "clientjs": "^0.1.11",
-    "instantsearch.js": "^3.5.4"
+    "instantsearch.js": "^3.5.4",
+    "jquery": "^3.4.1",
+    "selectize": "^0.12.6"
   },
   "devDependencies": {},
   "scripts": {
