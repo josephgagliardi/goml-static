@@ -84,33 +84,9 @@
     </div>
   </div>
 </footer>
-<!-- Node Modules -->
-<script src="/node_modules/jquery/dist/jquery.min.js"></script>
-<script src="/node_modules/clientjs/dist/client.min.js"></script>
-<script src="/node_modules/algoliasearch/dist/algoliasearchLite.min.js"></script>
-<script src="/node_modules/instantsearch.js/dist/instantsearch.production.min.js"></script>
-
-<!-- Base -->
-<script src="/assets/lib/js/bootstrap.min.js"></script>
-<script src="/assets/lib/slick/slick.min.js"></script>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-
-<!-- Viewport Helpers -->
-<script src="/assets/js/droopmenu.min.js"></script>
-<script src="/assets/js/ResizeSensor.js"></script>
-
-<!-- jQuery Plugins -->
-<script src="/assets/js/jquery.sticky-sidebar.min.js"></script>
-<script src="/assets/js/jquery.matchHeight-min.js"></script>
-
-<!-- Custom -->
-<script src="/assets/js/goml-animation-script.js"></script>
+<?php include('scripts.php'); ?>
 
 
-<!-- Hosted Libraries -->
-<script src="//cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=default,Array.prototype.find,Array.prototype.includes"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/js/standalone/selectize.js"></script>
 
 
 </body>
