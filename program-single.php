@@ -305,7 +305,7 @@
   user_Info.unshift(ua, userAgent, browser, browserVersion, isIE, OS, device, deviceType, deviceVendor, CPU, isMobile, screenPrint, timeZone, language, fingerprint);
 // Note that fingerprint can include multiple unique pieces of information, the more it includes the more likely it is to be the same user upon revisit/reuse
 
-  console.log(user_Info);
+  // console.log(user_Info);
   // If the ID does not exist it will be created in Algolia
   // If the ID does exist it will be overwritten (updated but really replaced)
   var algoliaadminclient = algoliasearch('JBY4H547QZ', '87081fa12236159a1437cc0fdd06de70');
@@ -320,14 +320,15 @@
     //   userDetails: user_Info
     // };
     // sendDataToAlgolia(object);
-    index2.addObject({
-      objectID: ,
-      firstname: 'Jimmie',
-      lastname: 'Barninger'
-    }, (err, { objectID } = {}) => {
-      console.log(`objectID=${objectID}`);
-    });
-  };
+    console.log(index2.describe);
+  //   index2.addObject({
+  //     objectID: ,
+  //     firstname: 'Jimmie',
+  //     lastname: 'Barninger'
+  //   }, (err, { objectID } = {}) => {
+  //     console.log(`objectID=${objectID}`);
+  //   });
+  // };
 
     // function sendDataToAlgolia(algoliaObjects){
     //   return new Promise((resolve, reject) => {

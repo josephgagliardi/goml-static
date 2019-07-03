@@ -49,3 +49,6 @@ var_dump($savedSearch['hits']);
 <!-- Rules put in place such as "For all degree URL's visited more than 3 times in the past week display this special offer or encouragement message" could be used for personalization -->
 <!-- For default cases or for when the filters break or the index cannot be found based on the hash we would display a default message or search result etc. -->
 
+
+<!-- The idea will be to mark each visit of the custom URL pattern somehow to track user visits -->
+
