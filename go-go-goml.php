@@ -2,6 +2,7 @@
 require __DIR__ . '/vendor/autoload.php'; 
 $searchID = (isset($_GET['pid']) && !empty($_GET['pid'])) ? $_GET["pid"] : null;
 
+// TODO: These should be stored as server vars or such
 $client = Algolia\AlgoliaSearch\SearchClient::create(
 	'JBY4H547QZ',
 	'87081fa12236159a1437cc0fdd06de70'

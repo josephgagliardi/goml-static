@@ -299,19 +299,43 @@
 
   // If the ID does not exist it will be created in Algolia
   // If the ID does exist it will be overwritten (updated but really replaced)
+  const algoliaIndex = algoliaclient.initIndex('saved_Searches');
   function saveSearch(){
-    const objects = [{
+    
+    const object = {
       objectID: 'xeB9qrst',
       firstname: 'Jimmie',
       lastname: 'Barninger',
       savedSearch: program,
       userDetails: user_Info
-    }];
-    var savedSearches = algoliaclient.initIndex('saved_Searches');
-    console.log(savedSearches);
-    savedSearches.addObjects(objects, (err, content) => {
-      console.log(content);
-    });
+    };
+    sendDataToAlgolia(object);
+  };
+
+    function sendDataToAlgolia(algoliaObjects){
+      return new Promise((resolve, reject) => {
+        algoliaIndex.addObjects(algoliaObjects, (err, content) => {
+          if(err) reject(err);
+          resolve();
+        })
+      });
+
+    // console.log(savedSearches);
+    // savedSearches.search(
+    //   {
+    //     query: 'Kennesaw',
+    //     attributesToRetrieve: ['Program Name', 'Institution'],
+    //     hitsPerPage: 10,
+    //   },
+    //   (err, { hits } = {}) => {
+    //     if (err) throw err;
+
+    //     console.log(hits);
+    //   }
+    // );
+    // savedSearches.addObjects(objects, (err, content) => {
+    //   console.log(content);
+    // });
 
   }
 
