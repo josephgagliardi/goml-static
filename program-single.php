@@ -313,13 +313,13 @@
     sendDataToAlgolia(object);
   };
 
-    // function sendDataToAlgolia(algoliaObjects){
-    //   return new Promise((resolve, reject) => {
-    //     algoliaIndex.addObjects(algoliaObjects, (err, content) => {
-    //       if(err) reject(err);
-    //       resolve();
-    //     })
-    //   });
+    function sendDataToAlgolia(algoliaObjects){
+      return new Promise((resolve, reject) => {
+        algoliaIndex.addObjects(algoliaObjects, (err, content) => {
+          if(err) reject(err);
+          resolve();
+        })
+      });
 
     // console.log(savedSearches);
     // savedSearches.search(
