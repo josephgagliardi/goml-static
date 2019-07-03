@@ -295,31 +295,40 @@
   var timeZone = client.getTimeZone(); // Get Time Zone
   var language = client.getLanguage(); // Get User Language
   // var systemLanguage = client.systemLanguage(); // Get System Language
-  user_Info.unshift(ua, canvasPrint, userAgent, userAgentLowerCase, browser, browserVersion, isIE, OS, device, deviceType, deviceVendor, CPU, isMobile, screenPrint, timeZone, language);
+  user_Info.unshift(ua, userAgent, browser, browserVersion, isIE, OS, device, deviceType, deviceVendor, CPU, isMobile, screenPrint, timeZone, language, fingerprint);
+// Note that fingerprint can include multiple unique pieces of information, the more it includes the more likely it is to be the same user upon revisit/reuse
 
+  console.log(user_Info);
   // If the ID does not exist it will be created in Algolia
   // If the ID does exist it will be overwritten (updated but really replaced)
   var algoliaadminclient = algoliasearch('JBY4H547QZ', '87081fa12236159a1437cc0fdd06de70');
-  const algoliaIndex = algoliaadminclient.initIndex('saved_Searches');
+  var index2 = algoliaadminclient.initIndex('saved_Searches');
   function saveSearch(){
     
-    const object = {
-      objectID: 'xeB9qrst',
+    // const object = {
+    //   objectID: 'xeB9qrst',
+    //   firstname: 'Jimmie',
+    //   lastname: 'Barninger',
+    //   savedSearch: program,
+    //   userDetails: user_Info
+    // };
+    // sendDataToAlgolia(object);
+    index2.addObject({
+      objectID: ,
       firstname: 'Jimmie',
-      lastname: 'Barninger',
-      savedSearch: program,
-      userDetails: user_Info
-    };
-    sendDataToAlgolia(object);
+      lastname: 'Barninger'
+    }, (err, { objectID } = {}) => {
+      console.log(`objectID=${objectID}`);
+    });
   };
 
-    function sendDataToAlgolia(algoliaObjects){
-      return new Promise((resolve, reject) => {
-        algoliaIndex.addObjects(algoliaObjects, (err, content) => {
-          if(err) reject(err);
-          resolve();
-        })
-      });
+    // function sendDataToAlgolia(algoliaObjects){
+    //   return new Promise((resolve, reject) => {
+    //     algoliaIndex.addObjects(algoliaObjects, (err, content) => {
+    //       if(err) reject(err);
+    //       resolve();
+    //     })
+    //   });
 
     // console.log(savedSearches);
     // savedSearches.search(
@@ -338,7 +347,7 @@
     //   console.log(content);
     // });
 
-  }
+  // }
 
 </script>
 
