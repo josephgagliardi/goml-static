@@ -7,7 +7,6 @@
 <script src="/node_modules/slick-carousel/slick/slick.min.js"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
-
 <!-- CDN Libraries -->
 <script src="//cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
 <script src="https://polyfill.io/v3/polyfill.min.js?features=default,Array.prototype.find,Array.prototype.includes"></script>
