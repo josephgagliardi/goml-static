@@ -1,4 +1,4 @@
-<header class="droopmenu-navbar" role="banner">
+<header class="droopmenu-navbar d-print-none" role="banner">
   <div class="droopmenu-inner">
     <div class="droopmenu-header">
       <a href="/" class="droopmenu-brand"><img src="/assets/img/logo/goml-logo.svg" alt="goml logo and return to home page"></a>

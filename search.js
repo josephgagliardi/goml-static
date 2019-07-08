@@ -271,6 +271,7 @@ search.addWidget(
     },
   })
 );
+
 search.addWidget(
   instantsearch.widgets.currentRefinements({
     container: '.tags',
