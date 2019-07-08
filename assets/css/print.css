@@ -1,0 +1,13 @@
+@media print {
+
+  .bundle-header__title,
+  .bundle-header__content,
+  .bundle-header__highlight {
+    color: #000 !important
+  }
+
+  .additional_info img {
+    display: none;
+  }
+
+}
