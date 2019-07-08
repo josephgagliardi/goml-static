@@ -20,7 +20,7 @@
                     <div class="accordion__title"><button class="accordion__link btn-block" data-toggle="collapse" data-target="#answer1" aria-expanded="true">Institutionl Accreditation<i class="fas fa-angle-right accordion__icon"></i></button>
                     </div>
                   </div>
-                  <div class="panel-collapse collapse show" id="answer1">
+                  <div class="panel-collapse collapse show d-print-block" id="answer1">
                     <div class="accordion__body">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vulputate fringilla tellus, in lacinia eros ullamcorper eget. Nam dolor enim, tincidunt eu felis eu, lacinia pretium nisi. In sed dolor dignissim, rutrum massa ac, egestas ex. Nulla congue placerat lacus, sed dignissim leo varius at. Aenean sodales sem velit, in volutpat ligula eleifend id. In hendrerit sagittis odio ac rhoncus. Curabitur at eros quam. Donec sed turpis in risus convallis ullamcorper. Quisque ac odio sit amet nisi rhoncus luctus et vel ex. Aliquam luctus sagittis blandit. Cras vel diam ac leo sagittis finibus vel non magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a justo id tortor porttitor sagittis.
                     </div>
@@ -31,7 +31,7 @@
                     <div class="accordion__title"><button class="accordion__link btn-block" data-toggle="collapse" data-target="#answer2">Program Accreditation<i class="fas fa-angle-right accordion__icon"></i></button>
                     </div>
                   </div>
-                  <div class="panel-collapse collapse " id="answer2">
+                  <div class="panel-collapse collapse d-print-block" id="answer2">
                     <div class="accordion__body">
                       <ul class="accred-list">
                         <li><img src="/assets/img/accreditation-logos/aacsb-seeklogo.com.svg"></li>
