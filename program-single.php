@@ -5,24 +5,7 @@
 <main class="bundle-content">
   <div class="container">
     <div class="row sticky__wrapper">
-      <div class="col-lg-3 col-md-3 col-sm-12">
-        <div id="menu-left">
-          <div class="list-link">
-            <div class="institutions-logo-single">
-            </div>
-            <nav>
-              <ul class="list-link__list">
-              </ul>
-              <div id="quickLinks" class="mt-4 p-3">
-                <a class="btn button-default btn-block list-link__btn" target="_blank" id="applynowlink" href="#">Apply Now</a>
-                <a class="btn button-outline-02 btn-block list-link__btn" id="instPageLink" href="#">Request Info</a>
-                <a class="mt-4 btn-block" id="curric-link" href="#"><i class="fas fa-clipboard-list"></i> View Curriculum</a>
-              </div>
-            </nav>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-9 col-md-9 col-sm-12">
+      <div class="col-lg-9 col-md-12 order-lg-2">
         <div class="bundle-header__about">
           <div class="bundle-header__image" style="background-image: url(/assets/img/program-single/header-img-1.jpg)" data-overlay="6"></div>
           <h1 id="program__title" class="bundle-header__title">Master of Education in Early Childhood Education</h1>
@@ -66,7 +49,24 @@
         <br />
         <br />
         <div class="bundle-list">
-            <canvas id="myChart"></canvas>
+          <canvas id="myChart"></canvas>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-12 d-print-none order-lg-1">
+        <div id="menu-left">
+          <div class="list-link">
+            <div class="institutions-logo-single">
+            </div>
+            <nav>
+              <ul class="list-link__list">
+              </ul>
+              <div id="quickLinks" class="mt-4 p-3">
+                <a class="btn button-default btn-block list-link__btn" target="_blank" id="applynowlink" href="#">Apply Now</a>
+                <a class="btn button-outline-02 btn-block list-link__btn" id="instPageLink" href="#">Request Info</a>
+                <a class="mt-4 btn-block" id="curric-link" href="#"><i class="fas fa-clipboard-list"></i> View Curriculum</a>
+              </div>
+            </nav>
+          </div>
         </div>
       </div>
     </div>
@@ -139,16 +139,18 @@
       $('#quickLinks').append(cplLink);
     };
 
-  
-  
-    let url =`https://api.data.gov/ed/collegescorecard/v1/schools?api_key=6lZ3mGdHSfNDUu8NgEgv8l6I1b8W3pcfO0zHLB3q&fields=school.name,latest.aid.median_debt.completers.overall,latest.cost.avg_net_price.overall,latest.cost.tuition.out_of_state,latest.cost.tuition.in_state,latest.earnings.10_yrs_after_entry.working_not_enrolled.mean_earnings,latest.aid.median_debt.completers.overall&school.name=${program["Institution"]}`;
+
+
+    let url = `https://api.data.gov/ed/collegescorecard/v1/schools?api_key=6lZ3mGdHSfNDUu8NgEgv8l6I1b8W3pcfO0zHLB3q&fields=school.name,latest.aid.median_debt.completers.overall,latest.cost.avg_net_price.overall,latest.cost.tuition.out_of_state,latest.cost.tuition.in_state,latest.earnings.10_yrs_after_entry.working_not_enrolled.mean_earnings,latest.aid.median_debt.completers.overall&school.name=${program["Institution"]}`;
     fetch(url)
       .then(function(response) {
         return response.json();
       })
       .then(function(myJson) {
         console.log(myJson);
-        if (myJson['metadata']['total'] == '0'){return;}
+        if (myJson['metadata']['total'] == '0') {
+          return;
+        }
         var ctx = $('#myChart');
         var careerlink = `<li class="list-link__item"><a class="list-link__link" href="#career-outlook">Career Outlook</a></li>`;
         $('.list-link__list').append(careerlink);
@@ -159,83 +161,91 @@
         var out_of_state_tuition = myJson['results'][0]["latest.cost.tuition.out_of_state"];
         var in_state_tuition = myJson['results'][0]["latest.cost.tuition.in_state"];
         var medianDebt = myJson['results'][0]["latest.aid.median_debt.completers.overall"];
-    
+
         data = [];
-        if (in_state_tuition != ''){data.push({
+        if (in_state_tuition != '') {
+          data.push({
             label: 'In-State Tuition',
             backgroundColor: 'rgb(199, 78, 26, 1)',
             borderColor: 'rgb(199, 78, 26, 1)',
             data: [in_state_tuition]
-        })};
-        if (out_of_state_tuition != ''){data.push({
+          })
+        };
+        if (out_of_state_tuition != '') {
+          data.push({
             label: 'Out of State Tuition',
-                backgroundColor: 'rgb(36, 198, 218, 1)',
-                borderColor: 'rgb(36, 198, 218, 1)',
+            backgroundColor: 'rgb(36, 198, 218, 1)',
+            borderColor: 'rgb(36, 198, 218, 1)',
             data: [out_of_state_tuition]
-        })};
-          if (medianDebt != ''){data.push({
-              label: 'Median Debt Completers Overall',
-              backgroundColor: 'rgb(168,169,173)',
-              borderColor: 'rgb(168,169,173)',
+          })
+        };
+        if (medianDebt != '') {
+          data.push({
+            label: 'Median Debt Completers Overall',
+            backgroundColor: 'rgb(168,169,173)',
+            borderColor: 'rgb(168,169,173)',
 
-              data: [medianDebt]
-          })};  
-        if (avgEarningsAfter10years != ''){data.push({
+            data: [medianDebt]
+          })
+        };
+        if (avgEarningsAfter10years != '') {
+          data.push({
             label: 'Median Annual Earnings after 10 years',
             backgroundColor: 'rgb(230, 114, 65, 1)',
             borderColor: 'rgb(230, 114, 65, 1)',
             data: [avgEarningsAfter10years]
-        })};        
-          var myBarChart = new Chart(ctx, {
-              type: 'bar',
-              data: {
-                  datasets: data
-              },
+          })
+        };
+        var myBarChart = new Chart(ctx, {
+          type: 'bar',
+          data: {
+            datasets: data
+          },
 
-              options: {
-                animation: {
-                        duration: 2200,
-                        easing: 'easeInOutCubic',
-                        onComplete: function () {
-                            var chartInstance = this.chart,
-                                ctx = chartInstance.ctx;
-                            ctx.font = Chart.helpers.fontString(Chart.defaults.global.defaultFontSize, Chart.defaults.global.defaultFontStyle, Chart.defaults.global.defaultFontFamily);
-                            ctx.textAlign = 'center';
-                            ctx.textBaseline = 'bottom';
+          options: {
+            animation: {
+              duration: 2200,
+              easing: 'easeInOutCubic',
+              onComplete: function() {
+                var chartInstance = this.chart,
+                  ctx = chartInstance.ctx;
+                ctx.font = Chart.helpers.fontString(Chart.defaults.global.defaultFontSize, Chart.defaults.global.defaultFontStyle, Chart.defaults.global.defaultFontFamily);
+                ctx.textAlign = 'center';
+                ctx.textBaseline = 'bottom';
 
-                            this.data.datasets.forEach(function (dataset, i) {
-                                var meta = chartInstance.controller.getDatasetMeta(i);
-                                meta.data.forEach(function (bar, index) {
-                                    var data = dataset.data[index];                            
-                                    ctx.fillText('$' + data, bar._model.x, bar._model.y - 5);
-                                });
-                            });
-                        }
-                      },
-                scales: {
-                    yAxes: [{
-                        ticks: {
-                            // Include a dollar sign in the ticks
-                            callback: function(value, index, values) {
-                                return '$' + value;
-                            }
-                        }
-                    }]
-                },
-                tooltips: {
-                    callbacks: {
-                        label: function(tooltipItems, data) {
-                            return "$" + tooltipItems.yLabel.toString();
-                        }
-                      }
-                    },
-                title: {
-                    display: true,
-                    text: 'Tuition vs. Earnings - Provided by data.gov '
-                }, 
-                responsive: true
+                this.data.datasets.forEach(function(dataset, i) {
+                  var meta = chartInstance.controller.getDatasetMeta(i);
+                  meta.data.forEach(function(bar, index) {
+                    var data = dataset.data[index];
+                    ctx.fillText('$' + data, bar._model.x, bar._model.y - 5);
+                  });
+                });
               }
-          });
+            },
+            scales: {
+              yAxes: [{
+                ticks: {
+                  // Include a dollar sign in the ticks
+                  callback: function(value, index, values) {
+                    return '$' + value;
+                  }
+                }
+              }]
+            },
+            tooltips: {
+              callbacks: {
+                label: function(tooltipItems, data) {
+                  return "$" + tooltipItems.yLabel.toString();
+                }
+              }
+            },
+            title: {
+              display: true,
+              text: 'Tuition vs. Earnings - Provided by data.gov '
+            },
+            responsive: true
+          }
+        });
       });
   });
 
@@ -260,9 +270,6 @@
     }
     return params;
   };
-
-
-  
 
 </script>
 

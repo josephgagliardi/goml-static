@@ -1,4 +1,4 @@
-<footer class="footer">
+<footer class="footer d-print-none">
   <div class="btn-ontop" id="on-top"><i class="fas fa-angle-up"></i><span class="sr-only">back to top</span></div>
   <div class="img-background">
     <div class="container">
