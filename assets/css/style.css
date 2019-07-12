@@ -4746,8 +4746,12 @@ button.view-gird__icon {
   -webkit-border-radius: 3px;
   border-radius: 3px;
   color: #FFF;
-  margin: -50px 0px 60px 0px;
+  margin: -50px 0px 30px 0px;
 
+}
+
+#share_container {
+  margin-bottom: 30px;
 }
 
 .additional_info {
