@@ -4762,6 +4762,18 @@ button.view-gird__icon {
   background-color: transparent;
 }
 
+.additional_info .card button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: none;
+  background: none;
+}
+
+.additional_info .card button:hover {
+  color: #FFF;
+}
+
 .additional_info img {
   height: 60px;
   display: block;
@@ -4804,13 +4816,11 @@ button.view-gird__icon {
   left: -118%;
   width: 300%;
   height: 100%;
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: #fafafa;
 }
 
 .bundle-header__image::before {
-  background: #000 none repeat scroll 0 0;
+  background: none repeat scroll 0 0;
   content: "";
   height: 100%;
   left: 0;
@@ -4826,7 +4836,8 @@ button.view-gird__icon {
   font-size: 50px;
   line-height: 1.2;
   text-align: left;
-  color: #FFF;
+  color: #000;
+  font-weight: 700;
 }
 
 @media (max-width: 768px) {
@@ -4845,7 +4856,6 @@ button.view-gird__icon {
   font-size: 14px;
   font-weight: bold;
   text-align: left;
-  color: #FFF;
   margin-bottom: 27px;
 }
 

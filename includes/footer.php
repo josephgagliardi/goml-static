@@ -85,6 +85,7 @@
   </div>
 </footer>
 <script src="/assets/lib/js/jquery-3.3.1.min.js"></script>
+<script src="/assets/lib/js/popper.min.js"></script>
 <script src="/assets/lib/js/bootstrap.min.js"></script>
 <script src="/assets/lib/slick/slick.min.js"></script>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

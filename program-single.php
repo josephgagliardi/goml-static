@@ -7,10 +7,10 @@
     <div class="row sticky__wrapper">
       <div class="col-lg-9 col-md-12 order-lg-2">
         <div class="bundle-header__about">
-          <div class="bundle-header__image" style="background-image: url(/assets/img/program-single/header-img-1.jpg)" data-overlay="6"></div>
-          <h1 id="program__title" class="bundle-header__title">Master of Education in Early Childhood Education</h1>
+          <div class="bundle-header__image"></div>
+          <h1 id="program__title" class="bundle-header__title"></h1>
           <p id="institution__name" class="bundle-header__content">
-            University Of West Georgia
+
           </p>
         </div>
         <div class="bundle-header__highlight">
@@ -38,7 +38,9 @@
                 <div class="card h-100 justify-content-center">
                   <img src="/assets/img/program-single/piggy-bank.svg">
                   Per Credit Hour Cost
+                  <button data-toggle="popover" data-trigger="hover click" data-placement="top" data-content="Based on in-state residency. Additional fees may apply. See institutional tuition and fees charts for detailed information."><i class="fas fa-info-circle"></i></button>
                   <strong id="total__cost"></strong>
+
                 </div>
               </div>
             </div>
