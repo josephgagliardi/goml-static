@@ -4746,8 +4746,12 @@ button.view-gird__icon {
   -webkit-border-radius: 3px;
   border-radius: 3px;
   color: #FFF;
-  margin: -50px 0px 60px 0px;
+  margin: -50px 0px 30px 0px;
 
+}
+
+#share_container {
+  margin-bottom: 30px;
 }
 
 .additional_info {
@@ -4760,6 +4764,18 @@ button.view-gird__icon {
 .additional_info .card {
   border: none;
   background-color: transparent;
+}
+
+.additional_info .card button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: none;
+  background: none;
+}
+
+.additional_info .card button:hover {
+  color: #FFF;
 }
 
 .additional_info img {
@@ -4804,13 +4820,11 @@ button.view-gird__icon {
   left: -118%;
   width: 300%;
   height: 100%;
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: #fafafa;
 }
 
 .bundle-header__image::before {
-  background: #000 none repeat scroll 0 0;
+  background: none repeat scroll 0 0;
   content: "";
   height: 100%;
   left: 0;
@@ -4826,7 +4840,8 @@ button.view-gird__icon {
   font-size: 50px;
   line-height: 1.2;
   text-align: left;
-  color: #FFF;
+  color: #000;
+  font-weight: 700;
 }
 
 @media (max-width: 768px) {
@@ -4845,7 +4860,6 @@ button.view-gird__icon {
   font-size: 14px;
   font-weight: bold;
   text-align: left;
-  color: #FFF;
   margin-bottom: 27px;
 }
 
