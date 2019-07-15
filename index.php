@@ -8,15 +8,15 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12 text-center">
-            <h1 data-aos="fade-up" data-aos-delay="100" id="site-headline" class="aos-init aos-animate">Success is Just a Search Away.</h1>
-            <h2 data-aos="fade-up" data-aos-delay="200" class="aos-init aos-animate">Explore online degrees and certificates from across the University System of Georgia.</h2>
+            <h1 data-aos="fade-up" data-aos-delay="300" id="site-headline">Success is Just a Search Away.</h1>
+            <h2 data-aos="fade-up" data-aos-delay="400">Explore online degrees and certificates from across the University System of Georgia.</h2>
           </div>
         </div>
       </div>
 
 
       <div class="container">
-        <div class="main-search-input aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
+        <div class="main-search-input" data-aos="fade-up" data-aos-delay="500">
           <div class="row">
             <div class="col-md-3 border-right">
               <div id="menu-select">
@@ -39,7 +39,7 @@
 
       <div class="container">
         <div class="row">
-          <div class="col-12">
+          <div class="col-12" data-aos="fade-up" data-aos-delay="500">
             <div class="d-flex align-items-center justify-content-center mt-5 info">
               <div class="mr-3">
                 <img src="/assets/img/home/usg-icon-logo.svg" alt="usg icon">
@@ -153,7 +153,7 @@
     <div class="container">
       <div class="list-course__header">
       </div>
-      <div class="row mb-5 justify-content-around align-items-center item__left">
+      <div class="row mb-5 justify-content-around align-items-center item__left" data-aos="fade-up">
 
         <div class="col-lg-5">
           <h3 class="item__left__title">The University System of Georgia at your Fingertips</h3>
@@ -165,11 +165,11 @@
           </div>
         </div>
         <div class="col-lg-7 p-5">
-          <img src="/assets/img/home/1-atyourfingertips.svg" data-aos="fade-up" alt="">
+          <img src="/assets/img/home/1-atyourfingertips.svg" alt="">
         </div>
       </div>
 
-      <div class="row mb-5 justify-content-around align-items-center item__left">
+      <div class="row mb-5 justify-content-around align-items-center item__left" data-aos="fade-up">
         <div class="col-lg-5 order-lg-2">
           <h3 class="item__left__title">Over 26 Colleges and Universities</h3>
           <div class="item__left__content">
@@ -180,10 +180,10 @@
           </div>
         </div>
         <div class="col-lg-7 order-lg-1 p-5">
-          <img src="/assets/img/home/2-institutions.svg" data-aos="fade-up" alt="">
+          <img src="/assets/img/home/2-institutions.svg" alt="">
         </div>
       </div>
-      <div class="row mb-5 justify-content-around align-items-center item__left">
+      <div class="row mb-5 justify-content-around align-items-center item__left" data-aos="fade-up">
 
         <div class="col-lg-5">
           <h3 class="item__left__title">Hundreds of Online Programs</h3>
@@ -195,7 +195,7 @@
           </div>
         </div>
         <div class="col-lg-7 p-5">
-          <img src="/assets/img/home/3-onlineprograms.svg" data-aos="fade-up" alt="">
+          <img src="/assets/img/home/3-onlineprograms.svg" alt="">
         </div>
       </div>
     </div>
