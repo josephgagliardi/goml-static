@@ -7536,11 +7536,15 @@ Blog details sidebar
   height: 30px;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 992px) {
   .main-search-input .ais-MenuSelect select {
     font-size: 14px;
     background-color: #FFF;
     border-radius: 40px;
+  }
+
+  .main-search-inner h2 {
+    font-size: 18px;
   }
 }
 
@@ -10461,6 +10465,11 @@ input[type="checkbox"]:checked + label:before {
 
   #site-headline {
     font-size: 2.5rem;
+  }
+
+  .main-search-inner {
+    padding-top: 90px;
+    padding-bottom: 100px;
   }
 
 }

@@ -39,7 +39,7 @@ search.addWidget(
       submit: 'button button-outline float-right d-flex'
     },
     templates: {
-      submit: '<div class="d-none d-sm-none d-md-block">submit</div> <i class="fas fa-search align-self-center"></i>',
+      submit: '<div class="d-none d-sm-none d-md-block">Search</div> <i class="fas fa-search align-self-center"></i>',
     }
   })
 );

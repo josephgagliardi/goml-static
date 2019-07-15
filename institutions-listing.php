@@ -6,9 +6,8 @@
   <div class="container">
     <div class="inst-main">
       <div class="row justify-content-center">
-        <div class="col-6 align-self-center inst-listing-header text-center">
-          <h1 class="title-text">Institutions</h1>
-          <p class="content-text">Our institutions are some of the most forward-looking university in the country, and they're looking for graduates to fill critical roles today.</p>
+        <div class="col-md-12 align-self-center inst-listing-header text-center">
+          <h1 class="title-text">University System of Georgia Institutions</h1>
         </div>
       </div>
       <div class="partner-listing-main">
