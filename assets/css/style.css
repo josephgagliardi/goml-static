@@ -4791,11 +4791,7 @@ button.view-gird__icon {
   font-weight: 700;
 }
 
-@media (max-width: 767px) {
-
-  .bundle-header__highlight {
-    margin: 60px 0;
-  }
+@media (max-width: 768px) {
 
   .additional_info img {
     height: 40px;
