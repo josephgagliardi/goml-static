@@ -69,6 +69,14 @@
   top: 10px;
 }
 
+@media (max-width: 950px) {
+
+  .dm-nav-brand a img,
+  .droopmenu-brand img {
+    height: 50px;
+  }
+}
+
 .dm-nav-brand a,
 .droopmenu-brand {
   font-size: 32px;

@@ -15,7 +15,7 @@
         </div>
         <div class="bundle-header__highlight">
           <div class="row">
-            <div class="col-4">
+            <div class="col-md-4 mb-2">
               <div class="additional_info rounded shadow p-3 p-lg-4 h-100">
                 <div class="card h-100 justify-content-center">
                   <img src="/assets/img/program-single/book.svg">
@@ -24,7 +24,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-4">
+            <div class="col-md-4 mb-2">
               <div class="additional_info rounded shadow p-3 p-lg-4 h-100">
                 <div class="card h-100 justify-content-center">
                   <img src="/assets/img/program-single/graph.svg">
@@ -33,7 +33,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-4">
+            <div class="col-md-4 mb-2">
               <div class="additional_info rounded shadow p-3 p-lg-4 h-100">
                 <div class="card h-100 justify-content-center">
                   <img src="/assets/img/program-single/piggy-bank.svg">
