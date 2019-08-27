@@ -8,10 +8,22 @@ handlers:
 
 
 # Serve images as static resources.
-- url: /(.+\.(gif|png|jpg))$
-  static_files: \1
-  upload: .+\.(gif|png|jpg)$
 
+- url: /(.*\.(htm$|html$|css$|js$))
+  static_files: \1
+  upload: (.*\.(htm$|html$|css$|js$))
+  application_readable: true
+
+- url: /css
+  static_dir: css
+
+- url: /js
+  static_dir: js
+
+- url: /(.*\.(ico$|jpg$|png$|gif$))
+  static_files: \1
+  upload: (.*\.(ico$|jpg$|png$|gif$))
+  application_readable: true
 # Serve your app through a front controller at index.php or public/index.php.
 - url: .*
   script: auto
