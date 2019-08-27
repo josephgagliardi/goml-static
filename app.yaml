@@ -1,7 +1,8 @@
 runtime: php72
+entrypoint: serve index.php
 
 handlers:
-  
+
 - url: /(.*\.(htm$|html$|css$|js$))
   static_files: \1
   upload: (.*\.(htm$|html$|css$|js$))
@@ -12,4 +13,4 @@ handlers:
 
 
 - url: /.*
-  script: index.php
+  script: auto
