@@ -1,3 +1,4 @@
+<?php require_once __DIR__ . '/vendor/autoload.php'; ?>
 <head>
   <title>GOML</title>
   <meta charset="utf-8">
