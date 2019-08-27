@@ -1,2 +1,2 @@
 runtime: php72
-entrypoint: serve index.php
+entrypoint: serve /index.php
