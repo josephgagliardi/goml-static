@@ -1,6 +1,6 @@
 {
   "require": {
-    "google/cloud-storage": "^1.6",
+    "google/cloud-storage": "^1.14",
     "slim/slim": "^3.0",
     "slim/twig-view": "^2.4"
   },
