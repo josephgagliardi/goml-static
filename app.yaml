@@ -7,9 +7,9 @@ handlers:
   static_files: \1
   upload: (.*\.(htm$|html$|css$|js$))
 
-- url: /(.*\.(ico$|jpg$|png$|gif$))
+- url: /(.*\.(ico$|jpg$|png$|gif$|svg$))
   static_files: \1
-  upload: (.*\.(ico$|jpg$|png$|gif$))
+  upload: (.*\.(ico$|jpg$|png$|gif$|svg$))
 
 
 - url: /.*
