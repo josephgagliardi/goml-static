@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
+
 <?php include("includes/head.php"); ?>
 <?php include("includes/header.php"); ?>
 <main class="blog-grid">
