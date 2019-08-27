@@ -1,4 +1,2 @@
 runtime: php72
-handlers:
-- url: /.*
-  script: index.php
+entrypoint: serve index.php
