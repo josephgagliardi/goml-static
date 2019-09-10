@@ -171,7 +171,7 @@
 
       <div class="row mb-5 justify-content-around align-items-center item__left" data-aos="fade-up">
         <div class="col-lg-5 order-lg-2">
-          <h3 class="item__left__title">Over 26 Colleges and Universities</h3>
+          <h3 class="item__left__title">26 Colleges and Universities</h3>
           <div class="item__left__content">
             <p>
               Searching for an online degree can be a daunting task, and it can sometimes be difficult to decipher the legitimacy of an online program. The Georgia On My Line degree marketplace allows you to search hundreds of online degrees and certificates offered through regionally accredited USG institutions you know and trust. You can have peace of mind knowing every institution on our site is accredited by the Southern Association of Colleges and Schools Commission on Colleges (SACSCOC) and is well respected throughout Georgia, the Southeast, and the world.
