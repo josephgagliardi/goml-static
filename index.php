@@ -239,12 +239,11 @@
   $('.list-icons__list').slick({
     dots: false,
     infinite: true,
-    speed: 2000,
+    speed: 1000,
     arrows: false,
     autoplay: true,
-    autoplaySpeed: 8000,
     slidesToShow: 6,
-    slidesToScroll: 3,
+    slidesToScroll: 6,
     responsive: [{
         breakpoint: 1024,
         settings: {
@@ -256,14 +255,14 @@
         breakpoint: 600,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 2
+          slidesToScroll: 3
         }
       },
       {
         breakpoint: 576,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 1
+          slidesToScroll: 2
         }
       }
     ]
