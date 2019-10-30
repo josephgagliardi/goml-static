@@ -149,6 +149,49 @@
       </div>
     </div>
   </section>
+
+
+  <section class="py-5 section-feature-course">
+    <div class="container">
+      <div class="row header-section">
+        <div class="col-md-12">
+          <h2 class="title-text">Feature Programs</h2>
+        </div>
+      </div>
+      <div class="row feature-boss">
+        <div class="order-lg-2 order-md-1 col-md-12 col-lg-6">
+          <a href="/program-listing.php?query=nursing">
+            <div class="card-feature"><img class="img-fluid" src="/assets/img/home/nursing.jpg" alt="card-feature-02">
+              <div class="card-feature-overlay card-feature-overlay-mid">
+                <h3 class="title-text">Nursing: Explore the benefits of a degree from our programs on nursing</h3>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="feature-col order-lg-1 order-md-2 col-md-6 col-sm-6 col-xs-6 col-lg-3">
+          <a href="/program-listing.php?query=cybersecurity">
+            <div class="card-feature"><img class="img-fluid" src="/assets/img/home/cyber.jpg" alt="card-feature-01">
+              <div class="card-bg"></div>
+              <div class="card-feature-overlay">
+                <p>Cybersecurity: Protect Sensitive Data from Theft with a Cyber Security Degree Online</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="feature-col order-lg-3 order-md-3 col-md-6 col-sm-6 col-xs-6 col-lg-3">
+          <a href="/program-listing.php?query=fintech">
+            <div class="card-feature"><img class="img-fluid" src="/assets/img/home/fintech.jpg" alt="card-feature-03">
+              <div class="card-bg"></div>
+              <div class="card-feature-overlay">
+                <p>FinTech: Master Search Engine Optimization and SEO Link Building</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+      </div>
+  </section>
   <section class="best-features">
     <div class="container">
       <div class="list-course__header">
@@ -239,12 +282,11 @@
   $('.list-icons__list').slick({
     dots: false,
     infinite: true,
-    speed: 2000,
+    speed: 1000,
     arrows: false,
     autoplay: true,
-    autoplaySpeed: 8000,
     slidesToShow: 6,
-    slidesToScroll: 3,
+    slidesToScroll: 6,
     responsive: [{
         breakpoint: 1024,
         settings: {
@@ -256,14 +298,14 @@
         breakpoint: 600,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 2
+          slidesToScroll: 3
         }
       },
       {
         breakpoint: 576,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 1
+          slidesToScroll: 2
         }
       }
     ]

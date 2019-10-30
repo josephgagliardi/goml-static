@@ -66,7 +66,7 @@
 .droopmenu-brand img {
   height: 70px;
   position: relative;
-  top: 10px;
+  top: -5px;
 }
 
 @media (max-width: 950px) {
