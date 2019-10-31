@@ -7,8 +7,8 @@
     <div class="main-search-inner">
       <div class="container">
         <div class="row">
-          <div class="col-md-12 text-center">
-            <h1 data-aos="fade-up" data-aos-delay="300" id="site-headline">Success is Just a Search Away.</h1>
+          <div class="col-md-12 text-center site-headline">
+            <h1 data-aos="fade-up" data-aos-delay="300">Success is Just a Search Away.</h1>
             <h2 data-aos="fade-up" data-aos-delay="400">Explore online degrees and certificates from across the University System of Georgia.</h2>
           </div>
         </div>
@@ -163,7 +163,8 @@
           <a href="/program-listing.php?query=nursing">
             <div class="card-feature"><img class="img-fluid" src="/assets/img/home/nursing.jpg" alt="card-feature-02">
               <div class="card-feature-overlay card-feature-overlay-mid">
-                <h3 class="title-text">Nursing: Explore the benefits of a degree from our programs on nursing</h3>
+                <h3 class="title-text"><strong>Nursing:</strong> Explore the benefits of a degree from our programs on nursing</h3>
+                <div class="bundle-badge shadow bundle-badge-big">View Programs</div>
               </div>
             </div>
           </a>
@@ -173,7 +174,8 @@
             <div class="card-feature"><img class="img-fluid" src="/assets/img/home/cyber.jpg" alt="card-feature-01">
               <div class="card-bg"></div>
               <div class="card-feature-overlay">
-                <p>Cybersecurity: Protect Sensitive Data from Theft with a Cyber Security Degree Online</p>
+                <p><strong>Cybersecurity:</strong> Protect sensitive data from theft with a cybersecurity degree online</p>
+                <div class="bundle-badge shadow bundle-badge-big">View Programs</div>
               </div>
             </div>
           </a>
@@ -184,7 +186,8 @@
             <div class="card-feature"><img class="img-fluid" src="/assets/img/home/fintech.jpg" alt="card-feature-03">
               <div class="card-bg"></div>
               <div class="card-feature-overlay">
-                <p>FinTech: Master Search Engine Optimization and SEO Link Building</p>
+                <p><strong>FinTech:</strong> A talent development initiative that will power the future of the global economy</p>
+                <div class="bundle-badge shadow bundle-badge-big">View Programs</div>
               </div>
             </div>
           </a>

@@ -257,6 +257,10 @@ table {
   border-spacing: 0;
 }
 
+strong {
+  font-weight: 700;
+}
+
 /*	TYPOGRAPHY
 –––––––––––––––––––––––––––*/
 body {
@@ -476,7 +480,6 @@ img {
 
 .title-text {
   font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
   color: #000;
 }
 
@@ -1064,51 +1067,9 @@ button.button-text:focus {
   color: #fff !important;
 }
 
-.bundle-badge,
-.best-sell-badge {
-  color: #fff;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-}
 
-.bundle-badge {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 9px;
-  font-weight: 700;
-  background-color: #ff9142;
-  letter-spacing: 1px;
-  text-align: center;
-  z-index: 2;
-}
-
-.best-sell-badge {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 12px;
-  font-weight: 600;
-  background-color: var(--main__accent__color);
-  text-align: left;
-}
-
-.bundle-badge-small {
-  padding: 0px 4px;
-}
-
-.bundle-badge-big {
-  width: auto;
-  height: auto;
-  padding: 0 50px;
-}
-
-.best-sell-badge-small {
-  width: auto;
-  height: auto;
-  padding: 3px 6px;
-  max-width: 110px;
-  max-height: 26px;
-}
 
 .tag-bundle {
-  font-family: 'Roboto';
   display: inline-block;
   padding: 4px 17px;
   -webkit-border-radius: 3px;
@@ -3020,7 +2981,6 @@ form.ais-SearchBox-form {
 
 .pro-item__subcontent {
   font-size: 16px;
-  font-family: 'Roboto';
   line-height: 1.5;
   letter-spacing: 0.2px;
 }
@@ -3272,7 +3232,6 @@ form.ais-SearchBox-form {
 
 .testimotials__item__content {
   margin-bottom: 37px;
-  font-family: 'Roboto';
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.2px;
@@ -7467,25 +7426,13 @@ Blog details sidebar
   top: 0;
   transform: none;
   padding-top: 150px;
-  padding-bottom: 210px;
+  padding-bottom: 170px;
   position: relative;
   display: block;
   z-index: 3;
 }
 
-.main-search-inner h1 {
-  font-size: 44px;
-  font-weight: 700;
-  line-height: 80px;
-  color: #FFF;
-}
 
-.main-search-inner h2 {
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 32px;
-  color: #FFF;
-}
 
 .main-search-inner .info {
   color: #FFF;
@@ -7501,7 +7448,7 @@ Blog details sidebar
 
 
 .main-search-input {
-  margin-top: 50px;
+  margin-top: 5%;
   border-radius: 40px;
   width: 100% !important;
   background-color: #fff;
@@ -7587,9 +7534,10 @@ Blog details sidebar
   height: 44px;
   line-height: 44px;
   box-shadow: none;
-  width: 60%;
+  width: 76%;
   border: none;
   float: left;
+  padding: 0 25px;
 }
 
 form.ais-SearchBox-form {
@@ -7599,6 +7547,13 @@ form.ais-SearchBox-form {
 form.ais-SearchBox-form:after {
   content: '';
   clear: both;
+}
+
+.ais-SearchBox-submit {
+  font-size: 1.5rem;
+  margin: 8px 10px 5px 0;
+  border: none;
+  background: none;
 }
 
 @media (max-width: 768px) {
@@ -8223,7 +8178,7 @@ form.ais-SearchBox-form:after {
   height: 100%;
   left: 0;
   right: 0;
-  top: 28%;
+  top: 30%;
   bottom: -2px;
   background: var(--main__accent__color);
   background: linear-gradient(0deg, rgba(144, 62, 27, 1) 21%, rgba(199, 78, 26, 1) 100%);
@@ -8245,43 +8200,61 @@ form.ais-SearchBox-form:after {
 }
 
 .section-feature-course .card-feature .title-text {
-  font-size: 32px;
-  font-weight: 400;
+  font-size: 28px;
 }
 
 .section-feature-course .card-feature h3 {
-  max-width: 392px;
+  max-width: 370px;
   margin-right: auto;
 }
 
 .section-feature-course .card-feature p {
-  margin-top: 52%;
-  font-size: 20px;
-  font-weight: 800;
+  margin-top: 55%;
+  font-size: 18px;
   color: #fff;
+}
+
+@media (max-width: 1200px) and (min-width: 991px) {
+  .section-feature-course .card-feature p {
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 991px) and (min-width: 768px) {
   .section-feature-course .card-feature p {
     margin-top: 60%;
-    font-size: 25px;
+    font-size: 24px;
+  }
+
+  .section-feature-course .feature-col {
+    margin-top: 20px;
   }
 
 }
 
 @media (max-width: 1199px) and (min-width: 992px) {
   .section-feature-course .card-feature p {
-    font-size: 17px;
+    font-size: 14px;
   }
 }
 
-@media (max-width: 991px) and (min-width: 0px) {
+@media (max-width: 768px) and (min-width: 576px) {
   .section-feature-course .feature-col {
     margin-top: 20px;
   }
 
   .section-feature-course .card-feature p {
-    font-size: 17px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 576px) and (min-width: 0px) {
+  .section-feature-course .feature-col {
+    margin-top: 20px;
+  }
+
+  .section-feature-course .card-feature p {
+    font-size: 20px;
   }
 }
 
@@ -8296,7 +8269,17 @@ form.ais-SearchBox-form:after {
 .section-feature-course .card-feature .bundle-badge {
   position: absolute;
   bottom: 25px;
-  padding: 5px 50px;
+  padding: 5px 20px;
+  text-align: center;
+  display: inline-block;
+  -webkit-border-radius: 18px;
+  border-radius: 18px;
+  background-color: #fff;
+  border: solid 1px var(--main__accent__color);
+  color: var(--main__accent__color);
+  text-transform: capitalize;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .section-feature-course .button-wrapper {
@@ -10398,8 +10381,7 @@ input[type="checkbox"]:checked + label:before {
   display: none;
 }
 
-#site-headline {
-  font-size: 4rem;
+.site-headline {
   color: #fff;
   word-break: break-word;
   line-height: 1.5em;
@@ -10407,17 +10389,45 @@ input[type="checkbox"]:checked + label:before {
   text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1)
 }
 
+.site-headline h1 {
+  font-weight: 700;
+  line-height: 80px;
+  color: #FFF;
+  margin-bottom: 20px;
+  font-size: 4rem;
+}
+
+.site-headline h2 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 32px;
+  color: #FFF;
+}
+
 @media(max-width: 992px) {
 
-  #site-headline {
-    font-size: 2.5rem;
+  .site-headline h1 {
+    font-size: 2rem;
+    line-height: 35px;
+    margin-bottom: 20px;
+  }
+
+  .site-headline h2 {
+    font-size: 1rem;
+    line-height: 25px;
   }
 
   .main-search-inner {
-    padding-top: 90px;
-    padding-bottom: 100px;
+    padding-top: 50px;
+    padding-bottom: 70px;
   }
 
+}
+
+@media(max-width: 768px) {
+  .site-headline h2 {
+    display: none;
+  }
 }
 
 @media(min-width: 1540px) {
