@@ -8177,7 +8177,7 @@ form.ais-SearchBox-form:after {
   height: 100%;
   left: 0;
   right: 0;
-  top: 30%;
+  top: 35%;
   bottom: -2px;
   background: var(--main__accent__color);
   background: linear-gradient(0deg, rgba(144, 62, 27, 1) 21%, rgba(199, 78, 26, 1) 100%);
@@ -8199,7 +8199,8 @@ form.ais-SearchBox-form:after {
 }
 
 .section-feature-course .card-feature .title-text {
-  font-size: 28px;
+  font-size: 4vw;
+  font-weight: 700;
 }
 
 .section-feature-course .card-feature h3 {
@@ -8208,33 +8209,33 @@ form.ais-SearchBox-form:after {
 }
 
 .section-feature-course .card-feature p {
-  margin-top: 55%;
-  font-size: 18px;
+  margin-top: 70%;
+  font-size: 2.1vw;
   color: #fff;
 }
 
 @media (max-width: 1200px) and (min-width: 991px) {
-  .section-feature-course .card-feature p {
-    font-size: 18px;
-  }
+  .section-feature-course .card-feature p {}
 }
 
 @media (max-width: 991px) and (min-width: 768px) {
   .section-feature-course .card-feature p {
-    margin-top: 60%;
-    font-size: 24px;
+    margin-top: 75%;
+    font-size: 3vw;
   }
 
   .section-feature-course .feature-col {
     margin-top: 20px;
   }
 
+  .section-feature-course .card-feature .title-text {
+    font-size: 5vw;
+  }
+
 }
 
 @media (max-width: 1199px) and (min-width: 992px) {
-  .section-feature-course .card-feature p {
-    font-size: 14px;
-  }
+  .section-feature-course .card-feature p {}
 }
 
 @media (max-width: 768px) and (min-width: 576px) {
@@ -8242,8 +8243,8 @@ form.ais-SearchBox-form:after {
     margin-top: 20px;
   }
 
-  .section-feature-course .card-feature p {
-    font-size: 16px;
+  .section-feature-course .card-feature .title-text {
+    font-size: 5vw;
   }
 }
 
@@ -8253,7 +8254,7 @@ form.ais-SearchBox-form:after {
   }
 
   .section-feature-course .card-feature p {
-    font-size: 20px;
+    font-size: 6vw;
   }
 }
 

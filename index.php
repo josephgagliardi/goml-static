@@ -31,7 +31,6 @@
               <div class="hit-container">
               </div>
             </div>
-
           </div>
         </div>
 
@@ -155,7 +154,7 @@
     <div class="container">
       <div class="row header-section">
         <div class="col-md-12">
-          <h2 class="title-text">Feature Programs</h2>
+          <h2 class="title-text">Prepare yourself for these high-demand careers in Georgia.</h2>
         </div>
       </div>
       <div class="row feature-boss">
@@ -163,7 +162,7 @@
           <a href="/program-listing.php?query=nursing">
             <div class="card-feature"><img class="img-fluid" src="/assets/img/home/nursing.jpg" alt="card-feature-02">
               <div class="card-feature-overlay card-feature-overlay-mid">
-                <h3 class="title-text"><strong>Nursing:</strong> Explore the benefits of a degree from our programs on nursing</h3>
+                <h3 class="title-text">Nursing</h3>
                 <div class="bundle-badge shadow bundle-badge-big">View Programs</div>
               </div>
             </div>
@@ -174,7 +173,7 @@
             <div class="card-feature"><img class="img-fluid" src="/assets/img/home/cyber.jpg" alt="card-feature-01">
               <div class="card-bg"></div>
               <div class="card-feature-overlay">
-                <p><strong>Cybersecurity:</strong> Protect sensitive data from theft with a cybersecurity degree online</p>
+                <p><strong>Cybersecurity</strong></p>
                 <div class="bundle-badge shadow bundle-badge-big">View Programs</div>
               </div>
             </div>
@@ -186,7 +185,7 @@
             <div class="card-feature"><img class="img-fluid" src="/assets/img/home/fintech.jpg" alt="card-feature-03">
               <div class="card-bg"></div>
               <div class="card-feature-overlay">
-                <p><strong>FinTech:</strong> A talent development initiative that will power the future of the global economy</p>
+                <p><strong>FinTech</strong></p>
                 <div class="bundle-badge shadow bundle-badge-big">View Programs</div>
               </div>
             </div>
