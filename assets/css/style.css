@@ -261,6 +261,11 @@ strong {
   font-weight: 700;
 }
 
+p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
 /*	TYPOGRAPHY
 –––––––––––––––––––––––––––*/
 body {
@@ -2835,11 +2840,18 @@ form.ais-SearchBox-form {
 ==============================*/
 
 .spot-light-title {
-  font-size: 2.625rem;
+  font-size: 2.5vw;
   margin-bottom: 20px;
   display: block;
   font-weight: 700;
   color: #000;
+}
+
+
+@media (max-width: 768px) {
+  .spot-light-title {
+    font-size: 5vw;
+  }
 }
 
 /*==============================
@@ -8066,13 +8078,14 @@ form.ais-SearchBox-form:after {
 }
 
 .header-section h2 {
-  font-size: 50px;
+  font-size: 2.5vw;
   text-align: center;
+
 }
 
 @media (max-width: 575px) {
   .header-section h2 {
-    font-size: 30px;
+    font-size: 4vw;
   }
 }
 
