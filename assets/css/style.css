@@ -7728,6 +7728,11 @@ form.ais-SearchBox-form:after {
     margin: 5px 5px 0 0;
   }
 
+  .ais-SearchBox-submit {
+    font-size: 1rem;
+    margin: 18px 10px 5px 0
+  }
+
 }
 
 
@@ -8080,12 +8085,11 @@ form.ais-SearchBox-form:after {
 .header-section h2 {
   font-size: 2.5vw;
   text-align: center;
-
 }
 
 @media (max-width: 575px) {
   .header-section h2 {
-    font-size: 4vw;
+    font-size: 5vw;
   }
 }
 
@@ -8268,6 +8272,10 @@ form.ais-SearchBox-form:after {
 
   .section-feature-course .card-feature p {
     font-size: 6vw;
+  }
+
+  .section-feature-course .card-feature .title-text {
+    font-size: 7vw;
   }
 }
 
