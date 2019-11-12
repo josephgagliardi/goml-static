@@ -1,7 +1,8 @@
 {
   "name": "goml-refresh",
   "version": "1.0.0",
-  "description": "",
+  "private": true,
+  "description": "GOML site",
   "main": "homepage-search.js",
   "dependencies": {
     "algoliasearch": "^3.33.0",
@@ -12,3 +13,4 @@
     "jquery": "^3.4.1",
     "slick-carousel": "^1.8.1"
   }
+}
