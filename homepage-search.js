@@ -1,5 +1,4 @@
 // /* global algoliasearch instantsearch */
-
 const searchClient = algoliasearch(
   'JBY4H547QZ',
   '133c145ebb78c84a04aefb61c32dba1d'

@@ -84,21 +84,5 @@
     </div>
   </div>
 </footer>
-<script src="/assets/lib/js/jquery-3.3.1.min.js"></script>
-<script src="/assets/lib/js/popper.min.js"></script>
-<script src="/assets/lib/js/bootstrap.min.js"></script>
-<script src="/assets/lib/slick/slick.min.js"></script>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script src="/assets/js/slicks.js"></script>
-<script src="/assets/js/droopmenu.min.js"></script>
-<script src="/assets/js/ResizeSensor.js"></script>
-<script src="/assets/js/jquery.sticky-sidebar.min.js"></script>
-<script src="/assets/js/jquery.matchHeight-min.js"></script>
-<script src="/assets/js/goml-animation-script.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/algoliasearch@3.32.1/dist/algoliasearchLite.js" integrity="sha256-pMaJf0I78weeXGkRMBDO6jSulxC/q3sb0aPdtV2N8n0=" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/instantsearch.js@3.2.0" integrity="sha256-/8usMtTwZ01jujD7KAZctG0UMk2S2NDNirGFVBbBZCM=" crossorigin="anonymous"></script>
-<script src="//cdn.jsdelivr.net/autocomplete.js/0/autocomplete.min.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=default,Array.prototype.find,Array.prototype.includes"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.6/js/standalone/selectize.js"></script>
-
+<?php include('scripts.php'); ?>
 </body>
