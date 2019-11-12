@@ -5,6 +5,7 @@
   "main": "homepage-search.js",
   "dependencies": {
     "algoliasearch": "^3.33.0",
+    "popper.js": "^1.14.1",
     "bootstrap": "^4.3.1",
     "clientjs": "^0.1.11",
     "instantsearch.js": "^3.5.4",
