@@ -6,29 +6,7 @@
   <div class="container">
     <div class="sticky__wrapper">
       <div class="row">
-        <div class="col-md-3">
-          <div id="menu-left">
-            <div class="list-link">
-              <div class="inst-main__img">
-                <img src="/assets/img/institutions/abraham-baldwin-agricultural-college.svg" alt="">
-              </div>
-              <nav>
-                <ul class="list-link__list">
-                  <li class="list-link__item"><a class="list-link__link" href="#list-link-1">Accreditation</a></li>
-                  <li class="list-link__item"><a class="list-link__link" href="#list-link-2">Online Programs</a></li>
-
-                </ul>
-              </nav>
-              <div class="mt-4 p-3">
-                <a class="btn button-default btn-block list-link__btn" href="#">Apply Now</a>
-                <a class="btn button-outline-02 btn-block list-link__btn" id="instPageLink" href="/contact-form.php">Request Info</a>
-                <a class="btn button-outline-02 btn-block list-link__btn" id="website-link" href="#">Visit Website</a>
-
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-9">
+        <div class="col-lg-9 col-md-12 order-lg-2">
           <div class="inst-main">
             <h1 class="inst-main__title">Abraham Baldwin Agricultural College</h1>
             <div class="inst-main__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vulputate fringilla tellus, in lacinia eros ullamcorper eget. Nam dolor enim, tincidunt eu felis eu, lacinia pretium nisi. In sed dolor dignissim, rutrum massa ac, egestas ex. Nulla congue placerat lacus, sed dignissim leo varius at. Aenean sodales sem velit, in volutpat ligula eleifend id. In hendrerit sagittis odio ac rhoncus. Curabitur at eros quam. Donec sed turpis in risus convallis ullamcorper. Quisque ac odio sit amet nisi rhoncus luctus et vel ex. Aliquam luctus sagittis blandit. Cras vel diam ac leo sagittis finibus vel non magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a justo id tortor porttitor sagittis.
@@ -42,7 +20,7 @@
                     <div class="accordion__title"><button class="accordion__link btn-block" data-toggle="collapse" data-target="#answer1" aria-expanded="true">Institutionl Accreditation<i class="fas fa-angle-right accordion__icon"></i></button>
                     </div>
                   </div>
-                  <div class="panel-collapse collapse show" id="answer1">
+                  <div class="panel-collapse collapse show d-print-block" id="answer1">
                     <div class="accordion__body">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vulputate fringilla tellus, in lacinia eros ullamcorper eget. Nam dolor enim, tincidunt eu felis eu, lacinia pretium nisi. In sed dolor dignissim, rutrum massa ac, egestas ex. Nulla congue placerat lacus, sed dignissim leo varius at. Aenean sodales sem velit, in volutpat ligula eleifend id. In hendrerit sagittis odio ac rhoncus. Curabitur at eros quam. Donec sed turpis in risus convallis ullamcorper. Quisque ac odio sit amet nisi rhoncus luctus et vel ex. Aliquam luctus sagittis blandit. Cras vel diam ac leo sagittis finibus vel non magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum a justo id tortor porttitor sagittis.
                     </div>
@@ -53,7 +31,7 @@
                     <div class="accordion__title"><button class="accordion__link btn-block" data-toggle="collapse" data-target="#answer2">Program Accreditation<i class="fas fa-angle-right accordion__icon"></i></button>
                     </div>
                   </div>
-                  <div class="panel-collapse collapse " id="answer2">
+                  <div class="panel-collapse collapse d-print-block" id="answer2">
                     <div class="accordion__body">
                       <ul class="accred-list">
                         <li><img src="/assets/img/accreditation-logos/aacsb-seeklogo.com.svg"></li>
@@ -130,6 +108,30 @@
             </div>
           </div>
         </div>
+
+        <div class="col-lg-3 col-md-12 d-print-none order-lg-1">
+          <div id="menu-left">
+            <div class="list-link">
+              <div class="inst-main__img">
+                <img src="/assets/img/institutions/abraham-baldwin-agricultural-college.svg" alt="">
+              </div>
+              <nav>
+                <ul class="list-link__list">
+                  <li class="list-link__item"><a class="list-link__link" href="#list-link-1">Accreditation</a></li>
+                  <li class="list-link__item"><a class="list-link__link" href="#list-link-2">Online Programs</a></li>
+
+                </ul>
+              </nav>
+              <div class="mt-4 p-3">
+                <a class="btn button-default btn-block list-link__btn" href="#">Apply Now</a>
+                <a class="btn button-outline-02 btn-block list-link__btn" id="instPageLink" href="/contact-form.php">Request Info</a>
+                <a class="btn button-outline-02 btn-block list-link__btn" id="website-link" href="#">Visit Website</a>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>

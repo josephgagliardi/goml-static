@@ -5,7 +5,67 @@
 <main class="bundle-content">
   <div class="container">
     <div class="row sticky__wrapper">
-      <div class="col-lg-3 col-md-3 col-sm-12">
+      <div class="col-lg-9 col-md-12 order-lg-2">
+        <div class="bundle-header__about">
+          <div class="bundle-header__image"></div>
+          <h1 id="program__title" class="bundle-header__title"></h1>
+          <p id="institution__name" class="bundle-header__content">
+
+          </p>
+        </div>
+        <div class="bundle-header__highlight">
+          <div class="row">
+            <div class="col-md-4 mb-2">
+              <div class="additional_info rounded shadow p-3 p-lg-4 h-100">
+                <div class="card h-100 justify-content-center">
+                  <img src="/assets/img/program-single/book.svg">
+                  Degree Level
+                  <strong id="program__level"></strong>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-2">
+              <div class="additional_info rounded shadow p-3 p-lg-4 h-100">
+                <div class="card h-100 justify-content-center">
+                  <img src="/assets/img/program-single/graph.svg">
+                  Total Credit Hours
+                  <strong id="total__hours"></strong>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-2">
+              <div class="additional_info rounded shadow p-3 p-lg-4 h-100">
+                <div class="card h-100 justify-content-center">
+                  <img src="/assets/img/program-single/piggy-bank.svg">
+                  Per Credit Hour Cost
+                  <button data-toggle="popover" data-trigger="hover click" data-placement="top" data-content="Based on in-state residency. Additional fees may apply. See institutional tuition and fees charts for detailed information."><i class="fas fa-info-circle"></i></button>
+                  <strong id="total__cost"></strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="share_container">
+          <div class="float-right">
+            <ul class="list-inline">
+              <li class="list-inline-item">Share:</li>
+              <li class="list-inline-item"><i class="fas fa-print"></i></li>
+              <li class="list-inline-item"><i class="fas fa-envelope-open-text"></i></li>
+              <li class="list-inline-item"><i class="fab fa-facebook-f"></i></li>
+              <li class="list-inline-item"><i class="fab fa-twitter"></i></li>
+            </ul>
+          </div>
+          <br />
+        </div>
+        <div class="bundles">
+        </div>
+        <br />
+        <br />
+        <div class="bundle-list">
+          <canvas id="myChart"></canvas>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-12 d-print-none order-lg-1">
         <div id="menu-left">
           <div class="list-link">
             <div class="institutions-logo-single">
@@ -15,58 +75,11 @@
               </ul>
               <div id="quickLinks" class="mt-4 p-3">
                 <a class="btn button-default btn-block list-link__btn" target="_blank" id="applynowlink" href="#">Apply Now</a>
-                <a class="btn button-outline-02 btn-block list-link__btn" id="instPageLink" href="#">Request Info</a>
+                <a class="btn button-outline-02 btn-block list-link__btn" id="instPageLink" href="#">Request Information</a>
                 <a class="mt-4 btn-block" id="curric-link" href="#"><i class="fas fa-clipboard-list"></i> View Curriculum</a>
               </div>
             </nav>
           </div>
-        </div>
-      </div>
-      <div class="col-lg-9 col-md-9 col-sm-12">
-        <div class="bundle-header__about">
-          <div class="bundle-header__image" style="background-image: url(/assets/img/program-single/header-img-1.jpg)" data-overlay="6"></div>
-          <h1 id="program__title" class="bundle-header__title">Master of Education in Early Childhood Education</h1>
-          <p id="institution__name" class="bundle-header__content">
-            University Of West Georgia
-          </p>
-        </div>
-        <div class="bundle-header__highlight">
-          <div class="row">
-            <div class="col-4">
-              <div class="additional_info rounded shadow p-3 p-lg-4 h-100">
-                <div class="card h-100 justify-content-center">
-                  <img src="/assets/img/program-single/book.svg">
-                  Degrees
-                  <strong id="program__level"></strong>
-                </div>
-              </div>
-            </div>
-            <div class="col-4">
-              <div class="additional_info rounded shadow p-3 p-lg-4 h-100">
-                <div class="card h-100 justify-content-center">
-                  <img src="/assets/img/program-single/graph.svg">
-                  Total Credit Hours
-                  <strong id="total__hours"></strong>
-                </div>
-              </div>
-            </div>
-            <div class="col-4">
-              <div class="additional_info rounded shadow p-3 p-lg-4 h-100">
-                <div class="card h-100 justify-content-center">
-                  <img src="/assets/img/program-single/piggy-bank.svg">
-                  Per Credit Hour Cost
-                  <strong id="total__cost"></strong>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="bundles">
-        </div>
-        <br />
-        <br />
-        <div class="bundle-list">
-            <canvas id="myChart"></canvas>
         </div>
       </div>
     </div>
@@ -147,15 +160,28 @@
     };
     var shareLink = `<a class="mt-4 btn-block" id="share-link" href="${program["Tuition and Fees Link"]}"><i class="fas fa-dollar-sign"></i> Tuition and Fees</a>`;
 
+<<<<<<< HEAD
   
     // Data Gov Chart 
     let url =`https://api.data.gov/ed/collegescorecard/v1/schools?api_key=6lZ3mGdHSfNDUu8NgEgv8l6I1b8W3pcfO0zHLB3q&fields=school.name,latest.aid.median_debt.completers.overall,latest.cost.avg_net_price.overall,latest.cost.tuition.out_of_state,latest.cost.tuition.in_state,latest.earnings.10_yrs_after_entry.working_not_enrolled.mean_earnings,latest.aid.median_debt.completers.overall&school.name=${program["Institution"]}`;
+=======
+
+
+    let url = `https://api.data.gov/ed/collegescorecard/v1/schools?api_key=6lZ3mGdHSfNDUu8NgEgv8l6I1b8W3pcfO0zHLB3q&fields=school.name,latest.aid.median_debt.completers.overall,latest.cost.avg_net_price.overall,latest.cost.tuition.out_of_state,latest.cost.tuition.in_state,latest.earnings.10_yrs_after_entry.working_not_enrolled.mean_earnings,latest.aid.median_debt.completers.overall&school.name=${program["Institution"]}`;
+>>>>>>> origin/master
     fetch(url)
       .then(function(response) {
         return response.json();
       })
       .then(function(myJson) {
+<<<<<<< HEAD
         if (myJson['metadata']['total'] == '0'){return;}
+=======
+        console.log(myJson);
+        if (myJson['metadata']['total'] == '0') {
+          return;
+        }
+>>>>>>> origin/master
         var ctx = $('#myChart');
         var careerlink = `<li class="list-link__item"><a class="list-link__link" href="#career-outlook">Career Outlook</a></li>`;
         $('.list-link__list').append(careerlink);
@@ -166,83 +192,91 @@
         var out_of_state_tuition = myJson['results'][0]["latest.cost.tuition.out_of_state"];
         var in_state_tuition = myJson['results'][0]["latest.cost.tuition.in_state"];
         var medianDebt = myJson['results'][0]["latest.aid.median_debt.completers.overall"];
-    
+
         data = [];
-        if (in_state_tuition != ''){data.push({
+        if (in_state_tuition != '') {
+          data.push({
             label: 'In-State Tuition',
             backgroundColor: 'rgb(199, 78, 26, 1)',
             borderColor: 'rgb(199, 78, 26, 1)',
             data: [in_state_tuition]
-        })};
-        if (out_of_state_tuition != ''){data.push({
+          })
+        };
+        if (out_of_state_tuition != '') {
+          data.push({
             label: 'Out of State Tuition',
-                backgroundColor: 'rgb(36, 198, 218, 1)',
-                borderColor: 'rgb(36, 198, 218, 1)',
+            backgroundColor: 'rgb(36, 198, 218, 1)',
+            borderColor: 'rgb(36, 198, 218, 1)',
             data: [out_of_state_tuition]
-        })};
-          if (medianDebt != ''){data.push({
-              label: 'Median Debt Completers Overall',
-              backgroundColor: 'rgb(168,169,173)',
-              borderColor: 'rgb(168,169,173)',
+          })
+        };
+        if (medianDebt != '') {
+          data.push({
+            label: 'Median Debt Completers Overall',
+            backgroundColor: 'rgb(168,169,173)',
+            borderColor: 'rgb(168,169,173)',
 
-              data: [medianDebt]
-          })};  
-        if (avgEarningsAfter10years != ''){data.push({
+            data: [medianDebt]
+          })
+        };
+        if (avgEarningsAfter10years != '') {
+          data.push({
             label: 'Median Annual Earnings after 10 years',
             backgroundColor: 'rgb(230, 114, 65, 1)',
             borderColor: 'rgb(230, 114, 65, 1)',
             data: [avgEarningsAfter10years]
-        })};        
-          var myBarChart = new Chart(ctx, {
-              type: 'bar',
-              data: {
-                  datasets: data
-              },
+          })
+        };
+        var myBarChart = new Chart(ctx, {
+          type: 'bar',
+          data: {
+            datasets: data
+          },
 
-              options: {
-                animation: {
-                        duration: 2200,
-                        easing: 'easeInOutCubic',
-                        onComplete: function () {
-                            var chartInstance = this.chart,
-                                ctx = chartInstance.ctx;
-                            ctx.font = Chart.helpers.fontString(Chart.defaults.global.defaultFontSize, Chart.defaults.global.defaultFontStyle, Chart.defaults.global.defaultFontFamily);
-                            ctx.textAlign = 'center';
-                            ctx.textBaseline = 'bottom';
+          options: {
+            animation: {
+              duration: 2200,
+              easing: 'easeInOutCubic',
+              onComplete: function() {
+                var chartInstance = this.chart,
+                  ctx = chartInstance.ctx;
+                ctx.font = Chart.helpers.fontString(Chart.defaults.global.defaultFontSize, Chart.defaults.global.defaultFontStyle, Chart.defaults.global.defaultFontFamily);
+                ctx.textAlign = 'center';
+                ctx.textBaseline = 'bottom';
 
-                            this.data.datasets.forEach(function (dataset, i) {
-                                var meta = chartInstance.controller.getDatasetMeta(i);
-                                meta.data.forEach(function (bar, index) {
-                                    var data = dataset.data[index];                            
-                                    ctx.fillText('$' + data, bar._model.x, bar._model.y - 5);
-                                });
-                            });
-                        }
-                      },
-                scales: {
-                    yAxes: [{
-                        ticks: {
-                            // Include a dollar sign in the ticks
-                            callback: function(value, index, values) {
-                                return '$' + value;
-                            }
-                        }
-                    }]
-                },
-                tooltips: {
-                    callbacks: {
-                        label: function(tooltipItems, data) {
-                            return "$" + tooltipItems.yLabel.toString();
-                        }
-                      }
-                    },
-                title: {
-                    display: true,
-                    text: 'Tuition vs. Earnings - Provided by data.gov '
-                }, 
-                responsive: true
+                this.data.datasets.forEach(function(dataset, i) {
+                  var meta = chartInstance.controller.getDatasetMeta(i);
+                  meta.data.forEach(function(bar, index) {
+                    var data = dataset.data[index];
+                    ctx.fillText('$' + data, bar._model.x, bar._model.y - 5);
+                  });
+                });
               }
-          });
+            },
+            scales: {
+              yAxes: [{
+                ticks: {
+                  // Include a dollar sign in the ticks
+                  callback: function(value, index, values) {
+                    return '$' + value;
+                  }
+                }
+              }]
+            },
+            tooltips: {
+              callbacks: {
+                label: function(tooltipItems, data) {
+                  return "$" + tooltipItems.yLabel.toString();
+                }
+              }
+            },
+            title: {
+              display: true,
+              text: 'Tuition vs. Earnings - Provided by data.gov '
+            },
+            responsive: true
+          }
+        });
       });
   });
 
@@ -268,94 +302,6 @@
     }
     return params;
   };
-
-  // ClientJS User Client Profile Information
-  var user_Info = [];
-  var client = new ClientJS(); // Create A New Client Object
-
-  var fingerprint = client.getFingerprint(); // Calculate Device/Browser Fingerprint
-
-  // Custom fingerprint -- take in string of datapoints and return custom 32 bit integer version
-
-  var ua = client.getBrowserData().ua;
-  var canvasPrint = client.getCanvasPrint();
-
-  var fingerprint = client.getCustomFingerprint(ua, canvasPrint);
-
-  var userAgent = client.getUserAgent(); // Get User Agent String
-
-  var userAgentLowerCase = client.getUserAgentLowerCase(); // Get User Agent String
-
-  var browser = client.getBrowser(); // Get Browser
-
-  var browserVersion = client.getBrowserVersion(); // Get Browser Version
-
-  var isIE = client.isIE(); // Check For IE
-
-  var OS = client.getOS(); // Get OS Version
-  var device = client.getDevice(); // Get Device
-  var deviceType = client.getDeviceType(); // Get Device Type
-  var deviceVendor = client.getDeviceVendor(); // Get Device Vendor
-  var CPU = client.getCPU(); // Get CPU Architecture
-  var isMobile = client.isMobile(); // Check For Mobile
-  var screenPrint = client.getScreenPrint(); // Get Screen Print
-  var timeZone = client.getTimeZone(); // Get Time Zone
-  var language = client.getLanguage(); // Get User Language
-  // var systemLanguage = client.systemLanguage(); // Get System Language
-  user_Info.unshift(ua, userAgent, browser, browserVersion, isIE, OS, device, deviceType, deviceVendor, CPU, isMobile, screenPrint, timeZone, language, fingerprint);
-// Note that fingerprint can include multiple unique pieces of information, the more it includes the more likely it is to be the same user upon revisit/reuse
-
-  // console.log(user_Info);
-  // If the ID does not exist it will be created in Algolia
-  // If the ID does exist it will be overwritten (updated but really replaced)
-  var algoliaadminclient = algoliasearch('JBY4H547QZ', '87081fa12236159a1437cc0fdd06de70');
-  var index2 = algoliaadminclient.initIndex('saved_Searches');
-  function saveSearch(){
-    
-    // const object = {
-    //   objectID: 'xeB9qrst',
-    //   firstname: 'Jimmie',
-    //   lastname: 'Barninger',
-    //   savedSearch: program,
-    //   userDetails: user_Info
-    // };
-    // sendDataToAlgolia(object);
-    console.log(index2.describe);
-  //   index2.addObject({
-  //     objectID: ,
-  //     firstname: 'Jimmie',
-  //     lastname: 'Barninger'
-  //   }, (err, { objectID } = {}) => {
-  //     console.log(`objectID=${objectID}`);
-  //   });
-  // };
-
-    // function sendDataToAlgolia(algoliaObjects){
-    //   return new Promise((resolve, reject) => {
-    //     algoliaIndex.addObjects(algoliaObjects, (err, content) => {
-    //       if(err) reject(err);
-    //       resolve();
-    //     })
-    //   });
-
-    // console.log(savedSearches);
-    // savedSearches.search(
-    //   {
-    //     query: 'Kennesaw',
-    //     attributesToRetrieve: ['Program Name', 'Institution'],
-    //     hitsPerPage: 10,
-    //   },
-    //   (err, { hits } = {}) => {
-    //     if (err) throw err;
-
-    //     console.log(hits);
-    //   }
-    // );
-    // savedSearches.addObjects(objects, (err, content) => {
-    //   console.log(content);
-    // });
-
-  }
 
 </script>
 
