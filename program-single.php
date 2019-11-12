@@ -18,7 +18,7 @@
               <div class="additional_info rounded shadow p-3 p-lg-4 h-100">
                 <div class="card h-100 justify-content-center">
                   <img src="/assets/img/program-single/book.svg">
-                  Degrees
+                  Degree Level
                   <strong id="program__level"></strong>
                 </div>
               </div>

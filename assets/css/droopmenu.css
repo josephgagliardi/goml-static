@@ -59,14 +59,14 @@
 
 .droopmenu-brand {
   margin-right: 20px;
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
 .dm-nav-brand a img,
 .droopmenu-brand img {
   height: 70px;
   position: relative;
-  top: 10px;
+  top: -5px;
 }
 
 @media (max-width: 950px) {

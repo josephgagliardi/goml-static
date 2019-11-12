@@ -20,8 +20,8 @@ switch (@parse_url($_SERVER['REQUEST_URI'])['path']) {
     <div class="main-search-inner">
       <div class="container">
         <div class="row">
-          <div class="col-md-12 text-center">
-            <h1 data-aos="fade-up" data-aos-delay="300" id="site-headline">Success is Just a Search Away.</h1>
+          <div class="col-md-12 text-center site-headline">
+            <h1 data-aos="fade-up" data-aos-delay="300">Success is Just a Search Away.</h1>
             <h2 data-aos="fade-up" data-aos-delay="400">Explore online degrees and certificates from across the University System of Georgia.</h2>
           </div>
         </div>
@@ -44,7 +44,6 @@ switch (@parse_url($_SERVER['REQUEST_URI'])['path']) {
               <div class="hit-container">
               </div>
             </div>
-
           </div>
         </div>
 
@@ -162,6 +161,52 @@ switch (@parse_url($_SERVER['REQUEST_URI'])['path']) {
       </div>
     </div>
   </section>
+
+
+  <section class="py-5 section-feature-course">
+    <div class="container">
+      <div class="row header-section">
+        <div class="col-md-12">
+          <h2 class="title-text">Prepare yourself for these high-demand careers in Georgia.</h2>
+        </div>
+      </div>
+      <div class="row feature-boss">
+        <div class="order-lg-2 order-md-1 col-md-12 col-lg-6">
+          <a href="/program-listing.php?query=nursing">
+            <div class="card-feature"><img class="img-fluid" src="/assets/img/home/nursing.jpg" alt="card-feature-02">
+              <div class="card-feature-overlay card-feature-overlay-mid">
+                <h3 class="title-text">Nursing</h3>
+                <div class="bundle-badge shadow bundle-badge-big">View Programs</div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="feature-col order-lg-1 order-md-2 col-md-6 col-sm-6 col-xs-6 col-lg-3">
+          <a href="/program-listing.php?query=cybersecurity">
+            <div class="card-feature"><img class="img-fluid" src="/assets/img/home/cyber.jpg" alt="card-feature-01">
+              <div class="card-bg"></div>
+              <div class="card-feature-overlay">
+                <p><strong>Cybersecurity</strong></p>
+                <div class="bundle-badge shadow bundle-badge-big">View Programs</div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="feature-col order-lg-3 order-md-3 col-md-6 col-sm-6 col-xs-6 col-lg-3">
+          <a href="/program-listing.php?query=fintech">
+            <div class="card-feature"><img class="img-fluid" src="/assets/img/home/fintech.jpg" alt="card-feature-03">
+              <div class="card-bg"></div>
+              <div class="card-feature-overlay">
+                <p><strong>FinTech</strong></p>
+                <div class="bundle-badge shadow bundle-badge-big">View Programs</div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+      </div>
+  </section>
   <section class="best-features">
     <div class="container">
       <div class="list-course__header">
@@ -184,7 +229,7 @@ switch (@parse_url($_SERVER['REQUEST_URI'])['path']) {
 
       <div class="row mb-5 justify-content-around align-items-center item__left" data-aos="fade-up">
         <div class="col-lg-5 order-lg-2">
-          <h3 class="item__left__title">Over 26 Colleges and Universities</h3>
+          <h3 class="item__left__title">26 Colleges and Universities</h3>
           <div class="item__left__content">
             <p>
               Searching for an online degree can be a daunting task, and it can sometimes be difficult to decipher the legitimacy of an online program. The Georgia On My Line degree marketplace allows you to search hundreds of online degrees and certificates offered through regionally accredited USG institutions you know and trust. You can have peace of mind knowing every institution on our site is accredited by the Southern Association of Colleges and Schools Commission on Colleges (SACSCOC) and is well respected throughout Georgia, the Southeast, and the world.
@@ -252,12 +297,11 @@ switch (@parse_url($_SERVER['REQUEST_URI'])['path']) {
   $('.list-icons__list').slick({
     dots: false,
     infinite: true,
-    speed: 2000,
+    speed: 1000,
     arrows: false,
     autoplay: true,
-    autoplaySpeed: 8000,
     slidesToShow: 6,
-    slidesToScroll: 3,
+    slidesToScroll: 6,
     responsive: [{
         breakpoint: 1024,
         settings: {
@@ -269,14 +313,14 @@ switch (@parse_url($_SERVER['REQUEST_URI'])['path']) {
         breakpoint: 600,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 2
+          slidesToScroll: 3
         }
       },
       {
         breakpoint: 576,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 1
+          slidesToScroll: 2
         }
       }
     ]
