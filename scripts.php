@@ -3,8 +3,11 @@
 <script src="/node_modules/clientjs/dist/client.min.js"></script>
 <script src="/node_modules/algoliasearch/dist/algoliasearchLite.min.js"></script>
 <script src="/node_modules/instantsearch.js/dist/instantsearch.production.min.js"></script>
-<script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="/node_modules/slick-carousel/slick/slick.min.js"></script>
+<script type="text/javascript" src="/node_modules/popper.js/dist/popper.min.js"></script>
+<script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
 <!-- CDN Libraries -->
