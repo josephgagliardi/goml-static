@@ -1,17 +1,17 @@
 <?php require_once __DIR__ . '/vendor/autoload.php';
-switch (@parse_url($_SERVER['REQUEST_URI'])['path']) {
-    case '/program-listing.php';
-        require 'program-listing.php';
-        break;
-    case '/institutions-listing.php';
-        require 'institutions-listing.php';
-        break;
-    case '/program-single.php';
-        require 'program-single.php';
-        break;
-    default:
-        break;
-}
+// switch (@parse_url($_SERVER['REQUEST_URI'])['path']) {
+//     case '/program-listing.php';
+//         require 'program-listing.php';
+//         break;
+//     case '/institutions-listing.php';
+//         require 'institutions-listing.php';
+//         break;
+//     case '/program-single.php';
+//         require 'program-single.php';
+//         break;
+//     default:
+//         break;
+// }
  ?>
 <?php include("includes/head.php"); ?>
 <?php include("includes/header.php"); ?>
