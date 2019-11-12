@@ -159,28 +159,18 @@
     };
     var shareLink = `<a class="mt-4 btn-block" id="share-link" href="${program["Tuition and Fees Link"]}"><i class="fas fa-dollar-sign"></i> Tuition and Fees</a>`;
 
-<<<<<<< HEAD
   
     // Data Gov Chart 
     let url =`https://api.data.gov/ed/collegescorecard/v1/schools?api_key=6lZ3mGdHSfNDUu8NgEgv8l6I1b8W3pcfO0zHLB3q&fields=school.name,latest.aid.median_debt.completers.overall,latest.cost.avg_net_price.overall,latest.cost.tuition.out_of_state,latest.cost.tuition.in_state,latest.earnings.10_yrs_after_entry.working_not_enrolled.mean_earnings,latest.aid.median_debt.completers.overall&school.name=${program["Institution"]}`;
-=======
 
-
-    let url = `https://api.data.gov/ed/collegescorecard/v1/schools?api_key=6lZ3mGdHSfNDUu8NgEgv8l6I1b8W3pcfO0zHLB3q&fields=school.name,latest.aid.median_debt.completers.overall,latest.cost.avg_net_price.overall,latest.cost.tuition.out_of_state,latest.cost.tuition.in_state,latest.earnings.10_yrs_after_entry.working_not_enrolled.mean_earnings,latest.aid.median_debt.completers.overall&school.name=${program["Institution"]}`;
->>>>>>> origin/master
     fetch(url)
       .then(function(response) {
         return response.json();
       })
       .then(function(myJson) {
-<<<<<<< HEAD
+
         if (myJson['metadata']['total'] == '0'){return;}
-=======
-        console.log(myJson);
-        if (myJson['metadata']['total'] == '0') {
-          return;
-        }
->>>>>>> origin/master
+
         var ctx = $('#myChart');
         var careerlink = `<li class="list-link__item"><a class="list-link__link" href="#career-outlook">Career Outlook</a></li>`;
         $('.list-link__list').append(careerlink);
