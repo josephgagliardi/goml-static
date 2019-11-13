@@ -312,6 +312,8 @@
     ]
   });
 
+  $('.list-icons__list').css('display', 'grid');
+
 </script>
 
 </html>
