@@ -65,8 +65,7 @@
 .dm-nav-brand a img,
 .droopmenu-brand img {
   height: 70px;
-  position: relative;
-  top: -5px;
+  margin-top: 10px;
 }
 
 @media (max-width: 950px) {
@@ -74,6 +73,7 @@
   .dm-nav-brand a img,
   .droopmenu-brand img {
     height: 50px;
+    margin-top: 22px;
   }
 }
 
