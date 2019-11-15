@@ -120,7 +120,7 @@
 .droopmenu > li {
   font-size: 1.2em;
   position: relative;
-  font-weight: 600;
+
   float: left;
 }
 
@@ -137,9 +137,8 @@
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   transition: all 1s ease;
-  letter-spacing: 1px;
   padding: 0 18px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .droopmenu > li a.droopmenu-button span {
@@ -355,14 +354,13 @@
 
 .droopmenu li a .droopmenu-indicator em:after,
 .droopmenu li li a .droopmenu-indicator em:after {
-  content: "\f078";
   font-family: 'Font Awesome 5 Free';
   display: inline-block;
-  font-weight: 600;
+  font-weight: 900;
+  content: "\f078";
   position: relative;
   font-size: 14px;
   margin-left: 10px;
-  top: 1px;
 }
 
 .droopmenu li li a .droopmenu-indicator em:after {
