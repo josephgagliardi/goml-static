@@ -1,4 +1,3 @@
-
 <?php include("includes/head.php"); ?>
 <?php include("includes/header.php"); ?>
 <main>
@@ -18,7 +17,7 @@
           <div class="column-left__item">
             <h1 class="column-left__title">Institutions</h1>
             <div class="select list-selector">
-              <a class="column-left__button-drop" data-toggle="collapse" href="#filter2" role="button" aria-expanded="false">
+              <a class="column-left__button-drop" data-toggle="collapse" href="#institution__filter" role="button" aria-expanded="false">
                 <span class="column-left__button-drop__text">Institutions</span><i class="fas fa-angle-down column-left__icon"></i></a>
               <div class="list-categories" id="institution__filter">
               </div>
@@ -55,6 +54,7 @@
           <div class="header-filter">
             <div class="header-filter__title">active filters</div>
             <div class="header-filter__result">Result:<span class="header-filter__number"></span></div>
+            <div class="clearfix"></div>
           </div>
           <div class="clear__filters"></div>
           <div class="tags">

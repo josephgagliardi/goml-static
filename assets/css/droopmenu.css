@@ -138,7 +138,7 @@
   -moz-transition: all 1s ease;
   transition: all 1s ease;
   padding: 0 18px;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .droopmenu > li a.droopmenu-button span {
