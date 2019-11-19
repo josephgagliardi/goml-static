@@ -1,3 +1,5 @@
+<html lang="en">
+
 <head>
   <title>GOML</title>
   <meta charset="utf-8">
@@ -26,7 +28,7 @@
   <link rel="stylesheet" type="text/css" href="assets/css/droopmenu.css">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   <link rel="stylesheet" type="text/css" href="assets/css/print.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,400i,700&display=swap" rel="stylesheet">
 </head>
 
 <body data-aos="fade">

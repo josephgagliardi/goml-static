@@ -192,8 +192,8 @@
             </div>
           </a>
         </div>
-
       </div>
+    </div>
   </section>
   <section class="best-features">
     <div class="container">
@@ -253,7 +253,7 @@
 </main>
 <?php include("includes/footer.php"); ?>
 <script src="/assets/js/typed.js"></script>
-<script src="../../homepage-search.js"></script>
+<script src="homepage-search.js"></script>
 
 <script>
   $(document).ready(function() {

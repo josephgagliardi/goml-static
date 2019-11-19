@@ -269,10 +269,9 @@ p {
 /*	TYPOGRAPHY
 –––––––––––––––––––––––––––*/
 body {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
+  font-family: "Nunito", Arial, sans-serif;
+  font-size: 1.125rem;
   font-weight: 400;
-  line-height: 1.5;
   margin: 0;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -470,7 +469,7 @@ img {
 
 /*----------  Text  ----------*/
 .content-text {
-  font-family: 'Open Sans', sans-serif;
+
   font-size: 16px;
   font-weight: 400;
   color: #545555;
@@ -484,12 +483,12 @@ img {
 }
 
 .title-text {
-  font-family: 'Open Sans', sans-serif;
+
   color: #000;
 }
 
 .name-text {
-  font-family: 'Open Sans', sans-serif;
+
   font-size: 14px;
   font-weight: 400;
   color: #545555;
@@ -500,20 +499,20 @@ img {
 }
 
 .number-text {
-  font-family: 'Open Sans', sans-serif;
+
   font-size: 12px;
   font-weight: 600;
   color: #545555;
 }
 
 .price-text {
-  font-family: 'Open Sans', sans-serif;
+
   font-size: 22px;
   color: var(--main__accent__color);
 }
 
 .name-text {
-  font-family: 'Open Sans', sans-serif;
+
   font-size: 14px;
   font-weight: 400;
   color: #545555;
@@ -719,6 +718,7 @@ button.button-text {
   border: 0;
   padding: 0;
   cursor: pointer;
+  background: none;
 }
 
 button.button-text:hover,
@@ -1346,9 +1346,7 @@ button.button-text:focus {
 }
 
 .card-price-menu__item .card-price-top__nature,
-.card-price-menu__item .card-price-top__price {
-  font-family: 'Open Sans', sans-serif;
-}
+.card-price-menu__item .card-price-top__price {}
 
 .card-price-menu__item .card-price-top__nature {
   font-size: 14px;
@@ -1376,7 +1374,7 @@ button.button-text:focus {
 }
 
 .card-price-menu__item .card-price-top__time {
-  font-family: 'Open Sans', sans-serif;
+
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.2px;
@@ -1389,14 +1387,14 @@ button.button-text:focus {
 }
 
 .card-price-menu__item .card-price-body__log {
-  font-family: 'Open Sans', sans-serif;
+
   font-size: 18px;
   color: #545555;
   margin-bottom: 16px;
 }
 
 .card-price-menu__item .card-price-body__content {
-  font-family: 'Open Sans', sans-serif;
+
   font-size: 14px;
   color: #545555;
   margin-bottom: 38px;
@@ -1421,7 +1419,7 @@ button.button-text:focus {
 
 .learning-table th,
 .learning-table td {
-  font-family: 'Open Sans', sans-serif;
+
   font-weight: 400;
   color: #545555;
   padding: 15px 32px !important;
@@ -1568,7 +1566,7 @@ button.button-text:focus {
 }
 
 .carousel-slide .carousel-slide__item__info .article-text {
-  font-family: 'Open Sans', sans-serif;
+
   font-size: 14px;
   font-weight: bold;
   color: #545555;
@@ -1576,7 +1574,7 @@ button.button-text:focus {
 }
 
 .carousel-slide .carousel-slide__item__info .specialize {
-  font-family: 'Open Sans', sans-serif;
+
   font-size: 12px;
   font-weight: 600;
   color: #545555;
@@ -1640,6 +1638,7 @@ button.button-text:focus {
   display: block;
   margin-bottom: 8px;
   color: #000;
+  line-height: 1.7rem;
 }
 
 .courses__content__title:hover {
@@ -1745,7 +1744,7 @@ button.button-text:focus {
   margin-left: 0;
 }
 
-.specializations .rating-start {
+.specializations {
   display: none;
 }
 
@@ -1757,7 +1756,7 @@ button.button-text:focus {
   display: none;
 }
 
-.feature-course .rating-start {
+.feature-course {
   display: none;
 }
 
@@ -2661,23 +2660,11 @@ form.ais-SearchBox-form {
   padding: 0 15px;
 }
 
-
-
-
-
 .courses__bottom {
   border-top: solid 1px rgba(232, 232, 232, 0.8);
   margin-top: 10px;
 }
 
-.courses__content__title {
-  display: block;
-  margin-bottom: 8px;
-}
-
-.courses__content__title:hover {
-  color: var(--main__accent__color);
-}
 
 .courses__content__aos {
   font-size: 0;
@@ -2826,7 +2813,7 @@ form.ais-SearchBox-form {
   color: var(--main__accent__color);
 }
 
-.specializations .rating-start {
+.specialization {
   display: none;
 }
 
@@ -4032,7 +4019,7 @@ form.ais-SearchBox-form {
 
 .column-left__button-drop__text {
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: baseline;
   font-size: 14px;
   text-transform: capitalize;
   width: -webkit-calc(100% - 40px);
@@ -4107,6 +4094,7 @@ form.ais-SearchBox-form {
 .ais-RefinementList-label.list-categories__link {
   cursor: pointer;
   width: 100%;
+
 }
 
 .list-categories__link:hover,
@@ -4267,16 +4255,15 @@ form.ais-SearchBox-form {
 }
 
 .ais-RefinementList-count.select__number {
-  display: inline-block;
   vertical-align: top;
   text-align: center;
-  width: auto;
-  letter-spacing: 1.3px;
-  margin-left: 20px;
-  background-color: #fafafa;
-  color: var(--main__accent__color);
+  letter-spacing: 1.1px;
+  font-size: 0.8rem;
+  background-color: rgba(65, 66, 71, 0.08);
+  color: #545555;
   border-radius: 3px;
   padding: 2px 4px;
+  margin-left: 10px;
 }
 
 .select input[type=checkbox].select__checkmark {
@@ -4602,7 +4589,6 @@ button.view-gird__icon {
 
 .header-filter {
   margin-bottom: 27px;
-  overflow: auto;
   color: #545555;
   font-size: 14px;
 }
@@ -4759,6 +4745,7 @@ button.view-gird__icon {
   font-size: 21px;
   font-size: 1.3125rem;
   font-weight: 700;
+  margin-top: 10px;
 }
 
 @media (max-width: 768px) {
@@ -4786,7 +4773,7 @@ button.view-gird__icon {
   left: -118%;
   width: 300%;
   height: 100%;
-  background-color: #fafafa;
+  background-color: #ededed;
 }
 
 .bundle-header__image::before {
@@ -4827,6 +4814,7 @@ button.view-gird__icon {
   font-weight: bold;
   text-align: left;
   margin-bottom: 27px;
+  color: #545555;
 }
 
 .title-list {
@@ -5877,9 +5865,6 @@ Course gird
   box-shadow: unset;
 }
 
-.inst-details .rating-start {
-  display: none;
-}
 
 .inst-details .courses__list {
   padding-bottom: 30px;
@@ -7588,7 +7573,7 @@ form.ais-SearchBox-form:after {
 .clear__button,
 .ais-ClearRefinements-button {
   display: inline-block;
-  padding: 7px 25px;
+  padding: 10px;
   -webkit-border-radius: 18px;
   border-radius: 18px;
   background-color: #fff;
@@ -7598,6 +7583,10 @@ form.ais-SearchBox-form:after {
   text-transform: capitalize;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+}
+
+.clear__button i {
+  margin-right: 10px;
 }
 
 .main-search-input button.button i {
@@ -7901,7 +7890,7 @@ form.ais-SearchBox-form:after {
 }
 
 .section-benefit .card-main-list .card-item .card-title {
-  font-family: 'Open Sans', sans-serif;
+
   font-weight: 400;
   font-size: 32px;
   color: #545555;
@@ -7915,7 +7904,7 @@ form.ais-SearchBox-form:after {
 }
 
 .section-benefit .card-main-list .card-item .card-text {
-  font-family: 'Open Sans', sans-serif;
+
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 0.2px;
@@ -8457,7 +8446,7 @@ form.ais-SearchBox-form:after {
 }
 
 .section-subscribe input {
-  font-family: 'Open Sans', sans-serif;
+
   font-size: 14px;
   font-weight: 400;
   font-style: italic;
@@ -8767,7 +8756,7 @@ form.ais-SearchBox-form:after {
 }
 
 .coming-soon-countdown .main-count span.count {
-  font-family: 'Open Sans', sans-serif;
+
   font-size: 50px;
   font-weight: 800;
   line-height: 1.4;
@@ -8781,7 +8770,7 @@ form.ais-SearchBox-form:after {
 }
 
 .coming-soon-countdown .main-count span.stat-label {
-  font-family: 'Open Sans', sans-serif;
+
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.2px;
@@ -8967,7 +8956,7 @@ form.ais-SearchBox-form:after {
 
 .contact-page__box__right .contact-information li {
   position: relative;
-  font-family: 'Open Sans', sans-serif;
+
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
@@ -9475,7 +9464,7 @@ form.ais-SearchBox-form:after {
 }
 
 .banner-course-detail .banner-bottom .banner-bottom__table .text-main {
-  font-family: 'Open Sans', sans-serif;
+
   font-size: 14px;
   font-weight: 400;
 }
@@ -9740,19 +9729,19 @@ form.ais-SearchBox-form:after {
   width: initial;
 }
 
-.student-reviews-course-detail .student-reviews__item .student-reviews__item__rating {
+.student-reviews-course-detail .student-reviews__item {
   margin-bottom: 24px;
 }
 
-.student-reviews-course-detail .student-reviews__item .student-reviews__item__rating .name {
+.student-reviews-course-detail .student-reviews__item .name {
   float: left;
-  font-family: 'Open Sans', sans-serif;
+
   font-size: 14px;
   font-weight: bold;
   color: #545555;
 }
 
-.student-reviews-course-detail .student-reviews__item .student-reviews__item__rating .rating-start {
+.student-reviews-course-detail .student-reviews__item .student-reviews__item__rating {
   float: right;
 }
 
@@ -9774,23 +9763,23 @@ form.ais-SearchBox-form:after {
   flex-wrap: nowrap;
 }
 
-.student-reviews-course-detail .student-reviews__synthetic__item .icon-star::before {
+.student-reviews-course-detail .student-reviews__synthetic__item::before {
   font-size: 6px;
   color: #545555;
 }
 
-.student-reviews-course-detail .student-reviews__synthetic__item .stat-bar {
+.student-reviews-course-detail .student-reviews__synthetic__item {
   width: 73%;
   height: 3px;
 }
 
-.student-reviews-course-detail .student-reviews__synthetic__item .number-star {
+.student-reviews-course-detail .student-reviews__synthetic__item {
   margin-left: 4px;
 }
 
-.student-reviews-course-detail .student-reviews__synthetic__item .number-star,
+.student-reviews-course-detail .student-reviews__synthetic__item,
 .student-reviews-course-detail .student-reviews__synthetic__item .stat-percent {
-  font-family: 'Open Sans', sans-serif;
+
   font-size: 12px;
   font-weight: 600;
   color: #545555;
@@ -9811,7 +9800,7 @@ form.ais-SearchBox-form:after {
   font-size: 28px;
 }
 
-.student-reviews-course-detail .student-reviews__synthetic__header .rating-start,
+.student-reviews-course-detail .student-reviews__synthetic__header,
 .student-reviews-course-detail .student-reviews__synthetic__header .number-per {
   margin-left: 16px;
 }
@@ -10359,32 +10348,70 @@ form.ais-SearchBox-form:after {
   box-shadow: -0.2px 3px 16px 0 #ebebeb;
 }
 
-.filter__checkbox {
-  width: 19px;
-  height: 19px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-  border: 1px solid #cacaca;
-  background-color: #fff;
-  content: "";
-  font-size: 12px;
-  line-height: 19px;
-  display: inline-block;
-  padding: 0;
-  vertical-align: top;
+.ais-CurrentRefinements-list li {
+  padding-bottom: 10px;
 }
 
-input[type="checkbox"]:checked + label:before {
-  border: none;
-  content: "\f00c";
-  font-family: 'Font Awesome 5 Free';
-  font-weight: 600;
+.ais-CurrentRefinements-list li:last-child {
+  padding-bottom: 0;
+}
+
+.ais-RefinementList-label {
+  align-items: center;
+  padding-bottom: 1.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.ais-RefinementList-labelText {
+  font-size: 1rem;
+}
+
+.ais-RefinementList-item--selected .ais-RefinementList-checkbox {
   background-color: var(--main__accent__color);
-  color: #fff;
-  text-align: center;
+
+
+}
+
+.ais-RefinementList-item--selected .ais-RefinementList-checkbox::after {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: '\f00c';
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  color: #FFF;
+  font-size: 0.86rem;
+  transition: transform .3s ease;
+}
+
+.filter__checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: rgba(65, 66, 71, 0.08);
+  border: none;
+  border-radius: 2px;
+  height: 20px;
+  width: 20px;
+  margin: 0;
+  margin-right: 1rem;
+  position: relative;
+  float: left;
 }
 
 .filter__delete {
+  color: #000;
+  border: none;
+  font-size: 0;
+  background: none;
+}
+
+.filter__checkbox .filter__delete {
   color: #000;
   border: none;
   font-size: 0;
