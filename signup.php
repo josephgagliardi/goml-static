@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
+
 <?php include("includes/head.php"); ?>
     <div id="signin--screen" class="container-fluid main_container d-flex">
         <div class="row flex-fill">
@@ -30,7 +29,7 @@
             </div>
         </div>
     </div>
-
+    <!-- TODO: These all must be replaced with references to node modules and consolidated to root/scripts.php -->
     <script src="assets/lib/js/jquery-3.3.1.min.js"></script>
     <script src="assets/lib/js/bootstrap.min.js"></script>
     <script src="assets/lib/slick/slick.min.js"></script>

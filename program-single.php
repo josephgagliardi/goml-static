@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
+
 <?php include("includes/head.php"); ?>
 <?php include("includes/header.php"); ?>
 <main class="bundle-content">
@@ -105,8 +104,8 @@
   var params = getParams(window.location.href);
 
   var programID = params["id"];
-  var client = algoliasearch('JBY4H547QZ', '133c145ebb78c84a04aefb61c32dba1d');
-  var index = client.initIndex('goml_DEMO');
+  var algoliaclient = algoliasearch('JBY4H547QZ', '133c145ebb78c84a04aefb61c32dba1d');
+  var index = algoliaclient.initIndex('goml_DEMO');
 
   index.getObjects([programID.toString()], function(err, content) {
     if (err) throw err;
@@ -117,18 +116,23 @@
 
     var logoImage = `<a href="/institutions-single.php?query=${program['Institution'].replace(/\s+/g, '-').toLowerCase()}"><img id="institution-logo-image" src="/assets/img/institutions/${program["Institution"].replace(/\s+/g, '-').toLowerCase()}.svg" alt="${program["Institution"]} logo"></a>`;
     $('.institutions-logo-single').append(logoImage);
+
+    // Dynamically set side nav and body items content to Algolia Program Attributes
     Object.entries(program).forEach(([key, value]) => {
-      // console.log('' + key + ':' +  value + '');
       var anchor = key.replace(/\s+/g, '-').toLowerCase();
       var block = `<div class="bundle-list"><div class="bundle" id="${anchor}"><h2 class="bundle__title" name="${toTitleCase(key)}">${toTitleCase(key)}</h2><div class="bundle__content"><p class="detail__infor__sub">${value}</p></div></div></div>`;
+
       var listLink = `<li class="list-link__item"><a class="list-link__link" href="#${anchor}">${toTitleCase(key)}</a></li>`;
+
       var exceptionList = ['Institution', 'objectID', 'Admissons Link', 'Curriculum Link', 'Program Name', 'Total Credit Hours', 'Degree Level', 'Area of Study', 'Dates and Deadlines', 'Tuition and Fees Link', 'Per Credit Hour Tuition', 'Collaborative', 'Credit for Prior Learning'];
+
       if (key !== null && (value !== null && value !== '' && !exceptionList.includes(key))) {
         $('.bundles').append(block);
         $('.list-link__list').append(listLink);
       };
     });
-    // console.log(program["Program Name"]);
+    
+    // Set page DOM element content to Algolia Program Attribute values
     document.getElementById('program__title').innerHTML = program["Program Name"];
     document.getElementById('institution__name').innerHTML = program["Institution"];
     document.getElementById('program__level').innerHTML = program["Degree Level"];
@@ -143,6 +147,8 @@
       $('#quickLinks').append(deadlineLink);
 
     };
+
+    // Quick links in side nav
     if (program["Tuition and Fees Link"] != null && program["Tuition and Fees Link"].length > 0) {
       var feesLink = `<a class="mt-4 btn-block" id="fees-link" target="_blank" href="${program["Tuition and Fees Link"]}"><i class="fas fa-dollar-sign"></i> Tuition and Fees</a>`;
       $('#quickLinks').append(feesLink);
@@ -151,19 +157,20 @@
       var cplLink = `<a class="mt-4 btn-block" id="fees-link" target="_blank" href="${program["Credit for Prior Learning"]}"><i class="fas fa-book"></i> Credit for Prior Learning</a>`;
       $('#quickLinks').append(cplLink);
     };
+    var shareLink = `<a class="mt-4 btn-block" id="share-link" href="${program["Tuition and Fees Link"]}"><i class="fas fa-dollar-sign"></i> Tuition and Fees</a>`;
 
+  
+    // Data Gov Chart 
+    let url =`https://api.data.gov/ed/collegescorecard/v1/schools?api_key=6lZ3mGdHSfNDUu8NgEgv8l6I1b8W3pcfO0zHLB3q&fields=school.name,latest.aid.median_debt.completers.overall,latest.cost.avg_net_price.overall,latest.cost.tuition.out_of_state,latest.cost.tuition.in_state,latest.earnings.10_yrs_after_entry.working_not_enrolled.mean_earnings,latest.aid.median_debt.completers.overall&school.name=${program["Institution"]}`;
 
-
-    let url = `https://api.data.gov/ed/collegescorecard/v1/schools?api_key=6lZ3mGdHSfNDUu8NgEgv8l6I1b8W3pcfO0zHLB3q&fields=school.name,latest.aid.median_debt.completers.overall,latest.cost.avg_net_price.overall,latest.cost.tuition.out_of_state,latest.cost.tuition.in_state,latest.earnings.10_yrs_after_entry.working_not_enrolled.mean_earnings,latest.aid.median_debt.completers.overall&school.name=${program["Institution"]}`;
     fetch(url)
       .then(function(response) {
         return response.json();
       })
       .then(function(myJson) {
-        console.log(myJson);
-        if (myJson['metadata']['total'] == '0') {
-          return;
-        }
+
+        if (myJson['metadata']['total'] == '0'){return;}
+
         var ctx = $('#myChart');
         var careerlink = `<li class="list-link__item"><a class="list-link__link" href="#career-outlook">Career Outlook</a></li>`;
         $('.list-link__list').append(careerlink);
@@ -262,6 +269,7 @@
       });
   });
 
+// Helpers 
   function toTitleCase(str) {
     return str.replace(
       /\w\S*/g,

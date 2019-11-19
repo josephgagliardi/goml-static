@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
+
 <?php include("includes/head.php"); ?>
 
     <div id="signin--screen" class="container-fluid main_container d-flex">

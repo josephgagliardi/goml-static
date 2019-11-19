@@ -1,5 +1,5 @@
 /*	-------------------------------------------------------
-	:: Droopmenu Wrapper Containers
+	 Wrapper Containers
 	------------------------------------------------------- */
 .droopmenu-navbar,
 .droopmenu-navbar * {
@@ -23,7 +23,7 @@
 }
 
 /*	-------------------------------------------------------
-	:: Droopmenu General Links
+	 General Links
 	------------------------------------------------------- */
 
 .droopmenu-navbar a {
@@ -33,7 +33,7 @@
 }
 
 /*	-------------------------------------------------------
-	:: Droopmenu Maximum Width
+	 Maximum Width
 	------------------------------------------------------- */
 
 .droopmenu-inner,
@@ -49,7 +49,7 @@
 }
 
 /*	-------------------------------------------------------
-	:: Droopmenu | LOGO | TOGGLE MOBILE | 
+	 | LOGO | TOGGLE MOBILE | 
 	------------------------------------------------------- */
 
 .droopmenu-brand,
@@ -65,8 +65,7 @@
 .dm-nav-brand a img,
 .droopmenu-brand img {
   height: 70px;
-  position: relative;
-  top: -5px;
+  margin-top: 10px;
 }
 
 @media (max-width: 950px) {
@@ -74,6 +73,7 @@
   .dm-nav-brand a img,
   .droopmenu-brand img {
     height: 50px;
+    margin-top: 22px;
   }
 }
 
@@ -87,7 +87,7 @@
 }
 
 /*	-------------------------------------------------------
-	:: Droopmenu Extra Menu
+	 Extra Menu
 	------------------------------------------------------- */
 
 .droopmenu-extra {
@@ -99,7 +99,7 @@
 }
 
 /*	-------------------------------------------------------
-	:: Droopmenu | Menu Styles
+	 | Menu Styles
 	------------------------------------------------------- */
 
 .droopmenu {
@@ -120,7 +120,7 @@
 .droopmenu > li {
   font-size: 1.2em;
   position: relative;
-  font-weight: 600;
+
   float: left;
 }
 
@@ -137,9 +137,8 @@
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
   transition: all 1s ease;
-  letter-spacing: 1px;
   padding: 0 18px;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .droopmenu > li a.droopmenu-button span {
@@ -175,7 +174,7 @@
 }
 
 /*	-------------------------------------------------------
-	:: Droopmenu Height | LOGO HEADER | TOP LINKS
+	 Height | LOGO HEADER | TOP LINKS
 	------------------------------------------------------- */
 
 .droopmenu-header {
@@ -195,7 +194,7 @@
 }
 
 /*	-------------------------------------------------------
-	:: Droopmenu | LEVEL I DROPDOWN 
+	 | LEVEL I DROPDOWN 
 	------------------------------------------------------- */
 
 .droopmenu li > ul {
@@ -225,7 +224,7 @@
 }
 
 /*	-------------------------------------------------------
-	:: Droopmenu | LEVEL II DROPDOWN 
+	:: LEVEL II DROPDOWN 
 	------------------------------------------------------- */
 
 .droopmenu li ul {
@@ -246,7 +245,8 @@
   left: 100%;
 }
 
-.droopmenu li:hover > a,
+.droopmenu li:hover > a {}
+
 .droopmenu li li:hover > a {
   color: var(--main__accent__color);
   text-decoration: underline;
@@ -271,7 +271,7 @@
 }
 
 /*	-------------------------------------------------------
-	:: Droopmenu | DECORATIVE ARROW
+	 | DECORATIVE ARROW
 	------------------------------------------------------- */
 
 .droopmenu .dm-arrow {
@@ -312,7 +312,7 @@
 
 
 /*	-------------------------------------------------------
-	:: Droopmenu | EXTENDED HOVER AREA
+	 | EXTENDED HOVER AREA
 	------------------------------------------------------- */
 
 .droopmenu li > ul:after {
@@ -335,7 +335,7 @@
 }
 
 /*	-------------------------------------------------------
-	:: Droopmenu | ARROW INDICATORS
+	 | ARROW INDICATORS
 	------------------------------------------------------- */
 
 .droopmenu li li.droopmenu-parent > a {
@@ -355,14 +355,13 @@
 
 .droopmenu li a .droopmenu-indicator em:after,
 .droopmenu li li a .droopmenu-indicator em:after {
-  content: "\f078";
   font-family: 'Font Awesome 5 Free';
   display: inline-block;
-  font-weight: 600;
+  font-weight: 900;
+  content: "\f078";
   position: relative;
   font-size: 14px;
   margin-left: 10px;
-  top: 1px;
 }
 
 .droopmenu li li a .droopmenu-indicator em:after {
@@ -373,7 +372,7 @@
 }
 
 /*	-------------------------------------------------------
-	:: Droopmenu | DROP RIGHT-LEFT DIRECTION
+	 | DROP RIGHT-LEFT DIRECTION
 	------------------------------------------------------- */
 
 .droopmenu li.droop-left > ul {
@@ -398,7 +397,7 @@
 }
 
 /*	-------------------------------------------------------
-	:: Droopmenu | MEGAMENU | GRID CONTAINER
+	 | MEGAMENU | GRID CONTAINER
 	------------------------------------------------------- */
 .droopmenu ul.droopmenu-grid,
 .droopmenu ul.droopmenu-grid ul {
@@ -446,7 +445,7 @@
 }
 
 /*	-------------------------------------------------------
-	:: Droopmenu | MEGAMENU GRID CONTAINER SIZES
+	 | MEGAMENU GRID CONTAINER SIZES
 	------------------------------------------------------- */
 
 .droopmenu-grid {}
@@ -497,7 +496,7 @@
 }
 
 /*	-------------------------------------------------------
-	:: Droopmenu | GRID ROWS COLUMNS
+	 | GRID ROWS COLUMNS
 	------------------------------------------------------- */
 
 .droopmenu-row {
@@ -584,7 +583,7 @@
 }
 
 /*	-------------------------------------------------------
-	:: Droopmenu Clear Floats
+	 Clear Floats
 	------------------------------------------------------- */
 
 .droopmenu:after,
@@ -604,7 +603,7 @@
 }
 
 /*	-------------------------------------------------------
-	:: Droopmenu | STICKY FOR HORIZONTAL MENU
+	 | STICKY FOR HORIZONTAL MENU
 	------------------------------------------------------- */
 
 .dmfixed {
@@ -621,7 +620,7 @@
 }
 
 /*	-------------------------------------------------------
-	:: Droopmenu | BOTTOM POSITION
+	 | BOTTOM POSITION
 	------------------------------------------------------- */
 
 .dmpos-bottom .droopmenu li > ul {
@@ -689,7 +688,7 @@
 }
 
 /*	-------------------------------------------------------
-	:: Droopmenu | VERTICAL MENU | ADJUST MIN-HEIGHT
+	 | VERTICAL MENU | ADJUST MIN-HEIGHT
 	------------------------------------------------------- */
 
 .droopmenu-vertical {
@@ -759,7 +758,7 @@
 }
 
 /*	-------------------------------------------------------
-	:: Droopmenu | VERUICAL | DROP BOTTOM-TOP DIRECTION
+	 | VERUICAL | DROP BOTTOM-TOP DIRECTION
 	------------------------------------------------------- */
 
 .droopmenu-vertical .droopmenu li.droop-bottom > ul {
@@ -774,7 +773,7 @@
 
 
 /*	-------------------------------------------------------
-	:: Droopmenu | VERUICAL | RIGHT POSITION
+	 | VERUICAL | RIGHT POSITION
 	------------------------------------------------------- */
 
 .droopmenu-vertical.dmpos-right {}
@@ -794,7 +793,7 @@
 }
 
 /*	-------------------------------------------------------
-	:: Droopmenu | CONTENT STYLING
+	 | CONTENT STYLING
 	------------------------------------------------------- */
 
 .droopmenu-left {
@@ -1586,7 +1585,7 @@ button.dm-search-close:focus {
 }
 
 /*	-------------------------------------------------------
-	:: Droopmenu | TABS | MOBILE FIRST
+	 | TABS | MOBILE FIRST
 	------------------------------------------------------- */
 
 .droopmenu .droopmenu-tabs {
@@ -1658,7 +1657,7 @@ button.dm-search-close:focus {
 }
 
 /*	-------------------------------------------------------
-	:: Droopmenu | MOBILE TOGGLE BUTTON
+	 | MOBILE TOGGLE BUTTON
 	------------------------------------------------------- */
 
 .droopmenu-toggle {
@@ -1823,7 +1822,7 @@ button.dm-search-close:focus {
 }
 
 /*	-------------------------------------------------------
-	:: Droopmenu | DROPDOWN ANIMATIONS
+	 | DROPDOWN ANIMATIONS
 	------------------------------------------------------- */
 
 /* FADE */
@@ -2057,7 +2056,7 @@ button.dm-search-close:focus {
 
 
 /*	-------------------------------------------------------
-	:: Droopmenu | RESPONSIVE STYLES > = 950
+	 | RESPONSIVE STYLES > = 950
 	------------------------------------------------------- */
 
 @media only screen and (min-width: 950px) {

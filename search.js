@@ -160,14 +160,10 @@ search.addWidget(
     searchablePlaceholder: 'Refine by Level...',
     sortBy: ['name:asc'],
     cssClasses: {
-      // item: 'list-categories__item',
-      list: 'select__list',
-      item: 'select__item',
-      count: 'select__number',
-      active: 'active',
+      count: 'badge select__number',
+      showMore: 'see-more-button-text',
       label: 'list-categories__link',
-      checkbox: 'filter__checkbox',
-      showMore: 'see-more-button-text'
+      checkbox: 'filter__checkbox'
     }
   })
 );
@@ -182,12 +178,10 @@ search.addWidget(
     searchablePlaceholder: 'Refine by Discipline...',
     sortBy: ['name:asc'],
     cssClasses: {
-      item: 'list-categories__item',
-      count: 'badge pull-right select__number',
-      active: 'active',
+      count: 'badge select__number',
+      showMore: 'see-more-button-text',
       label: 'list-categories__link',
-      checkbox: 'filter__checkbox',
-      showMore: 'see-more-button-text'
+      checkbox: 'filter__checkbox'
     }
   })
 );
@@ -203,12 +197,10 @@ search.addWidget(
     searchablePlaceholder: 'Refine by Collaborative...',
     sortBy: ['name:asc'],
     cssClasses: {
-      item: 'list-categories__item',
-      count: 'badge pull-right select__number',
-      active: 'active',
+      count: 'badge select__number',
+      showMore: 'see-more-button-text',
       label: 'list-categories__link',
-      checkbox: 'filter__checkbox',
-      showMore: 'see-more-button-text'
+      checkbox: 'filter__checkbox'
     }
   })
 );
@@ -223,13 +215,10 @@ search.addWidget(
     searchablePlaceholder: 'Choose School',
     sortBy: ['name:asc'],
     cssClasses: {
-      list: 'select__list',
-      item: 'select__item',
-      count: 'select__number',
-      active: 'active',
+      count: 'badge select__number',
+      showMore: 'see-more-button-text',
       label: 'list-categories__link',
-      checkbox: 'filter__checkbox',
-      showMore: 'see-more-button-text'
+      checkbox: 'filter__checkbox'
     }
   })
 );
@@ -247,8 +236,7 @@ search.addWidget(
       button: 'button-outline tags__item clear__button tags__item'
     },
     templates: {
-      resetLabel: 'Clear All',
-      item: `<div class="tags__item"><span class="button-outline">Clear All</span></div>`
+      resetLabel: '<i class="fas fa-redo-alt"></i>Clear All'
     },
   })
 );
@@ -261,13 +249,10 @@ search.addWidget(
       labelText: 'CPL',
     },
     cssClasses: {
-      list: 'select__list',
-      item: 'select__item',
-      count: 'select__number',
-      active: 'active',
+      count: 'badge select__number',
+      showMore: 'see-more-button-text',
       label: 'list-categories__link',
-      checkbox: 'filter__checkbox',
-      showMore: 'see-more-button-text'
+      checkbox: 'filter__checkbox'
     },
   })
 );

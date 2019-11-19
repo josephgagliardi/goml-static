@@ -1,3 +1,5 @@
+<html lang="en">
+
 <head>
   <title>GOML</title>
   <meta charset="utf-8">
@@ -18,15 +20,15 @@
   <link rel="icon" type="image/png" href="/assets/img/icons/favicon-32x32.png" sizes="32x32">
   <link rel="icon" type="image/png" href="/assets/img/icons/favicon-96x96.png" sizes="96x96">
   <link rel="icon" type="image/png" href="/assets/img/icons/android-chrome-192x192.png" sizes="192x192">
-  <link rel="stylesheet" type="text/css" href="assets/lib/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
-  <link rel="stylesheet" type="text/css" href="assets/lib/slick/slick.css">
-  <link rel="stylesheet" type="text/css" href="assets/lib/slick/slick-theme.css">
+  <link rel="stylesheet" type="text/css" href="/node_modules/slick-carousel/slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="/node_modules/slick-carousel/slick/slick-theme.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" type="text/css" href="assets/css/droopmenu.css">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   <link rel="stylesheet" type="text/css" href="assets/css/print.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,400i,700&display=swap" rel="stylesheet">
 </head>
 
 <body data-aos="fade">
