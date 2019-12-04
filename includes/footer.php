@@ -63,21 +63,11 @@
           </div>
         </div>
         <div class="col-lg-6 col-md-6 col-sm-12 align-self-center">
-          <div class="asocials text-center text-md-right">
-            <ul class="asocials__list">
-              <li class="asocials__item"><a class="asocials__link" href="#">
-                  <span class="icon-custom asocials__icon"><i class="fab fa-instagram"></i></span></a>
-              </li>
-              <li class="asocials__item"><a class="asocials__link" href="https://www.facebook.com/gaonmyline">
-                  <span class="icon-custom asocials__icon"><i class="fab fa-facebook-f"></i></span></a>
-              </li>
-              <li class="asocials__item"><a class="asocials__link" href="https://www.pinterest.com/georgiaonmyline/">
-                  <span class="icon-custom asocials__icon"><i class="fab fa-pinterest-p"></i></span></a>
-              </li>
-              <li class="asocials__item"><a class="asocials__link" href="https://twitter.com/USGGOML">
-                  <span class="icon-custom asocials__icon"><i class="fab fa-twitter"></i></span></a>
-              </li>
-            </ul>
+          <div class="text-center text-md-right social-btn">
+            <a href="#"><i class="fab fa-instagram"></i><span class="sr-only">facebook</span></a>
+            <a href="https://www.facebook.com/gaonmyline"><i class="fab fa-facebook-f"></i><span class="sr-only">facebook</span></a>
+            <a href="https://www.pinterest.com/georgiaonmyline/"><i class="fab fa-pinterest-p"></i><span class="sr-only">pinterest</span></a>
+            <a href="https://twitter.com/USGGOML"><i class="fab fa-twitter"></i><span class="sr-only">twitter</span></a>
           </div>
         </div>
       </div>

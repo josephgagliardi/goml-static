@@ -3838,45 +3838,13 @@ form.ais-SearchBox-form {
   color: #FFF;
 }
 
-.asocials__item {
-  display: inline-block;
-  margin-right: 8px;
-  text-align: center;
-  line-height: 40px;
-}
-
-@media (max-width: 375px) {
-  .asocials__item {
-    margin-right: 4px;
-  }
-}
-
-.asocials__link {
-  display: inline-block;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
+.social-btn a {
+  display: inline-flex;
+  text-decoration: none;
+  font-size: 1em;
   width: 40px;
   height: 40px;
-  background-color: rgba(255, 255, 255, 0.08);
-  color: rgba(232, 232, 232, 0.54);
-}
-
-.asocials__link:hover,
-.asocials__link:focus {
-  color: #fff;
-}
-
-.asocials__icon {
-  display: inline-block;
-  width: 100%;
-}
-
-.asocials__icon .fab {
-  font-size: 16px;
-}
-
-.asocials__icon::before {
-  font-size: 16px;
+  background-color: rgba(255, 255, 255, 0.08)
 }
 
 .footer-link__link {
