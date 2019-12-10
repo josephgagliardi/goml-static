@@ -71,6 +71,7 @@ search.addWidget(
         }
         return `
           <div class="list-content">
+              <i class="fas ${icon} column-left__icon"></i>
               <div class="courses__top">
                  <div class="courses__top__wrapper"><img class="courses__top__image align-self-center" src="/assets/img/institutions/${item['Institution'].replace(/\s+/g, '-').toLowerCase()}.svg" alt="">${favoritedIcon}</div>
               </div>
@@ -79,8 +80,7 @@ search.addWidget(
                 <a href="/program-listing.php?refinementList%5BInstitution%5D%5B0%5D=${item["Institution"]}"><span class="courses__content__institutions">${item["Institution"]}</span></a>
                <div class="courses__bottom">
                   <a href="/program-listing.php?refinementList%5BArea%20of%20Study%5D%5B0%5D=${item["Area of Study"]}">
-                   <div class="area-of-study d-flex align-items-center">
-                      <i class="fas ${icon} column-left__icon"></i>
+                   <div class="area-of-study">
                       ${item["Area of Study"]}
                     <div>
                     </a>
