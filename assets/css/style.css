@@ -1665,14 +1665,17 @@ button.button-text:focus {
 
 
 .area-of-study {
-  margin-top: 10px;
   font-size: 14px;
+  font-weight: 700;
 }
 
-.area-of-study .column-left__icon {
-  vertical-align: middle;
-  text-align: center;
-  margin-right: 9px;
+.column-left__icon {
+  position: absolute;
+  bottom: -15;
+  right: -3;
+  font-size: 100px;
+  overflow: hidden;
+  color: rgba(65, 66, 71, 0.03);
 }
 
 
@@ -2661,8 +2664,7 @@ form.ais-SearchBox-form {
 }
 
 .courses__bottom {
-  border-top: solid 1px rgba(232, 232, 232, 0.8);
-  margin-top: 10px;
+  margin-top: 25px;
 }
 
 
@@ -2757,7 +2759,7 @@ form.ais-SearchBox-form {
   width: 33.33%;
 }
 
-@media all and (max-width: 991px) {
+@media all and (max-width: 1200px) {
   .ais-Hits-item {
     width: 50%;
   }
@@ -2768,8 +2770,6 @@ form.ais-SearchBox-form {
     width: 100%;
   }
 }
-
-
 
 
 
@@ -2785,10 +2785,15 @@ form.ais-SearchBox-form {
   -webkit-transition: all .3s;
   transition: all .3s;
   color: #545555;
+  position: relative;
+  overflow: hidden;
 }
 
 .list-content:hover {
-  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+  box-shadow:
+    0 2.4px 2.6px -7px rgba(0, 0, 0, 0.095),
+    0 19px 21px -7px rgba(0, 0, 0, 0.19);
+
 }
 
 /*=====  End of Courses  ======*/
@@ -4027,13 +4032,6 @@ form.ais-SearchBox-form {
   color: #545555;
 }
 
-.column-left__button-drop[aria-expanded="true"] .flaticon-down-arrow.column-left__icon::before {
-  display: inline-block;
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg);
-}
-
 .list-selector {
   position: relative;
 }
@@ -4259,7 +4257,8 @@ form.ais-SearchBox-form {
   text-align: center;
   letter-spacing: 1.1px;
   font-size: 0.8rem;
-  background-color: rgba(65, 66, 71, 0.08);
+  background: rgba(255, 255, 255, 0.08);
+  background: linear-gradient(0deg, rgba(224, 224, 224, 1) 0%, rgba(240, 240, 241, 1) 100%);
   color: #545555;
   border-radius: 3px;
   padding: 2px 4px;
