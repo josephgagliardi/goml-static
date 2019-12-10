@@ -1628,10 +1628,9 @@ button.button-text:focus {
 
 
 .courses__content {
-  padding: 20px;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
+  padding: 25px;
   position: relative;
+  border-top: solid 1px rgb(232, 232, 232);
 }
 
 .courses__content__title {
@@ -1664,15 +1663,19 @@ button.button-text:focus {
 }
 
 
-.area-of-study {
-  margin-top: 10px;
+.area-of-study a {
   font-size: 14px;
+  font-weight: 700;
+  color: var(--main__accent__color);
 }
 
-.area-of-study .column-left__icon {
-  vertical-align: middle;
-  text-align: center;
-  margin-right: 9px;
+.column-left__icon {
+  position: absolute;
+  bottom: -15;
+  right: -3;
+  font-size: 100px;
+  overflow: hidden;
+  color: rgba(65, 66, 71, 0.03);
 }
 
 
@@ -2627,11 +2630,6 @@ form.ais-SearchBox-form {
   margin-bottom: 50px;
 }
 
-/*=.courses__top__wrapper:before {
-  content: '';
-  display: block;
-  padding-top: 61%;
-}*/
 
 .courses__top__wrapper {
   position: relative;
@@ -2639,7 +2637,6 @@ form.ais-SearchBox-form {
   text-align: center;
   padding: 30px;
   width: 100%;
-  border-bottom: solid 1px rgba(232, 232, 232, 0.8);
 }
 
 .courses__top__wrapper img {
@@ -2661,8 +2658,7 @@ form.ais-SearchBox-form {
 }
 
 .courses__bottom {
-  border-top: solid 1px rgba(232, 232, 232, 0.8);
-  margin-top: 10px;
+  margin-top: 25px;
 }
 
 
@@ -2755,9 +2751,10 @@ form.ais-SearchBox-form {
   display: flex;
   padding: 0.9em;
   width: 33.33%;
+
 }
 
-@media all and (max-width: 991px) {
+@media all and (max-width: 1200px) {
   .ais-Hits-item {
     width: 50%;
   }
@@ -2771,24 +2768,26 @@ form.ais-SearchBox-form {
 
 
 
-
-
 .list-content {
   background-color: #fff;
   display: flex;
   flex-direction: column;
   width: 100%;
   border: 1px solid transparent;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
   border: solid 1px #d6d6d6;
   -webkit-transition: all .3s;
   transition: all .3s;
   color: #545555;
+  position: relative;
+  overflow: hidden;
 }
 
 .list-content:hover {
-  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+  box-shadow:
+    0 2.4px 2.6px -7px rgba(0, 0, 0, 0.095),
+    0 19px 21px -7px rgba(0, 0, 0, 0.19);
 }
 
 /*=====  End of Courses  ======*/
@@ -3838,46 +3837,46 @@ form.ais-SearchBox-form {
   color: #FFF;
 }
 
-.asocials__item {
-  display: inline-block;
-  margin-right: 8px;
-  text-align: center;
-  line-height: 40px;
-}
-
-@media (max-width: 375px) {
-  .asocials__item {
-    margin-right: 4px;
-  }
-}
-
-.asocials__link {
-  display: inline-block;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
+.social-btn a {
+  display: inline-flex;
+  text-decoration: none;
+  font-size: 1em;
   width: 40px;
   height: 40px;
-  background-color: rgba(255, 255, 255, 0.08);
-  color: rgba(232, 232, 232, 0.54);
+  color: #FFF;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0 8px;
+  z-index: 0;
+  outline: none;
+
 }
 
-.asocials__link:hover,
-.asocials__link:focus {
-  color: #fff;
+.social-btn a:hover,
+.social-btn a:focus {
+  transform: scale(1.2);
+  transition: 0.3s ease-out;
 }
 
-.asocials__icon {
-  display: inline-block;
-  width: 100%;
+.social-btn a::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #171717;
+  transition: 0.3s ease-in;
+  border: 2px solid #171717;
+  z-index: -1;
 }
 
-.asocials__icon .fab {
-  font-size: 16px;
+.social-btn a:hover::before,
+.social-btn a:focus::before {
+  transform: 0.3s ease-in;
+  border: 2px solid #FFF;
 }
 
-.asocials__icon::before {
-  font-size: 16px;
-}
 
 .footer-link__link {
   color: #FFF;
@@ -4025,13 +4024,6 @@ form.ais-SearchBox-form {
   width: -webkit-calc(100% - 40px);
   width: calc(100% - 40px);
   color: #545555;
-}
-
-.column-left__button-drop[aria-expanded="true"] .flaticon-down-arrow.column-left__icon::before {
-  display: inline-block;
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg);
 }
 
 .list-selector {
@@ -4259,11 +4251,12 @@ form.ais-SearchBox-form {
   text-align: center;
   letter-spacing: 1.1px;
   font-size: 0.8rem;
-  background-color: rgba(65, 66, 71, 0.08);
+  background: rgba(255, 255, 255, 0.08);
+  background: linear-gradient(0deg, rgba(224, 224, 224, 1) 0%, rgba(240, 240, 241, 1) 100%);
   color: #545555;
   border-radius: 3px;
   padding: 2px 4px;
-  margin-left: 10px;
+  margin: 2px 0 0 10px;
 }
 
 .select input[type=checkbox].select__checkmark {
@@ -4421,6 +4414,7 @@ form.ais-SearchBox-form {
   background-color: #fafafa;
   margin-bottom: 40px;
   padding: 10px 7px;
+  border-radius: 5px;
 }
 
 .tabs__list {
