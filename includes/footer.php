@@ -64,7 +64,7 @@
         </div>
         <div class="col-lg-6 col-md-6 col-sm-12 align-self-center">
           <div class="text-center text-md-right social-btn">
-            <a href="#"><i class="fab fa-instagram"></i><span class="sr-only">facebook</span></a>
+            <a href="#"><i class="fab fa-instagram"></i><span class="sr-only">instagram</span></a>
             <a href="https://www.facebook.com/gaonmyline"><i class="fab fa-facebook-f"></i><span class="sr-only">facebook</span></a>
             <a href="https://www.pinterest.com/georgiaonmyline/"><i class="fab fa-pinterest-p"></i><span class="sr-only">pinterest</span></a>
             <a href="https://twitter.com/USGGOML"><i class="fab fa-twitter"></i><span class="sr-only">twitter</span></a>
