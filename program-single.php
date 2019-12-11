@@ -180,7 +180,7 @@
         var avgEarningsAfter10years = myJson['results'][0]["latest.earnings.10_yrs_after_entry.working_not_enrolled.mean_earnings"];
         var out_of_state_tuition = myJson['results'][0]["latest.cost.tuition.out_of_state"];
         var in_state_tuition = myJson['results'][0]["latest.cost.tuition.in_state"];
-        var medianDebt = myJson['results'][0]["latest.aid.median_debt.completers.overall"];
+        var medianDebt = myJson['results'][0]["latest.aid.median_debt.completers.overall"][0];
 
         data = [];
         if (in_state_tuition != '') {
