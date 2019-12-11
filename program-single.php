@@ -12,28 +12,22 @@
           </p>
         </div>
         <div class="bundle-header__highlight">
-          <div class="row">
-            <div class="col-md-4 col-sm-4 mb-2">
-              <div class="card additional_info rounded shadow p-3 p-lg-4 h-100 justify-content-center">
-                <img src="/assets/img/program-single/book.svg">
-                Degree Level
-                <strong id="program__level"></strong>
-              </div>
+          <div class="card-deck">
+            <div class="card additional_info rounded shadow p-3 p-lg-4 justify-content-center">
+              <img src="/assets/img/program-single/book.svg">
+              Degree Level
+              <strong id="program__level"></strong>
             </div>
-            <div class="col-md-4 col-sm-4 mb-2">
-              <div class="card additional_info rounded shadow p-3 p-lg-4 h-100 justify-content-center">
-                <img src="/assets/img/program-single/graph.svg">
-                Total Credit Hours
-                <strong id="total__hours"></strong>
-              </div>
+            <div class="card additional_info rounded shadow p-3 p-lg-4 justify-content-center">
+              <img src="/assets/img/program-single/graph.svg">
+              Total Credit Hours
+              <strong id="total__hours"></strong>
             </div>
-            <div class="col-md-4 col-sm-4 mb-2">
-              <div class="card additional_info rounded shadow p-3 p-lg-4 h-100 justify-content-center">
-                <img src="/assets/img/program-single/piggy-bank.svg">
-                Per Credit Hour Cost
-                <button data-toggle="popover" data-trigger="hover click" data-placement="top" data-content="Based on in-state residency. Additional fees may apply. See institutional tuition and fees charts for detailed information."><i class="fas fa-info-circle"></i></button>
-                <strong id="total__cost"></strong>
-              </div>
+            <div class="card additional_info rounded shadow p-3 p-lg-4 justify-content-center">
+              <img src="/assets/img/program-single/piggy-bank.svg">
+              Per Credit Hour Cost
+              <button data-toggle="popover" data-trigger="hover click" data-placement="top" data-content="Based on in-state residency. Additional fees may apply. See institutional tuition and fees charts for detailed information."><i class="fas fa-info-circle"></i></button>
+              <strong id="total__cost"></strong>
             </div>
           </div>
         </div>
