@@ -4716,15 +4716,15 @@ button.view-gird__icon {
   background-color: transparent;
 }
 
-.additional_info .card button {
+.additional_info button {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 10;
+  right: 10;
   border: none;
   background: none;
 }
 
-.additional_info .card button:hover {
+.additional_info button:hover {
   color: #FFF;
 }
 

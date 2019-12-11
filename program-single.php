@@ -1,4 +1,3 @@
-
 <?php include("includes/head.php"); ?>
 <?php include("includes/header.php"); ?>
 <main class="bundle-content">
@@ -14,32 +13,26 @@
         </div>
         <div class="bundle-header__highlight">
           <div class="row">
-            <div class="col-md-4 mb-2">
-              <div class="additional_info rounded shadow p-3 p-lg-4 h-100">
-                <div class="card h-100 justify-content-center">
-                  <img src="/assets/img/program-single/book.svg">
-                  Degree Level
-                  <strong id="program__level"></strong>
-                </div>
+            <div class="col-md-4 col-sm-4 mb-2">
+              <div class="card additional_info rounded shadow p-3 p-lg-4 h-100 justify-content-center">
+                <img src="/assets/img/program-single/book.svg">
+                Degree Level
+                <strong id="program__level"></strong>
               </div>
             </div>
-            <div class="col-md-4 mb-2">
-              <div class="additional_info rounded shadow p-3 p-lg-4">
-                <div class="card h-100 justify-content-center">
-                  <img src="/assets/img/program-single/graph.svg">
-                  Total Credit Hours
-                  <strong id="total__hours"></strong>
-                </div>
+            <div class="col-md-4 col-sm-4 mb-2">
+              <div class="card additional_info rounded shadow p-3 p-lg-4 h-100 justify-content-center">
+                <img src="/assets/img/program-single/graph.svg">
+                Total Credit Hours
+                <strong id="total__hours"></strong>
               </div>
             </div>
-            <div class="col-md-4 mb-2">
-              <div class="additional_info rounded shadow p-3 p-lg-4">
-                <div class="card h-100 justify-content-center">
-                  <img src="/assets/img/program-single/piggy-bank.svg">
-                  Per Credit Hour Cost
-                  <button data-toggle="popover" data-trigger="hover click" data-placement="top" data-content="Based on in-state residency. Additional fees may apply. See institutional tuition and fees charts for detailed information."><i class="fas fa-info-circle"></i></button>
-                  <strong id="total__cost"></strong>
-                </div>
+            <div class="col-md-4 col-sm-4 mb-2">
+              <div class="card additional_info rounded shadow p-3 p-lg-4 h-100 justify-content-center">
+                <img src="/assets/img/program-single/piggy-bank.svg">
+                Per Credit Hour Cost
+                <button data-toggle="popover" data-trigger="hover click" data-placement="top" data-content="Based on in-state residency. Additional fees may apply. See institutional tuition and fees charts for detailed information."><i class="fas fa-info-circle"></i></button>
+                <strong id="total__cost"></strong>
               </div>
             </div>
           </div>
@@ -131,7 +124,7 @@
         $('.list-link__list').append(listLink);
       };
     });
-    
+
     // Set page DOM element content to Algolia Program Attribute values
     document.getElementById('program__title').innerHTML = program["Program Name"];
     document.getElementById('institution__name').innerHTML = program["Institution"];
@@ -159,9 +152,9 @@
     };
     var shareLink = `<a class="mt-4 btn-block" id="share-link" href="${program["Tuition and Fees Link"]}"><i class="fas fa-dollar-sign"></i> Tuition and Fees</a>`;
 
-  
+
     // Data Gov Chart 
-    let url =`https://api.data.gov/ed/collegescorecard/v1/schools?api_key=6lZ3mGdHSfNDUu8NgEgv8l6I1b8W3pcfO0zHLB3q&fields=school.name,latest.aid.median_debt.completers.overall,latest.cost.avg_net_price.overall,latest.cost.tuition.out_of_state,latest.cost.tuition.in_state,latest.earnings.10_yrs_after_entry.working_not_enrolled.mean_earnings,latest.aid.median_debt.completers.overall&school.name=${program["Institution"]}`;
+    let url = `https://api.data.gov/ed/collegescorecard/v1/schools?api_key=6lZ3mGdHSfNDUu8NgEgv8l6I1b8W3pcfO0zHLB3q&fields=school.name,latest.aid.median_debt.completers.overall,latest.cost.avg_net_price.overall,latest.cost.tuition.out_of_state,latest.cost.tuition.in_state,latest.earnings.10_yrs_after_entry.working_not_enrolled.mean_earnings,latest.aid.median_debt.completers.overall&school.name=${program["Institution"]}`;
 
     fetch(url)
       .then(function(response) {
@@ -169,7 +162,9 @@
       })
       .then(function(myJson) {
 
-        if (myJson['metadata']['total'] == '0'){return;}
+        if (myJson['metadata']['total'] == '0') {
+          return;
+        }
 
         var ctx = $('#myChart');
         var careerlink = `<li class="list-link__item"><a class="list-link__link" href="#career-outlook">Career Outlook</a></li>`;
@@ -269,7 +264,7 @@
       });
   });
 
-// Helpers 
+  // Helpers 
   function toTitleCase(str) {
     return str.replace(
       /\w\S*/g,
