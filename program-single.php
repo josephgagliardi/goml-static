@@ -24,7 +24,7 @@
               </div>
             </div>
             <div class="col-md-4 mb-2">
-              <div class="additional_info rounded shadow p-3 p-lg-4 h-100">
+              <div class="additional_info rounded shadow p-3 p-lg-4">
                 <div class="card h-100 justify-content-center">
                   <img src="/assets/img/program-single/graph.svg">
                   Total Credit Hours
@@ -33,7 +33,7 @@
               </div>
             </div>
             <div class="col-md-4 mb-2">
-              <div class="additional_info rounded shadow p-3 p-lg-4 h-100">
+              <div class="additional_info rounded shadow p-3 p-lg-4">
                 <div class="card h-100 justify-content-center">
                   <img src="/assets/img/program-single/piggy-bank.svg">
                   Per Credit Hour Cost
@@ -180,7 +180,7 @@
         var avgEarningsAfter10years = myJson['results'][0]["latest.earnings.10_yrs_after_entry.working_not_enrolled.mean_earnings"];
         var out_of_state_tuition = myJson['results'][0]["latest.cost.tuition.out_of_state"];
         var in_state_tuition = myJson['results'][0]["latest.cost.tuition.in_state"];
-        var medianDebt = myJson['results'][0]["latest.aid.median_debt.completers.overall"];
+        var medianDebt = myJson['results'][0]["latest.aid.median_debt.completers.overall"][0];
 
         data = [];
         if (in_state_tuition != '') {
