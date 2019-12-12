@@ -2495,8 +2495,9 @@ form.ais-SearchBox-form {
 }
 
 .list-icons__link {
-  display: inline-block;
+  display: inline-flex;
   width: 100px;
+  height: auto
 }
 
 .list-icons__item {
@@ -2504,6 +2505,7 @@ form.ais-SearchBox-form {
   cursor: pointer;
   -webkit-transition: opacity 0.5s ease;
   transition: opacity 0.5s ease;
+  height: auto;
 }
 
 .list-icons__item:focus {
@@ -9242,11 +9244,11 @@ form.ais-SearchBox-form:after {
 .university-menu__item .item-top {
   position: relative;
   padding: 30px 30px;
+  text-align: center;
 }
 
 .university-menu__item .item-top img {
   height: 140px;
-  display: table-cell;
   vertical-align: middle;
   text-align: center;
   margin: 0 auto;
@@ -9270,8 +9272,9 @@ form.ais-SearchBox-form:after {
 }
 
 .university-menu__item .item-body {
-  padding: 30px 10px;
+  padding: 30px;
   text-align: center;
+  line-height: normal;
 }
 
 
