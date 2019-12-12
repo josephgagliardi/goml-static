@@ -9228,7 +9228,7 @@ form.ais-SearchBox-form:after {
   background-color: #fff;
   border: 1px solid transparent;
   -webkit-border-radius: 3px;
-  border-radius: 3px;
+  border-radius: 10px;
   border: solid 1px #d6d6d6;
   -webkit-transition: all .3s;
   transition: all .3s;
@@ -9238,7 +9238,8 @@ form.ais-SearchBox-form:after {
 .university-menu__item:hover,
 .university-menu__item:focus {
   color: var(--main__accent__color);
-  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+  box-shadow: 0 2.4px 2.6px -7px rgba(0, 0, 0, 0.095), 0 19px 21px -7px rgba(0, 0, 0, 0.19);
+   !important;
 }
 
 .university-menu__item .item-top {
