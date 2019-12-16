@@ -77,13 +77,15 @@ search.addWidget(
               </div>
             <div class="courses__content">
                <a class="courses__content__title" href="/program-single.php?id=${item["objectID"]}">${item["Program Name"]}</a>
-                <a href="/program-listing.php?refinementList%5BInstitution%5D%5B0%5D=${item["Institution"]}"><span class="courses__content__institutions">${item["Institution"]}</span></a>
+                <a aria-label="Filter by institution" href="/program-listing.php?refinementList%5BInstitution%5D%5B0%5D=${item["Institution"]}"><span class="courses__content__institutions">${item["Institution"]}</span></a>
                <div class="courses__bottom">
-                  <a href="/program-listing.php?refinementList%5BArea%20of%20Study%5D%5B0%5D=${item["Area of Study"]}">
+                 
                    <div class="area-of-study">
+                      <a aria-label="Filter by areas of study" href="/program-listing.php?refinementList%5BArea%20of%20Study%5D%5B0%5D=${item["Area of Study"]}">
                       ${item["Area of Study"]}
+                      </a>
                     <div>
-                    </a>
+                   
                 </div>
           </div>  
           </div>`;

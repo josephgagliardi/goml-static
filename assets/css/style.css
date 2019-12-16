@@ -1675,7 +1675,7 @@ button.button-text:focus {
   right: -3;
   font-size: 100px;
   overflow: hidden;
-  color: rgba(65, 66, 71, 0.03);
+  color: #fcfcfc;
 }
 
 
@@ -2495,8 +2495,9 @@ form.ais-SearchBox-form {
 }
 
 .list-icons__link {
-  display: inline-block;
+  display: inline-flex;
   width: 100px;
+  height: auto
 }
 
 .list-icons__item {
@@ -2504,6 +2505,7 @@ form.ais-SearchBox-form {
   cursor: pointer;
   -webkit-transition: opacity 0.5s ease;
   transition: opacity 0.5s ease;
+  height: auto;
 }
 
 .list-icons__item:focus {
@@ -2769,7 +2771,7 @@ form.ais-SearchBox-form {
 
 
 .list-content {
-  background-color: #fff;
+  background-color: #FFF;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -9226,7 +9228,7 @@ form.ais-SearchBox-form:after {
   background-color: #fff;
   border: 1px solid transparent;
   -webkit-border-radius: 3px;
-  border-radius: 3px;
+  border-radius: 10px;
   border: solid 1px #d6d6d6;
   -webkit-transition: all .3s;
   transition: all .3s;
@@ -9236,17 +9238,18 @@ form.ais-SearchBox-form:after {
 .university-menu__item:hover,
 .university-menu__item:focus {
   color: var(--main__accent__color);
-  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+  box-shadow: 0 2.4px 2.6px -7px rgba(0, 0, 0, 0.095), 0 19px 21px -7px rgba(0, 0, 0, 0.19);
+   !important;
 }
 
 .university-menu__item .item-top {
   position: relative;
   padding: 30px 30px;
+  text-align: center;
 }
 
 .university-menu__item .item-top img {
   height: 140px;
-  display: table-cell;
   vertical-align: middle;
   text-align: center;
   margin: 0 auto;
@@ -9270,8 +9273,9 @@ form.ais-SearchBox-form:after {
 }
 
 .university-menu__item .item-body {
-  padding: 30px 10px;
+  padding: 30px;
   text-align: center;
+  line-height: normal;
 }
 
 

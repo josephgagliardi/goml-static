@@ -261,11 +261,11 @@
   $(document).ready(function() {
     $(".list-icons__item").on({
       mouseenter: function() {
-        //stuff to do on mouse enter
+        //lower opacity on logos in slick slider
         $('.list-icons__item').not($(this)).addClass('active-item');
       },
       mouseleave: function() {
-        //stuff to do on mouse leave
+        //restores opacity
         $('.list-icons__item').not($(this)).removeClass('active-item');
 
       }
